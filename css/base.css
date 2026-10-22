@@ -4,8 +4,17 @@ html {
     scroll-padding-top: calc(3.5rem + 20px);
 }
 
+:root {
+    --shadow-grey: #372B31ff;
+    --brown-red: #B22230ff;
+    --charcoal: #564F56ff;
+    --floral-white: #FBF7F0ff;
+    --shadow-grey-3: #1B181Eff;
+}
+
 /* Replacement for `body { background-attachment: fixed; }`, which has
    performance issues when scrolling on large displays. See #1394. */
+
 body::before {
     content: ' ';
     position: fixed;
@@ -20,6 +29,10 @@ body::before {
 }
 
 body > .container {
+    background-color: var(--shadow-grey-3);
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 20px;
     margin-top: 20px;
     min-height: 400px;
 }
@@ -56,7 +69,7 @@ h2, h3, h4, h5, h6 {
 }
 
 hr {
-    border-top: 1px solid #aaa;
+    border-top: 1px solid var(--bs-border-color);
     opacity: 1;
 }
 
