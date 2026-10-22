@@ -1,0 +1,18 @@
+
+.spoiler-blur {
+    background-color: rgba(0, 0, 0, 0.1); 
+    filter: blur(5px); 
+    transition: filter 0.3s ease-in-out; 
+    cursor: pointer; 
+    user-select: none; 
+}
+
+.spoiler-blur:hover,
+.spoiler-blur:focus {
+    filter: blur(0px);
+    user-select: auto;
+}
+
+a {
+    color: darkred;
+}
