@@ -1,4 +1,4 @@
-<div style="border: 1px solid #ccc; background-color: #ffffff; padding: 12px; border-radius: 6px;">
+<div class="blurbox">
     <label><input data-input-for="BLURRED"> Blur Spoilers</label>
 </div>
 

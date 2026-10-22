@@ -1,21 +1,9 @@
-# Welcome to MkDocs
+<div class="blurbox">
+    <label><input data-input-for="BLURRED"> Blur Spoilers</label>
+</div>
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+# Status Effects
 
-## Commands
+Below is a list of status effects in Control Resonant.
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
-    site/
-	combat_abilities/
-	    inferno.md
-	    ...
+## Status Effect Table

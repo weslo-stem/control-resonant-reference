@@ -1,10 +1,18 @@
+/* CSS HEX */
+:root {
+    --shadow-grey: #372B31ff;
+    --brown-red: #B22230ff;
+    --charcoal: #564F56ff;
+    --floral-white: #FBF7F0ff;
+    --shadow-grey-3: #1B181Eff;
+}
 
 .spoiler-blur {
-    background-color: rgba(0, 0, 0, 0.1); 
-    filter: blur(5px); 
-    transition: filter 0.3s ease-in-out; 
-    cursor: pointer; 
-    user-select: none; 
+    background-color: rgba(0, 0, 0, 0.1);
+    filter: blur(5px);
+    transition: filter 0.3s ease-in-out;
+    cursor: pointer;
+    user-select: none;
 }
 
 .spoiler-blur:hover,
@@ -13,6 +21,28 @@
     user-select: auto;
 }
 
+.blurbox {
+    border: 1px solid #ccc; 
+    background-color: var(--charcoal); 
+    padding: 12px; 
+    border-radius: 6px;
+    accent-color: var(--brown-red);
+}
+
 a {
-    color: darkred;
+    color: var(--brown-red);
+}
+
+p, h1, h2, h3, h4, h5, h6, label {
+    color: var(--floral-white);
+}
+
+.dropdown-item-text {
+    display: block;
+    padding: 0.25rem 0.5rem;
+    color: var(--brown-red);
+}
+
+.modal-content {
+    background-color: var(--shadow-grey-3)
 }

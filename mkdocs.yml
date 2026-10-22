@@ -5,3 +5,6 @@ plugins:
     - search
     - table-reader
     - placeholder
+theme:
+  name: mkdocs
+  custom_dir: 'crr_custom_theme/'
