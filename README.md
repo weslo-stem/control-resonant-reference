@@ -1,3 +1,3 @@
 # Control Resonant Resource
 
-This is a public community-driven wiki for the game Control Resonant hosted on github pages
+A public community-driven wiki for the game [Control Resonant](https://controlgame.com/en) hosted on [GitHub](https://github.com/weslo-stem/control-resonant-reference) Pages.

@@ -1,4 +1,7 @@
 site_name: Control Resonant Resource
+extra_css: 
+    - stylesheets/extra.css
 plugins:
-  - search
-  - table-reader
+    - search
+    - table-reader
+    - placeholder

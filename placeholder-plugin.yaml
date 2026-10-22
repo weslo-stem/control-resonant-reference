@@ -1,0 +1,10 @@
+placeholders:
+    BLURRED: 
+        default: checked
+        values:
+            checked: "spoiler-blur"
+            unchecked: ""
+        replace_everywhere: true
+
+settings:
+    auto_placeholder_tables: false
