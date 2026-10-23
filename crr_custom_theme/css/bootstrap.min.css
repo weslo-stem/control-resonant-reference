@@ -10,13 +10,11 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
 :root, [data-bs-theme=light] {
-
     --shadow-grey: #372B31ff;
     --brown-red: #B22230ff;
     --charcoal: #564F56ff;
     --floral-white: #FBF7F0ff;
     --shadow-grey-3: #1B181Eff;
-
     --bs-blue: #033c73;
     --bs-indigo: #6610f2;
     --bs-purple: #6f42c1;
@@ -104,11 +102,11 @@
     --bs-tertiary-bg: #f8f9fa;
     --bs-tertiary-bg-rgb: 248,249,250;
     --bs-heading-color: #2fa4e7;
-    --bs-link-color: #2fa4e7;
-    --bs-link-color-rgb: 47,164,231;
+    --bs-link-color: var(--brown-red);
+    --bs-link-color-rgb: rgb(from var(--brown-red) r g b);
     --bs-link-decoration: underline;
-    --bs-link-hover-color: #2683b9;
-    --bs-link-hover-color-rgb: 38,131,185;
+    --bs-link-hover-color: var(--brown-red);
+    --bs-link-hover-color-rgb: rgb(from var(--brown-red) r g b);
     --bs-code-color: #e83e8c;
     --bs-highlight-color: #495057;
     --bs-highlight-bg: #f8ddcc;
@@ -1290,7 +1288,9 @@ progress {
 
     .col-md-12 {
         flex: 0 0 auto;
-        width: 100%
+        width: 100%;
+        background-color: #000000;
+        box-shadow: 0 50vh 0 50vh #000;
     }
 
     .offset-md-0 {
@@ -3659,9 +3659,9 @@ textarea.form-control-lg {
     --bs-dropdown-box-shadow: var(--bs-box-shadow);
     --bs-dropdown-link-color: var(--bs-body-color);
     --bs-dropdown-link-hover-color: #fff;
-    --bs-dropdown-link-hover-bg: #2fa4e7;
+    --bs-dropdown-link-hover-bg: var(--brown-red);
     --bs-dropdown-link-active-color: #fff;
-    --bs-dropdown-link-active-bg: #2fa4e7;
+    --bs-dropdown-link-active-bg: var(--brown-red);
     --bs-dropdown-link-disabled-color: var(--bs-tertiary-color);
     --bs-dropdown-item-padding-x: 1rem;
     --bs-dropdown-item-padding-y: 0.25rem;
@@ -4077,7 +4077,7 @@ textarea.form-control-lg {
     padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
     font-size: var(--bs-nav-link-font-size);
     font-weight: var(--bs-nav-link-font-weight);
-    color: var(--bs-nav-link-color);
+    color: var(--brown-red);
     text-decoration: none;
     background: 0 0;
     border: 0;

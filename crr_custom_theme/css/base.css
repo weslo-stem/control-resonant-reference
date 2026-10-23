@@ -23,7 +23,8 @@ body::before {
     top: 0;
     left: 0;
     background-color: var(--bs-body-bg);
-    background: url(../img/grid.png) repeat-x;
+    background: url(../img/Wallpaper2.png) fixed no-repeat;
+    background-size: cover;
     will-change: transform;
     z-index: -1;
 }
