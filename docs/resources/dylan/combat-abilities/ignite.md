@@ -10,7 +10,7 @@
 <div class="combat-ability-infobox">
     <!-- Image -->
     <div class="combat-ability-image">
-        <img src="../../../../icons/abilities/icn_ability_heat_aura.svg" alt="Ignite Icon">
+        <img src="/icons/abilities/icn_ability_heat_aura.svg" alt="Ignite Icon">
     </div>
     <div class="image-subtitle">
         <p><i>Ability Description</i></p>

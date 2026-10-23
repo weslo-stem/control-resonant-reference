@@ -3,8 +3,12 @@ extra_css:
     - stylesheets/extra.css
 plugins:
     - search
+    - macros
     - table-reader
     - placeholder
+    - awesome-nav
 theme:
   name: mkdocs
   custom_dir: 'crr_custom_theme/'
+extra:
+  nav_blur_terms: Hedron;Unknown;Underpass
