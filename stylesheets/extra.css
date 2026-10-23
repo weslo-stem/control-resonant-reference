@@ -46,3 +46,42 @@ p, h1, h2, h3, h4, h5, h6, label {
 .modal-content {
     background-color: var(--shadow-grey-3)
 }
+
+summary {
+    color: var(--brown-red);
+}
+
+.combat-ability-image {
+    display: flex;
+    align-items: center;
+}
+
+.combat-ability-image > img {
+    background-color: rgba(0,0,0,0);
+    border-width: 0px;
+    border-radius: 0px;
+    width: 240px;
+    max-width: 100%;
+
+}
+
+.combat-ability-infobox {
+    width: 320px;
+    max-width: 100%;
+    padding: 10px;
+    overflow: hidden;
+    color: var(--brown-red);
+    background-color: #000000;
+    border: 1px solid var(--floral-white);
+    border-radius: 6px;
+    box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.85), 0 6px 18px rgba(0, 0, 0, 0.45);
+    font-family: Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.25;
+}
+
+.image-subtitle > p {
+    font-size: 13px;
+    color: var(--brown-red);
+    padding: 10px;
+}
