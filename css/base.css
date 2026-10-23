@@ -22,8 +22,8 @@ body::before {
     height: 100%;
     top: 0;
     left: 0;
-    background-color: var(--bs-body-bg);
-    background: url(/img/Wallpaper2.png) fixed no-repeat;
+    background-color: var(--shadow-grey-3);
+    background: url(../img/Wallpaper2.png) fixed no-repeat;
     background-size: cover;
     will-change: transform;
     z-index: -1;
