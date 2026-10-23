@@ -38,7 +38,7 @@
     --bs-gray-700: #495057;
     --bs-gray-800: #343a40;
     --bs-gray-900: #212529;
-    --bs-primary: #2fa4e7;
+    --bs-primary: var(--shadow-grey-3);
     --bs-secondary: #e9ecef;
     --bs-success: #73a839;
     --bs-info: #033c73;
@@ -46,7 +46,7 @@
     --bs-danger: #c71c22;
     --bs-light: #f8f9fa;
     --bs-dark: #343a40;
-    --bs-primary-rgb: 47,164,231;
+    --bs-primary-rgb: 27,24,30;
     --bs-secondary-rgb: 233,236,239;
     --bs-success-rgb: 115,168,57;
     --bs-info-rgb: 3,60,115;
