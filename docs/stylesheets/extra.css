@@ -65,6 +65,19 @@ summary {
 
 }
 
+.combat-ability-gif {
+    display: flex;
+    align-items: center;
+}
+    .combat-ability-gif > img {
+        background-color: rgba(0,0,0,0);
+        border-width: 0px;
+        border-radius: 0px;
+        width: 300px;
+        max-width: 100%;
+        margin-bottom: 0px;
+    }
+
 .combat-ability-infobox {
     width: 320px;
     max-width: 100%;
@@ -81,7 +94,52 @@ summary {
 }
 
 .image-subtitle > p {
-    font-size: 13px;
-    color: var(--brown-red);
+    font-size: 18px;
+    color: var(--floral-white);
     padding: 10px;
+    font-family: 'Noto Sans'
+}
+
+.image-subtitle > a {
+    font-size: 18px;
+    color: var(--floral-white);
+    padding: 10px;
+    font-family: 'Noto Sans'
+}
+
+.inline-svg > img {
+    background-color: rgba(0,0,0,0);
+    border-width: 0px;
+    border-radius: 0px;
+    width: 32px;
+    height: 32px;
+    margin: 0px 0px 0px 0px;
+}
+
+.inline-svg > a {
+    font-size: 18px;
+    color: var(--floral-white);
+    font-family: 'Noto Sans';
+    text-decoration: none;
+}
+
+    .inline-svg > a > img {
+        background-color: rgba(0,0,0,0);
+        border-width: 0px;
+        border-radius: 0px;
+        width: 32px;
+        height: 32px;
+        margin: 0px 0px 0px 0px;
+    }
+
+.inline-svg > a:hover {
+    font-size: 18px;
+    color: var(--floral-white);
+    font-family: 'Noto Sans';
+    text-decoration: none;
+    background-color: var(--shadow-grey)
+}
+
+.table > th, td {
+    border: 1px solid;
 }

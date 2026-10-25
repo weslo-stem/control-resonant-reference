@@ -1,4 +1,4 @@
-site_name: Control Resonant Resource
+site_name: Control Resonant Reference
 extra_css: 
     - stylesheets/extra.css
 plugins:

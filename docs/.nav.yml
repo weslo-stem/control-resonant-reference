@@ -1,33 +1,33 @@
 nav:
   - index.md
-  - Resources:
+  - Reference:
     - Combat:
-      - resources/combat/status-effects.md
+      - reference/combat/status-effects.md
     - Dylan:
       - Aberrant:
-        - resources/dylan/aberrant/primary-forms.md
-        - resources/dylan/aberrant/secondary-forms.md
-        - resources/dylan/aberrant/combo-finishers.md
-      - resources/dylan/combat-abilities.md
-      - resources/dylan/talents.md
+        - reference/dylan/aberrant/primary-forms.md
+        - reference/dylan/aberrant/secondary-forms.md
+        - reference/dylan/aberrant/combo-finishers.md
+      - reference/dylan/combat-abilities.md
+      - reference/dylan/talents.md
     - Enemies: 
-      - resources/enemies/hiss.md
-      - resources/enemies/mold.md
-      - resources/enemies/hedron.md
-      - resources/enemies/resonants.md
+      - reference/enemies/hiss.md
+      - reference/enemies/mold.md
+      - reference/enemies/hedron.md
+      - reference/enemies/resonants.md
     - Items:
-      - resources/items/artifacts.md
-      - resources/items/cosmetics.md
-      - resources/items/key-items.md
-      - resources/items/materials.md
+      - reference/items/artifacts.md
+      - reference/items/cosmetics.md
+      - reference/items/key-items.md
+      - reference/items/materials.md
     - World:
-      - resources/world/quests.md
+      - reference/world/quests.md
       - Zones:
-        - resources/world/zones/downtown.md
-        - resources/world/zones/central.md
-        - resources/world/zones/evacuation-zone.md
-        - resources/world/zones/west-incursion-zone.md
-        - resources/world/zones/the-park.md
-        - resources/world/zones/underpass.md
-        - resources/world/zones/unknown.md
+        - reference/world/zones/downtown.md
+        - reference/world/zones/central.md
+        - reference/world/zones/evacuation-zone.md
+        - reference/world/zones/west-incursion-zone.md
+        - reference/world/zones/the-park.md
+        - reference/world/zones/underpass.md
+        - reference/world/zones/unknown.md
   - guides
