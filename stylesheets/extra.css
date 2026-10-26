@@ -56,14 +56,13 @@ summary {
     align-items: center;
 }
 
-.combat-ability-image > img, a > img{
-    background-color: rgba(0,0,0,0);
-    border-width: 0px;
-    border-radius: 0px;
-    width: 240px;
-    max-width: 100%;
-
-}
+    .combat-ability-image > img, .combat-ability-image > a > img {
+        background-color: rgba(0,0,0,0);
+        border-width: 0px;
+        border-radius: 0px;
+        width: 240px;
+        max-width: 100%;
+    }
 
     .combat-ability-image > a {
         background-color: rgba(0,0,0,0);
