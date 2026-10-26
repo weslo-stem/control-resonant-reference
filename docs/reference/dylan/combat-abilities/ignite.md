@@ -25,7 +25,7 @@
         <div class="combat-ability-gif left-box">
             <img src="{{gif_ignite}}" alt="Ignite">
         </div>
-        <div class="right-box">
+        <div class="right-box" style="overflow-x: auto;">
             <table>
                 <tbody>
                     <tr>
@@ -55,4 +55,10 @@
 # Damage
 
 ### Base Damage and Falter values by Ability Strength
+
+
+<div style="overflow-x: auto;" markdown="1">
+    
 {{ read_csv('damage_tables/combat_abilities/ignite.csv') }}
+    
+</div>
