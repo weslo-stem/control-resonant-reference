@@ -9,21 +9,21 @@
     <!-- Image -->
     <div class="flex-container">
         <div class="combat-ability-image left-box">
-            <img src="/icons/combat_abilities/icn_ability_heat_aura.svg" alt="Ignite Icon">
+            <img src="{{icon_ignite}}" alt="Ignite Icon">
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">Melee Attacks and 
-            <a href="{{ctx}}/reference/dylan/combat_abilities/barrage/"><img src="/icons/combat_abilities/icn_ability_barrage.svg"/><strong><b>Barrage</b></strong></a>,
-            <a href="{{ctx}}/reference/dylan/combat_abilities/shield/"><img src="/icons/combat_abilities/icn_ability_shield.svg"/><strong><b>Shield</b></strong></a>, and
-            <a href="{{ctx}}/reference/dylan/combat_abilities/volatile_anomaly/"><img src="/icons/combat_abilities/icn_ability_seekers.svg"/><strong><b>Volatile Anomaly</b></strong></a> do 
-            <img src="/icons/damage_types/icn_damage_fire.svg"/><strong><b>Fire Damage</b></strong> that applies
-            <img src="/icons/status_effects/icn_status_burn.svg"/><strong><b>Burn</b></strong>.</p>
+            <a href="{{page_barrage}}"><img src="{{icon_barrage}}"/><strong><b>Barrage</b></strong></a>,
+            <a href="{{page_shield}}"><img src="{{icon_shield}}"/><strong><b>Shield</b></strong></a>, and
+            <a href="{{page_volatile_anomaly}}"><img src="{{icon_volatile_anomaly}}"/><strong><b>Volatile Anomaly</b></strong></a> do 
+            <img src="{{icon_fire_damage}}"/><strong><b>Fire Damage</b></strong> that applies
+            <img src="{{icon_status_burn}}"/><strong><b>Burn</b></strong>.</p>
         </div>
     </div>
     <hr>
     <div class="flex-container">
         <div class="combat-ability-gif left-box">
-            <img src="/gifs/ignite.gif" alt="Ignite">
+            <img src="{{gif_ignite}}" alt="Ignite">
         </div>
         <div class="right-box">
             <table>
@@ -34,14 +34,14 @@
                     </tr>
                     <tr>
                         <th scope="row" style="background-color: var(--shadow-grey)">Damage Type</th>
-                        <td class="inline-svg"><img src="/icons/damage_types/icn_damage_fire.svg"/><strong><b>Fire Damage</b></strong></td>
+                        <td class="inline-svg"><img src="{{icon_fire_damage}}"/><strong><b>Fire Damage</b></strong></td>
                     </tr>
                     <tr>
-                        <th scope="row" style="background-color: var(--shadow-grey)" class="inline-svg">Initial <img src="/icons/icon/icn_ability_strength.svg"/><strong><b>Power</b></strong> cost</th>
+                        <th scope="row" style="background-color: var(--shadow-grey)" class="inline-svg">Initial <img src="{{icon_power}}"/><strong><b>Power</b></strong> cost</th>
                         <td>200</td>
                     </tr>
                     <tr>
-                        <th scope="row" style="background-color: var(--shadow-grey)" class="inline-svg">Persistent <img src="/icons/icon/icn_ability_strength.svg"/><strong><b>Power</b></strong> cost</th>
+                        <th scope="row" style="background-color: var(--shadow-grey)" class="inline-svg">Persistent <img src="{{icon_power}}"/><strong><b>Power</b></strong> cost</th>
                         <td>45/s</td>
                     </tr>
                 </tbody>
