@@ -66,20 +66,19 @@ summary {
 }
 
 .combat-ability-gif {
-    display: flex;
-    align-items: center;
+    display:flex;
+    align-content: center;
 }
     .combat-ability-gif > img {
         background-color: rgba(0,0,0,0);
         border-width: 0px;
         border-radius: 0px;
-        width: 300px;
-        max-width: 100%;
-        margin-bottom: 0px;
+        max-width: 75%;
+        align-self: center;
     }
 
 .combat-ability-infobox {
-    width: 320px;
+    
     max-width: 100%;
     padding: 10px;
     overflow: hidden;
@@ -142,4 +141,20 @@ summary {
 
 .table > th, td {
     border: 1px solid;
+}
+
+.flex-container{
+    display: flex;
+    align-items: center;
+
+}
+.right-box {
+    width: 50%;
+    height: 100%;
+    align-items: stretch;
+}
+.left-box {
+    width: 50%;
+    height: 100%;
+    flex-grow: 1;
 }
