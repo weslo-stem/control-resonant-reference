@@ -1,0 +1,9 @@
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Icon/Exit">
+<g id="foreground">
+<path d="M19 24H21V4C21 2.89543 20.1046 2 19 2H6C4.89543 2 4 2.89543 4 4V12H6V4H19V24Z" fill="white"/>
+<path d="M4 24H6V16H4V24Z" fill="white"/>
+</g>
+<path id="foreground_2" d="M9.60085 17.58L11.0209 19L16.0209 14L11.0209 9L9.60085 10.41L12.1909 13H2.52085V15H12.1909L9.60085 17.58Z" fill="white"/>
+</g>
+</svg>

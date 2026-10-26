@@ -1,14 +1,19 @@
 site_name: Control Resonant Reference
 extra_css: 
     - stylesheets/extra.css
+
 plugins:
     - search
     - macros
     - table-reader
     - placeholder
     - awesome-nav
+    - webcontext:
+        context: control-resonant-reference
 theme:
   name: mkdocs
   custom_dir: 'crr_custom_theme/'
+  favicon: 'docs/icons/favicon.ico'
 extra:
   nav_blur_terms: Hedron;Unknown;Underpass
+  ctx: /control-resonant-reference

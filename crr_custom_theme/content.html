@@ -1,9 +1,13 @@
 {% if page.meta.source %}
 <div class="source-links">
-{% for filename in page.meta.source %}
+    {% for filename in page.meta.source %}
     <span class="label label-primary">{{ filename }}</span>
-{% endfor %}
+    {% endfor %}
 </div>
 {% endif %}
+<div class="blurbox">
+    <label><input data-input-for="BLURRED"> Blur Spoilers</label>
+</div>
+<br>
 
 {{ page.content }}
