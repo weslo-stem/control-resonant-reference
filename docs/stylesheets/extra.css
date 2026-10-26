@@ -176,8 +176,20 @@ summary {
     all: unset;
 }
 
-span.scrollable {
-    display: inline-block;
-    width: 50%;
-    overflow: scroll;
+.image-title > p {
+    display: flex;
+    font-size: 18px;
+    color: var(--floral-white);
+    font-family: 'Noto Sans';
+    text-align: center;
+    align-self: center;
+}
+
+.image-title > a {
+    display: flex;
+    font-size: 18px;
+    color: var(--floral-white);
+    font-family: 'Noto Sans';
+    text-align: center;
+    align-self: center;
 }

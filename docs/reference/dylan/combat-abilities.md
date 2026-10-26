@@ -7,7 +7,7 @@
             <a href="{{page_astral_rebuke}}">
                 <img src="{{icon_astral_rebuke}}" alt="Astral Rebuke Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_astral_rebuke}}"><b>Astral Rebuke</b></a></div>
+            <div class="image-title"><a href="{{page_astral_rebuke}}"><b>Astral Rebuke</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">Unleash a homing spike that erupts beneath enemies and throws them in the air. Applies
@@ -23,7 +23,7 @@
             <a href="{{page_barrage}}">
                 <img src="{{icon_barrage}}" alt="Barrage Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_barrage}}"><b>Barrage</b></a></div>
+            <div class="image-title"><a href="{{page_barrage}}"><b>Barrage</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">Sends projectiles hurtling towards a target.</p>
@@ -37,7 +37,7 @@
             <a href="{{page_command}}">
                 <img src="{{icon_command}}" alt="Command Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_command}}"><b>Command</b></a></div>
+            <div class="image-title"><a href="{{page_command}}"><b>Command</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">Take over an enemy's mind and turn them into an ally.</p>
@@ -51,7 +51,7 @@
             <a href="{{page_ground_slam}}">
                 <img src="{{icon_ground_slam}}" alt="Ground Slam Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_ground_slam}}"><b>Ground Slam</b></a></div>
+            <div class="image-title"><a href="{{page_ground_slam}}"><b>Ground Slam</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">
@@ -69,7 +69,7 @@
             <a href="{{page_growth}}">
                 <img src="{{icon_growth}}" alt="Growth Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_growth}}"><b>Growth</b></a></div>
+            <div class="image-title"><a href="{{page_growth}}"><b>Growth</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">
@@ -87,7 +87,7 @@
             <a href="{{page_ignite}}">
                 <img src="{{icon_ignite}}" alt="Ignite Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_ignite}}"><b>Ignite</b></a></div>
+            <div class="image-title"><a href="{{page_ignite}}"><b>Ignite</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">Melee Attacks and 
@@ -106,7 +106,7 @@
             <a href="{{page_inferno}}">
                 <img src="{{icon_inferno}}" alt="Inferno Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_inferno}}"><b>Inferno</b></a></div>
+            <div class="image-title"><a href="{{page_inferno}}"><b>Inferno</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">
@@ -126,7 +126,7 @@
             <a href="{{page_push}}">
                 <img src="{{icon_push}}" alt="Push Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_push}}"><b>Push</b></a></div>
+            <div class="image-title"><a href="{{page_push}}"><b>Push</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">
@@ -143,7 +143,7 @@
             <a href="{{page_shield}}">
                 <img src="{{icon_shield}}" alt="Shield Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_shield}}"><b>Shield</b></a></div>
+            <div class="image-title"><a href="{{page_shield}}"><b>Shield</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">
@@ -164,7 +164,7 @@
             <a href="{{page_spike}}">
                 <img src="{{icon_spike}}" alt="Spike Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_spike}}"><b>Spike</b></a></div>
+            <div class="image-title"><a href="{{page_spike}}"><b>Spike</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">
@@ -181,7 +181,7 @@
             <a href="{{page_spore_burst}}">
                 <img src="{{icon_spore_burst}}" alt="Spore Burst Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_spore_burst}}"><b>Spore Burst</b></a></div>
+            <div class="image-title"><a href="{{page_spore_burst}}"><b>Spore Burst</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">
@@ -200,7 +200,7 @@
             <a href="{{page_volatile_anomaly}}">
                 <img src="{{icon_volatile_anomaly}}" alt="Volatile Anomaly Icon">
             </a>
-            <div class="image-subtitle"><a href="{{page_volatile_anomaly}}"><b>Volatile Anomaly</b></a></div>
+            <div class="image-title"><a href="{{page_volatile_anomaly}}"><b>Volatile Anomaly</b></a></div>
         </div>
         <div class="image-subtitle right-box">
             <p class="inline-svg">
