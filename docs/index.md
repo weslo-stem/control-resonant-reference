@@ -14,7 +14,7 @@ We highly recommend playing through your first time entirely blind. This is pure
     <details>
         <summary>Combat</summary>
         <br>
-        <p style="text-indent: 1em;">🔻 <a href="reference/combat/status-effects/">Status Effects</a></p>
+        <p style="text-indent: 1em;">🔻 <a href="{{ctx}}/reference/combat/status-effects/">Status Effects</a></p>
     </details>
     <details>
         <summary>Dylan</summary>
