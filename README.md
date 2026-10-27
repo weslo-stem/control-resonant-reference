@@ -18,11 +18,11 @@ https://weslo-stem.github.io/control-resonant-reference
 Make sure to install these!
 
 ## Site editing guides / standards
-- [Debugging and building](/#debugging_and_building)
-- [Macros and site-wide variables](/#macros_and_site-wide_variables)
-- [Site navigation](/#site_navigation)
-- [Placeholders](/#placeholders)
-- [Assets (Damage table .CSVs, images, icons, etc.)](/#assets)
+- [Debugging and building](#debugging_and_building)
+- [Macros and site-wide variables](#macros_and_site-wide_variables)
+- [Site navigation](#site_navigation)
+- [Placeholders](#placeholders)
+- [Assets (Damage table .CSVs, images, icons, etc.)](#assets)
 
 # Debugging and building
 
