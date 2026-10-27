@@ -41,6 +41,7 @@ def define_env(env):
 	env.variables['icon_status_burn'] = ctx + '/icons/status_effects/icn_status_burn.svg'
 	env.variables['icon_status_lifted'] = ctx + '/icons/status_effects/icn_status_lifted.svg'
 	env.variables['icon_status_infected'] = ctx + '/icons/status_effects/icn_status_mold-damage.svg'
+	env.variables['icon_status_seized'] = ctx + '/icons/status_effects/icn_status_seized.svg'
  
  
  

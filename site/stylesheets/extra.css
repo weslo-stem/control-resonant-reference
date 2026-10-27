@@ -150,8 +150,21 @@ summary {
     background-color: var(--shadow-grey)
 }
 
-.table > th, td {
+th, td {
     border: 1px solid;
+}
+
+tr {
+    text-align: center;
+    vertical-align: central;
+}
+
+thead {
+    background-color: var(--shadow-grey)
+}
+
+tbody > tr:hover {
+    background-color: var(--charcoal)
 }
 
 .flex-container{
@@ -176,8 +189,20 @@ summary {
     all: unset;
 }
 
-span.scrollable {
-    display: inline-block;
-    width: 50%;
-    overflow: scroll;
+.image-title > p {
+    display: flex;
+    font-size: 18px;
+    color: var(--floral-white);
+    font-family: 'Noto Sans';
+    text-align: center;
+    align-self: center;
+}
+
+.image-title > a {
+    display: flex;
+    font-size: 18px;
+    color: var(--floral-white);
+    font-family: 'Noto Sans';
+    text-align: center;
+    align-self: center;
 }

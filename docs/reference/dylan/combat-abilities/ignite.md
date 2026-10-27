@@ -2,7 +2,6 @@
 
 # Ignite
 
-<br>
 <div class="flex-container">
 
 <div class="combat-ability-infobox">
@@ -52,13 +51,20 @@
 </div>
 <br>
 
+Bonus damage and falter is applied to all melee attacks and the above listed combat abilities while **Ignite** is active. These values will be increased by talents and status buffs. Below is a table of the base damage and falter values per Ability Strength level.
+
 # Damage
 
-### Base Damage and Falter values by Ability Strength
+#### *Base Damage and Falter values by Ability Strength*
 
 
 <div style="overflow-x: auto;" markdown="1">
     
-{{ read_csv('damage_tables/combat_abilities/ignite.csv') }}
+{% set reader=pd_read_csv('damage_tables/combat_abilities/ignite.csv') %}
+{% set _=reader.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
+{% set _=reader.columns.values.__setitem__(2, 'Bonus <span class="inline-svg"><img src="'+ icon_fire_damage +'"/><strong><b>Fire Dmg</b></strong></span> Floor') %}
+{% set _=reader.columns.values.__setitem__(3, 'Bonus <span class="inline-svg"><img src="'+ icon_fire_damage +'"/><strong><b>Fire Dmg</b></strong></span> Ceiling') %}
+{% set _=reader.columns.values.__setitem__(4, 'Bonus <span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span>') %}
+{{ reader | convert_to_md_table }}
     
 </div>
