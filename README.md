@@ -80,6 +80,11 @@ def define_env(env):
 	bar.define_env(env)
 ```
 
+One-off macro variables can also be defined and initialized in the `mkdocs.yml` file by adding a new line to the `extra:` field. This variable can be referenced within the .py files in `/main` as well.
+
+To reference these variables in HTML and Markdown, use `{{variable_name}}`. 
+Within Jinja2 code blocks, you can use the variable name in python syntax without extra curly braces: `{% if variable_name in foo %} bar {% endif %}`
+
 # Site navigation
 
 # Placeholders
