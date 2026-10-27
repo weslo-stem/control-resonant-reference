@@ -56,6 +56,30 @@ You can also manually build/rebuild the site using `mkdocs build`. This will out
 
 # Macros and site-wide variables
 
+Site-wide variable macros are defined within the .py files in `/main`. Variable declarations in the .py files are intended mainly for creating paths to asset files. For example:
+
+```
+def define_env(env):
+	ctx = env.variables['ctx']
+	env.variables['gif_foo'] = ctx + '/gifs/foo.gif'
+	env.variables['gif_bar'] = ctx + '/gifs/bar.gif'
+```
+
+`env.variables['gif_foo']`, 'gif_foo' would represent the name of the variable you are creating.
+
+All variables should follow this format (use of python variables for cleanliness are perfectly fine, see `pages.py`). **Be sure that every defined variable contains `ctx + ` before the path to account for the behavior mentioned in [Debugging and building](#debugging-and-building).**
+
+If you create/remove any .py files in `/main`, make sure this change is reflected in ``__init__.py``:
+
+```
+import foo
+import bar
+
+def define_env(env):
+	foo.define_env(env)
+	bar.define_env(env)
+```
+
 # Site navigation
 
 # Placeholders
