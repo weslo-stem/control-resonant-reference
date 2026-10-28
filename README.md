@@ -8,6 +8,9 @@ https://weslo-stem.github.io/control-resonant-reference
 - Utilizes mkdocs as a base (not mkdocs-material... probably a bad idea on my part, but here we are)
 - Utilizes Jinja2 code blocks
 
+If you wish to contribute, you will need Python and Git installed.
+
+
 ## Plugins used
 - search (built-in)
 - [mkdocs-macros-plugin](https://github.com/fralau/mkdocs-macros-plugin)
@@ -15,7 +18,7 @@ https://weslo-stem.github.io/control-resonant-reference
 - [mkdocs-placeholder-plugin](https://github.com/six-two/mkdocs-placeholder-plugin)
 - [mkdocs-awesome-nav](https://github.com/lukasgeiter/mkdocs-awesome-nav)
 
-Make sure to install these!
+Make sure to install these if you wish to contribute!
 
 ## Site editing guides / standards
 - [Debugging and building](#debugging-and-building)
