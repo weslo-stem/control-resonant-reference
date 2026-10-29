@@ -9,6 +9,7 @@ plugins:
         icons: 'main/icons'
         gifs: 'main/gifs'
         pages: 'main/pages'
+        images: 'main/images'
     - table-reader
     - placeholder
     - awesome-nav
@@ -20,4 +21,4 @@ theme:
   favicon: 'docs/icons/favicon.ico'
 extra:
   nav_blur_terms: Hedron;Unknown;Underpass;The Physicist;Astral;Astral Plane;The Co-Director
-  ctx: /control-resonant-reference
+  ctx: '' #/control-resonant-reference
