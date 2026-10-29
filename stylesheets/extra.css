@@ -5,6 +5,8 @@
     --charcoal: #564F56ff;
     --floral-white: #FBF7F0ff;
     --shadow-grey-3: #1B181Eff;
+    --control-blue: #77EDEDff;
+    --control-yellow: #FEE93Bff;
 }
 
 .spoiler-blur {
@@ -170,7 +172,6 @@ tbody > tr:hover {
 .flex-container{
     display: flex;
     align-items: center;
-
 }
 .right-box {
     width: 50%;
@@ -206,3 +207,116 @@ tbody > tr:hover {
     text-align: center;
     align-self: center;
 }
+
+.vendor-image {
+    display: flex;
+    align-items: center;
+}
+
+    .vendor-image > img {
+        background-color: rgba(0,0,0,0);
+        border-width: 0px;
+        border-radius: 0px;
+        max-width: 100%;
+    }
+
+.shop-legend {
+    display: flex;
+    margin: 0px 0px 10px 0px;
+    align-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    height: 44px;
+}
+
+.shop-legend > p {
+    margin: 0px;
+    font-family: 'Noto Sans';
+    align-self: center;
+    font-size: 16px;
+}
+
+    .shop-legend > img {
+        margin: 0px;
+    }
+
+.shop-window {
+    display: flex;
+    
+}
+.shop-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+    .shop-row > div {
+        width: 20%;
+    }
+
+.shop-column {
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    border-color: var(--charcoal);
+    border-style: solid;
+    border-radius: 4px;
+    background-color: var(--shadow-grey);
+    padding: 10px;
+    
+}
+
+    .shop-column:hover {
+        background-color: var(--charcoal);
+        border-color: var(--floral-white);
+    }
+
+    .shop-column > img {
+        border: none;
+        margin: 0px;
+    }
+
+    .shop-column > a {
+        margin: 0px 0px 1rem 0px;
+        font-family: 'Noto Sans';
+        align-self: center;
+        font-size: 16px;
+        color: var(--floral-white)
+    }
+
+        .shop-column > a > img {
+            border: none;
+            margin: 0px;
+        }
+
+    .shop_p_qty {
+        font-family: 'Noto Sans';
+        text-align: left;
+        margin: 0px;
+        font-size: 16px;
+    }
+
+    .shop_p_source {
+        font-family: 'Noto Sans';
+        font-size: 16px;
+        text-align: right;
+        margin: 0px;
+        align-self: center;
+    }
+
+    .shop_source_svg {
+        display: flex;
+        background-color: rgba(0,0,0,0);
+        border-width: 0px;
+        border-radius: 0px;
+        max-width: 100%;
+        align-self: flex-end;
+    }
+
+        .shop_source_svg > img {
+            display: flex;
+            background-color: rgba(0,0,0,0);
+            border-width: 0px;
+            border-radius: 0px;
+            max-width: 35px;
+            margin: 0px;
+        }

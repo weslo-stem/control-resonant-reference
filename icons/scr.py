@@ -1,6 +1,6 @@
 import os
 
-directory = os.fsencode('C:\\Users\\wlowe\\control-resonant-reference\\docs\\icons')
+directory = os.fsencode('C:\\Users\\weslo\\OneDrive\\Desktop\\control-resonant-reference\\docs\\images\\vendors')
 
 for subdir, dirs, files in os.walk(directory):
     for file in files:
