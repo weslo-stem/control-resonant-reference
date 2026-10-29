@@ -21,4 +21,4 @@ theme:
   favicon: 'docs/icons/favicon.ico'
 extra:
   nav_blur_terms: Hedron;Unknown;Underpass;The Physicist;Astral;Astral Plane;The Co-Director
-  ctx: '' #/control-resonant-reference
+  ctx: /control-resonant-reference
