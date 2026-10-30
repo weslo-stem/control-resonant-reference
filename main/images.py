@@ -5,7 +5,7 @@ def define_env(env):
 	env.variables['img_vendor_central'] = ctx + '/images/vendors/vendor_central.png'
 	env.variables['img_vendor_downtown'] = ctx + '/images/vendors/vendor_downtown.png'
 	env.variables['img_vendor_evacuation_zone'] = ctx + '/images/vendors/vendor_evacuation_zone.png'
-	env.variables['img_vendor_secret_evacuation_zone'] = ctx + '/images/vendors/vendor_secret_evacuation_zone.png.png'
+	env.variables['img_vendor_secret_evacuation_zone'] = ctx + '/images/vendors/vendor_secret_evacuation_zone.png'
 	env.variables['img_vendor_the_park'] = ctx + '/images/vendors/vendor_the_park.png'
 	env.variables['img_vendor_underpass'] = ctx + '/images/vendors/vendor_underpass.png'
 	env.variables['img_vendor_unknown'] = ctx + '/images/vendors/vendor_unknown.png'
