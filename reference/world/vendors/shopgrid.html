@@ -2,10 +2,10 @@
 {% set reader=pd_read_csv(csv) %}
 <div class="shop-window">
     {% for index in reader['Row'].drop_duplicates() %}
-    <div class="shop-window shop-row">
+    <div class="shop-row">
         {% for _,shoprow in reader[ reader['Row'] == index ].fillna('').iterrows() %}
-        
-        <div class="shop-window shop-column">
+
+        <div class="shop-column">
             <div style="display: flex">
                 <p class="shop_p_qty" style="color:{% if shoprow['Level'] == 2 %}var(--control-blue){% elif shoprow['Level'] == 3 %}var(--control-yellow){% else %}white{% endif %}">{{ (shoprow['Qty 1']|round(2)|string).rstrip('.0') }} </p>
                 {% if shoprow['Qty 2']!='' %}
@@ -16,10 +16,19 @@
                 {% endif %}
             </div>
             <a href=""><img src="{{shoprow['img']}}" /></a>
-            <a href="">{{shoprow['Item']}}</a>
+            <a href="" style="color:{% if shoprow['Level'] == 2 %}var(--control-blue){% elif shoprow['Level'] == 3 %}var(--control-yellow){% else %}white{% endif %}">{{shoprow['Item']}}</a>
             <div class="shop_source_svg"><img src='/control-resonant-reference/icons/currencies/icn_currency_cash.svg' /><p class="shop_p_source">{{shoprow['Price']}}</p></div>
         </div>
         {% endfor %}
+        {% if reader[ reader['Row'] == index ].fillna('').shape[0] < reader['Column'].max() %}
+        {% for ix in range(0, reader['Column'].max()-reader[ reader['Row'] == index ].fillna('').shape[0]) %}
+        <div class="blank-shop-column">
+            
+        </div>
+        {% endfor %}
+
+
+        {% endif %}
     </div>
     {% endfor %}
 </div>
