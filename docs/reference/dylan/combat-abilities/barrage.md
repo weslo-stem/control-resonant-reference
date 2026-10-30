@@ -49,7 +49,7 @@
 
 <div style="overflow-x: auto;" markdown="1">
     
-{% set reader1=pd_read_csv('damage_tables/combat_abilities/barrage.csv') %}
+{% set reader1=pd_read_csv('tables/damage_tables/combat_abilities/barrage.csv') %}
 {% set _=reader1.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
 {% set _=reader1.columns.values.__setitem__(2, '<span class="inline-svg"><img src="'+ icon_blunt_damage +'"/><strong><b>Damage</b></strong></span> Floor') %}
 {% set _=reader1.columns.values.__setitem__(3, '<span class="inline-svg"><img src="'+ icon_blunt_damage +'"/><strong><b>Damage</b></strong></span> Ceiling') %}

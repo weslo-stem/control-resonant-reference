@@ -57,7 +57,7 @@ Inferno attacks can be rapidly chained by quick, persistent inputs. Damage and f
 
 <div style="overflow-x: auto;" markdown="1">
     
-{% set reader=pd_read_csv('damage_tables/combat_abilities/inferno.csv') %}
+{% set reader=pd_read_csv('tables/damage_tables/combat_abilities/inferno.csv') %}
 {% set _=reader.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
 {% set _=reader.columns.values.__setitem__(2, '<span class="inline-svg"><img src="'+ icon_fire_damage +'"/><strong><b>Damage</b></strong></span>') %}
 {% set _=reader.columns.values.__setitem__(3, '<span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span>') %}

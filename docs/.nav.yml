@@ -30,4 +30,12 @@ nav:
         - reference/world/zones/the-park.md
         - reference/world/zones/underpass.md
         - reference/world/zones/unknown.md
+      - Vendors:
+        - reference/world/vendors/downtown.md
+        - reference/world/vendors/central.md
+        - reference/world/vendors/evacuation-zone.md
+        - reference/world/vendors/west-incursion-zone.md
+        - reference/world/vendors/the-park.md
+        - reference/world/vendors/underpass.md
+        - reference/world/vendors/unknown.md
   - guides

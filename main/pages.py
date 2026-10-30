@@ -13,6 +13,7 @@ def define_env(env):
 	env.variables['page_items_keyitems'] = ctx + '/reference/items/key-items/'
 	env.variables['page_items_materials'] = ctx + '/reference/items/materials/'
 	env.variables['page_world_zones'] = ctx + '/reference/world/zones/'
+	env.variables['page_world_vendors'] = ctx + '/reference/world/vendors/'
 	env.variables['page_world_quests'] = ctx + '/reference/world/quests/'
 
 	combatAbilities = env.variables['page_combat_abilities'] ##
@@ -45,3 +46,13 @@ def define_env(env):
 	env.variables['page_underpass'] = zones + "underpass/"
 	env.variables['page_unknown'] = zones + "unknown/"
 	env.variables['page_west_incursion_zone'] = zones + "west-incursion-zone/"
+
+	vendors = env.variables['page_world_zones'] ##
+	env.variables['page_vendors_central'] = vendors + "central/"
+	env.variables['page_vendors_downtown'] = vendors + "downtown/"
+	env.variables['page_vendors_evacuation_zone'] = vendors + "evacuation-zone/"
+	env.variables['page_vendors_the_park'] = vendors + "the-park/"
+	env.variables['page_vendors_underpass'] = vendors + "underpass/"
+	env.variables['page_vendors_unknown'] = vendors + "unknown/"
+	env.variables['page_vendors_west_incursion_zone'] = vendors + "west-incursion-zone/"
+

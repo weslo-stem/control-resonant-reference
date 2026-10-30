@@ -20,7 +20,7 @@
                     <tr>
                         <td>Zone Level: <b>2</b></td>
                         <td>Zone Level: <b>14</b></td>
-                        <td><b>Tower Island</b><br><b>Dylan's Apartment</b> (post-game)</td>
+                        <td class="inline-svg"><img src="{{icon_fast_travel}}"/><b>Tower Island</b>, <img src="{{icon_fast_travel}}"/><b>Dylan's Apartment</b> (post-game)</td>
                     </tr>
                 </tbody>
             </table>
@@ -38,5 +38,5 @@
     <img src="{{icon_vendor_level_2_yellow}}" style="border: 0px"/>
 </div>
 <div class="combat-ability-infobox">
-    {{ vendorTable('vendor_tables/vendor_unknown.csv') }}
+    {{ vendorTable('tables/vendor_tables/vendor_unknown.csv') }}
 </div>

@@ -241,29 +241,31 @@ tbody > tr:hover {
     }
 
 .shop-window {
-
-    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-shrink: 1
 }
 .shop-row {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    flex: 1 1 auto;
+    min-width: 0;
+    min-height: 0;
 }
-    .shop-row > div {
-        width: 20%;
-    }
 
 .shop-column {
     display: flex;
     flex-direction: column;
-    border: 1px;
+    border: 2px;
     border-color: var(--charcoal);
     border-style: solid;
-    border-radius: 4px;
+    border-radius: 0px;
     background-color: var(--shadow-grey);
-    padding: 10px;
+    padding: 6px;
     margin: 4px;
-    
+    width:20%;
+    object-fit: contain;
 }
 
     .shop-column:hover {
@@ -279,13 +281,14 @@ tbody > tr:hover {
     }
 
     .shop-column > a {
-        margin: 0px 0px 1rem 0px;
+        margin: 0px 0px 5px 0px;
         font-family: 'Noto Sans';
         align-self: center;
-        font-size: 16px;
+        font-size: clamp(10px, 1.5cqw, 18px);
         color: var(--floral-white);
         width: 100%;
         text-align: center;
+        overflow: hidden;
     }
 
         .shop-column > a > img {
@@ -299,15 +302,18 @@ tbody > tr:hover {
     font-family: 'Noto Sans';
     text-align: left;
     margin: 0px 0px 5px 0px;
-    font-size: 16px;
+    font-size: clamp(10px, 1.5cqw, 18px);
+    overflow: hidden;
 }
 
 .shop_p_source {
+    display: flex;
     font-family: 'Noto Sans';
-    font-size: 16px;
     text-align: right;
     margin: 0px;
     align-self: safe center;
+    font-size: clamp(10px, 1.5cqw, 18px);
+    overflow: hidden;
 }
 
 .shop_source_svg {
@@ -325,6 +331,20 @@ tbody > tr:hover {
             background-color: rgba(0,0,0,0);
             border-width: 0px;
             border-radius: 0px;
-            max-width: 35px;
+            max-width: 5cqw;
             margin: 0px;
         }
+
+.blank-shop-column {
+    display: flex;
+    flex-direction: column;
+    border: 1px;
+    border-color: rgb(0,0,0,0);
+    border-style: solid;
+    border-radius: 4px;
+    background-color: rgb(0,0,0,0);
+    padding: 10px;
+    margin: 4px;
+    width: 20%;
+    object-fit: contain;
+}

@@ -60,7 +60,7 @@ Bonus damage and falter is applied to all melee attacks and the above listed com
 
 <div style="overflow-x: auto;" markdown="1">
     
-{% set reader=pd_read_csv('damage_tables/combat_abilities/ignite.csv') %}
+{% set reader=pd_read_csv('tables/damage_tables/combat_abilities/ignite.csv') %}
 {% set _=reader.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
 {% set _=reader.columns.values.__setitem__(2, 'Bonus <span class="inline-svg"><img src="'+ icon_fire_damage +'"/><strong><b>Fire Dmg</b></strong></span> Floor') %}
 {% set _=reader.columns.values.__setitem__(3, 'Bonus <span class="inline-svg"><img src="'+ icon_fire_damage +'"/><strong><b>Fire Dmg</b></strong></span> Ceiling') %}
