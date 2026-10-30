@@ -1,0 +1,26 @@
+{% macro vendorTable(csv) -%}
+{% set reader=pd_read_csv(csv) %}
+<div class="shop-window">
+    {% for index in reader['Row'].drop_duplicates() %}
+    <div class="shop-window shop-row">
+        {% for _,shoprow in reader[ reader['Row'] == index ].fillna('').iterrows() %}
+        
+        <div class="shop-window shop-column">
+            <div style="display: flex">
+                <p class="shop_p_qty" style="color:{% if shoprow['Level'] == 2 %}var(--control-blue){% elif shoprow['Level'] == 3 %}var(--control-yellow){% else %}white{% endif %}">{{ (shoprow['Qty 1']|round(2)|string).rstrip('.0') }} </p>
+                {% if shoprow['Qty 2']!='' %}
+                <p class="shop_p_qty" style="color:{% if shoprow['Level'] == 1 %}var(--control-blue){% elif shoprow['Level'] == 2 %}var(--control-yellow){% else %}{% endif %}">(+{{(shoprow['Qty 2']|round(2)|string).rstrip('.0')}})</p>
+                {% endif %}
+                {% if shoprow['Qty 3']!='' %}
+                <p class="shop_p_qty" style="color: var(--control-yellow)" style="color: var(--control-blue)">(+{{(shoprow['Qty 3']|round(2)|string).rstrip('.0')}})</p>
+                {% endif %}
+            </div>
+            <a href=""><img src="{{shoprow['img']}}" /></a>
+            <a href="">{{shoprow['Item']}}</a>
+            <div class="shop_source_svg"><img src='/icons/currencies/icn_currency_cash.svg' /><p class="shop_p_source">{{shoprow['Price']}}</p></div>
+        </div>
+        {% endfor %}
+    </div>
+    {% endfor %}
+</div>
+{%- endmacro %}
