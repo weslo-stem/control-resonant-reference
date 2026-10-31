@@ -165,7 +165,11 @@ thead {
     background-color: var(--shadow-grey)
 }
 
-tbody > tr:hover {
+.vtable table > tbody > tr:hover {
+    background-color: var(--charcoal)
+}
+
+.htable tbody > tr > td:hover {
     background-color: var(--charcoal)
 }
 
