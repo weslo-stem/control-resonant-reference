@@ -1,0 +1,21 @@
+Vendor,Level,Item,Qty 1,Qty 2,Qty 3,Price,Row,Column,Category,img,navpage
+West Incursiom Zone,1,Corrupted Element,5,10,10,100,1,1,Materials,/control-resonant-reference/images/items/currency_hiss_material_a_small.tex.png,/control-resonant-reference/reference/items/materials/corrupted-element/
+West Incursiom Zone,1,Distorted Form,5,10,10,100,1,2,Materials,/control-resonant-reference/images/items/currency_hiss_material_b_small.tex.png,/control-resonant-reference/reference/items/materials/distorted-form/
+West Incursiom Zone,1,Warped Resonance,3,4,4,150,1,3,Materials,/control-resonant-reference/images/items/currency_hiss_material_c_small.tex.png,/control-resonant-reference/reference/items/materials/warped-resonance/
+West Incursiom Zone,1,Edible Glob,3,6,6,200,1,4,Materials,/control-resonant-reference/images/items/currency_mold_material_a_small.tex.png,/control-resonant-reference/reference/items/materials/edible-glob/
+West Incursiom Zone,1,Fungal Growth,3,6,6,200,1,5,Materials,/control-resonant-reference/images/items/currency_mold_material_b_small.tex.png,/control-resonant-reference/reference/items/materials/fungal-growth/
+West Incursiom Zone,1,Thriving Spore,3,3,3,300,2,1,Materials,/control-resonant-reference/images/items/currency_mold_material_c_small.tex.png,/control-resonant-reference/reference/items/materials/thriving-spore/
+West Incursiom Zone,1,Aberrant Fragment,3,3,3,750,2,2,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_c_small.tex.png,/control-resonant-reference/reference/items/materials/aberrant-fragment/
+West Incursiom Zone,1,Aberrant Shard,3,3,3,750,2,3,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_d_small.tex.png,/control-resonant-reference/reference/items/materials/aberrant-shard/
+West Incursiom Zone,1,Mourning Echo,3,3,3,750,2,4,Artifacts,/control-resonant-reference/images/items/currency_charm_component_d_small.tex.png,/control-resonant-reference/reference/items/materials/mourning-echo/
+West Incursiom Zone,1,Violent Echo,3,3,3,750,2,5,Artifacts,/control-resonant-reference/images/items/currency_charm_component_c_small.tex.png,/control-resonant-reference/reference/items/materials/violent-echo/
+West Incursiom Zone,1,Reset Item,3,,,1000,3,1,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
+West Incursiom Zone,1,Untapped Spray Paint,1,,,1000,3,2,Artifacts,/control-resonant-reference/images/items/ch_102_soda_can_bp_small.tex.png,/control-resonant-reference/reference/items/artifacts/spray-paint/
+West Incursiom Zone,1,Living Shard,1,1,,4000,3,3,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_shard_small.tex.png,/control-resonant-reference/reference/items/materials/living-shard/
+West Incursiom Zone,2,Aberrant Slivers,3,3,,750,3,4,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_a_small.tex.png,/control-resonant-reference/reference/items/materials/aberrant-slivers/
+West Incursiom Zone,2,Aberrant Splinter,3,3,,750,3,5,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_b_small.tex.png,/control-resonant-reference/reference/items/materials/aberrant-splinter/
+West Incursiom Zone,2,Nostalgic Echo,3,3,,750,4,1,Artifacts,/control-resonant-reference/images/items/currency_charm_component_a_small.tex.png,/control-resonant-reference/reference/items/materials/nostalgic-echo/
+West Incursiom Zone,2,Quiet Echo,3,3,,750,4,2,Artifacts,/control-resonant-reference/images/items/currency_charm_component_b_small.tex.png,/control-resonant-reference/reference/items/materials/quiet-echo/
+West Incursiom Zone,2,Reset Item,5,,,1500,4,3,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
+West Incursiom Zone,2,Helix and Nostril Piercings,1,,,2000,4,4,Customization,/control-resonant-reference/images/player_outfit/outfit_item_dylan_accessories_piercings.tex.png,/control-resonant-reference/reference/items/cosmetics/accessories/helix-and-nostril-piercings/
+West Incursiom Zone,3,Reset Item,5,,,2000,4,5,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
