@@ -169,7 +169,7 @@ thead {
     background-color: var(--charcoal)
 }
 
-.htable tbody > tr > td:hover {
+.htable table > tbody > tr > td:hover {
     background-color: var(--charcoal)
 }
 
