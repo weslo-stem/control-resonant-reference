@@ -1,6 +1,5 @@
-
-
 # Ignite
+### *Combat Ability*
 
 <div class="flex-container">
 
@@ -24,7 +23,7 @@
         <div class="combat-ability-gif left-box">
             <img src="{{gif_ignite}}" alt="Ignite">
         </div>
-        <div class="right-box" style="overflow-x: auto;">
+        <div class="right-box htable" style="overflow-x: auto;">
             <table>
                 <tbody>
                     <tr>
@@ -58,7 +57,7 @@ Bonus damage and falter is applied to all melee attacks and the above listed com
 #### *Base Damage and Falter values by Ability Strength*
 
 
-<div style="overflow-x: auto;" markdown="1">
+<div style="overflow-x: auto;" class="vtable" markdown="1">
     
 {% set reader=pd_read_csv('tables/damage_tables/combat_abilities/ignite.csv') %}
 {% set _=reader.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}

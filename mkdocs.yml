@@ -17,12 +17,10 @@ plugins:
     - table-reader
     - placeholder
     - awesome-nav
-    #- webcontext:
-    #    context: control-resonant-reference
 theme:
   name: mkdocs
   custom_dir: 'crr_custom_theme/'
   favicon: 'docs/icons/favicon.ico'
 extra:
-  nav_blur_terms: Hedron;Unknown;Underpass;The Physicist;Astral Plane;The Co-Director
+  nav_blur_terms: Hedron;Unknown;Underpass;The Physicist;Astral Plane;The Co-Director;Evacuation Zone (Secret)
   ctx: /control-resonant-reference

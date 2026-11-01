@@ -1,4 +1,5 @@
 # Command
+### *Combat Ability*
 
 <div class="flex-container">
 
@@ -17,7 +18,7 @@
         <div class="combat-ability-gif left-box">
             <img src="{{gif_command}}" alt="Command">
         </div>
-        <div class="right-box" style="overflow-x: auto;">
+        <div class="right-box htable" style="overflow-x: auto;">
             <table>
                 <tbody>
                     <tr>

@@ -31,11 +31,12 @@ nav:
         - reference/world/zones/underpass.md
         - reference/world/zones/unknown.md
       - Vendors:
-        - reference/world/vendors/downtown.md
-        - reference/world/vendors/central.md
-        - reference/world/vendors/evacuation-zone.md
-        - reference/world/vendors/west-incursion-zone.md
-        - reference/world/vendors/the-park.md
-        - reference/world/vendors/underpass.md
-        - reference/world/vendors/unknown.md
+        - Downtown: reference/world/vendors/downtown.md
+        - Central: reference/world/vendors/central.md
+        - Evacuation Zone: reference/world/vendors/evacuation-zone.md
+        - Evacuation Zone (Secret): reference/world/vendors/secret-evacuation-zone.md
+        - West Incursion Zone: reference/world/vendors/west-incursion-zone.md
+        - The Park: reference/world/vendors/the-park.md
+        - Underpass: reference/world/vendors/underpass.md
+        - Unknown: reference/world/vendors/unknown.md
   - guides

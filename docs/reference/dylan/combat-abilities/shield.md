@@ -1,4 +1,5 @@
 # Shield
+### *Combat Ability*
 
 <div class="flex-container">
 
@@ -24,7 +25,7 @@
         <div class="combat-ability-gif left-box">
             <img src="{{gif_shield}}" alt="Shield">
         </div>
-        <div class="right-box" style="overflow-x: auto;">
+        <div class="right-box htable" style="overflow-x: auto;">
             <table>
                 <tbody>
                     <tr>
@@ -59,7 +60,7 @@
 
 #### **Shield Bash Damage:**
 
-<div style="overflow-x: auto;" markdown="1">
+<div style="overflow-x: auto;" class="vtable" markdown="1">
     
 {% set reader1=pd_read_csv('tables/damage_tables/combat_abilities/shield.csv') %}
 {% set _=reader1.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}

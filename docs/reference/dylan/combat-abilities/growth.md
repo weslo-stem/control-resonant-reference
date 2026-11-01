@@ -1,4 +1,5 @@
 # Growth
+### *Combat Ability*
 
 <div class="flex-container">
 
@@ -21,7 +22,7 @@
         <div class="combat-ability-gif left-box">
             <img src="{{gif_growth}}" alt="Growth">
         </div>
-        <div class="right-box" style="overflow-x: auto;">
+        <div class="right-box htable" style="overflow-x: auto;">
             <table>
                 <tbody>
                     <tr>
@@ -55,7 +56,7 @@ Maximum amount of Mold Ally summons can be increased to 3 by unlocking [insert t
 #### *Base Damage and Falter values by Ability Strength*
 
 
-<div style="overflow-x: auto;" markdown="1">
+<div style="overflow-x: auto;" class="vtable" markdown="1">
     
 {% set reader1=pd_read_csv('tables/damage_tables/combat_abilities/growth.csv') %}
 {% set _=reader1.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}

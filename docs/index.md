@@ -20,7 +20,7 @@ We highly recommend playing through your first time entirely blind. This is pure
         <summary>Dylan</summary>
         <br>
         <details>
-            <summary style="color: darkred;">
+            <summary>
                 Aberrant
             </summary>
             <br>
@@ -41,10 +41,46 @@ We highly recommend playing through your first time entirely blind. This is pure
     </details>
     <details>
         <summary>Items</summary>
+        <br>
+        <p style="text-indent: 1em;">🔻 <a href="reference/items/artifacts/">Artifacts</a></p>
+        <p style="text-indent: 1em;">🔻 <a href="reference/items/cosmetics/">Cosmetics</a></p>
+        <p style="text-indent: 1em;">🔻 <a href="reference/items/key-items/">Key Items</a></p>
+        <p style="text-indent: 1em;">🔻 <a href="reference/items/materials/">Materials</a></p>
+        <p style="text-indent: 1em;">🔻 <a href="reference/items/reset-item/">Reset Item</a></p>
     </details>
     <details>
         <summary>World</summary>
+        <br>
+        <p style="text-indent: 1em;">🔻 <a href="reference/world/quests/">Quests</a></p>
+        <details>
+            <summary>
+                Zones
+            </summary>
+            <br>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/zones/downtown">Downtown</a></p>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/zones/central">Central</a></p>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/zones/evacuation-zone">Evacuation Zone</a></p>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/zones/west-incursion-zone">West Incursion Zone</a></p>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/zones/the-park">The Park</a></p>
+            <p style="text-indent: 1em;">🔻 <span class="iBLURREDi"><a href="reference/world/zones/underpass">Underpass</a></p></span>
+            <p style="text-indent: 1em;">🔻 <span class="iBLURREDi"><a href="reference/world/zones/unknown">Unknown</a></p></span>
+        </details>
+        <details>
+            <summary>
+                Vendors
+            </summary>
+            <br>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/vendors/downtown">Downtown</a></p>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/vendors/central">Central</a></p>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/vendors/evacuation-zone">Evacuation Zone</a></p>
+            <p style="text-indent: 1em;">🔻 <span class="iBLURREDi"><a href="reference/world/vendors/secret-evacuation-zone">Evacuation Zone (Secret)</a></p></span>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/vendors/west-incursion-zone">West Incursion Zone</a></p>
+            <p style="text-indent: 1em;">🔻 <a href="reference/world/vendors/the-park">The Park</a></p>
+            <p style="text-indent: 1em;">🔻 <span class="iBLURREDi"><a href="reference/world/vendors/underpass">Underpass</a></p></span>
+            <p style="text-indent: 1em;">🔻 <span class="iBLURREDi"><a href="reference/world/vendors/unknown">Unknown</a></p></span>
+        </details>
     </details>
 </div>
+<br>
 
 ## Guides

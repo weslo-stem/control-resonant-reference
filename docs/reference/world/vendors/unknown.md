@@ -1,5 +1,6 @@
 {% from "reference/world/vendors/shopgrid.html" import vendorTable %}
-# Vendor - Unknown
+# Vendor
+### *Unknown*
 
 <div class="combat-ability-infobox">
     <!-- Image -->
@@ -9,7 +10,7 @@
         </div>
     </div>
     <div class="flex-container">
-        <div class="left-box" style="overflow-x: auto; padding: 5px;">
+        <div class="left-box htable" style="overflow-x: auto; padding: 5px;">
             <table>
                 <tbody>
                     <tr>

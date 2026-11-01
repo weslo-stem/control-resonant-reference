@@ -1,6 +1,5 @@
-
-
 # Inferno
+### *Combat Ability*
 
 <div class="flex-container">
 
@@ -25,7 +24,7 @@
         <div class="combat-ability-gif left-box">
             <img src="{{gif_inferno}}" alt="Inferno">
         </div>
-        <div class="right-box" style="overflow-x: auto;">
+        <div class="right-box htable" style="overflow-x: auto;">
             <table>
                 <tbody>
                     <tr>
@@ -55,7 +54,7 @@ Inferno attacks can be rapidly chained by quick, persistent inputs. Damage and f
 #### *Base Damage and Falter values by Ability Strength*
 
 
-<div style="overflow-x: auto;" markdown="1">
+<div style="overflow-x: auto;" class="vtable" markdown="1">
     
 {% set reader=pd_read_csv('tables/damage_tables/combat_abilities/inferno.csv') %}
 {% set _=reader.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
