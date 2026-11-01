@@ -38,6 +38,8 @@ You can also manually build/rebuild the site using `mkdocs build`. This will out
 
 # Macros and site-wide variables
 
+**Important**: Unfortunately, macros will not work in .html template pages and will only work in individual .md pages. I cannot seem to find a way around this inconvenience at the moment, so any ideas are greatly, greatly appreciated.
+
 Site-wide variable macros are defined within the .py files in `/main`. Variable declarations in the .py files are intended mainly for creating paths to asset files. For example:
 
 ```
