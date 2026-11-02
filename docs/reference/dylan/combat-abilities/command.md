@@ -26,8 +26,8 @@
                         <td class="iBLURREDi"><strong><b>The Co-Director</b></strong></td>
                     </tr>
                     <tr>
-                        <th scope="row" style="background-color: var(--shadow-grey)">Maximum Command Charges</th>
-                        <td>3 (+2)</td>
+                        <th scope="row" class="inline-svg" style="background-color: var(--shadow-grey)">Maximum <img src="{{icon_command_charge}}"/><strong><b>Command Charges</b></strong></th>
+                        <td><b>3 (+2)</b></td>
                     </tr>
                 </tbody>
             </table>
@@ -37,8 +37,12 @@
 </div>
 
 <br>
-
-<p class="inline-svg">Maximum amount of Command Charges can be increased to 5 by unlocking [insert talent name here] and [insert talent name here]. Applies <img src="{{icon_status_seized}}"/><strong><b>Seized</b></strong> status to target.</p>
+<p class="inline-svg">Applies <img src="{{icon_status_seized}}"/><strong><b>Seized</b></strong> status to target.<br>
+Maximum amount of
+<img src="{{icon_command_charge}}"/><strong><b>Command Charges</b></strong> can be increased to <b>5</b> by unlocking talents:
+<img src="{{icon_tal_command_i}}"/><strong><b>Command I</b></strong>
+and <img src="{{icon_tal_command_ii}}"/><strong><b>Command II</b></strong>.</p>
+<p class="inline-svg"><img src="{{icon_command_charge}}"/><strong><b>Command Charge Cost</b></strong> can be decreased by <b>1</b> (minimum cost of <b>1</b> charge) with Artifact: <a href="{{page_artifact_wad_of_cash}}"><b>Wad of Cash</b></a></p>
 
 Table of command charge costs will be updated here soon
 

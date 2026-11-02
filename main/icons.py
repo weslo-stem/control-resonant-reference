@@ -54,6 +54,10 @@ def define_env(env):
 	env.variables['icon_source'] = ctx + '/icons/currencies/icn_currency_cash.svg'
 	env.variables['icon_reset_item'] = ctx + '/icons/currencies/icn_currency_respec_items.svg'
 	env.variables['icon_talent_point'] = ctx + '/icons/currencies/icn_currency_talent_points.svg'
+	env.variables['icon_command_charge'] = ctx + '/icons/resources/icn_resource_ultimate.svg'
+
+	env.variables['icon_tal_command_i'] = ctx + '/icons/talents/icn_tal_30_ultimate_ability_up.svg'
+	env.variables['icon_tal_command_ii'] = ctx + '/icons/talents/icn_tal_65_unlock_second_ua_segment.svg'
 
 
 

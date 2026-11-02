@@ -56,3 +56,6 @@ def define_env(env):
 	env.variables['page_vendors_unknown'] = vendors + "unknown/"
 	env.variables['page_vendors_west_incursion_zone'] = vendors + "west-incursion-zone/"
 
+	artifacts = env.variables['page_items_artifacts'] ##
+	env.variables['page_artifact_wad_of_cash'] = artifacts + "wad-of-cash/"
+

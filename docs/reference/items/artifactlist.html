@@ -9,7 +9,7 @@
         </a>
         <div class="image-title"><a href="{{item['navpage']}}"><b>{{item['Artifact']}}</b></a></div>
     </div>
-    {% set desc = item['Description']
+    {% set desc = item['fixeddesc']
     .replace("#Health#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_health.svg" /><strong><b>Health</b></strong>')
     .replace("#Power#", '<img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg" /><strong><b>Power</b></strong>')
     .replace("#Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_generic.svg" /><strong><b>Damage</b></strong>')
@@ -22,8 +22,8 @@
     .replace("#Fire Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_fire.svg" /><strong><b>Fire Damage</b></strong>')
     .replace("#Dodge#", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_dodge.svg" /><strong><b>Dodge</b></strong>')
     .replace("#Rush#", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_dash.svg" /><strong><b>Rush</b></strong>')
-    .replace("#Shield#", '<img src="/control-resonant-reference/icons/combat_abilities/icn_ability_shield.svg" /><strong><b>Shield</b></strong>')
-    .replace("#Command#", '<img src="/control-resonant-reference/icons/combat_abilities/icn_ability_seize.svg" /><strong><b>Command</b></strong>')
+    .replace("#Shield#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/shield/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_shield.svg" /><strong><b>Shield</b></strong></a>')
+    .replace("#Command#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/command/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_seize.svg" /><strong><b>Command</b></strong></a>')
     .replace("#Command Charge#", '<img src="/control-resonant-reference/icons/resources/icn_resource_ultimate.svg" /><strong><b>Command Charge</b></strong>')
     .replace("#Hiss Shield#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_overshield.svg" /><strong><b>Hiss Shield</b></strong>')
     .replace("Gravity Anomaly", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_gravity_anomaly.svg" /><strong><b>Gravity Anomaly</b></strong>')
@@ -36,8 +36,10 @@
     .replace("Primary Melee", "<b>Primary Melee</b>")
     .replace("Secondary Melee", "<b>Secondary Melee</b>")
     .replace("Combat Abilities", "<b>Combat Abilities</b>")
+    .replace("Combat Ability", "<b>Combat Ability</b>")
     .replace("Melee", "<b>Melee</b>")
     .replace("Environmental Hazards", "<b>Environmental Hazards</b>")
+    .replace("Summon", "<b>Summon</b>")
     %}
     <div class="image-subtitle right-box">
         <p class="inline-svg">

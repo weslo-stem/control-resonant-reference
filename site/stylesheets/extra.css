@@ -126,6 +126,7 @@ summary {
     width: 32px;
     height: 32px;
     margin: 0px 0px 0px 0px;
+    vertical-align: central;
 }
 
 .inline-svg > a {
