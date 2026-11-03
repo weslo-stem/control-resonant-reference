@@ -46,14 +46,14 @@
     --bs-danger: #c71c22;
     --bs-light: #f8f9fa;
     --bs-dark: #343a40;
-    --bs-primary-rgb: 27,24,30;
-    --bs-secondary-rgb: 233,236,239;
-    --bs-success-rgb: 115,168,57;
-    --bs-info-rgb: 3,60,115;
-    --bs-warning-rgb: 221,86,0;
-    --bs-danger-rgb: 199,28,34;
-    --bs-light-rgb: 248,249,250;
-    --bs-dark-rgb: 52,58,64;
+    --bs-primary-rgb: rgb(from var(--bs-primary) r g b);
+    --bs-secondary-rgb: rgb(from var(--bs-secondary) r g b);
+    --bs-success-rgb: rgb(from var(--bs-success) r g b);
+    --bs-info-rgb: rgb(from var(--bs-info) r g b);
+    --bs-warning-rgb: rgb(from var(--bs-warning) r g b);
+    --bs-danger-rgb: rgb(from var(--bs-danger) r g b);
+    --bs-light-rgb: rgb(from var(--bs-light) r g b);
+    --bs-dark-rgb: rgb(from var(--bs-dark) r g b);
     --bs-primary-text-emphasis: #13425c;
     --bs-secondary-text-emphasis: #5d5e60;
     --bs-success-text-emphasis: #2e4317;
@@ -68,8 +68,8 @@
     --bs-info-bg-subtle: #cdd8e3;
     --bs-warning-bg-subtle: #f8ddcc;
     --bs-danger-bg-subtle: #f4d2d3;
-    --bs-light-bg-subtle: #fcfcfd;
-    --bs-dark-bg-subtle: #ced4da;
+    --bs-light-bg-subtle: var(--floral-white);
+    --bs-dark-bg-subtle: #000;
     --bs-primary-border-subtle: #acdbf5;
     --bs-secondary-border-subtle: #f6f7f9;
     --bs-success-border-subtle: #c7dcb0;
@@ -80,7 +80,7 @@
     --bs-dark-border-subtle: #adb5bd;
     --bs-white-rgb: 255,255,255;
     --bs-black-rgb: 0,0,0;
-    --bs-font-sans-serif: system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    --bs-font-sans-serif: "Noto Sans",system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     --bs-font-monospace: SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
     --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
     --bs-body-font-family: var(--bs-font-sans-serif);
@@ -89,8 +89,8 @@
     --bs-body-line-height: 1.5;
     --bs-body-color: #495057;
     --bs-body-color-rgb: 73,80,87;
-    --bs-body-bg: #fff;
-    --bs-body-bg-rgb: 255,255,255;
+    --bs-body-bg: #000;
+    --bs-body-bg-rgb: 0,0,0;
     --bs-emphasis-color: #000;
     --bs-emphasis-color-rgb: 0,0,0;
     --bs-secondary-color: rgba(73, 80, 87, 0.75);
@@ -189,6 +189,7 @@
     --bs-form-invalid-color: #dd777a;
     --bs-form-invalid-border-color: #dd777a
 }
+
 
 *, ::after, ::before {
     box-sizing: border-box
@@ -3656,7 +3657,7 @@ textarea.form-control-lg {
     --bs-dropdown-spacer: 0.125rem;
     --bs-dropdown-font-size: 1rem;
     --bs-dropdown-color: var(--bs-body-color);
-    --bs-dropdown-bg: var(--bs-body-bg);
+    --bs-dropdown-bg: var(--floral-white);
     --bs-dropdown-border-color: var(--bs-border-color-translucent);
     --bs-dropdown-border-radius: var(--bs-border-radius);
     --bs-dropdown-border-width: var(--bs-border-width);
