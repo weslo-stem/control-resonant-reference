@@ -3,8 +3,9 @@ placeholders:
         default: checked
         values:
             checked: "spoiler-blur"
-            unchecked: ""
+            unchecked: "spoiler-blur-disabled"
         replace_everywhere: true
 
 settings:
     auto_placeholder_tables: false
+    replace_delay_millis: -1

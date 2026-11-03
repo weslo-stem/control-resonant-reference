@@ -63,12 +63,12 @@
                 <tr>
                     {% if ";;" in artifact['Unlock'] %}
                     <th scope="row" style="background-color: var(--shadow-grey)"><b>Purchase</b></th>
-                    <td {% if artifact['blur']==true %} class="iBLURREDi" {% endif %}>
+                    <td {% if artifact['blur']==true %} class="spoilable iBLURREDi" {% endif %}>
                         {{artifact['Unlock'].split(';;')[0]}}
                     </td>
                     {% else %}
                     <th scope="row" style="background-color: var(--shadow-grey)"><b>Unlock</b></th>
-                    <td {% if artifact['blur']==true %} class="iBLURREDi" {% endif %}>
+                    <td {% if artifact['blur']==true %} class="spoilable iBLURREDi" {% endif %}>
                         {{artifact['Unlock']}}
                     </td>
                     {% endif %}

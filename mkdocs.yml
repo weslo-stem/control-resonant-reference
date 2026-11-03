@@ -17,6 +17,8 @@ plugins:
     - table-reader
     - placeholder
     - awesome-nav
+    - toggle-sidebar:
+        show_toc_by_default: False
 theme:
   name: mkdocs
   custom_dir: 'crr_custom_theme/'
