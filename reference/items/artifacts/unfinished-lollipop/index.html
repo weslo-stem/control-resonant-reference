@@ -311,12 +311,12 @@
     </div>
 
 
-    <div class="flex-container" style="align-items: flex-start;">
+    <div class="flex-container" style="flex-direction: row; width: 100%; align-items:flex-start;">
         <div class="image-subtitle left-box">
-            <div class="vtable" style="overflow-x: auto; width:stretch; padding: 10px">
-                <table class="table table-striped table-hover">
+            <div class="vtable" style=" padding: 10px; width:100%; overflow-x:auto;">
+                <table class="table table-striped table-hover" style="width: 100%; overflow-x:scroll;">
                     <thead>
-                        <tr style="width:stretch">
+                        <tr>
                             <th colspan="3" style="background-color: var(--shadow-grey)"><b>Recipe</b></th>
                         </tr>
                     </thead>
@@ -350,26 +350,26 @@
             </div>
         </div>
         <div class="image-subtitle right-box">
-            <div class="vtable" style="overflow-x: auto; width:stretch; height:100%; padding: 10px; vertical-align:top">
-                <table class="table table-striped table-hover">
+            <div class="vtable" style="vertical-align:top; padding: 10px; width:100%; overflow-x:auto;">
+                <table class="table table-striped table-hover" style="width: 100%;">
                     <thead>
-                        <tr style="width:stretch">
-                            <th colspan="3" style="background-color: var(--shadow-grey)"><b>Recycle</b></th>
+                        <tr>
+                            <th colspan="3" style="background-color: var(--shadow-grey);"><b>Recycle</b></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
                             <th scope="row" style="background-color: var(--shadow-grey)"><b>Gain Item (+)</b></th>
-                            <td>
+                            <td style="vertical-align: central; display:table-cell;">
                                 <a href="/control-resonant-reference/reference/items/materials/nostalgic-echo/" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/currency_charm_component_a_small.tex.png" style="border:0px; margin:0px; height:40px; vertical-align:central"><b>Nostalgic Echo</b></a>
                             </td>
-                            <td>
+                            <td style="vertical-align: central; display:table-cell;">
                                 5
                             </td>
                         </tr>
                         <tr>
-                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Recycle Cost (-)</b></th>
-                            <td colspan="2" style="vertical-align:central">
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Cost (-)</b></th>
+                            <td colspan="2" style="vertical-align: central; display:table-cell;">
                                 <img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">250
                             </td>
                         </tr>
