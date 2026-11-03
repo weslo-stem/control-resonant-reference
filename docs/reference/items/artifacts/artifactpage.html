@@ -1,0 +1,152 @@
+{% macro artifactPage(csv, artifactname) -%}
+{% set reader=pd_read_csv(csv) %}
+{% set artifact=reader.loc[reader["Artifact"] == artifactname].iloc[0] %}
+
+<div class="combat-ability-infobox">
+    <div class="flex-container">
+        <div class="combat-ability-image left-box">
+            <img src="{{artifact['img medium']}}" alt="{{artifact['Artifact']}} Icon">
+            <div class="image-subtitle"><p><b>{{artifact['Artifact']}}</b></p></div>
+        </div>
+        {% set desc = artifact['fixeddesc']
+        .replace("#Health#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_health.svg" /><strong><b>Health</b></strong>')
+        .replace("#Power#", '<img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg" /><strong><b>Power</b></strong>')
+        .replace("#Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_generic.svg" /><strong><b>Damage</b></strong>')
+        .replace("#Falter#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg" /><strong><b>Falter</b></strong>')
+        .replace("#Infected#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_mold-damage.svg" /><strong><b>Infected</b></strong>')
+        .replace("#Burn#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_burn.svg" /><strong><b>Burn</b></strong>')
+        .replace("#Sharp Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg" /><strong><b>Sharp Damage</b></strong>')
+        .replace("#Raw Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg" /><strong><b>Raw Damage</b></strong>')
+        .replace("#Blunt Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_blunt.svg" /><strong><b>Blunt Damage</b></strong>')
+        .replace("#Fire Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_fire.svg" /><strong><b>Fire Damage</b></strong>')
+        .replace("#Dodge#", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_dodge.svg" /><strong><b>Dodge</b></strong>')
+        .replace("#Rush#", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_dash.svg" /><strong><b>Rush</b></strong>')
+        .replace("#Shield#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/shield/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_shield.svg" /><strong><b>Shield</b></strong></a>')
+        .replace("#Command#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/command/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_seize.svg" /><strong><b>Command</b></strong></a>')
+        .replace("#Command Charge#", '<img src="/control-resonant-reference/icons/resources/icn_resource_ultimate.svg" /><strong><b>Command Charge</b></strong>')
+        .replace("#Hiss Shield#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_overshield.svg" /><strong><b>Hiss Shield</b></strong>')
+        .replace("Gravity Anomaly", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_gravity_anomaly.svg" /><strong><b>Gravity Anomaly</b></strong>')
+        .replace("Radar", "<b>Radar</b>")
+        .replace("Critical Hits", "<b>Critical Hits</b>")
+        .replace("Perfect Dodge", "<b>Perfect Dodge</b>")
+        .replace("Combo Finishers", "<b>Combo Finishers</b>")
+        .replace("Mold", "<b>Mold</b>")
+        .replace("Critical Chance", "<b>Critical Chance</b>")
+        .replace("Primary Melee", "<b>Primary Melee</b>")
+        .replace("Secondary Melee", "<b>Secondary Melee</b>")
+        .replace("Combat Abilities", "<b>Combat Abilities</b>")
+        .replace("Combat Ability", "<b>Combat Ability</b>")
+        .replace("Melee", "<b>Melee</b>")
+        .replace("Environmental Hazards", "<b>Environmental Hazards</b>")
+        .replace("Summon", "<b>Summon</b>")
+        %}
+        <div class="image-subtitle right-box">
+            <p class="inline-svg">
+                {{desc}}
+            </p>
+            <p style="font-size: 16px; color: #6e6e6e">
+                <i>{{artifact['Flavor Text']}}</i>
+            </p>
+            <div class="htable" style="overflow-x: auto; width:stretch; padding: 10px">
+                <table class="table table-striped table-hover">
+                    <tbody>
+                        <tr>
+                            {% if ";;" in artifact['Unlock'] %}
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Purchase</b></th>
+                            <td {% if artifact['blur']==true %} class="iBLURREDi" {% endif %}>
+                                {{artifact['Unlock'].split(';;')[0]}}
+                            </td>
+                            {% else %}
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Unlock</b></th>
+                            <td {% if artifact['blur']==true %} class="iBLURREDi" {% endif %}>
+                                {{artifact['Unlock']}}
+                            </td>
+                            {% endif %}
+                        </tr>
+                        {% if ";" in artifact['Unlock'] %}
+                        <tr>
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Cost</b></th>
+                            <td>
+                                <img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">{{artifact['Unlock'].split(';;')[1]}}
+                            </td>
+                        </tr>
+                        {% endif %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <hr />
+    <div class="flex-container">
+        <div class="combat-ability-image left-box">
+            <img src="{{artifact['img untapped medium']}}" alt="Untapped {{artifact['Artifact']}} Icon">
+            <div class="image-subtitle"><p><i>Untapped {{artifact['Artifact']}}</i></p></div>
+        </div>
+        
+        <div class="image-subtitle right-box">
+            {% if "Zone Level Reward" in artifact['Unlock'] %}<p><b>NOTE</b>: This artifact is granted to you pre-crafted. The artifact still has an internal crafting recipe in the game, which is listed below.</p>{% endif %}
+            <div class="vtable" style="overflow-x: auto; width:stretch; padding: 10px">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr style="width:stretch">
+                            <th colspan="3" style="background-color: var(--shadow-grey)"><b>Recipe</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Material 1</b></th>
+                            <td>
+                                <a href="{{artifact['item nav 1']}}" style="color: var(--floral-white)"><img src="{{artifact['item img 1']}}" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>{{artifact['Material 1']}}</b></a>
+                            </td>
+                            <td>
+                                x {{artifact['Qty 1']}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Material 2</b></th>
+                            <td>
+                                <a href="{{artifact['item nav 2']}}" style="color: var(--floral-white)"><img src="{{artifact['item img 2']}}" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>{{artifact['Material 2']}}</b></a>
+                            </td>
+                            <td>
+                                x {{artifact['Qty 2']}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Cost</b></th>
+                            <td colspan="2" style="vertical-align:central">
+                                <img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border: 0px; margin: 0px; height: inherit; vertical-align: central ">{{artifact['Cost']}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="vtable" style="overflow-x: auto; width:stretch; padding: 10px">
+                <table class="table table-striped table-hover">
+                    <thead>
+                        <tr style="width:stretch">
+                            <th colspan="3" style="background-color: var(--shadow-grey)"><b>Recycle</b></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Received Material (+)</b></th>
+                            <td>
+                                <a href="{{artifact['item nav 3']}}" style="color: var(--floral-white)"><img src="{{artifact['item img 3']}}" style="border:0px; margin:0px; height:40px; vertical-align:central"><b>{{artifact['Recycled Material']}}</b></a>
+                            </td>
+                            <td>
+                                x {{artifact['Recycled Qty']}}
+                            </td>
+                        </tr>
+                        <tr>
+                            <th scope="row" style="background-color: var(--shadow-grey)"><b>Recycle Cost (-)</b></th>
+                            <td colspan="2" style="vertical-align:central">
+                                <img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">{{artifact['Recycle Cost']}}
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+    {%- endmacro %}

@@ -1,1 +1,7 @@
-# Artifact
+# Artifact 
+### Paper Plane
+
+{% from "reference/items/artifacts/artifactpage.html" import artifactPage %}
+
+
+{{ artifactPage('tables/artifacts.csv', 'Paper Plane') }}

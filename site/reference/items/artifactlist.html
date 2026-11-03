@@ -9,7 +9,7 @@
         </a>
         <div class="image-title"><a href="{{item['navpage']}}"><b>{{item['Artifact']}}</b></a></div>
     </div>
-    {% set desc = item['Description']
+    {% set desc = item['fixeddesc']
     .replace("#Health#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_health.svg" /><strong><b>Health</b></strong>')
     .replace("#Power#", '<img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg" /><strong><b>Power</b></strong>')
     .replace("#Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_generic.svg" /><strong><b>Damage</b></strong>')

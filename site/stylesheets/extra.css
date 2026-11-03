@@ -130,10 +130,9 @@ summary {
 }
 
 .inline-svg > a {
-    font-size: 18px;
+    font-size: inherit;
     color: var(--floral-white);
     font-family: 'Noto Sans';
-    text-decoration: none;
 }
 
     .inline-svg > a > img {
@@ -143,15 +142,15 @@ summary {
         width: 32px;
         height: 32px;
         margin: 0px 0px 0px 0px;
+        vertical-align: central;
     }
 
-.inline-svg > a:hover {
-    font-size: 18px;
-    color: var(--floral-white);
-    font-family: 'Noto Sans';
-    text-decoration: none;
-    background-color: var(--shadow-grey)
-}
+    .inline-svg > a:hover {
+        font-size: inherit;
+        color: var(--floral-white);
+        font-family: 'Noto Sans';
+        background-color: var(--shadow-grey)
+    }
 
 th, td {
     border: 1px solid;
