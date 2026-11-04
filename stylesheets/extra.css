@@ -27,10 +27,19 @@
     user-select: auto;
 }
 
+.spoiler-blur-disabled {
+    background-color: rgba(0, 0, 0, 0);
+    color: inherit;
+}
+
+.spoilable{
+    color: rgba(0,0,0,0)
+}
+
 .blurbox {
-    border: 1px solid #ccc; 
-    background-color: var(--charcoal); 
-    padding: 12px; 
+    border: 1px solid #ccc;
+    background-color: var(--charcoal);
+    padding: 12px;
     border-radius: 6px;
     accent-color: var(--brown-red);
 }
@@ -366,4 +375,12 @@ thead {
         width: 80px;
         max-width: 100%;
         margin: 0px
+    }
+
+.md-typeset table:not([class]) {
+    display: table;
+    width: 100%;
+}
+    .md-typeset table:not([class]) th:nth-child(1) {
+        width: 150px;
     }
