@@ -138,7 +138,7 @@ summary {
     width: 32px;
     height: 32px;
     margin: 0px 0px 0px 0px;
-    vertical-align: central;
+    vertical-align: middle;
 }
 
 .inline-svg > a {
@@ -154,7 +154,7 @@ summary {
         width: 32px;
         height: 32px;
         margin: 0px 0px 0px 0px;
-        vertical-align: central;
+        vertical-align: middle;
     }
 
     .inline-svg > a:hover {
@@ -377,10 +377,11 @@ thead {
         margin: 0px
     }
 
-.md-typeset table:not([class]) {
-    display: table;
-    width: 100%;
+code {
+    padding: 2px 5px;
+    background-color: rgba(var(--charcoal), 0.75);
+    border: solid 1px var(--floral-white);
+    color: var(--floral-white);
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
-    .md-typeset table:not([class]) th:nth-child(1) {
-        width: 150px;
-    }
