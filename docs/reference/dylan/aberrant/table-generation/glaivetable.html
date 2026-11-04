@@ -18,19 +18,19 @@
             <tr>
                 <th scope="col" style="position: sticky; z-index:9; top:0px; left:0px; background-color: var(--shadow-grey); text-align: center;" class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg"><strong><b>Damage Floor</b></strong></span></th>
                 {% for _,row in reader.iterrows() %}
-                <td style="text-align: center; vertical-align:middle;">{{row['Damage Floor']|int}}</td>
+                <td style="text-align: center; vertical-align:middle;">{{row['Damage Floor']|round|int}}</td>
                 {% endfor %}
             </tr>
             <tr>
                 <th scope="col" style="position: sticky; z-index:9; top:0px; left:0px; border-collapse: separate; background-color: var(--shadow-grey); text-align: center;" class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg"><strong><b>Damage Ceiling</b></strong></span></th>
                 {% for _,row in reader.iterrows() %}
-                <td style="text-align: center; vertical-align:middle;">{{row['Damage Ceiling']|int}}</td>
+                <td style="text-align: center; vertical-align:middle;">{{row['Damage Ceiling']|round|int}}</td>
                 {% endfor %}
             </tr>
             <tr>
                 <th scope="col" style="position: sticky; z-index:9; top:0px; left:0px; background-color: var(--shadow-grey); text-align: center;" class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter</b></strong></span></th>
                 {% for _,row in reader.iterrows() %}
-                <td style="text-align: center; vertical-align: middle;">{{row['Falter']|int}}</td>
+                <td style="text-align: center; vertical-align: middle;">{{row['Falter']|round|int}}</td>
                 {% endfor %}
             </tr>
         </tbody>
