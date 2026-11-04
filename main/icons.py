@@ -56,6 +56,22 @@ def define_env(env):
 	env.variables['icon_talent_point'] = ctx + '/icons/currencies/icn_currency_talent_points.svg'
 	env.variables['icon_command_charge'] = ctx + '/icons/resources/icn_resource_ultimate.svg'
 
+	env.variables['icon_aberrant_form'] = ctx + '/icons/icon/icn_weapon_form.svg'
+	env.variables['icon_aberrant_strength'] = ctx + '/icons/icon/icn_aberrant_strength.svg'
+
+	env.variables['icon_cleave'] = ctx + '/icons/weapons/weapon_form_slice_small.tex.png'
+	env.variables['icon_strike'] = ctx + '/icons/weapons/weapon_form_flurry_small.tex.png'
+	env.variables['icon_glaive'] = ctx + '/icons/weapons/weapon_form_slash_small.tex.png'
+	env.variables['icon_crush'] = ctx + '/icons/weapons/weapon_form_crush_small.tex.png'
+	env.variables['icon_extend'] = ctx + '/icons/weapons/weapon_form_extend_small.tex.png'
+	env.variables['icon_drill'] = ctx + '/icons/weapons/weapon_form_drill_small.tex.png'
+	env.variables['icon_concussive_beatdown'] = ctx + '/icons/weapons/weapon_form_bludgeon_small.tex.png'
+	env.variables['icon_uppercut_surge'] = ctx + '/icons/weapons/weapon_form_bludgeon_uppercut_small.tex.png'
+	env.variables['icon_wide_edge'] = ctx + '/icons/weapons/weapon_form_cleave_small.tex.png'
+	env.variables['icon_spin_edge'] = ctx + '/icons/weapons/weapon_form_cleave_spin_small.tex.png'
+	env.variables['icon_split_orbit'] = ctx + '/icons/weapons/weapon_form_split_alt_small.tex.png'
+	env.variables['icon_split_pivot'] = ctx + '/icons/weapons/weapon_form_split_small.tex.png'
+
 	env.variables['icon_tal_command_i'] = ctx + '/icons/talents/icn_tal_30_ultimate_ability_up.svg'
 	env.variables['icon_tal_command_ii'] = ctx + '/icons/talents/icn_tal_65_unlock_second_ua_segment.svg'
 
