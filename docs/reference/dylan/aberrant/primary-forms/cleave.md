@@ -35,18 +35,14 @@
 
 Damage and falter values will be increased by talents and status buffs. Below is a table of the base damage and falter values per Aberrant Strength level.
 
-
-
-
-
 # Damage
 
 
-Damage Falter % Calculation: ***100% + ( Aberrant Strength * 1.67% )***
+Damage Falter % Calculation: `100% + ( Aberrant Strength * 1.67% )`
 
 Note that all values displayed in-game are rounded.
 
 #### *Base Damage and Falter values by Aberrant Strength*
 
-{% from "reference/dylan/aberrant/primary-forms/cleavetable.html" import cleaveTable %}
+{% from "reference/dylan/aberrant/table-generation/cleavetable.html" import cleaveTable %}
 {{ cleaveTable('tables/damage_tables/weapon_forms/cleave.csv') }}

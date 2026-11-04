@@ -1,4 +1,4 @@
-{% from "reference/world/vendors/shopgrid.html" import vendorTable %}
+{% from "reference/world/vendors/shopgrid_htmls/shopgrid.html" import vendorTable %}
 # Vendor
 ### *Evacuation Zone*
 

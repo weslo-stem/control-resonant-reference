@@ -1,0 +1,45 @@
+{% macro crushTable(csv) -%}
+{% set reader=pd_read_csv(csv) %}
+<div class="htable" style="overflow-x: auto;">
+    <table class="table table-striped table-hover" style="border-collapse: separate; border-spacing: 0;">
+        <tbody>
+            <tr>
+                <th scope="row" style="position: sticky; z-index:9; top:0px; left:0px; background-color: var(--shadow-grey); text-align: center;" class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_aberrant_strength.svg"><strong><b>Aberrant Strength</b></strong></span></th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align: middle;"><b>{{row['Aberrant Str']}}</b></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row" style="position: sticky; z-index:9; top:0px; left:0px; background-color: var(--shadow-grey); text-align: center;" class="inline-svg">DF%</th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align: middle;">{{row['DF%'].replace('%','')|float|round|int}}%</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row" style="position: sticky; z-index:9; top:0px; left:0px; background-color: var(--shadow-grey); text-align: center;" class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_blunt.svg"><strong><b>Damage Floor</b></strong></span></th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align:middle;">{{row['Damage Floor']|int}}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row" style="position: sticky; z-index:9; top:0px; left:0px; background-color: var(--shadow-grey); text-align: center;" class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_blunt.svg"><strong><b>Damage Ceiling</b></strong></span></th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align:middle;">{{row['Damage Ceiling']|int}}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row" style="position: sticky; z-index:9; top:0px; left:0px; background-color: var(--shadow-grey); text-align: center;" class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Floor</b></strong></span></th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align: middle;">{{row['Falter Floor']|int}}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row" style="position: sticky; z-index:9; top:0px; left:0px; background-color: var(--shadow-grey); text-align: center;" class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Ceiling</b></strong></span></th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align: middle;">{{row['Falter Ceiling']|int}}</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endmacro %}
