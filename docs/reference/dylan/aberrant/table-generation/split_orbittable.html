@@ -1,0 +1,33 @@
+{% macro split_orbitTable(csv) -%}
+{% set reader=pd_read_csv(csv) %}
+<div class="htable" style="overflow-x: auto;">
+    <table class="table table-striped table-hover" style="border-collapse: separate; border-spacing: 0;">
+        <tbody>
+            <tr>
+                <th scope="row" class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_aberrant_strength.svg"><strong><b>Aberrant Strength</b></strong></span></th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align: middle;"><b>{{row['Aberrant Str']}}</b></td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row" class="wpn-dmg-header inline-svg">DF%</th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align: middle;">{{row['DF%'].replace('%','')|float|round|int}}%</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row" class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"><strong><b>Damage</b></strong></span></th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align:middle;">{{row['Damage']|round|int}}</td>
+                {% endfor %}
+            </tr>
+            <tr>
+                <th scope="row" class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter</b></strong></span></th>
+                {% for _,row in reader.iterrows() %}
+                <td style="text-align: center; vertical-align: middle;">{{row['Falter']|round|int}}</td>
+                {% endfor %}
+            </tr>
+        </tbody>
+    </table>
+</div>
+{% endmacro %}

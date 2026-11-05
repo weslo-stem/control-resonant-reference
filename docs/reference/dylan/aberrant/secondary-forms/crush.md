@@ -8,23 +8,39 @@
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="{{icon_crush}}" alt="Crush Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">A slow, high <img src="{{icon_generic_damage}}"/><strong><b>Damage</b></strong> attack that can knock enemies down. Can be charged to do more damage. <br><br>Charged attacks deal <img src="{{icon_falter_damage}}"/><strong><b>Falter</b></strong>.</p>
+            </div>
         </div>
         <div class="combat-ability-gif right-box">
             <img src="{{gif_astral_rebuke}}" alt="Astral Rebuke">
         </div>
-       
     </div>
     <div class="flex-container" style="gap: 10px;">
-        <div class="image-subtitle left-box">
-            <p class="inline-svg">A slow, high <img src="{{icon_generic_damage}}"/><strong><b>Damage</b></strong> attack that can knock enemies down. Can be charged to do more damage. Charged attacks deal <img src="{{icon_falter_damage}}"/><strong><b>Falter</b></strong>.</p>
-        </div>
-        <div class="right-box htable" style="overflow-x: auto;">
-            <table>
+        <div class="right-box htable" style="overflow-x: auto; width: 100%;">
+            <table class="weapon-info">
                 <tbody>
                     <tr>
+                        <th scope="row" style="background-color: var(--shadow-grey)"><b>Unlock</b></th>
+                        <td><a href="/control-resonant-reference/reference/items/materials/living-shard/" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/living_shard_small.png" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>Living Shard</b></a></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: var(--shadow-grey)" class="inline-svg">Unlock <img src="{{icon_aberrant_strength}}"/><strong><b>Aberrant Strength</b></strong> Boost</th>
+                        <td colspan="2" class="inline-svg">+5</td>
+                    </tr>
+                    <tr>
                         <th scope="row" style="background-color: var(--shadow-grey)">Damage Type</th>
-                        <td class="inline-svg"><img src="{{icon_blunt_damage}}"/><strong><b>Blunt Damage</b></strong></td>
-                    </tr
+                        <td colspan="2" class="inline-svg"><img src="{{icon_blunt_damage}}"/><strong><b>Blunt Damage</b></strong></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: var(--shadow-grey)" class="inline-svg"><img src="{{icon_power}}"/><strong><b>Power</b></strong> Recovery</th>
+                        <td colspan="2" class="inline-svg">Medium</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: var(--shadow-grey)">Critical Chance</th>
+                        <td colspan="2" class="inline-svg">0%</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
