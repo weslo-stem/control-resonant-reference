@@ -104,7 +104,6 @@ summary {
     }
 
 .combat-ability-infobox {
-    
     max-width: 100%;
     padding: 10px;
     overflow: hidden;
@@ -113,7 +112,7 @@ summary {
     border: 1px solid var(--floral-white);
     border-radius: 6px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.85), 0 6px 18px rgba(0, 0, 0, 0.45);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.25;
 }
 
@@ -384,4 +383,31 @@ code {
     color: var(--floral-white);
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+.wpn-dmg-header {
+    position: sticky;
+    z-index: 9;
+    top: 0px;
+    left: 0px;
+    background-color: var(--shadow-grey);
+    text-align: center;
+}
+
+.conjoined-top > th, .conjoined-top > td {
+    border-bottom-style: hidden;
+}
+
+.conjoined-bot > th, .conjoined-bot > td {
+    border-top-style: dashed;
+}
+
+.weapon-info > tbody > tr > th {
+    min-width: 30%;
+    max-width: 50%;
+    vertical-align: middle;
+}
+
+.weapon-info > tbody > tr > td {
+    vertical-align: middle;
 }
