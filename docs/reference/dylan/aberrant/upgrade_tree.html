@@ -1,0 +1,20 @@
+{% macro upgrade_tree(form) -%}
+
+{% set reader=pd_read_csv('tables/weapon_upgrades.csv') %}
+{% set searchtable=reader[reader['Base Form']==form] %}
+
+<div class="wpn-ugrade-window" style="flex-direction:column;">
+    {% for rindex in range(0,searchtable['Row'].max()) %}
+    {{rindex}}, {{searchtable['Row'].max()}}
+    {% set crows = searchtable[searchtable['Row']==rindex] %}
+    <div class="wpn-upgrade-row">
+        {% for _,row in crows.iterrows() %}
+        {{row['Column']}}
+        {% endfor %}
+    </div>
+    <br />
+    {{rindex}}
+    {% endfor %}
+</div>
+
+    {%- endmacro %}

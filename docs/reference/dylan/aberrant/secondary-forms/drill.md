@@ -9,7 +9,7 @@
         <div class="combat-ability-image left-box">
             <img src="{{icon_drill}}" alt="Drill Icon">
             <div class="image-subtitle">
-                <p class="inline-svg">A long range attack that may hit multiple enemies. <br><br>Charge for <img src="{{icon_falter_damage}}"/><strong><b>Falter</b></strong> and extra <img src="{{icon_generic_damage}}"/><strong><b>Damage</b></strong> - a perfect charge deals more.</p>
+                <p class="inline-svg">A quick attack. Charge to continuously drill the target. <br><br>Charge attacks deal <img src="{{icon_falter_damage}}"/><strong><b>Falter</b></strong>.</p>
             </div>
         </div>
         <div class="combat-ability-gif right-box">
@@ -61,3 +61,6 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/drilltable.html" import drillTable %}
 {{ drillTable('tables/damage_tables/weapon_forms/drill.csv') }}
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Drill') }}
