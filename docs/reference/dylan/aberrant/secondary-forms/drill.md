@@ -62,5 +62,8 @@ Note that all values displayed in-game are rounded.
 {% from "reference/dylan/aberrant/table-generation/drilltable.html" import drillTable %}
 {{ drillTable('tables/damage_tables/weapon_forms/drill.csv') }}
 
+# Upgrades
+### Weapon Upgrade Tree
+
 {% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
 {{ upgrade_tree('Drill') }}
