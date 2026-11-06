@@ -271,6 +271,30 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#upgrades" class="nav-link">Upgrades</a>
               <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#debilitate" class="nav-link">Debilitate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#added-disruptor" class="nav-link">Added Disruptor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#power-drill" class="nav-link">Power Drill</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#suppression" class="nav-link">Suppression</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#drill-down" class="nav-link">Drill Down</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#board-rebuttal" class="nav-link">Board Rebuttal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
               </ul>
             </li>
         </ul>
@@ -2541,8 +2565,9 @@
 
 <h1 id="upgrades">Upgrades</h1>
 <h4 id="weapon-upgrade-tree"><em>Weapon Upgrade Tree</em></h4>
-<div class="combat-ability-infobox" style="padding: 5%">
+<div class="combat-ability-infobox" id="treewindow" style="padding: 5%">
     <div class="wpn-ugrade-window" style="flex-direction: column;">
+        <canvas id="drawlines" class="linecanvas"></canvas>
 
 
         <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
@@ -2555,11 +2580,12 @@
 
             <div class="wpn-ugrade-column">
                 <a href="#drill" class="wpn-upgrade-link"><b>Drill</b></a>
-                <a href="#drill" class="wpn-upgrade-icon">
-                    <img src="/control-resonant-reference/icons/weapons/weapon_form_drill_small.tex.png"/>
+                <a href="#drill" class="wpn-upgrade-icon" id="drill">
+                    <img src="/control-resonant-reference/icons/weapons/weapon_form_drill_small.tex.png" />
                     <p class="wpn-upgrade-str-boost"><b>+5</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
             </div>
+
 
 
 
@@ -2579,11 +2605,12 @@
 
             <div class="wpn-ugrade-column">
                 <a href="#debilitate" class="wpn-upgrade-link"><b>Debilitate</b></a>
-                <a href="#debilitate" class="wpn-upgrade-icon">
-                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilled_status.svg"/>
+                <a href="#debilitate" class="wpn-upgrade-icon" id="debilitate">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilled_status.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+2</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
             </div>
+
 
 
 
@@ -2603,22 +2630,24 @@
 
             <div class="wpn-ugrade-column">
                 <a href="#added-disruptor" class="wpn-upgrade-link"><b>Added Disruptor</b></a>
-                <a href="#added-disruptor" class="wpn-upgrade-icon">
-                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_third_attack.svg"/>
+                <a href="#added-disruptor" class="wpn-upgrade-icon" id="added-disruptor">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_third_attack.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
             </div>
+
 
 
 
 
             <div class="wpn-ugrade-column">
                 <a href="#power-drill" class="wpn-upgrade-link"><b>Power Drill</b></a>
-                <a href="#power-drill" class="wpn-upgrade-icon">
-                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_airborne_res_rec_up.svg"/>
+                <a href="#power-drill" class="wpn-upgrade-icon" id="power-drill">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_airborne_res_rec_up.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
             </div>
+
 
 
         </div>
@@ -2634,22 +2663,24 @@
 
             <div class="wpn-ugrade-column">
                 <a href="#suppression" class="wpn-upgrade-link"><b>Suppression</b></a>
-                <a href="#suppression" class="wpn-upgrade-icon">
-                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_switch_combo.svg"/>
+                <a href="#suppression" class="wpn-upgrade-icon" id="suppression">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_switch_combo.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
             </div>
+
 
 
 
 
             <div class="wpn-ugrade-column">
                 <a href="#drill-down" class="wpn-upgrade-link"><b>Drill Down</b></a>
-                <a href="#drill-down" class="wpn-upgrade-icon">
-                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_increased_damage_ticks.svg"/>
+                <a href="#drill-down" class="wpn-upgrade-icon" id="drill-down">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_increased_damage_ticks.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
             </div>
+
 
 
         </div>
@@ -2665,11 +2696,12 @@
 
             <div class="wpn-ugrade-column">
                 <a href="#board-rebuttal" class="wpn-upgrade-link"><b>Board Rebuttal</b></a>
-                <a href="#board-rebuttal" class="wpn-upgrade-icon">
-                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilling_defense.svg"/>
+                <a href="#board-rebuttal" class="wpn-upgrade-icon" id="board-rebuttal">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilling_defense.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+3</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
             </div>
+
 
 
 
@@ -2679,7 +2711,17 @@
         </div>
 
     </div>
-</div></div>
+</div>
+<script>
+    const jsUplist = "drill|,debilitate|drill,added-disruptor|debilitate,power-drill|debilitate,suppression|added-disruptor,drill-down|power-drill,board-rebuttal|suppression;drill-down";
+</script>
+
+<h2 id="debilitate">Debilitate</h2>
+<h2 id="added-disruptor">Added Disruptor</h2>
+<h2 id="power-drill">Power Drill</h2>
+<h2 id="suppression">Suppression</h2>
+<h2 id="drill-down">Drill Down</h2>
+<h2 id="board-rebuttal">Board Rebuttal</h2></div>
             </div>
         </div>
 
@@ -2693,6 +2735,7 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../../../../js/base.js"></script>
+        <script src="../../../../../scripts/drawlines.js"></script>
         <script src="../../../../../search/main.js"></script>
         <script src="../../../../../assets/javascripts/placeholder-combined.js"></script>
 
