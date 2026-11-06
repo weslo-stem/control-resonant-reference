@@ -268,6 +268,35 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-bs-level="1"><a href="#upgrades" class="nav-link">Upgrades</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-bs-level="2"><a href="#debilitate" class="nav-link">Debilitate</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#added-disruptor" class="nav-link">Added Disruptor</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#power-drill" class="nav-link">Power Drill</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#suppression" class="nav-link">Suppression</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#drill-down" class="nav-link">Drill Down</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-bs-level="2"><a href="#board-rebuttal" class="nav-link">Board Rebuttal</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
@@ -286,23 +315,39 @@
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="/control-resonant-reference/icons/weapons/weapon_form_drill_small.tex.png" alt="Drill Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">A quick attack. Charge to continuously drill the target. <br><br>Charge attacks deal <img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"/><strong><b>Falter</b></strong>.</p>
+            </div>
         </div>
         <div class="combat-ability-gif right-box">
-            <img src="/control-resonant-reference/gifs/astral_rebuke.gif" alt="Astral Rebuke">
+            <img src="/control-resonant-reference/gifs/drill.gif" alt="Drill">
         </div>
-
     </div>
     <div class="flex-container" style="gap: 10px;">
-        <div class="image-subtitle left-box">
-            <p class="inline-svg">A long range attack that may hit multiple enemies. Charge for <img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"/><strong><b>Falter</b></strong> and extra <img src="/control-resonant-reference/icons/damage_types/icn_damage_generic.svg"/><strong><b>Damage</b></strong> - a perfect charge deals more.</p>
-        </div>
-        <div class="right-box htable" style="overflow-x: auto;">
-            <table>
+        <div class="right-box htable" style="overflow-x: auto; width:100%;">
+            <table class="weapon-info">
                 <tbody>
                     <tr>
+                        <th scope="row" style="background-color: var(--shadow-grey)"><b>Unlock</b></th>
+                        <td><a href="/control-resonant-reference/reference/items/materials/living-shard/" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/living_shard_small.png" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>Living Shard</b></a></td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: var(--shadow-grey)" class="inline-svg">Unlock <img src="/control-resonant-reference/icons/icon/icn_aberrant_strength.svg"/><strong><b>Aberrant Strength</b></strong> Boost</th>
+                        <td colspan="2" class="inline-svg">+5</td>
+                    </tr>
+                    <tr>
                         <th scope="row" style="background-color: var(--shadow-grey)">Damage Type</th>
-                        <td class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"/><strong><b>Sharp Damage</b></strong></td>
-                    </tr
+                        <td colspan="2" class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"/><strong><b>Sharp Damage</b></strong></td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: var(--shadow-grey)" class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg"/><strong><b>Power</b></strong> Recovery</th>
+                        <td colspan="2" class="inline-svg">Medium</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" style="background-color: var(--shadow-grey)">Critical Chance</th>
+                        <td colspan="2" class="inline-svg">0%</td>
+                    </tr>
                 </tbody>
             </table>
         </div>
@@ -319,7 +364,7 @@
     <table class="table table-striped table-hover" style="border-collapse: separate; border-spacing: 0;">
         <tbody>
             <tr>
-                <th class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_aberrant_strength.svg"><strong><b>Aberrant Strength</b></strong></span></th>
+                <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_aberrant_strength.svg"><strong><b>Aberrant Strength</b></strong></span></th>
 
                 <td style="text-align: center; vertical-align: middle;"><b>0</b></td>
 
@@ -685,7 +730,7 @@
 
             </tr>
             <tr>
-                <th class="inline-svg">DF%</th>
+                <th class="wpn-dmg-header inline-svg">DF%</th>
 
                 <td style="text-align: center; vertical-align: middle;">100%</td>
 
@@ -1050,8 +1095,8 @@
                 <td style="text-align: center; vertical-align: middle;">400%</td>
 
             </tr>
-            <tr>
-                <th class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"><strong><b>Damage Floor</b></strong></span></th>
+            <tr class="conjoined-top">
+                <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"><strong><b>Damage Floor</b></strong></span></th>
 
                 <td style="text-align: center; vertical-align:middle;">90</td>
 
@@ -1416,8 +1461,8 @@
                 <td style="text-align: center; vertical-align:middle;">360</td>
 
             </tr>
-            <tr>
-                <th class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"><strong><b>Damage Ceiling</b></strong></span></th>
+            <tr class="conjoined-bot">
+                <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"><strong><b>Damage Ceiling</b></strong></span></th>
 
                 <td style="text-align: center; vertical-align:middle;">265</td>
 
@@ -1782,8 +1827,8 @@
                 <td style="text-align: center; vertical-align:middle;">1060</td>
 
             </tr>
-            <tr>
-                <th class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Floor</b></strong></span></th>
+            <tr class="conjoined-top">
+                <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Floor</b></strong></span></th>
 
                 <td style="text-align: center; vertical-align: middle;">0</td>
 
@@ -2148,8 +2193,8 @@
                 <td style="text-align: center; vertical-align: middle;">0</td>
 
             </tr>
-            <tr>
-                <th class="inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Ceiling</b></strong></span></th>
+            <tr class="conjoined-bot">
+                <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Ceiling</b></strong></span></th>
 
                 <td style="text-align: center; vertical-align: middle;">20</td>
 
@@ -2516,7 +2561,167 @@
             </tr>
         </tbody>
     </table>
-</div></div>
+</div>
+
+<h1 id="upgrades">Upgrades</h1>
+<h4 id="weapon-upgrade-tree"><em>Weapon Upgrade Tree</em></h4>
+<div class="combat-ability-infobox" id="treewindow" style="padding: 5%">
+    <div class="wpn-ugrade-window" style="flex-direction: column;">
+        <canvas id="drawlines" class="linecanvas"></canvas>
+
+
+        <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
+
+
+            <div class="blank-wpn-ugrade-column"></div>
+
+
+
+
+            <div class="wpn-ugrade-column">
+                <a href="#drill" class="wpn-upgrade-link"><b>Drill</b></a>
+                <a href="#drill" class="wpn-upgrade-icon" id="drill">
+                    <img src="/control-resonant-reference/icons/weapons/weapon_form_drill_small.tex.png" />
+                    <p class="wpn-upgrade-str-boost"><b>+5</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                </a>
+            </div>
+
+
+
+
+            <div class="blank-wpn-ugrade-column"></div>
+
+
+        </div>
+
+
+        <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
+
+
+            <div class="blank-wpn-ugrade-column"></div>
+
+
+
+
+            <div class="wpn-ugrade-column">
+                <a href="#debilitate" class="wpn-upgrade-link"><b>Debilitate</b></a>
+                <a href="#debilitate" class="wpn-upgrade-icon" id="debilitate">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilled_status.svg" />
+                    <p class="wpn-upgrade-str-boost"><b>+2</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                </a>
+            </div>
+
+
+
+
+            <div class="blank-wpn-ugrade-column"></div>
+
+
+        </div>
+
+
+        <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
+
+
+            <div class="blank-wpn-ugrade-column"></div>
+
+
+
+
+            <div class="wpn-ugrade-column">
+                <a href="#added-disruptor" class="wpn-upgrade-link"><b>Added Disruptor</b></a>
+                <a href="#added-disruptor" class="wpn-upgrade-icon" id="added-disruptor">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_third_attack.svg" />
+                    <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                </a>
+            </div>
+
+
+
+
+
+            <div class="wpn-ugrade-column">
+                <a href="#power-drill" class="wpn-upgrade-link"><b>Power Drill</b></a>
+                <a href="#power-drill" class="wpn-upgrade-icon" id="power-drill">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_airborne_res_rec_up.svg" />
+                    <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                </a>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
+
+
+            <div class="blank-wpn-ugrade-column"></div>
+
+
+
+
+            <div class="wpn-ugrade-column">
+                <a href="#suppression" class="wpn-upgrade-link"><b>Suppression</b></a>
+                <a href="#suppression" class="wpn-upgrade-icon" id="suppression">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_switch_combo.svg" />
+                    <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                </a>
+            </div>
+
+
+
+
+
+            <div class="wpn-ugrade-column">
+                <a href="#drill-down" class="wpn-upgrade-link"><b>Drill Down</b></a>
+                <a href="#drill-down" class="wpn-upgrade-icon" id="drill-down">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_increased_damage_ticks.svg" />
+                    <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                </a>
+            </div>
+
+
+
+        </div>
+
+
+        <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
+
+
+            <div class="blank-wpn-ugrade-column"></div>
+
+
+
+
+            <div class="wpn-ugrade-column">
+                <a href="#board-rebuttal" class="wpn-upgrade-link"><b>Board Rebuttal</b></a>
+                <a href="#board-rebuttal" class="wpn-upgrade-icon" id="board-rebuttal">
+                    <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilling_defense.svg" />
+                    <p class="wpn-upgrade-str-boost"><b>+3</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                </a>
+            </div>
+
+
+
+
+            <div class="blank-wpn-ugrade-column"></div>
+
+
+        </div>
+
+    </div>
+</div>
+<script>
+    const jsUplist = "drill|,debilitate|drill,added-disruptor|debilitate,power-drill|debilitate,suppression|added-disruptor,drill-down|power-drill,board-rebuttal|suppression;drill-down";
+</script>
+
+<h2 id="debilitate">Debilitate</h2>
+<h2 id="added-disruptor">Added Disruptor</h2>
+<h2 id="power-drill">Power Drill</h2>
+<h2 id="suppression">Suppression</h2>
+<h2 id="drill-down">Drill Down</h2>
+<h2 id="board-rebuttal">Board Rebuttal</h2></div>
             </div>
         </div>
 
@@ -2530,6 +2735,7 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../../../../js/base.js"></script>
+        <script src="../../../../../scripts/drawlines.js"></script>
         <script src="../../../../../search/main.js"></script>
         <script src="../../../../../assets/javascripts/placeholder-combined.js"></script>
 

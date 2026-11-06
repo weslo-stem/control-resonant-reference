@@ -104,7 +104,6 @@ summary {
     }
 
 .combat-ability-infobox {
-    
     max-width: 100%;
     padding: 10px;
     overflow: hidden;
@@ -113,7 +112,7 @@ summary {
     border: 1px solid var(--floral-white);
     border-radius: 6px;
     box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.85), 0 6px 18px rgba(0, 0, 0, 0.45);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 1.25;
 }
 
@@ -384,4 +383,152 @@ code {
     color: var(--floral-white);
     white-space: pre-wrap;
     word-wrap: break-word;
+}
+
+.wpn-dmg-header {
+    position: sticky;
+    z-index: 9;
+    top: 0px;
+    left: 0px;
+    background-color: var(--shadow-grey);
+    text-align: center;
+}
+
+.conjoined-top > th, .conjoined-top > td {
+    border-bottom-style: hidden;
+}
+
+.conjoined-bot > th, .conjoined-bot > td {
+    border-top-style: dashed;
+}
+
+.weapon-info > tbody > tr > th {
+    min-width: 30%;
+    max-width: 50%;
+    vertical-align: middle;
+}
+
+.weapon-info > tbody > tr > td {
+    vertical-align: middle;
+}
+
+.wpn-ugrade-window {
+    display: flex;
+    flex-shrink: 1;
+    position: relative;
+}
+
+.wpn-ugrade-row {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: normal;
+    aspect-ratio: 3 / 1;
+}
+
+.wpn-ugrade-column {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    border-color: var(--charcoal);
+    border-radius: 0px;
+    background-color: var(--shadow-grey);
+    padding: 1%;
+    margin: 5%;
+    aspect-ratio: 1 / 1;
+    max-width: 33%;
+    max-height: 33%;
+    width: 33%;
+    height: 33%;
+    position: relative;
+}
+    .wpn-ugrade-column:hover {
+        background-color: var(--charcoal);
+        border-color: var(--floral-white);
+    }
+
+    .wpn-ugrade-column > .wpn-upgrade-link {
+        color: var(--floral-white);
+        text-align: center;
+        align-content: flex-start;
+        margin: 0px;
+        font-size: clamp(10px, 1vw, 20px);
+    }
+
+    .wpn-ugrade-column > .wpn-upgrade-icon {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 0px;
+        flex-grow: 1;
+        flex-shrink: 1;
+        border: 0px;
+        object-fit: contain;
+        align-self: center;
+        
+        width: 100%;
+        height: 0%;
+    }
+
+        .wpn-ugrade-column > .wpn-upgrade-icon > img {
+            flex-basis: 0px;
+            flex-grow: 0.75;
+            flex-shrink: 0.25;
+            width: auto;
+            height: 100%;
+            align-self: center;
+            object-fit: contain;
+            border: 0px;
+            margin: auto;
+        }
+
+        .wpn-ugrade-column > .wpn-upgrade-icon > .wpn-upgrade-str-boost {
+            position: absolute;
+            font-size: clamp(10px, 1vw, 20px);
+            margin: 0px;
+            padding: 0px;
+            bottom: 0;
+            right: 0;
+        }
+
+            .wpn-ugrade-column > .wpn-upgrade-icon > .wpn-upgrade-str-boost > img {
+                background-color: rgba(0,0,0,0);
+                border-width: 0px;
+                border-radius: 0px;
+                width: clamp(20px, 2vw, 32px);
+                height: clamp(20px, 2vw, 32px);
+                margin: 0px 0px 0px 0px;
+                vertical-align: middle;
+            }
+
+
+
+.blank-wpn-ugrade-column {
+    display: flex;
+    flex: 0, 1, 0;
+    flex-direction: column;
+    border: 1px;
+    border-color: rgb(0,0,0,0);
+    border-style: solid;
+    border-radius: 0px;
+    background-color: rgb(0,0,0,0);
+    padding: 1%;
+    margin: 5%;
+    aspect-ratio: 1 / 1;
+    aspect-ratio: 1 / 1;
+    max-width: 33%;
+    max-height: 33%;
+    width: 33%;
+    height: 33%;
+}
+
+.linecanvas {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    text-align: center;
 }
