@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="combat-ability-gif right-box">
-            <img src="{{gif_astral_rebuke}}" alt="Astral Rebuke">
+            <img src="{{gif_drill}}" alt="Drill">
         </div>
     </div>
     <div class="flex-container" style="gap: 10px;">
@@ -63,7 +63,7 @@ Note that all values displayed in-game are rounded.
 {{ drillTable('tables/damage_tables/weapon_forms/drill.csv') }}
 
 # Upgrades
-### Weapon Upgrade Tree
+#### *Weapon Upgrade Tree*
 
 {% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
 {{ upgrade_tree('Drill') }}

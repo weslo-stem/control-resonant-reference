@@ -3,22 +3,27 @@
 {% set reader=pd_read_csv('tables/weapon_upgrades.csv') %}
 {% set searchtable=reader[reader['Base Form']==form] %}
 {% set lmr = ['left', 'middle', 'right'] %}
-
-<div class="wpn-ugrade-window" style="flex-direction: column;">
-    {% for rindex in range(0,searchtable['Row'].max()+1) %}
-    {% set crows = searchtable[searchtable['Row']==rindex] %}
-    <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
-        {% for xcol in lmr %}
-        {% if xcol in crows['Column'].values %}
-        {% set uprow = crows.loc[crows['Column'] == xcol] %}
-        <div class="wpn-ugrade-column"></div>
-        <!-- {{uprow['Upgrade'].item()}} -->
-        {% else %}
-        <div class="blank-wpn-ugrade-column"></div>
-        {% endif %}
+<div class="combat-ability-infobox" style="padding: 5%">
+    <div class="wpn-ugrade-window" style="flex-direction: column;">
+        {% for rindex in range(0,searchtable['Row'].max()+1) %}
+        {% set crows = searchtable[searchtable['Row']==rindex] %}
+        <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
+            {% for xcol in lmr %}
+            {% if xcol in crows['Column'].values %}
+            {% set uprow = crows.loc[crows['Column'] == xcol] %}
+            <div class="wpn-ugrade-column">
+                <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-link"><b>{{uprow['Upgrade'].item()}}</b></a>
+                <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-icon">
+                    <img src="{{uprow['Icon'].item()}}"/>
+                    <p class="wpn-upgrade-str-boost"><b>+{{uprow['Aberrant Strength Boost'].item()}}</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                </a>
+            </div>
+            {% else %}
+            <div class="blank-wpn-ugrade-column"></div>
+            {% endif %}
+            {% endfor %}
+        </div>
         {% endfor %}
     </div>
-    {% endfor %}
 </div>
-
     {%- endmacro %}

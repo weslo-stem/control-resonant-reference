@@ -420,8 +420,8 @@ code {
 .wpn-ugrade-row {
     display: flex;
     flex-direction: row;
-    aspect-ratio: 3 / 1;
-    height: 33%
+
+    
 }
 
 .wpn-ugrade-column {
@@ -431,17 +431,64 @@ code {
     border-color: var(--charcoal);
     border-radius: 0px;
     background-color: var(--shadow-grey);
+    padding: 1%;
+    margin: 5%;
     aspect-ratio: 1 / 1;
     width: 33%;
-    padding: 1%;
-    margin: 0.5%;
-    object-fit: contain;
+    position: relative;
 }
-
     .wpn-ugrade-column:hover {
         background-color: var(--charcoal);
         border-color: var(--floral-white);
     }
+
+    .wpn-ugrade-column > .wpn-upgrade-link {
+        color: var(--floral-white);
+        text-align: center;
+        align-content: flex-start;
+        margin: 0px;
+        font-size: clamp(10px, 1vw, 20px);
+    }
+
+    .wpn-ugrade-column > .wpn-upgrade-icon {
+        display: flex;
+        flex-shrink: 1;
+        flex-grow: 1;
+        border: 0px;
+        position: relative;
+    }
+
+        .wpn-ugrade-column > .wpn-upgrade-icon > img {
+            display: flex;
+            flex-shrink: 1;
+            flex-grow: 1;
+            border: 0px;
+            margin: 0% 25% 0% 25%;
+            aspect-ratio: 1/1;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .wpn-ugrade-column > .wpn-upgrade-icon > .wpn-upgrade-str-boost {
+            position: absolute;
+            font-size: clamp(12px, 1vw, 20px);
+            margin: 0px;
+            padding: 0px;
+            bottom: 0;
+            right: 0;
+        }
+
+            .wpn-ugrade-column > .wpn-upgrade-icon > .wpn-upgrade-str-boost > img {
+                background-color: rgba(0,0,0,0);
+                border-width: 0px;
+                border-radius: 0px;
+                width: clamp(20px, 2vw, 32px);
+                height: clamp(20px, 2vw, 32px);
+                margin: 0px 0px 0px 0px;
+                vertical-align: central;
+            }
+
+
 
 .blank-wpn-ugrade-column {
     display: flex;
@@ -452,8 +499,7 @@ code {
     border-radius: 0px;
     background-color: rgb(0,0,0,0);
     padding: 1%;
-    margin: 0.5%;
+    margin: 5%;
     aspect-ratio: 1 / 1;
     width: 33%;
-    object-fit: contain;
 }

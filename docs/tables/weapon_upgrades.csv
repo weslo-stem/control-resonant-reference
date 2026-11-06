@@ -1,116 +1,116 @@
-Base Form,Upgrade,Description,Item 1,Item 1 qty,Item 2,Item 2 qty,Source cost,Aberrant Strength Boost,Required Predecessor,Row,Column
-Cleave,Cleave,A balanced attack that does extra #Damage# when performed from the back.,Living Shard,3,,,,5,,0,middle
-Cleave,Dodge Cleave,Press #Primary# after a Dodge to perform a Dodge Attack that throws enemies in the air and applies #Lifted# status to them.,Corrupted Element,1,,,300,2,Cleave,1,middle
-Cleave,Powerful Opener,Adds +20% #Damage# and #Falter# to undamaged enemies.,Distorted Form,2,,,150,1,Dodge Cleave,1,right
-Cleave,Eager Carve,Adds +20% #Damage# and #Falter# against #Lifted# enemies.,Distorted Form,3,,,500,2,Dodge Cleave,2,middle
-Cleave,Effective Movement,Dodge Attack deals a small amount of #Falter#,Aberrant Splinter,1,Corrupted Element,4,250,1,Powerful Opener,2,right
-Cleave,Lethal Gain,Killing Enemies with Melee attacks restores additional #Power#.,Aberrant Slivers,2,Warped Resonance,2,750,2,Eager Carve,3,middle
-Cleave,Strong Follow-Up,Applies #Fortified# after killing enemies with Cleave or a Combo Finisher.,Aberrant Shard,2,Edible Glob,4,350,1,Lethal Gain,3,right
-Cleave,Total Command,Adds +25% #Damage# and #Falter# during #Dominance#.,Aberrant Fragment,3,Warped Resonance,3,1000,2,Strong Follow-Up,4,middle
-Cleave,Aerial Recovery,Adds +25% #Power# from hitting Airborne enemies.,Aberrant Shard,3,Fungal Growth,6,500,1,Total Command,4,left
-Cleave,Prime State,Adds +50% #Damage# and #Falter# when #Health# is full.,Aberrant Cuts,3,Ordered Image,4,1250,2,Total Command,5,middle
-Cleave,Sky-High Finisher,Combo Finishers deal +20% #Damage# and #Falter# to Airborne enemies.,Aberrant Remnant,3,Warped Resonance,3,750,1,Prime State,5,left
-Cleave,Lift Shock,Hitting an enemy with Dodge Attack lifts all the nearby Drone enemies into the air and applies #Lifted# to them.,Living Shard,2,Patterned Thought,6,1500,4,Sky-High Finisher,6,middle
-Strike,Strike,A fast attack with a high Critical Chance,Living Shard,3,,,,5,,0,middle
-Strike,Dodge Strike,Press #Primary# after a Dodge to perform a Dodge Attack that deals more #Damage#,Corrupted Element,1,,,300,3,Strike,1,middle
-Strike,Precise Agility,Dodge Attacks have +20% Critical Hit chance.,Distorted Form,2,,,200,1,Dodge Strike,1,left
-Strike,Sharp Recovery,Attacks recover +20% extra #Power#.,Distorted Form,3,,,500,3,Dodge Strike,2,middle
-Strike,Cut and Run,Combo Finishers have +10% Critical Hit chance.,Corrupted Element,4,,,400,1,Precise Agility,2,left
-Strike,Added Authority,Killing enemies with Melee applies #Empowered# status to Dylan.,Aberrant Slivers,1,Corrupted Element,4,400,1,Sharp Recovery,2,right
-Strike,Lasting Impression,Adds +25% #Damage# from Combo Finishers.,Aberrant Fragment,3,Warped Resonance,2,1000,3,Sharp Recovery,4,middle
-Strike,Falter Flurry,Critical Hits deal a small amount of #Falter#.,Aberrant Shard,3,Edible Glob,4,750,1,Lasting Impression,4,left
-Strike,Precise Striking,Gain +50% extra #Power# from damaging an enemy's #Hiss Shield#,Aberrant Shard,3,Fungal Growth,4,750,1,Lasting Impression,4,right
-Strike,Grievous Harm,Adds +30% #Damage# and #Falter# to all Melee Critical Hits.,Aberrant Cuts,3,Edible Glob,4,750,1,Lasting Impression,5,left
-Strike,Striking Addition,Does +25% #Damage# to an enemy's #Breakable Parts#,Aberrant Cuts,3,Fungal Growth,4,750,1,Lasting Impression,5,right
+Base Form,Upgrade,Description,Item 1,Item 1 qty,Item 2,Item 2 qty,Source cost,Aberrant Strength Boost,Required Predecessor,Row,Column,Icon
+Cleave,Cleave,A balanced attack that does extra #Damage# when performed from the back.,Living Shard,3,,,,5,,0,middle,
+Cleave,Dodge Cleave,Press #Primary# after a Dodge to perform a Dodge Attack that throws enemies in the air and applies #Lifted# status to them.,Corrupted Element,1,,,300,2,Cleave,1,middle,
+Cleave,Powerful Opener,Adds +20% #Damage# and #Falter# to undamaged enemies.,Distorted Form,2,,,150,1,Dodge Cleave,1,right,
+Cleave,Eager Carve,Adds +20% #Damage# and #Falter# against #Lifted# enemies.,Distorted Form,3,,,500,2,Dodge Cleave,2,middle,
+Cleave,Effective Movement,Dodge Attack deals a small amount of #Falter#,Aberrant Splinter,1,Corrupted Element,4,250,1,Powerful Opener,2,right,
+Cleave,Lethal Gain,Killing Enemies with Melee attacks restores additional #Power#.,Aberrant Slivers,2,Warped Resonance,2,750,2,Eager Carve,3,middle,
+Cleave,Strong Follow-Up,Applies #Fortified# after killing enemies with Cleave or a Combo Finisher.,Aberrant Shard,2,Edible Glob,4,350,1,Lethal Gain,3,right,
+Cleave,Total Command,Adds +25% #Damage# and #Falter# during #Dominance#.,Aberrant Fragment,3,Warped Resonance,3,1000,2,Strong Follow-Up,4,middle,
+Cleave,Aerial Recovery,Adds +25% #Power# from hitting Airborne enemies.,Aberrant Shard,3,Fungal Growth,6,500,1,Total Command,4,left,
+Cleave,Prime State,Adds +50% #Damage# and #Falter# when #Health# is full.,Aberrant Cuts,3,Ordered Image,4,1250,2,Total Command,5,middle,
+Cleave,Sky-High Finisher,Combo Finishers deal +20% #Damage# and #Falter# to Airborne enemies.,Aberrant Remnant,3,Warped Resonance,3,750,1,Prime State,5,left,
+Cleave,Lift Shock,Hitting an enemy with Dodge Attack lifts all the nearby Drone enemies into the air and applies #Lifted# to them.,Living Shard,2,Patterned Thought,6,1500,4,Sky-High Finisher,6,middle,
+Strike,Strike,A fast attack with a high Critical Chance,Living Shard,3,,,,5,,0,middle,
+Strike,Dodge Strike,Press #Primary# after a Dodge to perform a Dodge Attack that deals more #Damage#,Corrupted Element,1,,,300,3,Strike,1,middle,
+Strike,Precise Agility,Dodge Attacks have +20% Critical Hit chance.,Distorted Form,2,,,200,1,Dodge Strike,1,left,
+Strike,Sharp Recovery,Attacks recover +20% extra #Power#.,Distorted Form,3,,,500,3,Dodge Strike,2,middle,
+Strike,Cut and Run,Combo Finishers have +10% Critical Hit chance.,Corrupted Element,4,,,400,1,Precise Agility,2,left,
+Strike,Added Authority,Killing enemies with Melee applies #Empowered# status to Dylan.,Aberrant Slivers,1,Corrupted Element,4,400,1,Sharp Recovery,2,right,
+Strike,Lasting Impression,Adds +25% #Damage# from Combo Finishers.,Aberrant Fragment,3,Warped Resonance,2,1000,3,Sharp Recovery,4,middle,
+Strike,Falter Flurry,Critical Hits deal a small amount of #Falter#.,Aberrant Shard,3,Edible Glob,4,750,1,Lasting Impression,4,left,
+Strike,Precise Striking,Gain +50% extra #Power# from damaging an enemy's #Hiss Shield#,Aberrant Shard,3,Fungal Growth,4,750,1,Lasting Impression,4,right,
+Strike,Grievous Harm,Adds +30% #Damage# and #Falter# to all Melee Critical Hits.,Aberrant Cuts,3,Edible Glob,4,750,1,Lasting Impression,5,left,
+Strike,Striking Addition,Does +25% #Damage# to an enemy's #Breakable Parts#,Aberrant Cuts,3,Fungal Growth,4,750,1,Lasting Impression,5,right,
 Strike,Gain Control,"Strike can deal up to +50% more #Damage# based on Dylan's #Health#.
 
-The more Health, the higher the Damage modifier. (Max +50%).",Living Shard,2,Patterned Thought,6,1500,3,Lasting Impression,6,middle
-Glaive,Glaive,A wide attack that can hit multiple enemies at once and push them away.,Living Shard,3,,,,5,,0,middle
-Glaive,Dodge Glaive,Press #Primary# after a Dodge to perform a Dodge Attack that deals more #Damage#,Distorted Form,1,,,300,3,Glaive,1,middle
-Glaive,Strong Opening,Adds +100 extra #Power# from attacking undamaged enemies with Glaive.,Corrupted Element,2,,,200,1,Dodge Glaive,1,right
-Glaive,Recovery Dodge,Dodge Attacks recover +30% extra #Power#.,Corrupted Element,3,,,500,3,Dodge Glaive,2,middle
-Glaive,Aerial Decree,Adds +20% #Damage# against Airborne enemies.,Aberrant Splinter,1,Distorted Form,3,400,1,Recovery Dodge,2,left
-Glaive,Final Riposte,"Combo Finishers deal +20% #Damage# and #Falter# against enemies under: (#Burn#, #Infected#, #Astralized#)",Distorted Form,3,,,400,1,Strong Opening,2,right
-Glaive,Forceful Authority,Adds +25% #Damage# and #Falter# during #Dominance#.,Aberrant Slivers,2,Edible Glob,4,750,1,Aerial Decree,3,left
-Glaive,Precision,Glaive attacks deal extra #Damage# to #Hiss Shield#.,Aberrant Splinter,2,Fungal Growth,4,750,1,Final Riposte,3,right
-Glaive,Falter Improvement,Adds a small amount of #Falter# to the last attack in Glaive's combo.,Aberrant Fragment,3,Warped Resonance,3,750,1,Forceful Authority,4,left
-Glaive,Pain Point,Using the Switch Attack after Glaive attacks deals 50% more #Damage#,Aberrant Fragment,3,Thriving Spore,3,750,1,Precision,4,right
+The more Health, the higher the Damage modifier. (Max +50%).",Living Shard,2,Patterned Thought,6,1500,3,Lasting Impression,6,middle,
+Glaive,Glaive,A wide attack that can hit multiple enemies at once and push them away.,Living Shard,3,,,,5,,0,middle,
+Glaive,Dodge Glaive,Press #Primary# after a Dodge to perform a Dodge Attack that deals more #Damage#,Distorted Form,1,,,300,3,Glaive,1,middle,
+Glaive,Strong Opening,Adds +100 extra #Power# from attacking undamaged enemies with Glaive.,Corrupted Element,2,,,200,1,Dodge Glaive,1,right,
+Glaive,Recovery Dodge,Dodge Attacks recover +30% extra #Power#.,Corrupted Element,3,,,500,3,Dodge Glaive,2,middle,
+Glaive,Aerial Decree,Adds +20% #Damage# against Airborne enemies.,Aberrant Splinter,1,Distorted Form,3,400,1,Recovery Dodge,2,left,
+Glaive,Final Riposte,"Combo Finishers deal +20% #Damage# and #Falter# against enemies under: (#Burn#, #Infected#, #Astralized#)",Distorted Form,3,,,400,1,Strong Opening,2,right,
+Glaive,Forceful Authority,Adds +25% #Damage# and #Falter# during #Dominance#.,Aberrant Slivers,2,Edible Glob,4,750,1,Aerial Decree,3,left,
+Glaive,Precision,Glaive attacks deal extra #Damage# to #Hiss Shield#.,Aberrant Splinter,2,Fungal Growth,4,750,1,Final Riposte,3,right,
+Glaive,Falter Improvement,Adds a small amount of #Falter# to the last attack in Glaive's combo.,Aberrant Fragment,3,Warped Resonance,3,750,1,Forceful Authority,4,left,
+Glaive,Pain Point,Using the Switch Attack after Glaive attacks deals 50% more #Damage#,Aberrant Fragment,3,Thriving Spore,3,750,1,Precision,4,right,
 Glaive,Falter Follow-up,"Glaive can deal up to +25% more #Falter# based on Dylan's #Health#.
 
-The more Health, the higher the Falter modifier. (Max +25%).",Aberrant Cuts,4,Ordered Image,4,1000,3,Falter Improvement;Pain Point,4,middle
-Glaive,Astral Ascendant,Adds +30% chance for enemies to drop a Health Element when hit.,Living Shard,2,Patterned Thought,6,1500,3,Falter Follow-Up,6,middle
+The more Health, the higher the Falter modifier. (Max +25%).",Aberrant Cuts,4,Ordered Image,4,1000,3,Falter Improvement;Pain Point,4,middle,
+Glaive,Astral Ascendant,Adds +30% chance for enemies to drop a Health Element when hit.,Living Shard,2,Patterned Thought,6,1500,3,Falter Follow-Up,6,middle,
 Crush,Crush,"A slow, high #Damage# attack that can knock enemies down. Can be charged to do more damage.
 
-Charged attacks deal #Falter#.",Living Shard,2,,,,5,,0,middle
-Crush,Force Drive,Incoming #Damage# and Stagger will be reduced when charging.,Aberrant Splinter,2,Distorted Form,4,500,2,Crush,1,middle
+Charged attacks deal #Falter#.",Living Shard,2,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_crush_small.tex.png
+Crush,Force Drive,Incoming #Damage# and Stagger will be reduced when charging.,Aberrant Splinter,2,Distorted Form,4,500,2,Crush,1,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_crush_upg_charging_defense.svg
 Crush,Triple Smash,"Adds a third attack to the Crush combo that applies #Lifted# and launches enemies in the air.
 
-Can be charged like other Crush attacks.",Aberrant Slivers,3,Corrupted Element,6,750,1,Force Drive,2,middle
-Crush,Constant Impact,Crush attacks charge faster.,Aberrant Fragment,2,Fungal Growth,4,1000,1,Force Drive,2,right
+Can be charged like other Crush attacks.",Aberrant Slivers,3,Corrupted Element,6,750,1,Force Drive,2,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_crush_upg_third_attack.svg
+Crush,Constant Impact,Crush attacks charge faster.,Aberrant Fragment,2,Fungal Growth,4,1000,1,Force Drive,2,right,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_crush_upg_fast_charge.svg
 Crush,Hammer Shift,"After the third combo attack press #Secondary# to perform a Switch Attack instead of the Combo Finisher.
 
-A strong attack that knocks enemies down and deals high #Falter#. Cannot be charged, unlike most Crush attacks.",Aberrant Shard,4,Edible Glob,8,1250,1,Triple Smash,3,middle
-Crush,Hard Stop,The next Crush attack after damaging an enemy with a Combo Finisher charges instantly.,Aberrant Remnant,4,Patterned Thought,4,1500,1,Constant Impact,3,right
-Crush,Capitalizing Charge,Adds +20% #Falter# from Charged attacks.,Living Shard,1,Ordered Image,6,2000,3,Hammer Shift;Hard Stop,4,middle
+A strong attack that knocks enemies down and deals high #Falter#. Cannot be charged, unlike most Crush attacks.",Aberrant Shard,4,Edible Glob,8,1250,1,Triple Smash,3,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_crush_upg_switch_combo.svg
+Crush,Hard Stop,The next Crush attack after damaging an enemy with a Combo Finisher charges instantly.,Aberrant Remnant,4,Patterned Thought,4,1500,1,Constant Impact,3,right,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_crush_upg_insta_charge.svg
+Crush,Capitalizing Charge,Adds +20% #Falter# from Charged attacks.,Living Shard,1,Ordered Image,6,2000,3,Hammer Shift;Hard Stop,4,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_crush_upg_falter_up.svg
 Extend,Extend,"A long range attack that may hit multiple enemies.
 
-Charge for #Falter# and extra #Damage# - a perfect charge deals more.",Living Shard,2,,,,5,,0,middle
-Extend,Powerful Precision,Perfectly charged Extend attacks recover +30% extra #Power#.,Aberrant Splinter,2,Distorted Form,4,500,2,Extend,1,middle
-Extend,Extend Mastery,Adds a third attack to the Extend combo in a 360-degree area around Dylan with a very long reach.,Aberrant Slivers,3,Corrupted Element,6,750,1,Powerful Precision,2,middle
-Extend,High Lash,Adds +30% #Falter# against Airborne enemies.,Aberrant Fragment,2,Fungal Growth,4,1000,1,Powerful Precision,2,right
+Charge for #Falter# and extra #Damage# - a perfect charge deals more.",Living Shard,2,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_extend_small.tex.png
+Extend,Powerful Precision,Perfectly charged Extend attacks recover +30% extra #Power#.,Aberrant Splinter,2,Distorted Form,4,500,2,Extend,1,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_extend_res_recovery_buff.svg
+Extend,Extend Mastery,Adds a third attack to the Extend combo in a 360-degree area around Dylan with a very long reach.,Aberrant Slivers,3,Corrupted Element,6,750,1,Powerful Precision,2,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_extend_third_attack.svg
+Extend,High Lash,Adds +30% #Falter# against Airborne enemies.,Aberrant Fragment,2,Fungal Growth,4,1000,1,Powerful Precision,2,right,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_extend_airborne_falter_buff.svg
 Extend,Ritual Comeback,"After the third combo attack press #Secondary# to perform a Switch Attack instead of the Combo Finisher.
 
-Moves Dylan backwards and attacks in a wide area.",Aberrant Shard,4,Edible Glob,8,1250,1,Extend Mastery,3,middle
-Extend,Plain Retort,Damaging enemies applies #Empowered# status to Dylan.,Aberrant Remnant,4,Patterned Thought,4,1500,1,High Lash,3,right
-Extend,Executive Order,Guaranteed Critical Hit on the last attack in Extend combo if all attacks are perfectly charged.,Living Shard,1,Ordered Image,6,2000,3,Plain Retort;Ritual Comeback,4,middle
+Moves Dylan backwards and attacks in a wide area.",Aberrant Shard,4,Edible Glob,8,1250,1,Extend Mastery,3,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_switch_combo.svg
+Extend,Plain Retort,Damaging enemies applies #Empowered# status to Dylan.,Aberrant Remnant,4,Patterned Thought,4,1500,1,High Lash,3,right,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_extend_torn_status.svg
+Extend,Executive Order,Guaranteed Critical Hit on the last attack in Extend combo if all attacks are perfectly charged.,Living Shard,1,Ordered Image,6,2000,3,Plain Retort;Ritual Comeback,4,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_extend_perfect_charged_combo_crit.svg
 Drill,Drill,"A quick attack. Charge to continuously drill the target.
 
-Charge attacks deal #Falter#.",Living Shard,2,,,,5,,0,middle
-Drill,Debilitate,Continuous drilling builds up the #Weakened# status on enemies.,Aberrant Splinter,2,Distorted Form,4,500,2,Drill,1,middle
+Charge attacks deal #Falter#.",Living Shard,2,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_drill_small.tex.png
+Drill,Debilitate,Continuous drilling builds up the #Weakened# status on enemies.,Aberrant Splinter,2,Distorted Form,4,500,2,Drill,1,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilled_status.svg
 Drill,Added Disruptor,"Adds a third attack to the Drill combo.
 
-Builds up #Weakened# like other Drill attacks. Drills the longest of all Drill attacks, dealing the most #Damage#.",Aberrant Slivers,3,Corrupted Element,6,750,1,Debilitate,2,middle
-Drill,Power Drill,Adds +25% #Power# from drilling Airborne enemies.,Aberrant Fragment,2,Fungal Growth,4,1000,1,Debilitate,2,right
+Builds up #Weakened# like other Drill attacks. Drills the longest of all Drill attacks, dealing the most #Damage#.",Aberrant Slivers,3,Corrupted Element,6,750,1,Debilitate,2,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_third_attack.svg
+Drill,Power Drill,Adds +25% #Power# from drilling Airborne enemies.,Aberrant Fragment,2,Fungal Growth,4,1000,1,Debilitate,2,right,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_airborne_res_rec_up.svg
 Drill,Suppression,"After the third combo attack press #Secondary# to perform a Switch Attack with Drill instead of the Combo Finisher.
 
-A powerful attack that builds up #Weakened# on the target and knocks them away from the player.",Aberrant Shard,4,Edible Glob,8,1250,1,Added Disruptor,3,middle
-Drill,Drill Down,Drilling #Damages# enemies faster.,Aberrant Remnant,4,Patterned Thought,4,1500,1,Power Drill,3,right
-Drill,Board Rebuttal,Dylan takes less #Damage# from all attacks when drilling.,Living Shard,1,Ordered Image,6,2000,3,Added Disruptor;Power Drill,4,middle
-Concussive Beatdown,Concussive Beatdown,A few quick strikes that deal #Damage# and large amounts of #Falter#.,Living Shard,1,,,,5,,0,middle
-Concussive Beatdown,Drive Mauler,Adds +20% #Damage# and #Falter# against Airborne enemies.,Aberrant Slivers,3,Distorted Form,8,500,1,Concussive Beatdown,1,middle
-Concussive Beatdown,One-On-One,Recover #Power# from killing enemies.,Aberrant Splinter,4,Warped Resonance,4,1000,1,Drive Mauler,2,middle
+A powerful attack that builds up #Weakened# on the target and knocks them away from the player.",Aberrant Shard,4,Edible Glob,8,1250,1,Added Disruptor,3,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_switch_combo.svg
+Drill,Drill Down,Drilling #Damages# enemies faster.,Aberrant Remnant,4,Patterned Thought,4,1500,1,Power Drill,3,right,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_increased_damage_ticks.svg
+Drill,Board Rebuttal,Dylan takes less #Damage# from all attacks when drilling.,Living Shard,1,Ordered Image,6,2000,3,Added Disruptor;Power Drill,4,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilling_defense.svg
+Concussive Beatdown,Concussive Beatdown,A few quick strikes that deal #Damage# and large amounts of #Falter#.,Living Shard,1,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_bludgeon_small.tex.png
+Concussive Beatdown,Drive Mauler,Adds +20% #Damage# and #Falter# against Airborne enemies.,Aberrant Slivers,3,Distorted Form,8,500,1,Concussive Beatdown,1,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_upg_dmg_against_airborne.svg
+Concussive Beatdown,One-On-One,Recover #Power# from killing enemies.,Aberrant Splinter,4,Warped Resonance,4,1000,1,Drive Mauler,2,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_upg_res_chunk_on_kill.svg
 Concussive Beatdown,Strong Counter,"Unlocks a follow-up attack after the Concussive Beatdown combo that knocks the target away from the player.
 
-Deals both #Damage# and #Falter#.",Aberrant Fragment,6,Edible Glob,10,1500,1,One-On-One,3,middle
-Concussive Beatdown,Falter Jab,Adds +20% #Falter# to the last attack.,Aberrant Cuts,6,Thriving Spore,6,2000,1,Strong Counter,4,middle
-Concussive Beatdown,Paranatural Knockdown,"The last attack in the Concussive Beatdown combo sends out a shockwave, damaging and pushing back nearby enemies.",Living Shard,1,Ordered Image,10,2500,2,Falter Jab,5,middle
-Uppercut Surge,Uppercut Surge,Launches enemies and applies #Lifted#. Hitting #Lifted# enemies recovers extra #Power#. Charge for more #Damage# and #Falter#.,Living Shard,1,,,,5,,0,middle
-Uppercut Surge,Reclaiming Strike,Charged Attack recovers +30% extra #Power#.,Aberrant Splinter,3,Corrupted Element,8,500,1,Uppercut Surge,1,middle
-Uppercut Surge,Uppercut Stagger,Adds +30% #Falter#.,Aberrant Slivers,4,Warped Resonance,4,1000,1,Reclaiming Strike,2,middle
-Uppercut Surge,Hover Break,"When hitting an enemy, all the nearby Drone enemies will be #Lifted# as well.",Aberrant Shard,6,Fungal Growth,10,1500,1,Uppercut Stagger,3,middle
-Uppercut Surge,Prizefighter,Hitting #Lifted# enemies deals a significant amount of #Falter#.,Aberrant Remnant,6,Thriving Spore,6,2000,1,Hover Break,4,middle
-Uppercut Surge,Imminent Knockout,Adds +10% Critical Chance.,Living Shard,1,Patterned Thought,10,2500,2,Prizefighter,5,middle
-Wide Edge,Wide Edge,"A powerful, wide attack that deals massive #Damage# and pushes enemies away.",Living Shard,1,,,,5,,0,middle
-Wide Edge,Power Slice,"Adds +30% bonus #Power# to attacks,",Aberrant Slivers,3,Distorted Form,8,500,1,Wide Edge,1,middle
-Wide Edge,A Healthy Approach,Adds +10% chance of dropping Health Elements from each hit.,Aberrant Splinter,4,Warped Resonance,4,1000,1,Power Slice,2,middle
-Wide Edge,Precise Delivery,Adds +5% Critical Chance for every enemy hit with the Primary Combo attacks leading to Wide Edge.,Aberrant Fragment,6,Edible Glob,10,1500,1,A Healthy Approach,3,middle
-Wide Edge,Brutal Edge,Adds +10% chance to instantly #Falter# a Drone enemy.,Aberrant Cuts,6,Thriving Spore,6,2000,1,Precise Delivery,4,middle
-Wide Edge,Savage Accumulation,Adds +3% #Falter# for every enemy hit with the Primary Combo.,Living Shard,1,Ordered Image,10,2500,2,Brutal Edge,5,middle
-Spin Edge,Spin Edge,A continuous spin that deals #Damage# to all nearby enemies.,Living Shard,1,,,,5,,0,middle
-Spin Edge,Slash Synergy,#Power# recovery increases by +10% with each consecutive attack that hits an enemy.,Aberrant Splinter,3,Corrupted Element,8,500,1,Spin Edge,1,middle
-Spin Edge,Forceful Authority,Adds +25% #Damage# and #Falter# during #Dominance#.,Aberrant Slivers,4,Warped Resonance,4,1000,1,Slash Synergy,2,middle
-Spin Edge,Rousing Sabotage,Damaging enemies applies #Empowered# status to Dylan.,Aberrant Shard,6,Fungal Growth,10,1500,1,Forceful Authority,3,middle
-Spin Edge,Ravage Blade,#Damage# increases by +10% with each consecutive Spin that hits an enemy. Goes up to a maximum of 50%.,Aberrant Remnant,6,Thriving Spore,6,2000,1,Rousing Sabotage,4,middle
-Spin Edge,Deathly Trajectory,Dylan can keep spinning forever.,Living Shard,1,Patterned Thought,10,2500,2,Ravage Blade,5,middle
-Split Pivot,Split Pivot,An attack that becomes a circular blade that causes #Damage# and #Falter# for a short time.,Living Shard,1,,,,5,,0,middle
-Split Pivot,Keen Opening,The first hit from Split Pivot has a very high Critical Chance.,Aberrant Slivers,3,Distorted Form,8,500,1,Split Pivot,1,middle
-Split Pivot,Shatter Spin,Spinning attack builds up the #Weakened# status.,Aberrant Splinter,4,Warped Resonance,4,1000,1,Keen Opening,2,middle
-Split Pivot,Explosive Concept,"Split Pivot blades explode at the end of their lifetime, dealing #Fire Damage# to an area.",Aberrant Fragment,6,Edible Glob,10,1500,1,Shatter Spin,3,middle
-Split Pivot,Double Burn,"When Split Pivot explodes, it deals two #Burn# build-ups.",Aberrant Cuts,6,Thriving Spore,6,2000,1,Explosive Concept,4,middle
-Split Pivot,Power Game,Adds +20% #Falter# to the spinning blades.,Living Shard,1,Ordered Image,10,2500,2,Double Burn,5,middle
-Split Orbit,Split Orbit,A short-range attack that becomes a blade that flies around Dylan for a short duration.,Living Shard,1,,,,5,,0,middle
-Split Orbit,Clear the Air,Adds +20% #Damage# and #Falter# against Airborne enemies.,Aberrant Splinter,3,Corrupted Element,8,500,1,Split Orbit,1,middle
-Split Orbit,Double Recursion,Doubles the lifetime of Split Orbit.,Aberrant Slivers,4,Warped Resonance,4,1000,1,Clear the Air,2,middle
-Split Orbit,Ambitious Blade,Adds +5% #Damage# and #Falter# to Split Orbit's attack every time it hits an enemy. Resets at the end of its lifetime.,Aberrant Shard,6,Fungal Growth,10,1500,1,Double Recursion,3,middle
-Split Orbit,Hyper Orbit,Split Orbit's rotation speed is doubled.,Aberrant Remnant,6,Thriving Spore,6,2000,1,Ambitious Blade,4,middle
-Split Orbit,Limitless Intensity,The #Damage# and #Falter# done by Split Orbit increase over time.,Living Shard,1,Patterned Thought,10,2500,2,Hyper Orbit,5,middle
+Deals both #Damage# and #Falter#.",Aberrant Fragment,6,Edible Glob,10,1500,1,One-On-One,3,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_upg_follow_up_att.svg
+Concussive Beatdown,Falter Jab,Adds +20% #Falter# to the last attack.,Aberrant Cuts,6,Thriving Spore,6,2000,1,Strong Counter,4,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_upg_falter_up.svg
+Concussive Beatdown,Paranatural Knockdown,"The last attack in the Concussive Beatdown combo sends out a shockwave, damaging and pushing back nearby enemies.",Living Shard,1,Ordered Image,10,2500,2,Falter Jab,5,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_upg_shockwave.svg
+Uppercut Surge,Uppercut Surge,Launches enemies and applies #Lifted#. Hitting #Lifted# enemies recovers extra #Power#. Charge for more #Damage# and #Falter#.,Living Shard,1,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_bludgeon_uppercut_small.tex.png
+Uppercut Surge,Reclaiming Strike,Charged Attack recovers +30% extra #Power#.,Aberrant Splinter,3,Corrupted Element,8,500,1,Uppercut Surge,1,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_wiip_bludgeonuc_upg_charged_attack.svg
+Uppercut Surge,Uppercut Stagger,Adds +30% #Falter#.,Aberrant Slivers,4,Warped Resonance,4,1000,1,Reclaiming Strike,2,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeonuc_falter_buff.svg
+Uppercut Surge,Hover Break,"When hitting an enemy, all the nearby Drone enemies will be #Lifted# as well.",Aberrant Shard,6,Fungal Growth,10,1500,1,Uppercut Stagger,3,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_wip_bludgeonuc_upg_areal_launch.svg
+Uppercut Surge,Prizefighter,Hitting #Lifted# enemies deals a significant amount of #Falter#.,Aberrant Remnant,6,Thriving Spore,6,2000,1,Hover Break,4,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_upg_falter_against_lifted.svg
+Uppercut Surge,Imminent Knockout,Adds +10% Critical Chance.,Living Shard,1,Patterned Thought,10,2500,2,Prizefighter,5,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_uc_upg_crit_up.svg
+Wide Edge,Wide Edge,"A powerful, wide attack that deals massive #Damage# and pushes enemies away.",Living Shard,1,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_cleave_small.tex.png
+Wide Edge,Power Slice,"Adds +30% bonus #Power# to attacks,",Aberrant Slivers,3,Distorted Form,8,500,1,Wide Edge,1,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_cleave_upg_res_recovery_big.svg
+Wide Edge,A Healthy Approach,Adds +10% chance of dropping Health Elements from each hit.,Aberrant Splinter,4,Warped Resonance,4,1000,1,Power Slice,2,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_cleave_upg_healing_on_hit.svg
+Wide Edge,Precise Delivery,Adds +5% Critical Chance for every enemy hit with the Primary Combo attacks leading to Wide Edge.,Aberrant Fragment,6,Edible Glob,10,1500,1,A Healthy Approach,3,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_cleave_upg_crit_chance_buff.svg
+Wide Edge,Brutal Edge,Adds +10% chance to instantly #Falter# a Drone enemy.,Aberrant Cuts,6,Thriving Spore,6,2000,1,Precise Delivery,4,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_cleave_upg_insta_kill.svg
+Wide Edge,Savage Accumulation,Adds +3% #Falter# for every enemy hit with the Primary Combo.,Living Shard,1,Ordered Image,10,2500,2,Brutal Edge,5,middle,/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_cleave_upg_per_hit_falter_up.svg
+Spin Edge,Spin Edge,A continuous spin that deals #Damage# to all nearby enemies.,Living Shard,1,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_cleave_spin_small.tex.png
+Spin Edge,Slash Synergy,#Power# recovery increases by +10% with each consecutive attack that hits an enemy.,Aberrant Splinter,3,Corrupted Element,8,500,1,Spin Edge,1,middle,
+Spin Edge,Forceful Authority,Adds +25% #Damage# and #Falter# during #Dominance#.,Aberrant Slivers,4,Warped Resonance,4,1000,1,Slash Synergy,2,middle,
+Spin Edge,Rousing Sabotage,Damaging enemies applies #Empowered# status to Dylan.,Aberrant Shard,6,Fungal Growth,10,1500,1,Forceful Authority,3,middle,
+Spin Edge,Ravage Blade,#Damage# increases by +10% with each consecutive Spin that hits an enemy. Goes up to a maximum of 50%.,Aberrant Remnant,6,Thriving Spore,6,2000,1,Rousing Sabotage,4,middle,
+Spin Edge,Deathly Trajectory,Dylan can keep spinning forever.,Living Shard,1,Patterned Thought,10,2500,2,Ravage Blade,5,middle,
+Split Pivot,Split Pivot,An attack that becomes a circular blade that causes #Damage# and #Falter# for a short time.,Living Shard,1,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_split_small.tex.png
+Split Pivot,Keen Opening,The first hit from Split Pivot has a very high Critical Chance.,Aberrant Slivers,3,Distorted Form,8,500,1,Split Pivot,1,middle,
+Split Pivot,Shatter Spin,Spinning attack builds up the #Weakened# status.,Aberrant Splinter,4,Warped Resonance,4,1000,1,Keen Opening,2,middle,
+Split Pivot,Explosive Concept,"Split Pivot blades explode at the end of their lifetime, dealing #Fire Damage# to an area.",Aberrant Fragment,6,Edible Glob,10,1500,1,Shatter Spin,3,middle,
+Split Pivot,Double Burn,"When Split Pivot explodes, it deals two #Burn# build-ups.",Aberrant Cuts,6,Thriving Spore,6,2000,1,Explosive Concept,4,middle,
+Split Pivot,Power Game,Adds +20% #Falter# to the spinning blades.,Living Shard,1,Ordered Image,10,2500,2,Double Burn,5,middle,
+Split Orbit,Split Orbit,A short-range attack that becomes a blade that flies around Dylan for a short duration.,Living Shard,1,,,,5,,0,middle,/control-resonant-reference/icons/weapons/weapon_form_split_alt_small.tex.png
+Split Orbit,Clear the Air,Adds +20% #Damage# and #Falter# against Airborne enemies.,Aberrant Splinter,3,Corrupted Element,8,500,1,Split Orbit,1,middle,
+Split Orbit,Double Recursion,Doubles the lifetime of Split Orbit.,Aberrant Slivers,4,Warped Resonance,4,1000,1,Clear the Air,2,middle,
+Split Orbit,Ambitious Blade,Adds +5% #Damage# and #Falter# to Split Orbit's attack every time it hits an enemy. Resets at the end of its lifetime.,Aberrant Shard,6,Fungal Growth,10,1500,1,Double Recursion,3,middle,
+Split Orbit,Hyper Orbit,Split Orbit's rotation speed is doubled.,Aberrant Remnant,6,Thriving Spore,6,2000,1,Ambitious Blade,4,middle,
+Split Orbit,Limitless Intensity,The #Damage# and #Falter# done by Split Orbit increase over time.,Living Shard,1,Patterned Thought,10,2500,2,Hyper Orbit,5,middle,

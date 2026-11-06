@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="combat-ability-gif right-box">
-            <img src="{{gif_astral_rebuke}}" alt="Astral Rebuke">
+            <img src="{{gif_spin_edge}}" alt="Spin Edge">
         </div>
     </div>
     <div class="flex-container" style="gap: 10px;">
