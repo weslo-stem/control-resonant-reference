@@ -1,20 +1,16 @@
 
-(function () {
-    const canvas = document.getElementById("drawlines");
-    const treewindow = document.getElementById("treewindow");
-    const ctx = canvas.getContext('2d');
+/**(function () {
 
     // resize the canvas to fill browser window dynamically
-    window.addEventListener('draw', resizeCanvas, false);
+    window.addEventListener('resize', resizeCanvas, false);
+    window.addEventListener('scroll', resizeCanvas, false);
 
     function resizeCanvas() {
-        canvas.width = treewindow.clientWidth;
-        canvas.height = treewindow.clientHeight;
 
         /**
          * Your drawings need to be inside this function otherwise they will be reset when 
          * you resize the browser window and the canvas goes will be cleared.
-         **/
+         
         drawStuff();
     }
 
@@ -25,22 +21,21 @@
             var cvid = cvidstr.split("|")[0];
             var requiredstr = (cvidstr?.split("|")[1]);
             var required = requiredstr?.split(";");
-            var cvidobj = document.getElementById(cvid);
             for (conn of required) {
                 if (conn != 0) {
-                    var connobj = document.getElementById(conn);
-                    ctx.beginPath();
-                    ctx.lineWidth = "2";
-                    ctx.strokeStyle = "white";
-                    ctx.setLineDash([5,5]);
-                    var connrect = connobj.getBoundingClientRect();
-                    var cvidrect = cvidobj.getBoundingClientRect();
+                    var c1 = new Connector({ ele1: cvid, ele2: conn, lineStyle: '1px dashed white' })
+                    Setup(c1, cvid);
+                    Setup(c1, conn);
 
-                    ctx.moveTo(cvidrect.left, cvidrect.top);
-                    ctx.lineTo(connrect.left, connrect.top);
-                    ctx.stroke();
+                    new muConnector({
+                        ele1: "conn",
+                        ele2: "cvid",
+                        lineStyle: "5px solid pink",
+                        defaultGap: -35
+                    })
                 }
             }
         }
     }
 }) ();
+**/

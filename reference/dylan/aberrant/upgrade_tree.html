@@ -5,19 +5,18 @@
 {% set lmr = ['left', 'middle', 'right'] %}
 {% set uplist = [] %}
 
-
-<div class="combat-ability-infobox" id="treewindow" style="padding: 5%">
+<div class="combat-ability-infobox" id="treewindow" style="padding: 5%; align-self: center">
     <div class="wpn-ugrade-window" style="flex-direction: column;">
-        <canvas id="drawlines" class="linecanvas"></canvas>
+        
         {% for rindex in range(0,searchtable['Row'].max()+1) %}
         {% set crows = searchtable[searchtable['Row']==rindex] %}
         <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
             {% for xcol in lmr %}
             {% if xcol in crows['Column'].fillna('').values %}
             {% set uprow = crows.loc[crows['Column'] == xcol] %}
-            <div class="wpn-ugrade-column">
+            <div class="wpn-ugrade-column" id="x{{uprow['Upgrade'].item().lower().replace(' ', '-')}}">
                 <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-link"><b>{{uprow['Upgrade'].item()}}</b></a>
-                <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-icon" id="{{uprow['Upgrade'].item().lower().replace(' ', '-')}}">
+                <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-icon" >
                     <img src="{{uprow['Icon'].item()}}" />
                     <p class="wpn-upgrade-str-boost"><b>+{{uprow['Aberrant Strength Boost'].item()}}</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
@@ -31,8 +30,9 @@
         {% endfor %}
     </div>
 </div>
+
 <script>
-    const jsUplist = "{{ uplist | join(',') }}";
+    var jsUplist = "{{ uplist | join(',') }}";
 </script>
 {% for _,indrow in searchtable.iterrows() %}
 {% if indrow['Upgrade']!=form %}
