@@ -137,7 +137,7 @@ summary {
     width: 32px;
     height: 32px;
     margin: 0px 0px 0px 0px;
-    vertical-align: middle;
+    vertical-align: central;
 }
 
 .inline-svg > a {
@@ -527,7 +527,7 @@ code {
 
 .muConnector {
     position: absolute;
-    border-left: 4px dashed white;
+    border-left: clamp(1px, 1vw, 4px) dashed white;
     -webkit-transform-origin: top left;
     -moz-transform-origin: top left;
     -o-transform-origin: top left;
