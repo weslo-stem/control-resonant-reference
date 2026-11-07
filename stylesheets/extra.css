@@ -257,15 +257,14 @@ thead {
 
 .shop-window {
     display: flex;
-    flex-wrap: wrap;
-    flex-shrink: 1
+    flex-direction: column;
 }
 .shop-row {
-    display: flex;
+    display: inline-flex;
     flex-direction: row;
-    flex: 1 1 auto;
+    flex: 1 0 auto;
     min-width: 0;
-    min-height: 0;
+    min-height: 100%;
 }
 
 .shop-column {
