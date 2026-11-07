@@ -61,3 +61,9 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/uppercut_surgetable.html" import uppercut_surgeTable %}
 {{ uppercut_surgeTable('tables/damage_tables/weapon_forms/uppercut_surge.csv') }}
+
+# Upgrades
+#### *Weapon Upgrade Tree*
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Uppercut Surge') }}

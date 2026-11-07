@@ -62,3 +62,9 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/cleavetable.html" import cleaveTable %}
 {{ cleaveTable('tables/damage_tables/weapon_forms/cleave.csv') }}
+
+# Upgrades
+#### *Weapon Upgrade Tree*
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Cleave') }}

@@ -137,7 +137,7 @@ summary {
     width: 32px;
     height: 32px;
     margin: 0px 0px 0px 0px;
-    vertical-align: middle;
+    vertical-align: central;
 }
 
 .inline-svg > a {
@@ -416,6 +416,7 @@ code {
     display: flex;
     flex-shrink: 1;
     position: relative;
+
 }
 
 .wpn-ugrade-row {
@@ -443,6 +444,7 @@ code {
     width: 33%;
     height: 33%;
     position: relative;
+    z-index: 2;
 }
     .wpn-ugrade-column:hover {
         background-color: var(--charcoal);
@@ -454,7 +456,7 @@ code {
         text-align: center;
         align-content: flex-start;
         margin: 0px;
-        font-size: clamp(10px, 1vw, 20px);
+        font-size: clamp(8px, 1.5vw, 20px);
     }
 
     .wpn-ugrade-column > .wpn-upgrade-icon {
@@ -485,7 +487,7 @@ code {
 
         .wpn-ugrade-column > .wpn-upgrade-icon > .wpn-upgrade-str-boost {
             position: absolute;
-            font-size: clamp(10px, 1vw, 20px);
+            font-size: clamp(10px, 1.5vw, 20px);
             margin: 0px;
             padding: 0px;
             bottom: 0;
@@ -523,12 +525,12 @@ code {
     height: 33%;
 }
 
-.linecanvas {
+.muConnector {
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    text-align: center;
+    border-left: clamp(1px, 1vw, 4px) dashed white;
+    -webkit-transform-origin: top left;
+    -moz-transform-origin: top left;
+    -o-transform-origin: top left;
+    -ms-transform-origin: top left;
+    transform-origin: top left;
 }

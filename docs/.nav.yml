@@ -5,9 +5,21 @@ nav:
       - reference/combat/status-effects.md
     - Dylan:
       - Aberrant:
-        - reference/dylan/aberrant/primary-forms.md
-        - reference/dylan/aberrant/secondary-forms.md
-        - reference/dylan/aberrant/combo-finishers.md
+        - Primary Forms:
+            - reference/dylan/aberrant/primary-forms/cleave.md
+            - reference/dylan/aberrant/primary-forms/strike.md
+            - reference/dylan/aberrant/primary-forms/glaive.md
+        - Secondary Forms:
+            - reference/dylan/aberrant/secondary-forms/crush.md
+            - reference/dylan/aberrant/secondary-forms/extend.md
+            - reference/dylan/aberrant/secondary-forms/drill.md
+        - Combo Finishers:
+            - reference/dylan/aberrant/combo-finishers/concussive-beatdown.md
+            - reference/dylan/aberrant/combo-finishers/uppercut-surge.md
+            - reference/dylan/aberrant/combo-finishers/wide-edge.md
+            - reference/dylan/aberrant/combo-finishers/spin-edge.md
+            - reference/dylan/aberrant/combo-finishers/split-pivot.md
+            - reference/dylan/aberrant/combo-finishers/split-orbit.md
       - reference/dylan/combat-abilities.md
       - reference/dylan/talents.md
     - Enemies: 

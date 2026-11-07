@@ -62,3 +62,9 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/split_pivottable.html" import split_pivotTable %}
 {{ split_pivotTable('tables/damage_tables/weapon_forms/split_pivot.csv') }}
+
+# Upgrades
+#### *Weapon Upgrade Tree*
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Split Pivot') }}

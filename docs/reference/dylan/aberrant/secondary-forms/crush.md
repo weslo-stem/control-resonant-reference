@@ -61,3 +61,9 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/crushtable.html" import crushTable %}
 {{ crushTable('tables/damage_tables/weapon_forms/crush.csv') }}
+
+# Upgrades
+#### *Weapon Upgrade Tree*
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Crush') }}

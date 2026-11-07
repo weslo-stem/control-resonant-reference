@@ -61,3 +61,9 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/split_orbittable.html" import split_orbitTable %}
 {{ split_orbitTable('tables/damage_tables/weapon_forms/split_orbit.csv') }}
+
+# Upgrades
+#### *Weapon Upgrade Tree*
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Split Orbit') }}

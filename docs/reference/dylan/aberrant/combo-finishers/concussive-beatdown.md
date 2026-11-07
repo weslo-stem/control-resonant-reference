@@ -61,3 +61,9 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/concussive_beatdowntable.html" import concussive_beatdownTable %}
 {{ concussive_beatdownTable('tables/damage_tables/weapon_forms/concussive_beatdown.csv') }}
+
+# Upgrades
+#### *Weapon Upgrade Tree*
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Concussive Beatdown') }}

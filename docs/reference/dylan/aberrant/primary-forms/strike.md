@@ -61,3 +61,9 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/striketable.html" import strikeTable %}
 {{ strikeTable('tables/damage_tables/weapon_forms/strike.csv') }}
+
+# Upgrades
+#### *Weapon Upgrade Tree*
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Strike') }}

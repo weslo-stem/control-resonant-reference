@@ -61,3 +61,9 @@ Note that all values displayed in-game are rounded.
 
 {% from "reference/dylan/aberrant/table-generation/wide_edgetable.html" import wide_edgeTable %}
 {{ wide_edgeTable('tables/damage_tables/weapon_forms/wide_edge.csv') }}
+
+# Upgrades
+#### *Weapon Upgrade Tree*
+
+{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{{ upgrade_tree('Wide Edge') }}

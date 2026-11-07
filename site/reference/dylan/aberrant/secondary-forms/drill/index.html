@@ -2565,9 +2565,9 @@
 
 <h1 id="upgrades">Upgrades</h1>
 <h4 id="weapon-upgrade-tree"><em>Weapon Upgrade Tree</em></h4>
-<div class="combat-ability-infobox" id="treewindow" style="padding: 5%">
+<div class="combat-ability-infobox" id="treewindow" style="padding: 5%; align-self: center">
     <div class="wpn-ugrade-window" style="flex-direction: column;">
-        <canvas id="drawlines" class="linecanvas"></canvas>
+
 
 
         <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
@@ -2578,9 +2578,9 @@
 
 
 
-            <div class="wpn-ugrade-column">
+            <div class="wpn-ugrade-column" id="xdrill">
                 <a href="#drill" class="wpn-upgrade-link"><b>Drill</b></a>
-                <a href="#drill" class="wpn-upgrade-icon" id="drill">
+                <a href="#drill" class="wpn-upgrade-icon" >
                     <img src="/control-resonant-reference/icons/weapons/weapon_form_drill_small.tex.png" />
                     <p class="wpn-upgrade-str-boost"><b>+5</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
@@ -2603,9 +2603,9 @@
 
 
 
-            <div class="wpn-ugrade-column">
+            <div class="wpn-ugrade-column" id="xdebilitate">
                 <a href="#debilitate" class="wpn-upgrade-link"><b>Debilitate</b></a>
-                <a href="#debilitate" class="wpn-upgrade-icon" id="debilitate">
+                <a href="#debilitate" class="wpn-upgrade-icon" >
                     <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilled_status.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+2</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
@@ -2628,9 +2628,9 @@
 
 
 
-            <div class="wpn-ugrade-column">
+            <div class="wpn-ugrade-column" id="xadded-disruptor">
                 <a href="#added-disruptor" class="wpn-upgrade-link"><b>Added Disruptor</b></a>
-                <a href="#added-disruptor" class="wpn-upgrade-icon" id="added-disruptor">
+                <a href="#added-disruptor" class="wpn-upgrade-icon" >
                     <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_third_attack.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
@@ -2640,9 +2640,9 @@
 
 
 
-            <div class="wpn-ugrade-column">
+            <div class="wpn-ugrade-column" id="xpower-drill">
                 <a href="#power-drill" class="wpn-upgrade-link"><b>Power Drill</b></a>
-                <a href="#power-drill" class="wpn-upgrade-icon" id="power-drill">
+                <a href="#power-drill" class="wpn-upgrade-icon" >
                     <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_airborne_res_rec_up.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
@@ -2661,9 +2661,9 @@
 
 
 
-            <div class="wpn-ugrade-column">
+            <div class="wpn-ugrade-column" id="xsuppression">
                 <a href="#suppression" class="wpn-upgrade-link"><b>Suppression</b></a>
-                <a href="#suppression" class="wpn-upgrade-icon" id="suppression">
+                <a href="#suppression" class="wpn-upgrade-icon" >
                     <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_switch_combo.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
@@ -2673,9 +2673,9 @@
 
 
 
-            <div class="wpn-ugrade-column">
+            <div class="wpn-ugrade-column" id="xdrill-down">
                 <a href="#drill-down" class="wpn-upgrade-link"><b>Drill Down</b></a>
-                <a href="#drill-down" class="wpn-upgrade-icon" id="drill-down">
+                <a href="#drill-down" class="wpn-upgrade-icon" >
                     <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_increased_damage_ticks.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+1</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
@@ -2694,9 +2694,9 @@
 
 
 
-            <div class="wpn-ugrade-column">
+            <div class="wpn-ugrade-column" id="xboard-rebuttal">
                 <a href="#board-rebuttal" class="wpn-upgrade-link"><b>Board Rebuttal</b></a>
-                <a href="#board-rebuttal" class="wpn-upgrade-icon" id="board-rebuttal">
+                <a href="#board-rebuttal" class="wpn-upgrade-icon" >
                     <img src="/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_drill_upg_drilling_defense.svg" />
                     <p class="wpn-upgrade-str-boost"><b>+3</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
@@ -2712,8 +2712,9 @@
 
     </div>
 </div>
+
 <script>
-    const jsUplist = "drill|,debilitate|drill,added-disruptor|debilitate,power-drill|debilitate,suppression|added-disruptor,drill-down|power-drill,board-rebuttal|suppression;drill-down";
+    var jsUplist = "drill|,debilitate|drill,added-disruptor|debilitate,power-drill|debilitate,suppression|added-disruptor,drill-down|power-drill,board-rebuttal|suppression;drill-down";
 </script>
 
 <h2 id="debilitate">Debilitate</h2>
@@ -2735,7 +2736,7 @@
                 shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
         </script>
         <script src="../../../../../js/base.js"></script>
-        <script src="../../../../../scripts/drawlines.js"></script>
+        <script src="../../../../../scripts/muConnector.js"></script>
         <script src="../../../../../search/main.js"></script>
         <script src="../../../../../assets/javascripts/placeholder-combined.js"></script>
 
