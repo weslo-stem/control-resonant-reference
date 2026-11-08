@@ -14,6 +14,7 @@ If you wish to contribute, you will need Python and Git installed.
 
 ## Progress
 
+```
 [x] Combat Abilities
 [x] Vendors
 [x] Artifacts
@@ -25,6 +26,7 @@ If you wish to contribute, you will need Python and Git installed.
 [ ] talents
 [ ] materials
 [ ] cosmetics
+```
 
 ## Plugins used
 - search (built-in)
