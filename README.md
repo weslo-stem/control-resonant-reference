@@ -19,13 +19,13 @@ If you wish to contribute, you will need Python and Git installed.
 [x] Vendors
 [x] Artifacts
 [x] Weapon Forms
-[ ] zones
-[ ] quests
-[ ] enemies
-[ ] status effects/buffs
-[ ] talents
-[ ] materials
-[ ] cosmetics
+[ ] Zones
+[ ] Quests
+[ ] Enemies
+[ ] Status effects/buffs
+[ ] Talents
+[ ] Materials
+[ ] Cosmetics
 ```
 
 ## Plugins used
