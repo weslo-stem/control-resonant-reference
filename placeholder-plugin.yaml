@@ -5,6 +5,34 @@ placeholders:
             checked: "spoiler-blur"
             unchecked: "spoiler-blur-disabled"
         replace_everywhere: true
+    DMG_INPUT:
+          default: 0
+          validators: float
+    DOMINANCE_PCF:
+          default: unchecked
+          values:
+              checked: 1
+              unchecked: 0
+          validators: float
+    DOMINANCE_S:
+          default: unchecked
+          values:
+              checked: 0.5
+              unchecked: 0
+          validators: float
+    EMPOWERED:
+          default: unchecked
+          values:
+              checked: 0.25
+              unchecked: 0
+          validators: float
+    TRACKED:
+          default: unchecked
+          values:
+              checked: 0.3
+              unchecked: 0
+          validators: float
+
 
 settings:
     auto_placeholder_tables: false

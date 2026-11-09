@@ -4,8 +4,8 @@ repo_url: https://github.com/weslo-stem/control-resonant-reference
 edit_uri: blob/main/docs/
 extra_javascript:
     - path: scripts/muConnector.js
-#      type: module
-#    - scripts/drawlines.js
+      type: module
+    - path: scripts/updateMultipliers.js
 extra_css: 
     - stylesheets/extra.css
 markdown_extensions:
@@ -30,3 +30,4 @@ theme:
 extra:
   nav_blur_terms: Hedron;Unknown;Underpass;The Physicist;Astral Plane;The Co-Director;Evacuation Zone (Secret)
   ctx: /control-resonant-reference
+  dmg_falter_formula: "`100% + ( Aberrant Strength * 1.67% )`"
