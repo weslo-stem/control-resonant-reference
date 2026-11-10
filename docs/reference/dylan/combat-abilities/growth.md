@@ -1,5 +1,5 @@
 # Growth
-### *Combat Ability*
+## <img src="{{icon_power}}" style="border: 0px;"/> Combat Ability
 
 <div class="flex-container">
 
@@ -8,21 +8,24 @@
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="{{icon_growth}}" alt="Growth Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">
+                    Summon a Mold Ally that shoots spores at enemies. These spores build up
+                    <img src="{{icon_status_infected}}"/><strong><b>Infected</b></strong>
+                    over time.
+                </p>
+            </div>
         </div>
-       <div class="image-subtitle right-box">
-            <p class="inline-svg">
-                Summon a Mold Ally that shoots spores at enemies. These spores build up
-                <img src="{{icon_status_infected}}"/><strong><b>Infected</b></strong>
-                over time.
-            </p>
-        </div>
+       <div class="combat-ability-gif">
+            <img src="{{gif_growth}}" alt="Growth">
+       </div>
+    </div>
+    <div class="mobile-combat-ability-gif">
+        <img src="{{gif_growth}}" alt="Growth">
     </div>
     <hr>
     <div class="flex-container">
-        <div class="combat-ability-gif left-box">
-            <img src="{{gif_growth}}" alt="Growth">
-        </div>
-        <div class="right-box htable" style="overflow-x: auto;">
+        <div class="htable" style="overflow-x: auto; width: 100%">
             <table>
                 <tbody>
                     <tr>
@@ -56,12 +59,6 @@ Maximum amount of Mold Ally summons can be increased to 3 by unlocking [insert t
 #### *Base Damage and Falter values by Ability Strength*
 
 
-<div style="overflow-x: auto;" class="vtable" markdown="1">
-    
-{% set reader1=pd_read_csv('tables/damage_tables/combat_abilities/growth.csv') %}
-{% set _=reader1.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
-{% set _=reader1.columns.values.__setitem__(2, '<span class="inline-svg"><img src="'+ icon_mold_damage +'"/>+<img src="'+ icon_sharp_damage +'"/><strong><b>Damage</b></strong></span>') %}
-{% set _=reader1.columns.values.__setitem__(3, '<span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span>') %}
-{{ reader1 | convert_to_md_table }}
-    
-</div>
+{% include "reference/dylan/combat-abilities/html/buffs_dropdown.html" %}
+{% from "reference/dylan/combat-abilities/html/damage_table.html" import dmgTable %}
+{{ dmgTable('tables/damage_tables/combat_abilities/growth.csv', ['Mold', 'Sharp']) }}

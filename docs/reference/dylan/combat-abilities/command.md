@@ -1,5 +1,5 @@
 # Command
-### *Combat Ability*
+## <img src="{{icon_power}}" style="border: 0px;"/> Combat Ability
 
 <div class="flex-container">
 
@@ -8,17 +8,20 @@
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="{{icon_command}}" alt="Command Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">Take over an enemy's mind and turn them into an ally.</p>
+            </div>
         </div>
-       <div class="image-subtitle right-box">
-            <p class="inline-svg">Take over an enemy's mind and turn them into an ally.</p>
+        <div class="combat-ability-gif">
+            <img src="{{gif_command}}" alt="Command">
         </div>
+    </div>
+    <div class="mobile-combat-ability-gif">
+        <img src="{{gif_command}}" alt="Command">
     </div>
     <hr>
     <div class="flex-container">
-        <div class="combat-ability-gif left-box">
-            <img src="{{gif_command}}" alt="Command">
-        </div>
-        <div class="right-box htable" style="overflow-x: auto;">
+        <div class="htable" style="overflow-x: auto; width: 100%;">
             <table>
                 <tbody>
                     <tr>

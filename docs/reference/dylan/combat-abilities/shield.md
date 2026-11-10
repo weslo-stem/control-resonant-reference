@@ -1,5 +1,5 @@
 # Shield
-### *Combat Ability*
+## <img src="{{icon_power}}" style="border: 0px;"/> Combat Ability
 
 <div class="flex-container">
 
@@ -8,24 +8,27 @@
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="{{icon_shield}}" alt="Shield Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">
+                    Shield absorbs damage. Its durability is equal to the
+                    <img src="{{icon_power}}"/><strong><b>Power</b></strong>
+                    meter.
+                    <br>
+                    <img src="{{icon_nav_dodge}}"/><strong><b>Dodge</b></strong>
+                    with Shield to <b>Shield Bash</b>.
+                </p>
+            </div>
         </div>
-        <div class="image-subtitle right-box">
-            <p class="inline-svg">
-                Shield absorbs damage. Its durability is equal to the
-                <img src="{{icon_power}}"/><strong><b>Power</b></strong>
-                meter.
-                <br>
-                <img src="{{icon_nav_dodge}}"/><strong><b>Dodge</b></strong>
-                with Shield to <b>Shield Bash</b>.
-            </p>
+        <div class="combat-ability-gif">
+            <img src="{{gif_shield}}" alt="Shield">
         </div>
+    </div>
+    <div class="mobile-combat-ability-gif">
+        <img src="{{gif_shield}}" alt="Shield">
     </div>
     <hr>
     <div class="flex-container">
-        <div class="combat-ability-gif left-box">
-            <img src="{{gif_shield}}" alt="Shield">
-        </div>
-        <div class="right-box htable" style="overflow-x: auto;">
+        <div class="htable" style="overflow-x: auto; width: 100%;">
             <table>
                 <tbody>
                     <tr>
@@ -60,12 +63,6 @@
 
 #### **Shield Bash Damage:**
 
-<div style="overflow-x: auto;" class="vtable" markdown="1">
-    
-{% set reader1=pd_read_csv('tables/damage_tables/combat_abilities/shield.csv') %}
-{% set _=reader1.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
-{% set _=reader1.columns.values.__setitem__(2, 'Shield Bash <span class="inline-svg"><img src="'+ icon_blunt_damage +'"/><strong><b>Damage</b></strong></span>') %}
-{% set _=reader1.columns.values.__setitem__(3, 'Shield Bash <span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span>') %}
-{{ reader1 | convert_to_md_table }}
-    
-</div>
+{% include "reference/dylan/combat-abilities/html/buffs_dropdown.html" %}
+{% from "reference/dylan/combat-abilities/html/damage_table.html" import dmgTable %}
+{{ dmgTable('tables/damage_tables/combat_abilities/shield.csv', ['Blunt']) }}

@@ -4,8 +4,8 @@ repo_url: https://github.com/weslo-stem/control-resonant-reference
 edit_uri: blob/main/docs/
 extra_javascript:
     - path: scripts/muConnector.js
-      type: module
     - path: scripts/updateMultipliers.js
+    - path: scripts/updateMultIcons.js
 extra_css: 
     - stylesheets/extra.css
 markdown_extensions:
@@ -23,6 +23,7 @@ plugins:
     - awesome-nav
     - toggle-sidebar:
         show_toc_by_default: False
+        enable_key_bindings: False
 theme:
   name: mkdocs
   custom_dir: 'crr_custom_theme/'

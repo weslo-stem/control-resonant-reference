@@ -16,8 +16,12 @@
             <img src="{{gif_glaive}}" alt="Glaive">
         </div>
     </div>
+    <div class="mobile-combat-ability-gif">
+        <img src="{{gif_glaive}}" alt="Glaive">
+    </div>
+    <hr>
     <div class="flex-container" style="gap: 10px;">
-        <div class="right-box htable" style="overflow-x: auto; width: 100%;">
+        <div class="htable" style="overflow-x: auto; width: 100%;">
             <table class="weapon-info">
                 <tbody>
                     <tr>

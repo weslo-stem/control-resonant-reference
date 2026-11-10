@@ -1,26 +1,29 @@
 # Astral Rebuke
-### *Combat Ability*
+## <img src="{{icon_power}}" style="border: 0px;"/> Combat Ability
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox">
+<div class="combat-ability-infobox" style="width: 100%;" >
     <!-- Image -->
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="{{icon_astral_rebuke}}" alt="Astral Rebuke Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">Unleash a homing spike that erupts beneath enemies and throws them in the air. Applies
+                <img src="{{icon_status_lifted}}"/><strong><b>Lifted</b></strong> and builds up
+                <img src="{{icon_status_astralized}}"/><strong><b>Astralized</b></strong>.</p>
+            </div>
         </div>
-       <div class="image-subtitle right-box">
-            <p class="inline-svg">Unleash a homing spike that erupts beneath enemies and throws them in the air. Applies
-            <img src="{{icon_status_lifted}}"/><strong><b>Lifted</b></strong> and builds up
-            <img src="{{icon_status_astralized}}"/><strong><b>Astralized</b></strong>.</p>
+       <div class="combat-ability-gif ">
+            <img src="{{gif_astral_rebuke}}" alt="Astral Rebuke">
         </div>
+    </div>
+    <div class="mobile-combat-ability-gif">
+        <img src="{{gif_astral_rebuke}}" alt="Astral Rebuke">
     </div>
     <hr>
     <div class="flex-container">
-        <div class="combat-ability-gif left-box">
-            <img src="{{gif_astral_rebuke}}" alt="Astral Rebuke">
-        </div>
-        <div class="right-box htable" style="overflow-x: auto;">
+        <div class="htable" style="overflow-x: auto; width: 100%">
             <table>
                 <tbody>
                     <tr>
@@ -50,12 +53,7 @@ Damage and falter values will be increased by talents and status buffs. Below is
 #### *Base Damage and Falter values by Ability Strength*
 
 
-<div style="overflow-x: auto;" class="vtable" markdown="1">
+{% include "reference/dylan/combat-abilities/html/buffs_dropdown.html" %}
+{% from "reference/dylan/combat-abilities/html/damage_table.html" import dmgTable %}
+{{ dmgTable('tables/damage_tables/combat_abilities/astral_rebuke.csv', ['Astral']) }}
     
-{% set reader1=pd_read_csv('tables/damage_tables/combat_abilities/astral_rebuke.csv') %}
-{% set _=reader1.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
-{% set _=reader1.columns.values.__setitem__(2, '<span class="inline-svg"><img src="'+ icon_astral_damage +'"/><strong><b>Damage</b></strong></span>') %}
-{% set _=reader1.columns.values.__setitem__(3, '<span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span>') %}
-{{ reader1 | convert_to_md_table }}
-    
-</div>

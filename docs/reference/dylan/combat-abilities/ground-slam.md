@@ -1,5 +1,5 @@
 # Ground Slam
-### *Combat Ability*
+## <img src="{{icon_power}}" style="border: 0px;"/> Combat Ability
 
 <div class="flex-container">
 
@@ -8,21 +8,24 @@
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="{{icon_ground_slam}}" alt="Ground Slam Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">
+                    Slams enemies from above. The area of effect and amount of
+                    <img src="{{icon_generic_damage}}"/><strong><b>Damage</b></strong>
+                    can be boosted if executed from higher up.
+                </p>
+            </div>
+       </div>
+       <div class="combat-ability-gif">
+            <img src="{{gif_ground_slam}}" alt="Ground Slam">
         </div>
-       <div class="image-subtitle right-box">
-            <p class="inline-svg">
-                Slams enemies from above. The area of effect and amount of
-                <img src="{{icon_generic_damage}}"/><strong><b>Damage</b></strong>
-                can be boosted if executed from higher up.
-            </p>
-        </div>
+    </div>
+    <div class="mobile-combat-ability-gif">
+        <img src="{{gif_ground_slam}}" alt="Ground Slam">
     </div>
     <hr>
     <div class="flex-container">
-        <div class="combat-ability-gif left-box">
-            <img src="{{gif_ground_slam}}" alt="Ground Slam">
-        </div>
-        <div class="right-box htable" style="overflow-x: auto;">
+        <div class="htable" style="overflow-x: auto; width: 100%;">
             <table>
                 <tbody>
                     <tr>
@@ -52,14 +55,6 @@ Damage and falter values will be increased by talents and status buffs. Below is
 #### *Base Damage and Falter values by Ability Strength*
 
 
-<div style="overflow-x: auto;" class="vtable" markdown="1">
-    
-{% set reader1=pd_read_csv('tables/damage_tables/combat_abilities/ground_slam.csv') %}
-{% set _=reader1.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
-{% set _=reader1.columns.values.__setitem__(2, '<span class="inline-svg"><img src="'+ icon_raw_damage +'"/><strong><b>Damage</b></strong></span> Floor') %}
-{% set _=reader1.columns.values.__setitem__(3, '<span class="inline-svg"><img src="'+ icon_raw_damage +'"/><strong><b>Damage</b></strong></span> Ceiling') %}
-{% set _=reader1.columns.values.__setitem__(4, '<span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span> Floor') %}
-{% set _=reader1.columns.values.__setitem__(5, '<span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span> Ceiling') %}
-{{ reader1 | convert_to_md_table }}
-    
-</div>
+{% include "reference/dylan/combat-abilities/html/buffs_dropdown.html" %}
+{% from "reference/dylan/combat-abilities/html/damage_table.html" import dmgTable %}
+{{ dmgTable('tables/damage_tables/combat_abilities/ground_slam.csv', ['Raw']) }}

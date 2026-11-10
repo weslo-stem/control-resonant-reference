@@ -16,8 +16,12 @@
             <img src="{{gif_extend}}" alt="Extend">
         </div>
     </div>
+    <div class="mobile-combat-ability-gif">
+        <img src="{{gif_extend}}" alt="Extend">
+    </div>
+    <hr>
     <div class="flex-container" style="gap: 10px;">
-        <div class="right-box htable" style="overflow-x: auto; width: 100%;">
+        <div class="htable" style="overflow-x: auto; width: 100%;">
             <table class="weapon-info">
                 <tbody>
                     <tr>

@@ -1,5 +1,5 @@
 # Ignite
-### *Combat Ability*
+## <img src="{{icon_power}}" style="border: 0px;"/> Combat Ability
 
 <div class="flex-container">
 
@@ -8,22 +8,25 @@
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="{{icon_ignite}}" alt="Ignite Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">Melee Attacks and 
+                <a href="{{page_barrage}}"><img src="{{icon_barrage}}"/><strong><b>Barrage</b></strong></a>,
+                <a href="{{page_shield}}"><img src="{{icon_shield}}"/><strong><b>Shield</b></strong></a>, and
+                <a href="{{page_volatile_anomaly}}"><img src="{{icon_volatile_anomaly}}"/><strong><b>Volatile Anomaly</b></strong></a> do 
+                <img src="{{icon_fire_damage}}"/><strong><b>Fire Damage</b></strong> that applies
+                <img src="{{icon_status_burn}}"/><strong><b>Burn</b></strong>.</p>
+            </div>
         </div>
-        <div class="image-subtitle right-box">
-            <p class="inline-svg">Melee Attacks and 
-            <a href="{{page_barrage}}"><img src="{{icon_barrage}}"/><strong><b>Barrage</b></strong></a>,
-            <a href="{{page_shield}}"><img src="{{icon_shield}}"/><strong><b>Shield</b></strong></a>, and
-            <a href="{{page_volatile_anomaly}}"><img src="{{icon_volatile_anomaly}}"/><strong><b>Volatile Anomaly</b></strong></a> do 
-            <img src="{{icon_fire_damage}}"/><strong><b>Fire Damage</b></strong> that applies
-            <img src="{{icon_status_burn}}"/><strong><b>Burn</b></strong>.</p>
-        </div>
-    </div>
-    <hr>
-    <div class="flex-container">
-        <div class="combat-ability-gif left-box">
+        <div class="combat-ability-gif">
             <img src="{{gif_ignite}}" alt="Ignite">
         </div>
-        <div class="right-box htable" style="overflow-x: auto;">
+    </div>
+    <div class="mobile-combat-ability-gif">
+            <img src="{{gif_ignite}}" alt="Ignite">
+        </div>
+    <hr>
+    <div class="flex-container">
+        <div class="htable" style="overflow-x: auto; width: 100%;">
             <table>
                 <tbody>
                     <tr>
@@ -57,13 +60,6 @@ Bonus damage and falter is applied to all melee attacks and the above listed com
 #### *Base Damage and Falter values by Ability Strength*
 
 
-<div style="overflow-x: auto;" class="vtable" markdown="1">
-    
-{% set reader=pd_read_csv('tables/damage_tables/combat_abilities/ignite.csv') %}
-{% set _=reader.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
-{% set _=reader.columns.values.__setitem__(2, 'Bonus <span class="inline-svg"><img src="'+ icon_fire_damage +'"/><strong><b>Fire Dmg</b></strong></span> Floor') %}
-{% set _=reader.columns.values.__setitem__(3, 'Bonus <span class="inline-svg"><img src="'+ icon_fire_damage +'"/><strong><b>Fire Dmg</b></strong></span> Ceiling') %}
-{% set _=reader.columns.values.__setitem__(4, 'Bonus <span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span>') %}
-{{ reader | convert_to_md_table }}
-    
-</div>
+{% include "reference/dylan/combat-abilities/html/buffs_dropdown.html" %}
+{% from "reference/dylan/combat-abilities/html/damage_table.html" import dmgTable %}
+{{ dmgTable('tables/damage_tables/combat_abilities/ignite.csv', ['Fire']) }}

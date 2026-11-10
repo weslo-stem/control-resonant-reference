@@ -1,5 +1,5 @@
 # Inferno
-### *Combat Ability*
+## <img src="{{icon_power}}" style="border: 0px;"/> Combat Ability
 
 <div class="flex-container">
 
@@ -8,23 +8,26 @@
     <div class="flex-container">
         <div class="combat-ability-image left-box">
             <img src="{{icon_inferno}}" alt="Inferno Icon">
+            <div class="image-subtitle">
+                <p class="inline-svg">
+                    Generates increasingly intense
+                    <img src="{{icon_fire_damage}}"/><strong><b>Fire</b></strong>
+                    waves applying
+                    <img src="{{icon_status_burn}}"/><strong><b>Burn</b></strong>
+                    that builds up.
+                </p>
+            </div>
         </div>
-        <div class="image-subtitle right-box">
-            <p class="inline-svg">
-                Generates increasingly intense
-                <img src="{{icon_fire_damage}}"/><strong><b>Fire</b></strong>
-                waves applying
-                <img src="{{icon_status_burn}}"/><strong><b>Burn</b></strong>
-                that builds up.
-            </p>
+        <div class="combat-ability-gif">
+            <img src="{{gif_inferno}}" alt="Inferno">
         </div>
+    </div>
+    <div class="mobile-combat-ability-gif">
+        <img src="{{gif_inferno}}" alt="Inferno">
     </div>
     <hr>
     <div class="flex-container">
-        <div class="combat-ability-gif left-box">
-            <img src="{{gif_inferno}}" alt="Inferno">
-        </div>
-        <div class="right-box htable" style="overflow-x: auto;">
+        <div class="htable" style="overflow-x: auto; width: 100%;">
             <table>
                 <tbody>
                     <tr>
@@ -54,13 +57,6 @@ Inferno attacks can be rapidly chained by quick, persistent inputs. Damage and f
 #### *Base Damage and Falter values by Ability Strength*
 
 
-<div style="overflow-x: auto;" class="vtable" markdown="1">
-    
-{% set reader=pd_read_csv('tables/damage_tables/combat_abilities/inferno.csv') %}
-{% set _=reader.columns.values.__setitem__(0, '<span class="inline-svg"><img src="'+ icon_power +'"/><strong><b>Ability Strength</b></strong></span>') %}
-{% set _=reader.columns.values.__setitem__(2, '<span class="inline-svg"><img src="'+ icon_fire_damage +'"/><strong><b>Damage</b></strong></span>') %}
-{% set _=reader.columns.values.__setitem__(3, '<span class="inline-svg"><img src="'+ icon_falter_damage +'"/><strong><b>Falter</b></strong></span>') %}
-
-{{ reader | convert_to_md_table }}
-    
-</div>
+{% include "reference/dylan/combat-abilities/html/buffs_dropdown.html" %}
+{% from "reference/dylan/combat-abilities/html/damage_table.html" import dmgTable %}
+{{ dmgTable('tables/damage_tables/combat_abilities/inferno.csv', ['Fire']) }}
