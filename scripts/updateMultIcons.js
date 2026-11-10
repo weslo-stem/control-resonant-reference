@@ -15,4 +15,3 @@ function updateIcons()
     empowered_style.visibility = phEmpowered.checked ? "visible" : "hidden";
 }
 
-updateIcons()

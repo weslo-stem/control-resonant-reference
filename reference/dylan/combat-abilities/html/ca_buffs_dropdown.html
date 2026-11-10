@@ -1,0 +1,17 @@
+{% macro caBuffsDropdown(dmgTypes) %}
+<details>
+    <summary>
+        Buff/Debuff Toggles
+        <div style="display: inline-flex; vertical-align: middle; align-items:unsafe center; max-height: 26px;">
+            <div class="buff-icons" id="empowered-icon"><img style="border: 0px; color: black; margin: 0px; filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_ability_up.svg' /></div>
+            <div class="buff-icons" id="tracked-icon"><img style="border: 0px; color: black; margin: 0px; filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_marked.svg' /></div>
+            {% if 'Blunt' in dmgTypes %}
+            <div class="buff-icons" id="spraypaint-icon"><img style="border: 0px; color: black; margin: 0px; max-height: 26px; max-width: 26px" src='/control-resonant-reference/images/artifacts/ch_102_soda_can_small.tex.png' /></div>
+            {% endif %}
+        </div>
+    </summary>
+    <label style="color: var(--brown-red); accent-color: var(--brown-red)"><input data-input-for="EMPOWERED"> Empowered (+25% DF)</label> <br>
+    <label style="color: var(--brown-red); accent-color: var(--brown-red)"><input data-input-for="TRACKED"> Tracked (+30% DF)</label> <br>
+    <label style="color: var(--brown-red); accent-color: var(--brown-red)"><input data-input-for="SPRAYPAINT"> Spray Paint (+15% Blunt Dmg)</label>
+</details>
+{% endmacro %}
