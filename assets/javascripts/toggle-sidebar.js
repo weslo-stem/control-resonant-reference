@@ -169,7 +169,7 @@ const registerKeyboardEventHandler = registerNativeHtmlKeyboardEventHandler;
             console.error(`[mkdocs-toggle-sidebar-plugin] Unknown value for toggle_button: '${toggleButtonType}'`);
         }
 
-        registerKeyboardEventHandler(); console.log("The mkdocs-toggle-sidebar-plugin is installed. It adds the following key bindings:\n T -> toggle table of contents sidebar\n M -> toggle navigation menu sidebar\n B -> toggle both sidebars (TOC and navigation)");
+        
     }
 
     const createDefaultToggleButton = (toggleNavigation, toggleTOC) => {

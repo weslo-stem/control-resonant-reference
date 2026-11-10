@@ -592,6 +592,15 @@ summary {
 
 }
 
+.buff-icons {
+    margin: 0px;
+}
+
+.buff-icons > p {
+    margin: 0px;
+    color: var(--brown-red);
+}
+
 @media (max-width: 768px) {
     .combat-ability-gif {
         visibility: hidden;

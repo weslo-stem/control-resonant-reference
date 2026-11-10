@@ -1,4 +1,4 @@
-Ability Strength,DF%,Explosion Damage Floor,Explosion Damage Ceiling,Explosion Falter Floor,Explosion Falter Ceiling
+Ability Strength,DF%,Damage Floor,Damage Ceiling,Falter Floor,Falter Ceiling
 0,100%,150,350,25,180
 1,110%,165,385,28,198
 2,141%,211,492,35,253

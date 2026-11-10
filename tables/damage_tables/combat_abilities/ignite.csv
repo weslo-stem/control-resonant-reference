@@ -1,4 +1,4 @@
-Ability Strength,DF%,Bonus Fire Damage Floor,Bonus Fire Damage Ceiling,Bonus Falter
+Ability Strength,DF%,Damage Floor,Damage Ceiling,Falter
 0,100%,15,30,4
 1,110%,17,33,4
 2,141%,21,42,6

@@ -381,125 +381,299 @@
 <p>Damage and falter values will be increased by talents and status buffs. Below is a table of the base damage and falter values per Ability Strength level.</p>
 <h1 id="damage">Damage</h1>
 <h4 id="base-damage-and-falter-values-by-ability-strength"><em>Base Damage and Falter values by Ability Strength</em></h4>
-<div class="vtable" style="overflow-x: auto;">
-<table>
-<thead>
-<tr>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg"/><strong><b>Ability Strength</b></strong></span></th>
-<th style="text-align: left;">DF%</th>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg"/><strong><b>Damage</b></strong></span> Floor</th>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg"/><strong><b>Damage</b></strong></span> Ceiling</th>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"/><strong><b>Falter</b></strong></span> Floor</th>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"/><strong><b>Falter</b></strong></span> Ceiling</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: right;">0</td>
-<td style="text-align: left;">100%</td>
-<td style="text-align: right;">50</td>
-<td style="text-align: right;">100</td>
-<td style="text-align: right;">5</td>
-<td style="text-align: right;">15</td>
-</tr>
-<tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">110%</td>
-<td style="text-align: right;">55</td>
-<td style="text-align: right;">110</td>
-<td style="text-align: right;">6</td>
-<td style="text-align: right;">17</td>
-</tr>
-<tr>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">141%</td>
-<td style="text-align: right;">70</td>
-<td style="text-align: right;">141</td>
-<td style="text-align: right;">7</td>
-<td style="text-align: right;">21</td>
-</tr>
-<tr>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">175%</td>
-<td style="text-align: right;">88</td>
-<td style="text-align: right;">175</td>
-<td style="text-align: right;">9</td>
-<td style="text-align: right;">26</td>
-</tr>
-<tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">210%</td>
-<td style="text-align: right;">105</td>
-<td style="text-align: right;">210</td>
-<td style="text-align: right;">11</td>
-<td style="text-align: right;">31</td>
-</tr>
-<tr>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">246%</td>
-<td style="text-align: right;">123</td>
-<td style="text-align: right;">246</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">37</td>
-</tr>
-<tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: left;">276%</td>
-<td style="text-align: right;">138</td>
-<td style="text-align: right;">276</td>
-<td style="text-align: right;">14</td>
-<td style="text-align: right;">41</td>
-</tr>
-<tr>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;">313%</td>
-<td style="text-align: right;">156</td>
-<td style="text-align: right;">313</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">47</td>
-</tr>
-<tr>
-<td style="text-align: right;">8</td>
-<td style="text-align: left;">325%</td>
-<td style="text-align: right;">163</td>
-<td style="text-align: right;">325</td>
-<td style="text-align: right;">16</td>
-<td style="text-align: right;">49</td>
-</tr>
-<tr>
-<td style="text-align: right;">9</td>
-<td style="text-align: left;">343%</td>
-<td style="text-align: right;">171</td>
-<td style="text-align: right;">343</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">51</td>
-</tr>
-<tr>
-<td style="text-align: right;">10</td>
-<td style="text-align: left;">355%</td>
-<td style="text-align: right;">178</td>
-<td style="text-align: right;">355</td>
-<td style="text-align: right;">18</td>
-<td style="text-align: right;">53</td>
-</tr>
-<tr>
-<td style="text-align: right;">11</td>
-<td style="text-align: left;">373%</td>
-<td style="text-align: right;">186</td>
-<td style="text-align: right;">373</td>
-<td style="text-align: right;">19</td>
-<td style="text-align: right;">56</td>
-</tr>
-<tr>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;">400%</td>
-<td style="text-align: right;">200</td>
-<td style="text-align: right;">400</td>
-<td style="text-align: right;">20</td>
-<td style="text-align: right;">60</td>
-</tr>
-</tbody>
-</table>
+<details>
+    <summary>
+        Buffs/Debuff Toggles
+        <div style="display: inline-flex; vertical-align: middle; align-items:unsafe center; max-height: 26px;">
+            <div class="buff-icons" id="empowered-icon"><img style="border: 0px; color: black; margin: 0px; filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_ability_up.svg' /></div>
+            <div class="buff-icons" id="tracked-icon"><img style="border: 0px; color: black; margin: 0px; filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_marked.svg' /></div>
+        </div>
+    </summary>
+    <label style="color: var(--brown-red); accent-color: var(--brown-red)"><input data-input-for="EMPOWERED" type="checkbox" disabled> Empowered (+25%)</label> <br>
+    <label style="color: var(--brown-red); accent-color: var(--brown-red)"><input data-input-for="TRACKED" type="checkbox" disabled> Tracked (+30%)</label>
+</details>
+
+<div class="htable" style="overflow-x: auto;">
+    <table class="table table-striped table-hover" style="border-collapse: separate; border-spacing: 0;"  id="CombatAbilityDamageTable" >
+        <thead>
+            <tr>
+                <th scope="row" class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg"><strong><b>Ability Strength</b></strong></span></th>
+                <th scope="row" class="wpn-dmg-header inline-svg">DF%</th>
+
+                <th scope="row" class="wpn-dmg-header inline-svg"><span class="inline-svg">
+
+                    <img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg">
+
+                    <strong><b>Damage Floor</b></strong></span></th>
+
+
+                <th scope="row" class="wpn-dmg-header inline-svg"><span class="inline-svg">
+
+                    <img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg">
+
+                    <strong><b>Damage Ceiling</b></strong></span></th>
+
+
+
+                <th scope="row" class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Floor</b></strong></span></th>
+
+
+                <th scope="row" class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Ceiling</b></strong></span></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr0x0"><b>0</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr0x1" data-base-value="100%">100%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr0x2" data-base-value="50">50</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr0x3" data-base-value="100">100</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr0x4" data-base-value="5">5</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr0x5" data-base-value="15">15</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr1x0"><b>1</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr1x1" data-base-value="110%">110%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr1x2" data-base-value="55">55</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr1x3" data-base-value="110">110</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr1x4" data-base-value="6">6</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr1x5" data-base-value="17">17</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr2x0"><b>2</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr2x1" data-base-value="141%">141%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr2x2" data-base-value="70">70</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr2x3" data-base-value="141">141</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr2x4" data-base-value="7">7</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr2x5" data-base-value="21">21</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr3x0"><b>3</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr3x1" data-base-value="175%">175%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr3x2" data-base-value="88">88</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr3x3" data-base-value="175">175</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr3x4" data-base-value="9">9</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr3x5" data-base-value="26">26</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr4x0"><b>4</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr4x1" data-base-value="210%">210%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr4x2" data-base-value="105">105</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr4x3" data-base-value="210">210</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr4x4" data-base-value="11">11</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr4x5" data-base-value="31">31</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr5x0"><b>5</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr5x1" data-base-value="246%">246%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr5x2" data-base-value="123">123</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr5x3" data-base-value="246">246</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr5x4" data-base-value="12">12</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr5x5" data-base-value="37">37</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr6x0"><b>6</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr6x1" data-base-value="276%">276%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr6x2" data-base-value="138">138</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr6x3" data-base-value="276">276</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr6x4" data-base-value="14">14</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr6x5" data-base-value="41">41</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr7x0"><b>7</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr7x1" data-base-value="313%">313%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr7x2" data-base-value="156">156</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr7x3" data-base-value="313">313</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr7x4" data-base-value="16">16</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr7x5" data-base-value="47">47</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr8x0"><b>8</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr8x1" data-base-value="325%">325%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr8x2" data-base-value="163">163</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr8x3" data-base-value="325">325</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr8x4" data-base-value="16">16</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr8x5" data-base-value="49">49</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr9x0"><b>9</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr9x1" data-base-value="343%">343%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr9x2" data-base-value="171">171</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr9x3" data-base-value="343">343</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr9x4" data-base-value="17">17</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr9x5" data-base-value="51">51</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr10x0"><b>10</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr10x1" data-base-value="355%">355%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr10x2" data-base-value="178">178</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr10x3" data-base-value="355">355</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr10x4" data-base-value="18">18</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr10x5" data-base-value="53">53</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr11x0"><b>11</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr11x1" data-base-value="373%">373%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr11x2" data-base-value="186">186</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr11x3" data-base-value="373">373</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr11x4" data-base-value="19">19</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr11x5" data-base-value="56">56</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="xr12x0"><b>12</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="xr12x1" data-base-value="400%">400%</td>
+
+                <td style="text-align: center; vertical-align: middle;" id="xr12x2" data-base-value="200">200</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr12x3" data-base-value="400">400</td>
+
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr12x4" data-base-value="20">20</td>
+
+
+                <td style="text-align: center; vertical-align: middle;" id="xr12x5" data-base-value="60">60</td>
+
+
+            </tr>
+
+        </tbody>
+    </table>
 </div></div>
             </div>
         </div>
@@ -515,6 +689,8 @@
         </script>
         <script src="../../../../js/base.js"></script>
         <script src="../../../../scripts/muConnector.js"></script>
+        <script src="../../../../scripts/updateMultipliers.js"></script>
+        <script src="../../../../scripts/updateMultIcons.js"></script>
         <script src="../../../../search/main.js"></script>
         <script src="../../../../assets/javascripts/placeholder-combined.js"></script>
 
