@@ -32,8 +32,15 @@ placeholders:
               checked: 0.3
               unchecked: 0
           validators: float
+    SPRAYPAINT:
+          default: unchecked
+          values:
+              checked: 0.15
+              unchecked: 0
+          validators: float
 
 
 settings:
     auto_placeholder_tables: false
     replace_delay_millis: -1
+    debug_javascript: true

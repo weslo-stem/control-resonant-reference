@@ -419,6 +419,18 @@ summary {
         text-align: center;
     }
 
+.cba-dmg-header {
+    background-color: var(--shadow-grey);
+    text-align: center;
+}
+
+.conjoined-left {
+    border-right-style: hidden;
+}
+.conjoined-right {
+    border-left-style: dashed;
+}
+
     .conjoined-top > th, .conjoined-top > td {
         border-bottom-style: hidden;
     }

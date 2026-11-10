@@ -40,7 +40,7 @@
 </div>
 
 <br>
-<p class="inline-svg">Applies <img src="{{icon_status_seized}}"/><strong><b>Seized</b></strong> status to target.<br>
+<p class="inline-svg">Applies <img src="{{icon_status_seized}}"/><strong><b>Commanded</b></strong> status to target.<br>
 Maximum amount of
 <img src="{{icon_command_charge}}"/><strong><b>Command Charges</b></strong> can be increased to <b>5</b> by unlocking talents:
 <img src="{{icon_tal_command_i}}"/><strong><b>Command I</b></strong>

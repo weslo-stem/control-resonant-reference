@@ -5,7 +5,9 @@ edit_uri: blob/main/docs/
 extra_javascript:
     - path: scripts/muConnector.js
     - path: scripts/updateMultipliers.js
-    - path: scripts/updateMultIcons.js
+      type: module
+    - https://jquery.com
+    #- path: scripts/updateMultIcons.js
 extra_css: 
     - stylesheets/extra.css
 markdown_extensions:

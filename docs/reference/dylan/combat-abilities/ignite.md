@@ -60,6 +60,7 @@ Bonus damage and falter is applied to all melee attacks and the above listed com
 #### *Base Damage and Falter values by Ability Strength*
 
 
-{% include "reference/dylan/combat-abilities/html/buffs_dropdown.html" %}
-{% from "reference/dylan/combat-abilities/html/damage_table.html" import dmgTable %}
+{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{{ caBuffsDropdown(['Fire']) }}
+{% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/ignite.csv', ['Fire']) }}
