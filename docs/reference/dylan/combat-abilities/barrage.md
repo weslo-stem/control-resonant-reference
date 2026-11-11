@@ -52,6 +52,6 @@
 
 
 {% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
-{{ caBuffsDropdown(['Blunt']) }}
+{{ caBuffsDropdown(['Blunt'], 'Barrage', false, false) }}
 {% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/barrage.csv', ['Blunt']) }}

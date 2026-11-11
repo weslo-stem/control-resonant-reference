@@ -65,7 +65,7 @@
 #### **Projectile Damage:**
 
 {% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
-{{ caBuffsDropdown(['Blunt']) }}
+{{ caBuffsDropdown(['Blunt'], 'Volatile Anomaly', false, false) }}
 {% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/volatile_anomaly_projectiles.csv', ['Blunt']) }}
 

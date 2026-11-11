@@ -57,6 +57,6 @@ Damage and falter values will be increased by talents and status buffs. Below is
 
 
 {% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
-{{ caBuffsDropdown(['Mold', 'Sharp']) }}
+{{ caBuffsDropdown(['Mold', 'Sharp'], 'Spore Burst', false, false) }}
 {% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/spore_burst.csv', ['Mold', 'Sharp']) }}

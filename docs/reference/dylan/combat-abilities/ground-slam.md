@@ -56,6 +56,6 @@ Damage and falter values will be increased by talents and status buffs. Below is
 
 
 {% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
-{{ caBuffsDropdown(['Raw']) }}
+{{ caBuffsDropdown(['Raw'], 'Ground Slam', false, false) }}
 {% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/ground_slam.csv', ['Raw']) }}

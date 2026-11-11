@@ -7,38 +7,121 @@ placeholders:
         replace_everywhere: true
     DMG_INPUT:
           default: 0
-          validators: float
     DOMINANCE_PCF:
           default: unchecked
           values:
-              checked: 1
-              unchecked: 0
-          validators: float
+              checked: true
+              unchecked: false
     DOMINANCE_S:
           default: unchecked
           values:
-              checked: 0.5
-              unchecked: 0
-          validators: float
+              checked: true
+              unchecked: false
     EMPOWERED:
           default: unchecked
           values:
-              checked: 0.25
-              unchecked: 0
-          validators: float
+              checked: true
+              unchecked: false
     TRACKED:
           default: unchecked
           values:
-              checked: 0.3
-              unchecked: 0
-          validators: float
+              checked: true
+              unchecked: false
     SPRAYPAINT:
           default: unchecked
           values:
-              checked: 0.15
-              unchecked: 0
-          validators: float
-
+              checked: true
+              unchecked: false
+    WORLD_TOUR_TICKETS:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    WHETSTONE:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    TRUSTED_SPANNER:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    FORK:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    FINGERBOARD:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    BUG_SPRAY:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    GOLDEN_EARRINGS:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    MEDICAL_ALERT_BANDS:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    MOTHERS_LOCKET:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    PRACTICE_KNOT:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    BRASS_DUSTERS:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    FRAMING_HAMMER:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    COMPACT:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    CRITICAL:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    WEAKENED:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    RUTHLESS:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    VENGEANCE:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
+    RETALIATION:
+          default: unchecked
+          values:
+              checked: true
+              unchecked: false
 
 settings:
     auto_placeholder_tables: false

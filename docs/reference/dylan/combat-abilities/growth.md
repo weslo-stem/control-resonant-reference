@@ -60,6 +60,6 @@ Maximum amount of Mold Ally summons can be increased to 3 by unlocking [insert t
 
 
 {% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
-{{ caBuffsDropdown(['Mold', 'Sharp']) }}
+{{ caBuffsDropdown(['Mold', 'Sharp'], 'Growth', false, false) }}
 {% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/growth.csv', ['Mold', 'Sharp']) }}
