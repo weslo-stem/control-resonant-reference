@@ -383,125 +383,363 @@
 <p>Damage and falter values will be increased by talents and status buffs. Below is a table of the base damage and falter values per Ability Strength level.</p>
 <h1 id="damage">Damage</h1>
 <h4 id="base-damage-and-falter-values-by-ability-strength"><em>Base Damage and Falter values by Ability Strength</em></h4>
-<div class="vtable" style="overflow-x: auto;">
-<table>
-<thead>
-<tr>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg"/><strong><b>Ability Strength</b></strong></span></th>
-<th style="text-align: left;">DF%</th>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_mold.svg"/>+<img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"/><strong><b>Damage</b></strong></span> Floor</th>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_mold.svg"/>+<img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg"/><strong><b>Damage</b></strong></span> Ceiling</th>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"/><strong><b>Falter</b></strong></span> Floor</th>
-<th style="text-align: right;"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"/><strong><b>Falter</b></strong></span> Ceiling</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: right;">0</td>
-<td style="text-align: left;">100%</td>
-<td style="text-align: right;">12</td>
-<td style="text-align: right;">120</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">10</td>
-</tr>
-<tr>
-<td style="text-align: right;">1</td>
-<td style="text-align: left;">110%</td>
-<td style="text-align: right;">13</td>
-<td style="text-align: right;">132</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">11</td>
-</tr>
-<tr>
-<td style="text-align: right;">2</td>
-<td style="text-align: left;">141%</td>
-<td style="text-align: right;">17</td>
-<td style="text-align: right;">169</td>
-<td style="text-align: right;">1</td>
-<td style="text-align: right;">14</td>
-</tr>
-<tr>
-<td style="text-align: right;">3</td>
-<td style="text-align: left;">175%</td>
-<td style="text-align: right;">21</td>
-<td style="text-align: right;">210</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">18</td>
-</tr>
-<tr>
-<td style="text-align: right;">4</td>
-<td style="text-align: left;">210%</td>
-<td style="text-align: right;">25</td>
-<td style="text-align: right;">252</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">21</td>
-</tr>
-<tr>
-<td style="text-align: right;">5</td>
-<td style="text-align: left;">246%</td>
-<td style="text-align: right;">29</td>
-<td style="text-align: right;">295</td>
-<td style="text-align: right;">2</td>
-<td style="text-align: right;">25</td>
-</tr>
-<tr>
-<td style="text-align: right;">6</td>
-<td style="text-align: left;">276%</td>
-<td style="text-align: right;">33</td>
-<td style="text-align: right;">331</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">28</td>
-</tr>
-<tr>
-<td style="text-align: right;">7</td>
-<td style="text-align: left;">313%</td>
-<td style="text-align: right;">38</td>
-<td style="text-align: right;">375</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">31</td>
-</tr>
-<tr>
-<td style="text-align: right;">8</td>
-<td style="text-align: left;">325%</td>
-<td style="text-align: right;">39</td>
-<td style="text-align: right;">390</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">33</td>
-</tr>
-<tr>
-<td style="text-align: right;">9</td>
-<td style="text-align: left;">343%</td>
-<td style="text-align: right;">41</td>
-<td style="text-align: right;">411</td>
-<td style="text-align: right;">3</td>
-<td style="text-align: right;">34</td>
-</tr>
-<tr>
-<td style="text-align: right;">10</td>
-<td style="text-align: left;">355%</td>
-<td style="text-align: right;">43</td>
-<td style="text-align: right;">426</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">36</td>
-</tr>
-<tr>
-<td style="text-align: right;">11</td>
-<td style="text-align: left;">373%</td>
-<td style="text-align: right;">45</td>
-<td style="text-align: right;">447</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">37</td>
-</tr>
-<tr>
-<td style="text-align: right;">12</td>
-<td style="text-align: left;">400%</td>
-<td style="text-align: right;">48</td>
-<td style="text-align: right;">480</td>
-<td style="text-align: right;">4</td>
-<td style="text-align: right;">40</td>
-</tr>
-</tbody>
-</table>
+<details>
+    <summary>
+        Buff/Debuff Toggles
+        <div style="display: inline-flex; flex-wrap: wrap; max-width: 100%">
+            <div class="buff-icons" id="critical-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_crit_up.svg' /></div>
+            <div class="buff-icons" id="compact-icon"><img src='/control-resonant-reference/images/artifacts/ch_054_magnifying_glass_small.tex.png' /></div>
+
+            <div class="buff-icons" id="empowered-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_ability_up.svg' /></div>
+            <div class="buff-icons" id="retaliation-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_retaliate.svg' /></div>
+            <div class="buff-icons" id="ruthless-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_hiss_unleashed.svg' /></div>
+            <div class="buff-icons" id="tracked-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_marked.svg' /></div>
+            <div class="buff-icons" id="vengeance-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_vengeance_mark.svg' /></div>
+            <div class="buff-icons" id="weakened-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_defense_down.svg' /></div>
+
+            <div class="buff-icons" id="bug-spray-icon"><img src='/control-resonant-reference/images/artifacts/ch_035_bug_spray_small.tex.png' /></div>
+            <div class="buff-icons" id="brass-dusters-icon"><img src='/control-resonant-reference/images/artifacts/ch_016_curved_mirror_small.tex.png' /></div>
+            <div class="buff-icons" id="fork-icon"><img src='/control-resonant-reference/images/artifacts/ch_103_fork_small.tex.png' /></div>
+            <div class="buff-icons" id="fingerboard-icon"><img src='/control-resonant-reference/images/artifacts/ch_010_fingerboard_small.tex.png' /></div>
+            <div class="buff-icons" id="framing-hammer-icon"><img src='/control-resonant-reference/images/artifacts/ch_018_scissors_small.tex.png' /></div>
+            <div class="buff-icons" id="golden-earrings-icon"><img src='/control-resonant-reference/images/artifacts/ch_015_diamond_stone_small.tex.png' /></div>
+            <div class="buff-icons" id="medical-alert-bands-icon"><img src='/control-resonant-reference/images/artifacts/ch_003_locket_gold_small.tex.png' /></div>
+            <div class="buff-icons" id="mothers-locket-icon"><img src='/control-resonant-reference/images/artifacts/ch_002_locket_silver_small.tex.png' /></div>
+            <div class="buff-icons" id="practice-knot-icon"><img src='/control-resonant-reference/images/artifacts/ch_001_tension_knot_small.tex.png' /></div>
+            <div class="buff-icons" id="spraypaint-icon"><img src='/control-resonant-reference/images/artifacts/ch_102_soda_can_small.tex.png' /></div>
+            <div class="buff-icons" id="trusted-spanner-icon"><img src='/control-resonant-reference/images/artifacts/ch_101_wrench_small.tex.png' /></div>
+            <div class="buff-icons" id="whetstone-icon"><img src='/control-resonant-reference/images/artifacts/ch_014_whetstone_small.tex.png' /></div>
+            <div class="buff-icons" id="world-tour-tickets-icon"><img src='/control-resonant-reference/images/artifacts/ch_043_movie_ticket_small.tex.png' /></div>
+
+        </div>
+    </summary>
+
+
+
+    <label style="color: black;">Status Effects</label> <br>
+
+    <label class="cbox-indent"><input data-input-for="EMPOWERED" type="checkbox" disabled> Empowered (+25% Damage and Falter)</label> <br>
+
+    <label class="cbox-indent"><input data-input-for="RETALIATION" type="checkbox" disabled> Retaliation (+50% Damage and Falter <b>after Perfect Dodge</b>)</label> <br>
+    <label class="cbox-indent"><input data-input-for="RUTHLESS" type="checkbox" disabled> <span class="iBLURREDi">Ruthless (+200% Damage and Falter)</span></label> <br>
+
+    <label class="cbox-indent"><input data-input-for="TRACKED" type="checkbox" disabled> Tracked (+30% Damage and Falter, debuff on enemy)</label> <br>
+
+
+
+    <label class="cbox-indent"><input data-input-for="WEAKENED" type="checkbox" disabled> Weakened (+25% Damage and Falter, debuff on enemy)</label> <br>
+
+
+    <label style="color: black;">Artifacts</label> <br>
+    <label class="cbox-indent"><input data-input-for="BUG_SPRAY" type="checkbox" disabled> Bug Spray (+30% Damage and Falter <b>against Mold enemies</b>)</label> <br>
+
+    <label class="cbox-indent"><input data-input-for="BRASS_DUSTERS" type="checkbox" disabled> Brass Dusters (+50% Damage, <b>no Falter at all</b>)</label> <br>
+
+
+    <label class="cbox-indent"><input data-input-for="FORK" type="checkbox" disabled> Fork (+15% Sharp Damage)</label> <br>
+
+    <label class="cbox-indent"><input data-input-for="FINGERBOARD" type="checkbox" disabled> Fingerboard (+25% Damage and Falter <b>while using a Gravity Anomaly</b>)</label> <br>
+
+    <label class="cbox-indent"><input data-input-for="FRAMING_HAMMER" type="checkbox" disabled> Framing Hammer (+30% Falter, <b>no Damage at all</b>)</label> <br>
+
+    <label class="cbox-indent"><input data-input-for="GOLDEN_EARRINGS" type="checkbox" disabled> Golden Earrings (-30% Damage, +20% Falter)</label> <br>
+    <label class="cbox-indent"><input data-input-for="MEDICAL_ALERT_BANDS" type="checkbox" disabled> Medical Alert Bands (+25% Falter <b>while below 25% Health</b>)</label> <br>
+    <label class="cbox-indent"><input data-input-for="MOTHERS_LOCKET" type="checkbox" disabled> Mother's Locket (+25% Damage <b>while below 25% Health</b>)</label> <br>
+    <label class="cbox-indent"><input data-input-for="PRACTICE_KNOT" type="checkbox" disabled> Practice Knot (+15% Falter <b>against Heavy enemies</b>)</label> <br>
+
+
+    <label class="cbox-indent"><input data-input-for="WHETSTONE" type="checkbox" disabled> Whetstone (+20% Damage, -20% Falter)</label> <br>
+
+    <label class="cbox-indent"><input data-input-for="WORLD_TOUR_TICKETS" type="checkbox" disabled> World Tour Tickets (+100% Damage, <b>Power capped at 50%</b>)</label><br />
+
+    <button id="clear-all" style="margin: 10px 0px 0px 0px; padding: 0px 2px 0px 2px; accent-color: var(--brown-red); color: var(--brown-red); ">Clear All</button>
+</details>
+
+<div class="htable" style="overflow-x: auto;">
+    <table class="table table-striped table-hover combat-ability-damage-table" style="border-collapse: separate; border-spacing: 0;" >
+        <thead>
+            <tr>
+                <th scope="row" class="cba-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg"><strong><b>Ability Strength</b></strong></span></th>
+                <th scope="row" class="cba-dmg-header inline-svg">DF%</th>
+
+                <th scope="row" class="cba-dmg-header inline-svg conjoined-left"><span class="inline-svg">
+
+                    <img src="/control-resonant-reference/icons/damage_types/icn_damage_mold.svg">
+
+                    <img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg">
+
+                    <strong><b>Damage Floor</b></strong></span></th>
+
+
+                <th scope="row" class="cba-dmg-header inline-svg conjoined-right"><span class="inline-svg">
+
+                    <img src="/control-resonant-reference/icons/damage_types/icn_damage_mold.svg">
+
+                    <img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg">
+
+                    <strong><b>Damage Ceiling</b></strong></span></th>
+
+
+
+                <th scope="row" class="cba-dmg-header inline-svg conjoined-left"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Floor</b></strong></span></th>
+
+
+                <th scope="row" class="cba-dmg-header inline-svg conjoined-right"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Ceiling</b></strong></span></th>
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr0x0"><b>0</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr0x1" data-base-value="100%">100%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr0x2" data-base-value="12">12</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr0x3" data-base-value="120">120</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr0x4" data-base-value="1">1</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr0x5" data-base-value="10">10</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr1x0"><b>1</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr1x1" data-base-value="110%">110%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr1x2" data-base-value="13">13</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr1x3" data-base-value="132">132</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr1x4" data-base-value="1">1</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr1x5" data-base-value="11">11</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr2x0"><b>2</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr2x1" data-base-value="141%">141%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr2x2" data-base-value="17">17</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr2x3" data-base-value="169">169</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr2x4" data-base-value="1">1</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr2x5" data-base-value="14">14</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr3x0"><b>3</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr3x1" data-base-value="175%">175%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr3x2" data-base-value="21">21</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr3x3" data-base-value="210">210</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr3x4" data-base-value="2">2</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr3x5" data-base-value="18">18</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr4x0"><b>4</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr4x1" data-base-value="210%">210%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr4x2" data-base-value="25">25</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr4x3" data-base-value="252">252</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr4x4" data-base-value="2">2</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr4x5" data-base-value="21">21</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr5x0"><b>5</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr5x1" data-base-value="246%">246%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr5x2" data-base-value="29">29</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr5x3" data-base-value="295">295</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr5x4" data-base-value="2">2</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr5x5" data-base-value="25">25</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr6x0"><b>6</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr6x1" data-base-value="276%">276%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr6x2" data-base-value="33">33</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr6x3" data-base-value="331">331</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr6x4" data-base-value="3">3</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr6x5" data-base-value="28">28</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr7x0"><b>7</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr7x1" data-base-value="313%">313%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr7x2" data-base-value="38">38</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr7x3" data-base-value="375">375</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr7x4" data-base-value="3">3</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr7x5" data-base-value="31">31</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr8x0"><b>8</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr8x1" data-base-value="325%">325%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr8x2" data-base-value="39">39</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr8x3" data-base-value="390">390</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr8x4" data-base-value="3">3</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr8x5" data-base-value="33">33</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr9x0"><b>9</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr9x1" data-base-value="343%">343%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr9x2" data-base-value="41">41</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr9x3" data-base-value="411">411</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr9x4" data-base-value="3">3</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr9x5" data-base-value="34">34</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr10x0"><b>10</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr10x1" data-base-value="355%">355%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr10x2" data-base-value="43">43</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr10x3" data-base-value="426">426</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr10x4" data-base-value="4">4</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr10x5" data-base-value="36">36</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr11x0"><b>11</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr11x1" data-base-value="373%">373%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr11x2" data-base-value="45">45</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr11x3" data-base-value="447">447</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr11x4" data-base-value="4">4</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr11x5" data-base-value="37">37</td>
+
+
+            </tr>
+
+            <tr>
+                <td style="text-align: center; vertical-align: middle;" id="0xr12x0"><b>12</b></td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr12x1" data-base-value="400%">400%</td>
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr12x2" data-base-value="48">48</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr12x3" data-base-value="480">480</td>
+
+
+
+                <td class="conjoined-left" style="text-align: center; vertical-align: middle;" id="0xr12x4" data-base-value="4">4</td>
+
+
+                <td class="conjoined-right" style="text-align: center; vertical-align: middle;" id="0xr12x5" data-base-value="40">40</td>
+
+
+            </tr>
+
+        </tbody>
+    </table>
 </div></div>
             </div>
         </div>
@@ -517,8 +755,11 @@
         </script>
         <script src="../../../../js/base.js"></script>
         <script src="../../../../scripts/muConnector.js"></script>
+        <script src="../../../../scripts/updateMultipliers.js" type="module"></script>
+        <script src="https://jquery.com"></script>
         <script src="../../../../search/main.js"></script>
-        <script src="../../../../assets/javascripts/placeholder-combined.js"></script>
+        <script src="../../../../assets/javascripts/placeholder.min.js"></script>
+        <script src="../../../../assets/javascripts/placeholder-data.js"></script>
 
         <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">

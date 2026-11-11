@@ -249,3 +249,9 @@ table tr td input.input-for-variable[type="checkbox"] {
 .placeholder-value-checkbox.checked .checkbox-unchecked {
     display: none;
 }
+
+.placeholder-value {
+    background-color: #aaa;
+    padding: 3px;
+    border-radius: 3px;
+}
