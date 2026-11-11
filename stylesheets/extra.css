@@ -604,13 +604,30 @@ summary {
 
 }
 
-.buff-icons {
-    margin: 0px;
+.buff-icons > img {
+    border: 0px;
+    color: black;
+    margin: 0px 3px 0px 3px;
+    padding: 0px;
+    max-height: 26px;
+    max-width: 26px;
+    vertical-align: central;
 }
 
 .buff-icons > p {
     margin: 0px;
     color: var(--brown-red);
+}
+
+.cbox-indent {
+    margin-left: 1rem;
+    color: var(--brown-red);
+    accent-color: var(--brown-red);
+}
+.cbox-indent-2 {
+    margin-left: 2rem;
+    color: var(--brown-red);
+    accent-color: var(--brown-red);
 }
 
 @media (max-width: 768px) {

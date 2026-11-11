@@ -1,59 +1,88 @@
 import "/control-resonant-reference/assets/javascripts/placeholder-data.js" 
 
-const phTracked = document.querySelector('[data-input-for="TRACKED"]');
-const phEmpowered = document.querySelector('[data-input-for="EMPOWERED"]');
-const phSpraypaint = document.querySelector('[data-input-for="SPRAYPAINT"]');
-
 var tables = document.getElementsByClassName("combat-ability-damage-table");
+var clearbutton = document.getElementById("clear-all");
 
-// new multiplier(damage, falter)
+// new multiplier(name, element tag (data-input-for), damage, falter)
 class multiplier {
+    static name;
     static damage;
     static falter;
     static enabled;
-    constructor(d, f) {
+    static element;
+    static iconid;
+    constructor(n, dif, icn, d, f) {
+        this.name = n;
         this.damage = d;
         this.falter = f;
+        this.element = document.querySelector('[data-input-for="' + dif + '"]');
+        this.enabled = this.element?.checked;
+        this.iconid = icn;
     }
 
-    setEnabled = (b) => {
-        this.enabled = b
+    matchCheck = () => {
+        this.enabled = this.element?.checked
     }
 }
 
 class multipliers {
-    static tracked;
-    static empowered;
-    static spraypaint;
+    static multArray;
     constructor() {
-        this.tracked = new multiplier(0.3, 0.3);
-        this.empowered = new multiplier(0.25, 0.25);
-        this.spraypaint = new multiplier(0.15, 0.0);
+        this.multArray = [];
+        this.multArray.push(new multiplier("Critical Hit", "CRITICAL", "critical-icon", 0, 0));
+        this.multArray.push(new multiplier("Compact", "COMPACT", "compact-icon", 0, 0));
+
+        this.multArray.push(new multiplier('Tracked', "TRACKED", "tracked-icon", 0.3, 0.3));
+        this.multArray.push(new multiplier('Empowered', "EMPOWERED", "empowered-icon", 0.25, 0.25));
+        this.multArray.push(new multiplier('Weakened', "WEAKENED", "weakened-icon", 0.25, 0.25));
+        this.multArray.push(new multiplier('Ruthless', "RUTHLESS", "ruthless-icon", 2, 2));
+        this.multArray.push(new multiplier('Retaliation', "RETALIATION", "retaliation-icon", 0.5, 0.5));
+        this.multArray.push(new multiplier('Vengeance', "VENGEANCE", "vengeance-icon", 0.5, 0.5));
+
+        this.multArray.push(new multiplier('Spray Paint', "SPRAYPAINT", "spraypaint-icon", 0.15, 0.0));
+        this.multArray.push(new multiplier('World Tour Tickets', "WORLD_TOUR_TICKETS", "world-tour-tickets-icon", 1, 0.0));
+        this.multArray.push(new multiplier('Whetstone', "WHETSTONE", "whetstone-icon", 0.2, -0.2));
+        this.multArray.push(new multiplier('Trusted Spanner', "TRUSTED_SPANNER", "trusted-spanner-icon", 0.15, 0.0));
+        this.multArray.push(new multiplier('Fork', "FORK", "fork-icon", 0.15, 0.0));
+        this.multArray.push(new multiplier('Fingerboard', "FINGERBOARD", "fingerboard-icon", 0.25, 0.25));
+        this.multArray.push(new multiplier('Bug Spray', "BUG_SPRAY", "bug-spray-icon", 0.3, 0.3));
+        this.multArray.push(new multiplier('Golden Earrings', "GOLDEN_EARRINGS", "golden-earrings-icon", -0.3, 0.2));
+        this.multArray.push(new multiplier('Medical Alert Bands', "MEDICAL_ALERT_BANDS", "medical-alert-bands-icon", 0.0, 0.25));
+        this.multArray.push(new multiplier("Mother's Locket", "MOTHERS_LOCKET", "mothers-locket-icon", 0.25, 0.0));
+        this.multArray.push(new multiplier("Practice Knot", "PRACTICE_KNOT", "practice-knot-icon", 0.0, 0.15));
+        this.multArray.push(new multiplier("Brass Dusters", "BRASS_DUSTERS", "brass-dusters-icon", 0.5, -999999));
+        this.multArray.push(new multiplier("Framing Hammer", "FRAMING_HAMMER", "framing-hammer-icon", -999999, 0.3));
     }
 
     check = () => {
-        this.tracked.setEnabled(phTracked.checked)
-        this.empowered.setEnabled(phEmpowered.checked)
-        this.spraypaint.setEnabled(phSpraypaint.checked)
+        this.multArray.forEach((mult) => {
+            mult.matchCheck()
+        })
+    }
+
+    clearall = () => {
+        this.multArray.forEach((mult) => {
+            if (mult != null && mult.element != null && mult.element.checked) {
+                mult.element.checked = false;
+                mult.element.dispatchEvent(new Event("change"));
+            }
+        })
     }
 }
 
 var _multipliers = new multipliers()
+clearbutton.addEventListener("click", _multipliers.clearall)
 
 var cbs = document.querySelectorAll('[type="checkbox"]');
 [].forEach.call(cbs, function (cb) {
-    //cb.addEventListener("click", updateValues);
-    //cb.addEventListener("click", updateIcons);
-
+    cb.addEventListener("change", _multipliers.check)
     cb.addEventListener("change", updateValues);
     cb.addEventListener("change", updateIcons);
-    cb.addEventListener("change", _multipliers.check)
 });
 
+document.addEventListener("PlaceholderPluginConfigJson", _multipliers.check)
 document.addEventListener("PlaceholderPluginConfigJson", updateIcons)
 document.addEventListener("PlaceholderPluginConfigJson", updateValues)
-document.addEventListener("PlaceholderPluginConfigJson", _multipliers.check)
-
 
 function updateValues() {
     var k = 0;
@@ -63,23 +92,18 @@ function updateValues() {
                 if (j > 0) {
                     if (j == 1) {
                         if (col != null & col.innerHTML != "DF%") {
-                            var dtracked = phTracked.checked ? _multipliers.tracked.damage : 0;
-                            var dempowered = phEmpowered.checked ? _multipliers.empowered.damage : 0;
-                            var dspraypaint = phEmpowered.checked ? _multipliers.spraypaint.damage : 0;
+                            var mappedDamage = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
+                            var mappedFalter = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
 
-                            var ftracked = phTracked.checked ? _multipliers.tracked.falter : 0;
-                            var fempowered = phEmpowered.checked ? _multipliers.empowered.falter : 0;
-                            var fspraypaint = phEmpowered.checked ? _multipliers.empowered.falter : 0;
-
-                            var dfinalmult = dtracked + dempowered + dspraypaint
-                            var ffinalmult = ftracked + fempowered + fspraypaint
+                            var finalDamage = mappedDamage.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                            var finalFalter = mappedFalter.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
                             var basecol = parseFloat(col.getAttribute('data-base-value'))/100;
 
-                            if (dfinalmult == ffinalmult) {
-                                col.innerHTML = Math.round((parseFloat(basecol) + dfinalmult)*100) + "%"
+                            if (finalDamage == finalFalter) {
+                                col.innerHTML = Math.round((parseFloat(basecol) + finalDamage)*100) + "%"
                             } else {
-                                var str = Math.round(parseFloat((basecol) + dfinalmult) * 100) + "%" + "/" + Math.round((parseFloat(basecol) + ffinalmult) * 100) + "%"
+                                var str = Math.max(0, Math.round(parseFloat((basecol) + finalDamage) * 100)) + "%" + "/" + Math.max(0, Math.round(parseFloat((basecol) + finalFalter) * 100)) + "%"
                                 col.innerHTML = str;
                             }
                         }
@@ -87,24 +111,19 @@ function updateValues() {
                     } else {
                         var col = document.getElementById(k + 'xr' + i + 'x' + j);
                         if (col != null) {
-                            var tracked;
-                            var empowered;
-                            var spraypaint;
+                            var finalMap;
+                            var finalOut;
+
                             var header = table.rows[0].cells[j].innerHTML;
                             if (header.includes('Damage')) {
-                                tracked = phTracked.checked ? _multipliers.tracked.damage : 0;
-                                empowered = phEmpowered.checked ? _multipliers.empowered.damage : 0;
-                                spraypaint = phSpraypaint.checked ? _multipliers.spraypaint.damage : 0;
-                                console.log(+_multipliers.tracked.enabled * _multipliers.tracked.damage)
+                                finalMap = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
                             }
                             else if (header.includes('Falter')) {
-                                tracked = phTracked.checked ? _multipliers.tracked.falter : 0;
-                                empowered = phEmpowered.checked ? _multipliers.empowered.falter : 0;
-                                spraypaint = phSpraypaint.checked ? _multipliers.spraypaint.falter : 0;
+                                finalMap = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
                             }
-                            var finalmult = tracked + empowered + spraypaint
+                            finalOut = finalMap.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
                             var basecol = col.getAttribute('data-base-value');
-                            col.innerHTML = Math.round(parseFloat(basecol) + (parseFloat(basecol) * finalmult))
+                            col.innerHTML = Math.max(0, Math.round(parseFloat(basecol) + (parseFloat(basecol) * finalOut)))
                         }
                     }
                 }
@@ -114,21 +133,14 @@ function updateValues() {
     }) 
 }
 function updateIcons() {
-    var tracked_style = document.getElementById("tracked-icon").style
-    var empowered_style = document.getElementById("empowered-icon").style
-    var spraypaint_style = document.getElementById("spraypaint-icon").style
-
-    tracked_style.height = phTracked.checked ? "auto" : "0";
-    tracked_style.width = phTracked.checked ? "auto" : "0";
-    tracked_style.visibility = phTracked.checked ? "visible" : "hidden";
-
-    empowered_style.height = phEmpowered.checked ? "auto" : "0";
-    empowered_style.width = phEmpowered.checked ? "auto" : "0";
-    empowered_style.visibility = phEmpowered.checked ? "visible" : "hidden";
-
-    spraypaint_style.height = phSpraypaint.checked ? "auto" : "0";
-    spraypaint_style.width = phSpraypaint.checked ? "auto" : "0";
-    spraypaint_style.visibility = phSpraypaint.checked ? "visible" : "hidden";
+    _multipliers.multArray.forEach((mult) => {
+        var style = document.getElementById(mult.iconid)?.style
+        if (style != null) {
+            style.height = mult.enabled ? "auto" : "0";
+            style.width = mult.enabled ? "auto" : "0";
+            style.visibility = mult.enabled ? "visible" : "hidden";
+        }
+    })
 }
 
 updateIcons()
