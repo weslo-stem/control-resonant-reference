@@ -37,7 +37,7 @@
 {% for _,indrow in searchtable.fillna('').iterrows() %}
 <br />
 {% if indrow['Upgrade']!=form %}
-## {{indrow['Upgrade']}} <a style="font-size: 20px; vertical-align: central;" href='#'>▲</a>
+## {{indrow['Upgrade']}} <a style="font-size: 20px; vertical-align: central;" href='#upgrades'>▲</a>
 
 {% set desc = indrow['fixeddesc']
     .replace("#Health#", '
@@ -100,8 +100,12 @@
             {% if indrow['Required Predecessor']!='' %}
             <p>
                 <i>
-                    Requires:
                     {% set pred = indrow['Required Predecessor'].split(";") %}
+                    {% if pred|length is gt 1 %}
+                    Requires one of the following:<br />
+                    {% else %}
+                    Requires:<br />
+                    {% endif %}
                     {% for pr in pred %}
                     <a href="#{{pr.replace(" ", "-").lower()}}"><b>{{pr}}</b></a><br />
                     {% endfor %}
@@ -170,8 +174,12 @@
             {% if indrow['Required Predecessor']!='' %}
             <p>
                 <i>
-                    Requires:
                     {% set pred = indrow['Required Predecessor'].split(";") %}
+                    {% if pred|length is gt 1 %}
+                    Requires one of the following:<br />
+                    {% else %}
+                    Requires:<br />
+                    {% endif %}
                     {% for pr in pred %}
                     <a href="#{{pr.replace(" ", "-").lower()}}"><b>{{pr}}</b></a><br />
                     {% endfor %}

@@ -7,11 +7,17 @@
             <div class="buff-icons" id="compact-icon"><img src='/control-resonant-reference/images/artifacts/ch_054_magnifying_glass_small.tex.png' /></div>
 
             <div class="buff-icons" id="empowered-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_ability_up.svg' /></div>
+            <div class="buff-icons" id="focused-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_falter_up.svg' /></div>
             <div class="buff-icons" id="retaliation-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_retaliate.svg' /></div>
             <div class="buff-icons" id="ruthless-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_hiss_unleashed.svg' /></div>
             <div class="buff-icons" id="tracked-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_marked.svg' /></div>
             <div class="buff-icons" id="vengeance-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_vengeance_mark.svg' /></div>
             <div class="buff-icons" id="weakened-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_defense_down.svg' /></div>
+
+            <div class="buff-icons" id="all-rounder-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_110_inc_all_damage.svg' /></div>
+            <div class="buff-icons" id="extra-impact-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_101_inc_falter_dmg_combat_abilities.svg' /></div>
+            <div class="buff-icons" id="retribution-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_103_retaliate_falter_dmg_inc.svg' /></div>
+            <div class="buff-icons" id="stored-command-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_117_inc_combat_ability_damage_unused_ua.svg' /><sup class="placeholder-value placeholder-value-static" data-placeholder="CHARGE_COUNT" style="background-color: rgba(0, 0, 0, 0); margin-left: -5px; color: #000000">0</sup></div>
 
             <div class="buff-icons" id="bug-spray-icon"><img src='/control-resonant-reference/images/artifacts/ch_035_bug_spray_small.tex.png' /></div>
             <div class="buff-icons" id="brass-dusters-icon"><img src='/control-resonant-reference/images/artifacts/ch_016_curved_mirror_small.tex.png' /></div>
@@ -27,42 +33,51 @@
             <div class="buff-icons" id="whetstone-icon"><img src='/control-resonant-reference/images/artifacts/ch_014_whetstone_small.tex.png' /></div>
             <div class="buff-icons" id="world-tour-tickets-icon"><img src='/control-resonant-reference/images/artifacts/ch_043_movie_ticket_small.tex.png' /></div>
 
+
+
         </div>
     </summary>
     {% if enableCrit %}
-    <label style="color: black;">Critical Hits</label> <br>
+    <b><label style="color: black;">Critical Hits</label></b> <br>
     <label class="cbox-indent"><input data-input-for="CRITICAL"> Critical Hit (150% Base Damage)</label> <br>
     <label class="cbox-indent"><input data-input-for="COMPACT"> Compact (+50% Critical Damage, -30% Critical Falter)</label> <br>
     {% endif %}
 
-
-    <label style="color: black;">Status Effects</label> <br>
+    <b><label style="color: black;">Status Effects</label></b> <br>
     {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="EMPOWERED"> Empowered (+25% Damage and Falter)</label> <br>
+    <label class="cbox-indent"><input data-input-for="EMPOWERED"> Empowered (+25% Damage and Falter from Combat Abilities)</label> <br>
     {% endif %}
+    <label class="cbox-indent"><input data-input-for="FOCUSED"> Focused (+20% Falter <b>at max health, with a minimum build power 8, and with build power close to enemy level</b>)</label> <br>
     <label class="cbox-indent"><input data-input-for="RETALIATION"> Retaliation (+50% Damage and Falter <b>after Perfect Dodge</b>)</label> <br>
     <label class="cbox-indent"><input data-input-for="RUTHLESS"> <span class="iBLURREDi">Ruthless (+200% Damage and Falter)</span></label> <br>
     {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="TRACKED"> Tracked (+30% Damage and Falter, debuff on enemy)</label> <br>
+    <label class="cbox-indent"><input data-input-for="TRACKED"> Tracked (+30% Damage and Falter from Combat Abilities , debuff on enemy)</label> <br>
     {% endif %}
     {% if abilityName == 'Shield' %}
     <label class="cbox-indent"><input data-input-for="VENGEANCE"> Vengeance (+50% Damage and Falter <b>from Shield Bash</b>)</label> <br>
     {% endif %}
     {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="WEAKENED"> Weakened (+25% Damage and Falter, debuff on enemy)</label> <br>
+    <label class="cbox-indent"><input data-input-for="WEAKENED"> Weakened (+25% Damage and Falter from Combat Abilities, debuff on enemy)</label> <br>
     {% endif %}
 
-    <label id="artifacts-label" style="color: black;">Artifacts (0/4) <i style='font-size: 12px'>(3 in base NG)</i></label> <br>
+    <b><label style="color: black;">Talents</label></b> <br>
+    <label class="cbox-indent"><input data-input-for="ALL_ROUNDER"> All-Rounder (+5% Damage and Falter)</label> <br>
+    {% if enableWeapons == false %}<label class="cbox-indent"><input data-input-for="EXTRA_IMPACT"> Extra Impact (+10% Falter from Combat Abilities)</label> <br>{% endif %}
+    <label class="cbox-indent"><input data-input-for="RETRIBUTION"> Retribution (+25% Falter to Retaliation)</label> <br>
+    <label class="cbox-indent"><input data-input-for="STORED_COMMAND"> Stored Command (+5% Damage and Falter per unused Command Charge)</label> <br>
+    <label class="cbox-indent-2"> Charge Count (0-5): <br /><input style="width: 50%" data-input-for="CHARGE_COUNT"></label> <br>
+
+    <b><label id="artifacts-label" style="color: black;">Artifacts (0/4) <i style='font-size: 12px'>(3 in base NG)</i></label></b> <br>
     <label class="cbox-indent"><input data-input-for="BUG_SPRAY"> Bug Spray (+30% Damage and Falter <b>against Mold enemies</b>)</label> <br>
     {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="BRASS_DUSTERS"> Brass Dusters (+50% Damage, <b>no Falter at all</b>)</label> <br>
+    <label class="cbox-indent"><input data-input-for="BRASS_DUSTERS"> Brass Dusters (+50% Damage from Combat Abilities, <b>no Falter at all</b>)</label> <br>
     {% endif %}
     {% if 'Sharp' in dmgTypes %}
     <label class="cbox-indent"><input data-input-for="FORK"> Fork (+15% Sharp Damage)</label> <br>
     {% endif %}
     <label class="cbox-indent"><input data-input-for="FINGERBOARD"> Fingerboard (+25% Damage and Falter <b>while using a Gravity Anomaly</b>)</label> <br>
     {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="FRAMING_HAMMER"> Framing Hammer (+30% Falter, <b>no Damage at all</b>)</label> <br>
+    <label class="cbox-indent"><input data-input-for="FRAMING_HAMMER"> Framing Hammer (+30% Falter from Combat Abilities, <b>no Damage at all</b>)</label> <br>
     {% endif %}
     <label class="cbox-indent"><input data-input-for="GOLDEN_EARRINGS"> Golden Earrings (-30% Damage, +20% Falter)</label> <br>
     <label class="cbox-indent"><input data-input-for="MEDICAL_ALERT_BANDS"> Medical Alert Bands (+25% Falter <b>while below 25% Health</b>)</label> <br>
@@ -76,7 +91,7 @@
     {% endif %}
     <label class="cbox-indent"><input data-input-for="WHETSTONE"> Whetstone (+20% Damage, -20% Falter)</label> <br>
     {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="WORLD_TOUR_TICKETS"> World Tour Tickets (+100% Damage, <b>Power capped at 50%</b>)</label><br />
+    <label class="cbox-indent"><input data-input-for="WORLD_TOUR_TICKETS"> World Tour Tickets (+100% Damage from Combat Abilities, <b>Power capped at 50%</b>)</label><br />
     {% endif %}
     <button id="clear-all" style="margin: 10px 0px 0px 0px; padding: 0px 2px 0px 2px; accent-color: var(--brown-red); color: var(--brown-red); ">Clear All</button>
 </details>
