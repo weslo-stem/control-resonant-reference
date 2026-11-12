@@ -11,7 +11,7 @@
             {% for _,uprow in reader[reader['Row']==rindex].fillna('').iterrows() %}
             <div class="talent-column" id="x{{uprow['Talent'].lower().replace(' ', '-')}}">
                 <a href="#{{uprow['Talent'].lower().replace(' ', '-')}}" class="talent-icon">
-                    <img src="{{uprow['Icon']}}" />
+                    <img {% if uprow['Talent'] == "Ruthless"%} class="iBLURREDi" {% endif %} src="{{uprow['Icon']}}" />
                 </a>
             </div>
             {{uplist.append(uprow['Talent'].replace(' ', '-').lower() + '|' + uprow['Required Predecessor'].replace(' ', '-').lower()) or ""}}
@@ -26,7 +26,7 @@
 </script>
 {% for _,indrow in reader.fillna('').iterrows() %}
 <br />
-## {{indrow['Talent']}} <a style="font-size: 20px; vertical-align: central;" href='#'>▲</a>
+## <span class="{% if indrow['Talent'] == "Ruthless"%}iBLURREDi{% endif %}">{{indrow['Talent']}}</span> <a style="font-size: 20px; vertical-align: central;" href='#talents'>▲</a>
 
 {% set desc = indrow['Description']
     .replace("#Health#", '
@@ -76,11 +76,11 @@
     .replace("Summon", "<b>Summon</b>")
 %}
 
-<div class="melee-upgrade-box" style="display:flex;">
+<div class="{% if indrow['Talent'] == "Ruthless"%}iBLURREDi{% endif %} melee-upgrade-box" style="display:flex;">
     <div style="height:auto; width:15%;">
         <img src="{{indrow['Icon']}}" style="border: 0px; width:100%"/>
     </div>
-    <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 42%;">
+    <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
         <div class="image-subtitle left-box">
 
             <p class="inline-svg">
@@ -89,10 +89,15 @@
             {% if indrow['Required Predecessor']!='' %}
             <p>
                 <i>
-                    Requires:
+
                     {% set pred = indrow['Required Predecessor'].split(";") %}
+                    {% if pred|length is gt 1 %}
+                    Requires one of the following:<br />
+                    {% else %}
+                    Requires:<br />
+                    {% endif %}
                     {% for pr in pred %}
-                    <a href="#{{pr.replace(" ", "-").lower()}}"><b>{{pr}}</b></a><br />
+                    <a href="#{{pr.replace(" ", " -").lower()}}"><b>{{pr}}</b></a><br />
                     {% endfor %}
                 </i>
             </p>
@@ -117,8 +122,12 @@
             {% if indrow['Required Predecessor']!='' %}
             <p>
                 <i>
-                    Requires:
                     {% set pred = indrow['Required Predecessor'].split(";") %}
+                    {% if pred|length is gt 1 %}
+                    Requires one of the following:<br />
+                    {% else %}
+                    Requires:<br />
+                    {% endif %}
                     {% for pr in pred %}
                     <a href="#{{pr.replace(" ", "-").lower()}}"><b>{{pr}}</b></a><br />
                     {% endfor %}

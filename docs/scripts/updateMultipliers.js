@@ -3,6 +3,7 @@ import "/control-resonant-reference/assets/javascripts/placeholder-data.js"
 var tables = document.getElementsByClassName("combat-ability-damage-table");
 var clearbutton = document.getElementById("clear-all");
 var artifactslabel = document.getElementById("artifacts-label");
+var chargeCount = document.querySelector('[data-input-for="CHARGE_COUNT"]');
 
 // new multiplier(name, element tag (data-input-for), damage, falter)
 class multiplier {
@@ -25,6 +26,23 @@ class multiplier {
 
     matchCheck = () => {
         this.enabled = this.element?.checked
+        if (this.buffsrc == 'Talent') { this.talentSolve() }
+    }
+
+    talentSolve = () => {
+        if (this.name=="Stored Command") {
+            var attrVal = parseInt(chargeCount.value)
+            if (chargeCount && attrVal <= 5 && attrVal >= 0) {
+                this.damage = 0.05 * attrVal
+                this.falter = 0.05 * attrVal
+            }
+        }
+        if (this.name == "Retribution") {
+            var tryGetRetaliation = document.querySelector('[data-input-for="RETALIATION"]');
+            if (tryGetRetaliation && tryGetRetaliation.checked) {
+                this.falter = 0.25
+            }
+        }
     }
 }
 
@@ -37,6 +55,7 @@ class multipliers {
 
         this.multArray.push(new multiplier('Tracked', "TRACKED", "tracked-icon", 'EnemyDebuff', 0.3, 0.3));
         this.multArray.push(new multiplier('Empowered', "EMPOWERED", "empowered-icon", 'Buff', 0.25, 0.25));
+        this.multArray.push(new multiplier('Focused', "FOCUSED", "focused-icon", 'Buff', 0, 0.2));
         this.multArray.push(new multiplier('Weakened', "WEAKENED", "weakened-icon", 'EnemyDebuff', 0.25, 0.25));
         this.multArray.push(new multiplier('Ruthless', "RUTHLESS", "ruthless-icon", 'Buff', 2, 2));
         this.multArray.push(new multiplier('Retaliation', "RETALIATION", "retaliation-icon", 'Buff', 0.5, 0.5));
@@ -53,8 +72,14 @@ class multipliers {
         this.multArray.push(new multiplier('Medical Alert Bands', "MEDICAL_ALERT_BANDS", "medical-alert-bands-icon", 'Artifact', 0.0, 0.25));
         this.multArray.push(new multiplier("Mother's Locket", "MOTHERS_LOCKET", "mothers-locket-icon", 'Artifact', 0.25, 0.0));
         this.multArray.push(new multiplier("Practice Knot", "PRACTICE_KNOT", "practice-knot-icon", 'Artifact', 0.0, 0.15));
-        this.multArray.push(new multiplier("Brass Dusters", "BRASS_DUSTERS", "brass-dusters-icon", 'Artifact', 0.5, -999999));
-        this.multArray.push(new multiplier("Framing Hammer", "FRAMING_HAMMER", "framing-hammer-icon", 'Artifact', -999999, 0.3));
+        this.multArray.push(new multiplier("Brass Dusters", "BRASS_DUSTERS", "brass-dusters-icon", 'Artifact', 0.5, -9999999));
+        this.multArray.push(new multiplier("Framing Hammer", "FRAMING_HAMMER", "framing-hammer-icon", 'Artifact', -9999999, 0.3));
+
+        this.multArray.push(new multiplier("Stored Command", "STORED_COMMAND", "stored-command-icon", 'Talent', 0, 0));
+        this.multArray.push(new multiplier("All-Rounder", "ALL_ROUNDER", "all-rounder-icon", 'Talent', 0.05, 0.05));
+        this.multArray.push(new multiplier("Extra Impact", "EXTRA_IMPACT", "extra-impact-icon", 'Talent', 0, 0.1));
+        this.multArray.push(new multiplier("Retribution", "RETRIBUTION", "retribution-icon", 'Talent', 0, 0));
+
     }
 
     check = () => {
@@ -83,6 +108,10 @@ var cbs = document.querySelectorAll('[type="checkbox"]');
     cb.addEventListener("change", updateElements);
 });
 
+chargeCount.addEventListener("change", _multipliers.check)
+chargeCount.addEventListener("change", updateValues);
+chargeCount.addEventListener("change", updateElements);
+
 document.addEventListener("PlaceholderPluginConfigJson", _multipliers.check)
 document.addEventListener("PlaceholderPluginConfigJson", updateValues)
 document.addEventListener("PlaceholderPluginConfigJson", updateElements)
@@ -110,8 +139,23 @@ function updateElements() {
             } else {
                 mult.element.disabled = false;
             }
+
+            if (mult.name == "Focused") {
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Medical Alert Bands" || x.name == "Mother's Locket") && x.enabled == true)
+                if (tfilt.length > 0) {
+                    mult.element.disabled = true;
+                }
+            } else if (mult.name == "Medical Alert Bands" || mult.name == "Mother's Locket") {
+                var tfilt = _multipliers.multArray.filter((x) => x.name == "Focused" && x.enabled == true)
+                if (tfilt.length > 0) {
+                    mult.element.disabled = true;
+                }
+            }
+
+            if (mult.name=="Retribution") {
+                // do stuff
+            }
         }
-        
     })
 
     if (artifactslabel) { artifactslabel.innerHTML = "Artifacts (" + enabledArtifacts.length + "/4) <i style='font-size: 12px'>(3 in base NG)</i>" }
