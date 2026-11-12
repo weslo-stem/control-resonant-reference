@@ -208,7 +208,7 @@ for (cvidstr of jsUplist.split(",")) {
                 connectors.push(new muConnector({
                     ele1: 'x' + conn,
                     ele2: 'x' + cvid,
-                    lineStyle: "2 dashed white",
+                    lineStyle: "2px dashed white",
                     defaultGap: -35
                 }));
             }

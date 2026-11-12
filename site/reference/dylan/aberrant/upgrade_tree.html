@@ -37,7 +37,7 @@
 {% for _,indrow in searchtable.fillna('').iterrows() %}
 <br />
 {% if indrow['Upgrade']!=form %}
-## {{indrow['Upgrade']}}
+## {{indrow['Upgrade']}} <a style="font-size: 20px; vertical-align: central;" href='#'>▲</a>
 
 {% set desc = indrow['fixeddesc']
     .replace("#Health#", '
