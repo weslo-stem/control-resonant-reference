@@ -5,12 +5,7 @@ placeholders:
             checked: "spoiler-blur"
             unchecked: "spoiler-blur-disabled"
         replace_everywhere: true
-    DOMINANCE_PCF:
-        default: unchecked
-        values:
-            checked: true
-            unchecked: false
-    DOMINANCE_S:
+    DOMINANCE:
         default: unchecked
         values:
             checked: true
@@ -162,6 +157,36 @@ placeholders:
             checked: true
             unchecked: false
     FIELD_MASTER:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    SKILLED_BACKSTAB:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    SUMMON_SYNERGY:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    ENERGIZED_MELEE:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    SCRUNCHIE:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    THE_WEEKEND_CROSSWORD:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    UNFINISHED_LOLLIPOP:
         default: unchecked
         values:
             checked: true

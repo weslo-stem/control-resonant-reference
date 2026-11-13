@@ -63,8 +63,11 @@ Note that all values displayed in-game are rounded.
 
 #### *Base Damage and Falter values by Aberrant Strength*
 
-{% from "reference/dylan/aberrant/table-generation/concussive_beatdowntable.html" import concussive_beatdownTable %}
-{{ concussive_beatdownTable('tables/damage_tables/weapon_forms/concussive_beatdown.csv') }}
+{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{{ caBuffsDropdown(['Blunt'], 'Combo Finisher', true, true) }}
+
+{% from "reference/dylan/combat-abilities/html/af_damage_table.html" import dmgTable %}
+{{ dmgTable('tables/damage_tables/weapon_forms/concussive_beatdown.csv', ['Blunt']) }}
 
 # Upgrades
 #### *Weapon Upgrade Tree*

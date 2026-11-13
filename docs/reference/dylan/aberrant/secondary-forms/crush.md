@@ -63,8 +63,11 @@ Note that all values displayed in-game are rounded.
 
 #### *Base Damage and Falter values by Aberrant Strength*
 
-{% from "reference/dylan/aberrant/table-generation/crushtable.html" import crushTable %}
-{{ crushTable('tables/damage_tables/weapon_forms/crush.csv') }}
+{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{{ caBuffsDropdown(['Blunt'], 'Secondary', true, true) }}
+
+{% from "reference/dylan/combat-abilities/html/af_damage_table.html" import dmgTable %}
+{{ dmgTable('tables/damage_tables/weapon_forms/crush.csv', ['Blunt']) }}
 
 # Upgrades
 #### *Weapon Upgrade Tree*

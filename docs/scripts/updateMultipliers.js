@@ -1,9 +1,12 @@
 import "/control-resonant-reference/assets/javascripts/placeholder-data.js" 
 
-var tables = document.getElementsByClassName("combat-ability-damage-table");
+var catables = document.getElementsByClassName("combat-ability-damage-table");
+var wtables = document.getElementsByClassName("weapon-damage-table");
 var clearbutton = document.getElementById("clear-all");
 var artifactslabel = document.getElementById("artifacts-label");
 var chargeCount = document.querySelector('[data-input-for="CHARGE_COUNT"]');
+var summonCount = document.querySelector('[data-input-for="SUMMON_COUNT"]');
+var secHeader = document.getElementsByTagName("h2").item(0)
 
 // new multiplier(name, element tag (data-input-for), damage, falter)
 class multiplier {
@@ -27,6 +30,9 @@ class multiplier {
     matchCheck = () => {
         this.enabled = this.element?.checked
         if (this.buffsrc == 'Talent') { this.talentSolve() }
+        if (secHeader.innerHTML.includes("Primary")) { this.aberrantSolve("Primary") }
+        else if (secHeader.innerHTML.includes("Secondary")) { this.aberrantSolve("Secondary") }
+        else if (secHeader.innerHTML.includes("Combo Finisher")) { this.aberrantSolve("Combo Finisher") }
     }
 
     talentSolve = () => {
@@ -44,6 +50,33 @@ class multiplier {
             } else {
                 this.falter = 0
             }
+        }
+        if (this.name == "Summon Synergy") {
+            var attrVal = parseInt(summonCount.value)
+            if (summonCount && attrVal <= 5 && attrVal >= 0) {
+                this.damage = 0.1 * attrVal
+                this.falter = 0.1 * attrVal
+            }
+        }
+        if (this.name == "Energized Melee") {
+            var attrVal = parseInt(chargeCount.value)
+            if (chargeCount && attrVal <= 5 && attrVal >= 0) {
+                this.damage = 0.05 * attrVal
+                this.falter = 0.05 * attrVal
+            }
+        }
+    }
+
+    aberrantSolve = (form) => {
+        var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
+        if (form == "Primary" && tryGetDominance && tryGetDominance.checked) {
+            this.damage = 1
+        }
+        else if (form == "Secondary" && tryGetDominance && tryGetDominance.checked) {
+            this.damage = 0.5
+        }
+        else if (form == "Combo Finisher" && tryGetDominance && tryGetDominance.checked) {
+            this.damage = 1
         }
     }
 }
@@ -76,7 +109,12 @@ class multipliers {
         this.multArray.push(new multiplier("Practice Knot", "PRACTICE_KNOT", "practice-knot-icon", 'Artifact', 0.0, 0.15));
         this.multArray.push(new multiplier("Brass Dusters", "BRASS_DUSTERS", "brass-dusters-icon", 'Artifact', 0.5, -9999999));
         this.multArray.push(new multiplier("Framing Hammer", "FRAMING_HAMMER", "framing-hammer-icon", 'Artifact', -9999999, 0.3));
+        this.multArray.push(new multiplier("Scrunchie", "SCRUNCHIE", "scrunchie-icon", 'Artifact', 0.1, 0));
+        this.multArray.push(new multiplier("The Weekend Crossword", "THE_WEEKEND_CROSSWORD", "the-weekend-crossword-icon", 'Artifact', 0.15, 0));
+        this.multArray.push(new multiplier("Unfinished Lollipop", "UNFINISHED_LOLLIPOP", "unfinished-lollipop-icon", 'Artifact', 0.1, 0));
 
+
+        this.multArray.push(new multiplier("Dominance", "DOMINANCE", "dominance-icon", 'Talent', 0, 0));
         this.multArray.push(new multiplier("Stored Command", "STORED_COMMAND", "stored-command-icon", 'Talent', 0, 0));
         this.multArray.push(new multiplier("All-Rounder", "ALL_ROUNDER", "all-rounder-icon", 'Talent', 0.05, 0.05));
         this.multArray.push(new multiplier("Extra Impact", "EXTRA_IMPACT", "extra-impact-icon", 'Talent', 0, 0.1));
@@ -84,6 +122,9 @@ class multipliers {
         this.multArray.push(new multiplier("Optimized Projectiles", "OPTIMIZED_PROJECTILES", "optimized-projectiles-icon", 'Talent', 0.25, 0.25));
         this.multArray.push(new multiplier("Peak Condition", "PEAK_CONDITION", "peak-condition-icon", 'Talent', 0, 0.25));
         this.multArray.push(new multiplier("Field Master", "FIELD_MASTER", "field-master-icon", 'Talent', 0.2, 0.2));
+        this.multArray.push(new multiplier("Skilled Backstab", "SKILLED_BACKSTAB", "skilled-backstab-icon", 'Talent', 0.5, 0.5));
+        this.multArray.push(new multiplier("Summon Synergy", "SUMMON_SYNERGY", "summon-synergy-icon", 'Talent', 0, 0));
+        this.multArray.push(new multiplier("Energized Melee", "ENERGIZED_MELEE", "energized-melee-icon", 'Talent', 0, 0));
 
     }
 
@@ -156,10 +197,6 @@ function updateElements() {
                     mult.element.disabled = true;
                 }
             }
-
-            if (mult.name=="Retribution") {
-                // do stuff
-            }
         }
     })
 
@@ -168,7 +205,7 @@ function updateElements() {
 
 function updateValues() {
     var k = 0;
-    [].forEach.call(tables, function (table) {
+    [].forEach.call(catables, function (table) {
         for (var i = 0, row; row = table.rows[i]; i++) {
             for (var j = 0, col; col = row.cells[j]; j++) {
                 if (j > 0) {
@@ -177,19 +214,19 @@ function updateValues() {
                             var mappedDamage = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
                             var mappedFalter = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
 
-                            var finalDamage = mappedDamage.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-                            var finalFalter = mappedFalter.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                            var finalDamage = mappedDamage?.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                            var finalFalter = mappedFalter?.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
-                            var basecol = parseFloat(col.getAttribute('data-base-value'))/100;
+                            var basecol = parseFloat(col.getAttribute('data-base-value')) / 100;
 
                             if (finalDamage == finalFalter) {
-                                col.innerHTML = Math.round((parseFloat(basecol) + finalDamage)*100) + "%"
+                                col.innerHTML = Math.round((parseFloat(basecol) + finalDamage) * 100) + "%"
                             } else {
                                 var str = Math.max(0, Math.round(parseFloat((basecol) + finalDamage) * 100)) + "%" + "/" + Math.max(0, Math.round(parseFloat((basecol) + finalFalter) * 100)) + "%"
                                 col.innerHTML = str;
                             }
                         }
-                        
+
                     } else {
                         var col = document.getElementById(k + 'xr' + i + 'x' + j);
                         if (col != null) {
@@ -203,7 +240,7 @@ function updateValues() {
                             else if (header.includes('Falter')) {
                                 finalMap = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
                             }
-                            finalOut = finalMap.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                            finalOut = finalMap?.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
                             var basecol = col.getAttribute('data-base-value');
                             col.innerHTML = Math.max(0, Math.round(parseFloat(basecol) + (parseFloat(basecol) * finalOut)))
                         }
@@ -212,7 +249,55 @@ function updateValues() {
             }
         }
         k++;
-    }) 
+    });
+
+    [].forEach.call(wtables, function (table) {
+        var colCount = table.rows.length;
+        var rowCount = table.rows[0].cells.length;
+        for (var i = 0; i < rowCount; i++) {
+            for (var j = 0; j < colCount; j++) {
+                col = table.rows[j].cells[i]
+                if (j > 0) {
+                    if (j == 1) {
+                        if (col != null & col.innerHTML != "DF%") {
+                            var mappedDamage = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
+                            var mappedFalter = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
+
+                            var finalDamage = mappedDamage.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                            var finalFalter = mappedFalter.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+
+                            var basecol = parseFloat(col.getAttribute('data-base-value')) / 100;
+                            console.log(basecol)
+                            if (finalDamage == finalFalter) {
+                                col.innerHTML = Math.round((parseFloat(basecol) + finalDamage) * 100) + "%"
+                            } else {
+                                var str = Math.max(0, Math.round(parseFloat((basecol) + finalDamage) * 100)) + "%" + "/" + Math.max(0, Math.round(parseFloat((basecol) + finalFalter) * 100)) + "%"
+                                col.innerHTML = str;
+                            }
+                        }
+
+                    } else {
+                        var col = document.getElementById('0' + 'xr' + i + 'x' + j);
+                        if (col != null) {
+                            var finalMap;
+                            var finalOut;
+
+                            var header = table.rows[j].cells[0].innerHTML;
+                            if (header.includes('Damage')) {
+                                finalMap = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
+                            }
+                            else if (header.includes('Falter')) {
+                                finalMap = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
+                            }
+                            finalOut = finalMap?.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+                            var basecol = col.getAttribute('data-base-value');
+                            col.innerHTML = Math.max(0, Math.round(parseFloat(basecol) + (parseFloat(basecol) * finalOut)))
+                        }
+                    }
+                }
+            }
+        }
+    })
 }
 
 updateElements()
