@@ -23,7 +23,7 @@ If you wish to contribute, you will need Python and Git installed.
 [ ] Quests
 [ ] Enemies
 [ ] Status effects/buffs
-[ ] Talents
+[x] Talents
 [ ] Materials
 [ ] Cosmetics
 ```
