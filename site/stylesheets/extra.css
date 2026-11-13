@@ -621,11 +621,13 @@ summary {
 
 .cbox-indent {
     margin-left: 1rem;
+    margin-bottom: 0.5rem;
     color: var(--brown-red);
     accent-color: var(--brown-red);
 }
 .cbox-indent-2 {
     margin-left: 2rem;
+    margin-bottom: 0.5rem;
     color: var(--brown-red);
     accent-color: var(--brown-red);
 }

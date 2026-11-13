@@ -7,16 +7,25 @@
     <div class="talent-window" style="display: inline-flex; flex-direction: column-reverse; width:100%;">
 
         {% for rindex in range(0,reader['Row'].max()+1) %}
+        {% if rindex == 6 %}
+        <p><span style="background-color: #000000; position: relative; z-index: 3; ">7 talent requirement</span></p>
+        <hr />
+        {% endif %}
+        {% if rindex == 12 %}
+        <p><span style="background-color: #000000; position: relative; z-index: 3;">20 talent requirement</span></p>
+        <hr />
+        {% endif %}
         <div class="talent-row">
             {% for _,uprow in reader[reader['Row']==rindex].fillna('').iterrows() %}
-            <div class="talent-column" id="x{{uprow['Talent'].lower().replace(' ', '-')}}">
+            <div class="talent-column" id="icon-{{uprow['Talent'].lower().replace(' ', '-')}}">
                 <a href="#{{uprow['Talent'].lower().replace(' ', '-')}}" class="talent-icon">
-                    <img src="{{uprow['Icon']}}" />
+                    <img {% if uprow['Talent']=="Ruthless" %} class="iBLURREDi" {% endif %} src="{{uprow['Icon']}}" />
                 </a>
             </div>
             {{uplist.append(uprow['Talent'].replace(' ', '-').lower() + '|' + uprow['Required Predecessor'].replace(' ', '-').lower()) or ""}}
             {% endfor %}
         </div>
+
         {% endfor %}
     </div>
 </div>
@@ -26,44 +35,54 @@
 </script>
 {% for _,indrow in reader.fillna('').iterrows() %}
 <br />
-## {{indrow['Talent']}} <a style="font-size: 20px; vertical-align: central;" href='#'>▲</a>
+## <span class="{% if indrow['Talent'] == 'Ruthless' %}iBLURREDi{% endif %}">{{indrow['Talent']}}</span> <a style="font-size: 20px; vertical-align: central;" href='#icon-{{indrow['Talent'].replace(' ', '-').lower()}}'>▲</a>
 
 {% set desc = indrow['Description']
-    .replace("#Health#", '
-<img src="/control-resonant-reference/icons/status_effects/icn_status_health.svg" /><strong><b>Health</b></strong>')
-    .replace("#Power#", '
-<img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg" /><strong><b>Power</b></strong>')
-    .replace("#Damage#", '
-<img src="/control-resonant-reference/icons/damage_types/icn_damage_generic.svg" /><strong><b>Damage</b></strong>')
-    .replace("#Falter#", '
-<img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg" /><strong><b>Falter</b></strong>')
-    .replace("#Infected#", '
-<img src="/control-resonant-reference/icons/status_effects/icn_status_mold-damage.svg" /><strong><b>Infected</b></strong>')
-    .replace("#Burn#", '
-<img src="/control-resonant-reference/icons/status_effects/icn_status_burn.svg" /><strong><b>Burn</b></strong>')
-    .replace("#Sharp Damage#", '
-<img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg" /><strong><b>Sharp Damage</b></strong>')
-    .replace("#Raw Damage#", '
-<img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg" /><strong><b>Raw Damage</b></strong>')
-    .replace("#Blunt Damage#", '
-<img src="/control-resonant-reference/icons/damage_types/icn_damage_blunt.svg" /><strong><b>Blunt Damage</b></strong>')
-    .replace("#Fire Damage#", '
-<img src="/control-resonant-reference/icons/damage_types/icn_damage_fire.svg" /><strong><b>Fire Damage</b></strong>')
-    .replace("#Dodge#", '
-<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_dodge.svg" /><strong><b>Dodge</b></strong>')
-    .replace("#Rush#", '
-<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_dash.svg" /><strong><b>Rush</b></strong>')
+    .replace("#Health#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_health.svg" /><strong><b>Health</b></strong>')
+    .replace("#Power#", '<img src="/control-resonant-reference/icons/icon/icn_ability_strength.svg" /><strong><b>Power</b></strong>')
+    .replace("#Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_generic.svg" /><strong><b>Damage</b></strong>')
+    .replace("#Damages#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_generic.svg" /><strong><b>Damages</b></strong>')
+    .replace("#Falter#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg" /><strong><b>Falter</b></strong>')
+    .replace("#Faltered#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg" /><strong><b>Faltered</b></strong>')
+    .replace("#Infected#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_mold-damage.svg" /><strong><b>Infected</b></strong>')
+    .replace("#Astralized#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_astralized.svg" /><strong><b>Astralized</b></strong>')
+    .replace("#Burn#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_burn.svg" /><strong><b>Burn</b></strong>')
+    .replace("#Sharp Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_sharp.svg" /><strong><b>Sharp Damage</b></strong>')
+    .replace("#Raw Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_raw.svg" /><strong><b>Raw Damage</b></strong>')
+    .replace("#Blunt Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_blunt.svg" /><strong><b>Blunt Damage</b></strong>')
+    .replace("#Fire Damage#", '<img src="/control-resonant-reference/icons/damage_types/icn_damage_fire.svg" /><strong><b>Fire Damage</b></strong>')
+    .replace("#Dodge#", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_dodge.svg" /><strong><b>Dodge</b></strong>')
+    .replace("#Rush#", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_dash.svg" /><strong><b>Rush</b></strong>')
     .replace("#Shield#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/shield/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_shield.svg" /><strong><b>Shield</b></strong></a>')
+    .replace("#Shield Bash#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/shield/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_shield.svg" /><strong><b>Shield Bash</b></strong></a>')
     .replace("#Command#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/command/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_seize.svg" /><strong><b>Command</b></strong></a>')
-    .replace("#Command Charge#", '
-<img src="/control-resonant-reference/icons/resources/icn_resource_ultimate.svg" /><strong><b>Command Charge</b></strong>')
-    .replace("#Hiss Shield#", '
-<img src="/control-resonant-reference/icons/status_effects/icn_status_overshield.svg" /><strong><b>Hiss Shield</b></strong>')
-    .replace("Gravity Anomaly", '
-<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_gravity_anomaly.svg" /><strong><b>Gravity Anomaly</b></strong>')
+    .replace("#Command Charge#", '<img src="/control-resonant-reference/icons/resources/icn_resource_ultimate.svg" /><strong><b>Command Charge</b></strong>')
+    .replace("#Hiss Shield#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_overshield.svg" /><strong><b>Hiss Shield</b></strong>')
+    .replace("Gravity Anomaly", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_gravity_anomaly.svg" /><strong><b>Gravity Anomaly</b></strong>')
+    .replace("Gravity Anomalies", '<img src="/control-resonant-reference/icons/combat_abilities/icn_nav_ability_gravity_anomaly.svg" /><strong><b>Gravity Anomalies</b></strong>')
+    .replace("#Commanded#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_seized.svg" /><strong><b>Commanded</b></strong>')
+    .replace("#Commanding#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_seized.svg" /><strong><b>Commanding</b></strong>')
+    .replace("#Dominance#", '<img src="/control-resonant-reference/icons/talents/icn_tal_0_bloodlust.svg" /><strong><b>Dominance</b></strong>')
+    .replace("#Keen#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_crit_up.svg" /><strong><b>Keen</b></strong>')
+    .replace("#Vengeance#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_vengeance_mark.svg" /><strong><b>Vengeance</b></strong>')
+    .replace("#Push#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/push/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_push.svg" /><strong><b>Push</b></strong></a>')
+    .replace("#Ground Slam#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/ground-slam/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_ground_slam.svg" /><strong><b>Ground Slam</b></strong></a>')
+    .replace("#Inferno#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/inferno/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_flame_wave.svg" /><strong><b>Inferno</b></strong></a>')
+    .replace("#Tracked#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_marked.svg" /><strong><b>Tracked</b></strong>')
+    .replace("#Retaliation#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_retaliate.svg" /><strong><b>Retaliation</b></strong>')
+    .replace("#Mold Ally#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/growth/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_mold_turret.svg" /><strong><b>Mold Ally</b></strong></a>')
+    .replace("#Ignite#", '<a href="/control-resonant-reference/reference/dylan/combat-abilities/ignite/"><img src="/control-resonant-reference/icons/combat_abilities/icn_ability_heat_aura.svg" /><strong><b>Ignite</b></strong></a>')
+    .replace("#Ruthless#", '<img src="/control-resonant-reference/icons/talents/icn_tal_333_hiss_power.svg" /><strong><b>Ruthless</b></strong>')
+    .replace("#Primary#", '<img src="/control-resonant-reference/icons/controls/gamepad_left.svg" />/<img src="/control-resonant-reference/icons/controls/mouse_left.svg" /><strong><b>Primary</b></strong>')
+    .replace("#Secondary#", '<img src="/control-resonant-reference/icons/controls/gamepad_right.svg" />/<img src="/control-resonant-reference/icons/controls/mouse_right.svg" /><strong><b>Secondary</b></strong>')
+    .replace("#Breakable Parts#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_breakable_part.svg" /><strong><b>Breakable Parts</b></strong>') 
+    .replace("#Lifted#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_lifted.svg" /><strong><b>Lifted</b></strong>') 
+    .replace("#Fortified#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_defense-up.svg" /><strong><b>Fortified</b></strong>') 
+    .replace("#Empowered#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_ability_up.svg" /><strong><b>Empowered</b></strong>') 
+    .replace("#Weakened#", '<img src="/control-resonant-reference/icons/status_effects/icn_status_defense_down.svg" /><strong><b>Weakened</b></strong>') 
     .replace("Radar", "<b>Radar</b>")
     .replace("Critical Hits", "<b>Critical Hits</b>")
-    .replace("Perfect Dodge", "<b>Perfect Dodge</b>")
+    .replace("Perfect Dodge", '<img src="/control-resonant-reference/icons/talents/icn_tal_60_unlock_perfect_dodge.svg" /><strong><b>Perfect Dodge</b></strong>')
     .replace("Combo Finishers", "<b>Combo Finishers</b>")
     .replace("Mold", "<b>Mold</b>")
     .replace("Critical Chance", "<b>Critical Chance</b>")
@@ -72,15 +91,20 @@
     .replace("Combat Abilities", "<b>Combat Abilities</b>")
     .replace("Combat Ability", "<b>Combat Ability</b>")
     .replace("Melee", "<b>Melee</b>")
+    .replace("Execution", "<b>Execution</b>")
     .replace("Environmental Hazards", "<b>Environmental Hazards</b>")
-    .replace("Summon", "<b>Summon</b>")
+    .replace("Dodge Attacks", "<b>Dodge Attacks</b>")
+    .replace("Primary", "<b>Primary</b>")
+    .replace("Secondary", "<b>Secondary</b>")
+    .replace("Combo Finisher", "<b>Combo Finisher</b>")
+    .replace("Summons", "<b>Summons</b>")
 %}
 
-<div class="melee-upgrade-box" style="display:flex;">
+<div class="{% if indrow['Talent'] == "Ruthless"%}iBLURREDi{% endif %} melee-upgrade-box" style="display:flex;">
     <div style="height:auto; width:15%;">
-        <img src="{{indrow['Icon']}}" style="border: 0px; width:100%"/>
+        <img src="{{indrow['Icon']}}" style="border: 0px; width:100%" />
     </div>
-    <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 42%;">
+    <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
         <div class="image-subtitle left-box">
 
             <p class="inline-svg">
@@ -89,8 +113,13 @@
             {% if indrow['Required Predecessor']!='' %}
             <p>
                 <i>
-                    Requires:
+
                     {% set pred = indrow['Required Predecessor'].split(";") %}
+                    {% if pred|length is gt 1 %}
+                    Requires one of the following:<br />
+                    {% else %}
+                    Requires:<br />
+                    {% endif %}
                     {% for pr in pred %}
                     <a href="#{{pr.replace(" ", "-").lower()}}"><b>{{pr}}</b></a><br />
                     {% endfor %}
@@ -104,7 +133,7 @@
 
 <!-- MOBILE LAYOUT -->
 
-<div class="mobile-melee-upgrade-box" style="display:flex; flex-direction:column;">
+<div class="{% if indrow['Talent'] == "Ruthless"%}iBLURREDi{% endif %} mobile-melee-upgrade-box" style="display:flex; flex-direction:column;">
     <div style="height:auto; width:65%; align-self:center">
         <img src="{{indrow['Icon']}}" style="border: 0px; width:100%" />
     </div>
@@ -117,8 +146,12 @@
             {% if indrow['Required Predecessor']!='' %}
             <p>
                 <i>
-                    Requires:
                     {% set pred = indrow['Required Predecessor'].split(";") %}
+                    {% if pred|length is gt 1 %}
+                    Requires one of the following:<br />
+                    {% else %}
+                    Requires:<br />
+                    {% endif %}
                     {% for pr in pred %}
                     <a href="#{{pr.replace(" ", "-").lower()}}"><b>{{pr}}</b></a><br />
                     {% endfor %}
