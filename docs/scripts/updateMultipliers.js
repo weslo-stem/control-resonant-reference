@@ -41,6 +41,8 @@ class multiplier {
             var tryGetRetaliation = document.querySelector('[data-input-for="RETALIATION"]');
             if (tryGetRetaliation && tryGetRetaliation.checked) {
                 this.falter = 0.25
+            } else {
+                this.falter = 0
             }
         }
     }
@@ -79,6 +81,9 @@ class multipliers {
         this.multArray.push(new multiplier("All-Rounder", "ALL_ROUNDER", "all-rounder-icon", 'Talent', 0.05, 0.05));
         this.multArray.push(new multiplier("Extra Impact", "EXTRA_IMPACT", "extra-impact-icon", 'Talent', 0, 0.1));
         this.multArray.push(new multiplier("Retribution", "RETRIBUTION", "retribution-icon", 'Talent', 0, 0));
+        this.multArray.push(new multiplier("Optimized Projectiles", "OPTIMIZED_PROJECTILES", "optimized-projectiles-icon", 'Talent', 0.25, 0.25));
+        this.multArray.push(new multiplier("Peak Condition", "PEAK_CONDITION", "peak-condition-icon", 'Talent', 0, 0.25));
+        this.multArray.push(new multiplier("Field Master", "FIELD_MASTER", "field-master-icon", 'Talent', 0.2, 0.2));
 
     }
 
@@ -108,9 +113,9 @@ var cbs = document.querySelectorAll('[type="checkbox"]');
     cb.addEventListener("change", updateElements);
 });
 
-chargeCount.addEventListener("change", _multipliers.check)
-chargeCount.addEventListener("change", updateValues);
-chargeCount.addEventListener("change", updateElements);
+chargeCount?.addEventListener("change", _multipliers.check)
+chargeCount?.addEventListener("change", updateValues);
+chargeCount?.addEventListener("change", updateElements);
 
 document.addEventListener("PlaceholderPluginConfigJson", _multipliers.check)
 document.addEventListener("PlaceholderPluginConfigJson", updateValues)
@@ -140,13 +145,13 @@ function updateElements() {
                 mult.element.disabled = false;
             }
 
-            if (mult.name == "Focused") {
+            if (mult.name == "Focused" || mult.name == "Peak Condition") {
                 var tfilt = _multipliers.multArray.filter((x) => (x.name == "Medical Alert Bands" || x.name == "Mother's Locket") && x.enabled == true)
                 if (tfilt.length > 0) {
                     mult.element.disabled = true;
                 }
             } else if (mult.name == "Medical Alert Bands" || mult.name == "Mother's Locket") {
-                var tfilt = _multipliers.multArray.filter((x) => x.name == "Focused" && x.enabled == true)
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Focused" || x.name == "Peak Condition") && x.enabled == true)
                 if (tfilt.length > 0) {
                     mult.element.disabled = true;
                 }

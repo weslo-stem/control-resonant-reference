@@ -43,8 +43,8 @@
 <p class="inline-svg">Applies <img src="{{icon_status_seized}}"/><strong><b>Commanded</b></strong> status to target.<br>
 Maximum amount of
 <img src="{{icon_command_charge}}"/><strong><b>Command Charges</b></strong> can be increased to <b>5</b> by unlocking talents:
-<img src="{{icon_tal_command_i}}"/><strong><b>Command I</b></strong>
-and <img src="{{icon_tal_command_ii}}"/><strong><b>Command II</b></strong>.</p>
+<a class="inline-svg" href="/control-resonant-reference/reference/dylan/talents/#command-i"><img src="{{icon_tal_command_i}}"/><strong><b>Command I</b></strong></a>
+and <a class="inline-svg" href="/control-resonant-reference/reference/dylan/talents/#command-ii"><img src="{{icon_tal_command_ii}}"/><strong><b>Command II</b></strong></a>.</p>
 <p class="inline-svg"><img src="{{icon_command_charge}}"/><strong><b>Command Charge Cost</b></strong> can be decreased by <b>1</b> (minimum cost of <b>1</b> charge) with Artifact: <a href="{{page_artifact_wad_of_cash}}"><b>Wad of Cash</b></a></p>
 
 Table of command charge costs will be updated here soon

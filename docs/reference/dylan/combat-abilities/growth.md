@@ -52,7 +52,7 @@
 </div>
 <br>
 
-Maximum amount of Mold Ally summons can be increased to 3 by unlocking [insert talent name here]. Damage and falter values will be increased by talents and status buffs. Below is a table of the base damage and falter values per Ability Strength level.
+Maximum amount of Mold Ally summons can be increased to 3 by unlocking the talent <a class="inline-svg" href="/control-resonant-reference/reference/dylan/talents/#mold-colony"><img src="/control-resonant-reference/icons/talents/icn_tal_3_turret_cap_inc.svg"/><strong><b>Mold Colony</b></strong></a>. Damage and falter values will be increased by talents and status buffs. Below is a table of the base damage and falter values per Ability Strength level.
 
 # Damage
 

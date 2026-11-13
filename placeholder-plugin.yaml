@@ -123,7 +123,9 @@ placeholders:
     CHARGE_COUNT:
         default: 0
         validators: cc_uint
-
+    SUMMON_COUNT:
+        default: 0
+        validators: sc_uint
     FOCUSED:
         default: unchecked
         values:
@@ -149,6 +151,21 @@ placeholders:
         values:
             checked: true
             unchecked: false
+    OPTIMIZED_PROJECTILES:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    PEAK_CONDITION:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    FIELD_MASTER:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
 
 settings:
     auto_placeholder_tables: false
@@ -158,6 +175,11 @@ settings:
 validators:
     cc_uint:
         name: "Charge Count"
+        rules:
+        - regex: "^[+-]?[0-5]{1}$"
+          should_match: true
+    sc_uint:
+        name: "Summon Count"
         rules:
         - regex: "^[+-]?[0-5]{1}$"
           should_match: true
