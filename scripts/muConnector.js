@@ -206,8 +206,8 @@ for (cvidstr of jsUplist.split(",")) {
         for (conn of required) {
             if (conn != null) {
                 connectors.push(new muConnector({
-                    ele1: 'x' + conn,
-                    ele2: 'x' + cvid,
+                    ele1: 'icon-' + conn,
+                    ele2: 'icon-' + cvid,
                     lineStyle: "2px dashed white",
                     defaultGap: -35
                 }));
@@ -229,7 +229,38 @@ window.addEventListener("resize", (e) => {
         c.link();
     });
 });
-window.addEventListener("load", (e) => {
+var navbar = document.getElementById("navbar-collapse");
+
+navbar.addEventListener("resize", (e) => {
+    connectors.forEach((c) => {
+        var ele = c.ele2;
+        var rect = ele.getBoundingClientRect();
+        c.offsets[c.ele2.id].left = e.pageX - rect.left + document.body.scrollLeft;
+        c.offsets[c.ele2.id].top = e.pageY - rect.top + document.body.scrollTop;
+
+        ele.style.left = e.pageX - c.offsets[c.ele2.id].left;
+        ele.style.top = e.pageY - c.offsets[c.ele2.id].top;
+
+        c.link();
+    });
+});
+
+const resizeObserver = new ResizeObserver((e) => {
+    connectors.forEach((c) => {
+        var ele = c.ele2;
+        var rect = ele.getBoundingClientRect();
+        c.offsets[c.ele2.id].left = e.pageX - rect.left + document.body.scrollLeft;
+        c.offsets[c.ele2.id].top = e.pageY - rect.top + document.body.scrollTop;
+
+        ele.style.left = e.pageX - c.offsets[c.ele2.id].left;
+        ele.style.top = e.pageY - c.offsets[c.ele2.id].top;
+
+        c.link();
+    });
+});
+resizeObserver.observe(navbar);
+
+document.addEventListener("DOMContentLoaded", (e) => {
     connectors.forEach((c) => {
         var ele = c.ele2;
         var rect = ele.getBoundingClientRect();

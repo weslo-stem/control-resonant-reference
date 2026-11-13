@@ -14,12 +14,12 @@ Cleansing Rush,#Rush# removes status ailments twice as fast.,1,3,2,Perfect Dodge
 Extended Falter,Enemies stay #Faltered# for longer.,1,3,3,Perfect Dodge,/control-resonant-reference/icons/talents/icn_tal_68_longer_faltered_state.svg
 Agile Response,Adds <b>+25%</b> Damage and Falter from Dodge Attacks.,1,4,0,Retribution,/control-resonant-reference/icons/talents/icn_tal_39_inc_damage_dodge_attacks.svg
 Guarded Formation,Take <b>-20%</b> less #Damage# when near Summons.,1,4,1,Extended Falter,/control-resonant-reference/icons/talents/icn_tal_114_dmg_dec_near_summons.svg
-Skilled Backstab,Hitting enemies from behind with Melee attacks deals <b>+50%</b> more Damage and Falter.,1,5,0,Agile Response,/control-resonant-reference/icons/talents/icn_tal_18_backstab_dmg_up.svg
+Skilled Backstab,Hitting enemies from behind with Melee attacks deals <b>+50%</b> more #Damage# and #Falter#.,1,5,0,Agile Response,/control-resonant-reference/icons/talents/icn_tal_18_backstab_dmg_up.svg
 Sanctioned Retaliation,#Retaliation# recovers <b>+50%</b> more #Power#.,1,5,1,Agile Response;Extended Rush;Cleansing Rush;Guarded Formation,/control-resonant-reference/icons/talents/icn_tal_112_perfect_dodge_ability_resource_regen.svg
 Restorative Summons,Enemies killed by Summons drop extra Health Elements.,1,5,2,Guarded Formation,/control-resonant-reference/icons/talents/icn_tal_107_summon_kills_extra_healing.svg
 Resurgence,"Enemies who attack Dylan while #Ignite# or #Shield# is active are marked with #Vengeance#, making them take <b>+50%</b> #Damage# and #Falter# from Melee attacks and #Shield Bash#.",1,6,0,Skilled Backstab,/control-resonant-reference/icons/talents/icn_tal_37_enemy_shield_vengeance.svg
 Decisive Step-Up,Activates #Keen# after an Execution.,1,6,1,Skilled Backstab,/control-resonant-reference/icons/talents/icn_tal_38_crit_inc_after_execution.svg
-Back Stab Recovery,Hitting enemies from behind with Melee aAttacks recovers <b>+50%</b> more #Power#.,1,6,2,Sanctioned Retaliation,/control-resonant-reference/icons/talents/icn_tal_16_backstab_res_rec_up.svg
+Back Stab Recovery,Hitting enemies from behind with Melee Attacks recovers <b>+50%</b> more #Power#.,1,6,2,Sanctioned Retaliation,/control-resonant-reference/icons/talents/icn_tal_16_backstab_res_rec_up.svg
 Reactive Detonation,Performing a Perfect Dodge during #Ignite# applies #Burn# to all nearby enemies.,1,6,3,Sanctioned Retaliation,/control-resonant-reference/icons/talents/icn_tal_24_heataura_after_perfect_dodge_explode.svg
 Mold Colony,Dylan can have <b>+1</b> more active #Mold Ally#.,1,6,4,Restorative Summons,/control-resonant-reference/icons/talents/icn_tal_3_turret_cap_inc.svg
 Enduring Ally,Increases the lifetime of all Summons by <b>+50%</b>.,1,6,5,Restorative Summons,/control-resonant-reference/icons/talents/icn_tal_1_summons_lifetime_inc.svg
@@ -28,7 +28,7 @@ Heightened State,Adds <b>+20%</b> #Power# while #Dominance# is active.,1,7,1,Bac
 Better Together,Summons deal <b>+25%</b> more #Damage# and #Falter# while #Dominance# is active.,1,7,2,Mold Colony;Enduring Ally,/control-resonant-reference/icons/talents/icn_tal_111_bloodlust_summons_inc.svg
 Restorative Dodge,Perfect Dodge recovers a small amount of #Health#,1,8,0,Sustained Assault;Heightened State,/control-resonant-reference/icons/talents/icn_tal_113_perfect_dodge_health_recovery.svg
 Extended Retaliation,"Adds an extra charge to #Retaliation#, making it boost the next two attacks within 5 seconds after a Perfect Dodge.",1,8,1,Heightened State;Better Together,/control-resonant-reference/icons/talents/icn_tal_121_extra_retaliate_charge.svg
-Impressive Comeback,Adds <b>+20%</b> #Power# recovery when #Health# is low (&lt;25%).,1,9,0,Restorative Dodge,/control-resonant-reference/icons/talents/icn_tal_43_inc_ability_res_low_hp.svg
+Impressive Comeback,Adds <b>+20%</b> #Power# recovery when #Health# is low (<b>&lt;25%</b>).,1,9,0,Restorative Dodge,/control-resonant-reference/icons/talents/icn_tal_43_inc_ability_res_low_hp.svg
 Optimized Projectiles,Projectiles deal <b>+25%</b> #Damage# and #Falter#.,1,9,1,Restorative Dodge;Heightened State;Extended Retaliation,/control-resonant-reference/icons/talents/icn_tal_63_projectile_dmg.svg
 Battle Alignment,Summons apply #Tracked# to enemies they hit.,1,9,2,Extended Retaliation,/control-resonant-reference/icons/talents/icn_tal_5_hunter_mark.svg
 Shield Blast,Tap #Primary# while #Shield# is active to trigger an explosion.,1,10,0,Impressive Comeback,/control-resonant-reference/icons/talents/icn_tal_122_shield_parry.svg
@@ -37,7 +37,7 @@ Avid Execution,Increases Execution range.,2,10,2,Optimized Projectiles,/control-
 Anti Air,Summons deal <b>+20%</b> more #Damage# and #Falter# to Airborne enemies.,1,10,3,Battle Alignment,/control-resonant-reference/icons/talents/icn_tal_12_summons_deal_more_damage_player_airborne.svg
 Parting Blast,"When destroyed, Summons send out a shockwave dealing #Damage# and #Falter# to a small area.",1,10,4,Battle Alignment,/control-resonant-reference/icons/talents/icn_tal_9_turrets_astral_const_spawn_shockwave.svg
 Executive Finisher,Executing Heavy enemies restores a large amount of #Power#,2,11,0,Shield Blast,/control-resonant-reference/icons/talents/icn_tal_503_seized_life_time.svg
-Rising Heat,Using #Inferno# in rapid succession increases its #Damage# and #Falter.,1,11,1,Restorative Dominance;Avid Execution,/control-resonant-reference/icons/talents/icn_tal_100_flamewave_succession_inc_dmg.svg
+Rising Heat,Using #Inferno# in rapid succession increases its #Damage# and #Falter#.,1,11,1,Restorative Dominance;Avid Execution,/control-resonant-reference/icons/talents/icn_tal_100_flamewave_succession_inc_dmg.svg
 Status Spread,#Push# and #Ground Slam# instantly spread any of the target's active status ailments to nearby enemies that are hit.,1,11,2,Restorative Dominance;Avid Execution,/control-resonant-reference/icons/talents/icn_tal_108_push_shield_neg_status_effect_build_down.svg
 Peak Condition,Adds <b>+20%</b> #Falter# when #Health# is full.,1,11,3,Avid Execution;Anti Air,/control-resonant-reference/icons/talents/icn_tal_106_inc_falter_health_full.svg
 Combat Recharge,Adds <b>+10%</b> #Power# from all Melee attacks,1,11,4,Avid Execution;Anti Air,/control-resonant-reference/icons/talents/icn_tal_62_ability_res_rec.svg
@@ -46,7 +46,7 @@ Scorch,#Fire Damage# becomes more effective against #Hiss Shield#.,1,12,0,Rising
 Vital Magnetism,Collect Health Elements from a greater distance.,1,12,1,Status Spread,/control-resonant-reference/icons/talents/icn_tal_41_absorb_health_further.svg
 Command I,Adds <b>+1</b> #Command Charge#.,2,12,2,Status Spread;Avid Execution;Peak Condition,/control-resonant-reference/icons/talents/icn_tal_30_ultimate_ability_up.svg
 Summon Synergy,Melee #Damage# and #Falter# increase by <b>+10%</b> for each Summon on the battlefield.,1,12,3,Peak Condition,/control-resonant-reference/icons/talents/icn_tal_7_melee_dmg_inc_from_summons.svg
-Anomalous Gain,Adds <b>+10%</b> #Power# when using #Gravity Anomalies#.,1,12,4,Combat Recharge,/control-resonant-reference/icons/talents/icn_tal_58_ability_res_rec_in_ga.svg
+Anomalous Gain,Adds <b>+10%</b> #Power# when using Gravity Anomalies.,1,12,4,Combat Recharge,/control-resonant-reference/icons/talents/icn_tal_58_ability_res_rec_in_ga.svg
 Morale Boost,Adds <b>+20%</b> #Power# recovery when you have a #Commanded# enemy on the battlefield.,1,13,0,Vital Magnetism,/control-resonant-reference/icons/talents/icn_tal_44_inc_ability_res_seized_active.svg
 Summoned Reserves,Heavy enemies killed by Summons have a <b>+20%</b> chance to drop a #Command Charge#.,1,13,1,Summon Synergy,/control-resonant-reference/icons/talents/icn_tal_6_chance_ua_drop_heavy_summons.svg
 High Morale,#Commanded# enemies deal <b>+25%</b> more #Damage# and #Falter#.,2,14,0,Morale Boost,/control-resonant-reference/icons/talents/icn_tal_501_seized_dmg_up.svg
@@ -55,7 +55,7 @@ Command Provision,Enemies killed by Combat Abilities have a <b>+20%</b> chance t
 Crowd Conversion,Drone enemies killed by #Commanded# enemies revive as allies.,2,14,3,Summoned Reserves,/control-resonant-reference/icons/talents/icn_tal_11_fodders_killed_by_seized_revive_allies.svg
 Thought Leader,#Commanding# enemies with low #Health# costs 1 less #Command Charge# (minimum <b>1</b> charge).,2,14,4,Summoned Reserves,/control-resonant-reference/icons/talents/icn_tal_10_seize_enemies_low_hp_cost_less.svg
 Command Advantage,Applies #Keen# status effect to Dylan and all #Commanded# characters while a #Commanded# enemy is on the battlefield.,2,15,0,High Morale,/control-resonant-reference/icons/talents/icn_tal_45_inc_crit_seized_active.svg
-Energized Melee,Adds +5%</b> Melee #Damage# and #Falter# for each unused #Command Charge#.,2,15,1,Lethal Authorization,/control-resonant-reference/icons/talents/icn_tal_502_dmg_up_unused_ua.svg
+Energized Melee,Adds <b>+5%</b> Melee #Damage# and #Falter# for each unused #Command Charge#.,2,15,1,Lethal Authorization,/control-resonant-reference/icons/talents/icn_tal_502_dmg_up_unused_ua.svg
 Strong Presence,Increases the lifetime of #Commanded# enemies by <b>+30%</b>.,2,15,2,Command Provision,/control-resonant-reference/icons/talents/icn_tal_503_seized_life_time.svg
 Stored Command,Adds <b>+5%</b> Combat Ability #Damage# and #Falter# for each unused #Command Charge#.,2,15,3,Command Provision,/control-resonant-reference/icons/talents/icn_tal_117_inc_combat_ability_damage_unused_ua.svg
 Exploit Ailments,"Enemies afflicted by #Burn#, #Infected#, or #Astralized# take more #Damage# and #Falter# from Summons.",1,15,4,Crowd Conversion;Thought Leader,/control-resonant-reference/icons/talents/icn_tal_15_enemies_ailments_inc_damage_summons.svg
