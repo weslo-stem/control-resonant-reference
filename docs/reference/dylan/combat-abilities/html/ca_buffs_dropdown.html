@@ -1,5 +1,5 @@
 {% macro caBuffsDropdown(dmgTypes, abilityName, enableWeapons, enableCrit) %}
-<details>
+<details id="buff-dropdown">
     <summary>
         Buff/Debuff Toggles
         <div style="display: inline-flex; flex-wrap: wrap; max-width: 100%">
@@ -23,7 +23,7 @@
             <div class="buff-icons" id="skilled-backstab-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_18_backstab_dmg_up.svg' /></div>
             <div class="buff-icons" id="optimized-projectiles-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_63_projectile_dmg.svg' /></div>
             <div class="buff-icons" id="peak-condition-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_106_inc_falter_health_full.svg' /></div>
-            <div class="buff-icons" id="summon-synergy-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_7_melee_dmg_inc_from_summons.svg' /></div>
+            <div class="buff-icons" id="summon-synergy-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_7_melee_dmg_inc_from_summons.svg' /><sup class="placeholder-value placeholder-value-static" data-placeholder="SUMMON_COUNT" style="background-color: rgba(0, 0, 0, 0); margin-left: -5px; color: #000000">0</sup></div>
             <div class="buff-icons" id="energized-melee-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_502_dmg_up_unused_ua.svg' /><sup class="placeholder-value placeholder-value-static" data-placeholder="CHARGE_COUNT" style="background-color: rgba(0, 0, 0, 0); margin-left: -5px; color: #000000">0</sup></div>
             <div class="buff-icons" id="stored-command-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_117_inc_combat_ability_damage_unused_ua.svg' /><sup class="placeholder-value placeholder-value-static" data-placeholder="CHARGE_COUNT" style="background-color: rgba(0, 0, 0, 0); margin-left: -5px; color: #000000">0</sup></div>
             <div class="buff-icons" id="field-master-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_504_ca_up_with_seize.svg' /></div>
@@ -37,13 +37,10 @@
             <div class="buff-icons" id="medical-alert-bands-icon"><img src='/control-resonant-reference/images/artifacts/ch_003_locket_gold_small.tex.png' /></div>
             <div class="buff-icons" id="mothers-locket-icon"><img src='/control-resonant-reference/images/artifacts/ch_002_locket_silver_small.tex.png' /></div>
             <div class="buff-icons" id="practice-knot-icon"><img src='/control-resonant-reference/images/artifacts/ch_001_tension_knot_small.tex.png' /></div>
-            <!-- new -->
             <div class="buff-icons" id="scrunchie-icon"><img src='/control-resonant-reference/images/artifacts/ch_104_umbrella_small.tex.png' /></div>
             <div class="buff-icons" id="spraypaint-icon"><img src='/control-resonant-reference/images/artifacts/ch_102_soda_can_small.tex.png' /></div>
-            <!-- new -->
             <div class="buff-icons" id="the-weekend-crossword-icon"><img src='/control-resonant-reference/images/artifacts/ch_105_stapler_small.tex.png' /></div>
             <div class="buff-icons" id="trusted-spanner-icon"><img src='/control-resonant-reference/images/artifacts/ch_101_wrench_small.tex.png' /></div>
-            <!-- new -->
             <div class="buff-icons" id="unfinished-lollipop-icon"><img src='/control-resonant-reference/images/artifacts/ch_106_lollipop_small.tex.png' /></div>
             <div class="buff-icons" id="whetstone-icon"><img src='/control-resonant-reference/images/artifacts/ch_014_whetstone_small.tex.png' /></div>
             <div class="buff-icons" id="world-tour-tickets-icon"><img src='/control-resonant-reference/images/artifacts/ch_043_movie_ticket_small.tex.png' /></div>
@@ -85,11 +82,14 @@
     <label class="cbox-indent"><input data-input-for="PEAK_CONDITION"> Peak Condition (+20% Falter <b>at full health.</b>)</label> <br>
     {% if enableWeapons == true %}
     <label class="cbox-indent"><input data-input-for="SUMMON_SYNERGY"> Summon Synergy (+10% Damage and Falter for Melee <b>per Summon on the battlefield.</b>)</label> <br>
-    <label class="cbox-indent-2"> Summon Count (0-5): <br /><input style="width: 50%" data-input-for="SUMMON_COUNT"> (3 Mold turrets, 1 Spike, 1 Volatile Anomaly) </label> <br>
+    <label class="cbox-indent-2"> 🔻 Summon Count (0-5): <br /><input style="width: 50%" data-input-for="SUMMON_COUNT"> <i>(3 Mold turrets, 1 Spike, 1 Volatile Anomaly)</i> </label> <br>
     <label class="cbox-indent"><input data-input-for="ENERGIZED_MELEE"> Energized Melee (+5% Damage and Falter for Melee <b>per unused Command Charge.</b>)</label> <br>
+    <label class="cbox-indent-2"> 🔻 Charge Count (0-5): <br /><input style="width: 50%" data-input-for="CHARGE_COUNT"></label> <br>
     {% endif %}
+    {% if enableWeapons == false %}
     <label class="cbox-indent"><input data-input-for="STORED_COMMAND"> Stored Command (+5% Damage and Falter <b>per unused Command Charge.</b>)</label> <br>
-    <label class="cbox-indent-2"> Charge Count (0-5): <br /><input style="width: 50%" data-input-for="CHARGE_COUNT"></label> <br>
+    <label class="cbox-indent-2"> 🔻 Charge Count (0-5): <br /><input style="width: 50%" data-input-for="CHARGE_COUNT"></label> <br>
+    {% endif %}
     {% if enableWeapons == false and abilityName!='Growth' and abilityName!='Volatile Anomaly' and abilityName!='Spike' %}
     <label class="cbox-indent"><input data-input-for="FIELD_MASTER"> Field Master (+20% Damage and Falter from <b>Non-Summon</b> Combat Abilities <b>if Commanded enemy on battlefield</b>)</label> <br>
     {% endif %}

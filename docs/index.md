@@ -24,9 +24,21 @@ We highly recommend playing through your first time entirely blind. This is pure
                 Aberrant
             </summary>
             <br>
-            <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/primary-forms/">Primary Forms</a></p>
-            <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/secondary-forms/">Secondary Forms</a></p>
-            <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/combo-finishers/">Combo Finishers</a></p>
+            <details>
+                <summary>
+                    Primary Forms
+                </summary>
+            </details>
+            <details>
+                <summary>
+                    Secondary Forms
+                </summary>
+            </details>
+            <details>
+                <summary>
+                    Combo Finishers
+                </summary>
+            </details>
         </details>
         <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/combat-abilities/">Combat Abilities</a></p>
         <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/talents/">Talents</a></p>
