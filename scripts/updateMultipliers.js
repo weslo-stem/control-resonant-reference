@@ -85,9 +85,12 @@ class multipliers {
     static multArray;
     constructor() {
         this.multArray = [];
+
+        // Critical
         this.multArray.push(new multiplier("Critical Hit", "CRITICAL", "critical-icon", 'Other', 0, 0));
         this.multArray.push(new multiplier("Compact", "COMPACT", "compact-icon", 'Artifact', 0, 0));
 
+        // Status Effects
         this.multArray.push(new multiplier('Tracked', "TRACKED", "tracked-icon", 'EnemyDebuff', 0.3, 0.3));
         this.multArray.push(new multiplier('Empowered', "EMPOWERED", "empowered-icon", 'Buff', 0.25, 0.25));
         this.multArray.push(new multiplier('Focused', "FOCUSED", "focused-icon", 'Buff', 0, 0.2));
@@ -96,6 +99,7 @@ class multipliers {
         this.multArray.push(new multiplier('Retaliation', "RETALIATION", "retaliation-icon", 'Buff', 0.5, 0.5));
         this.multArray.push(new multiplier('Vengeance', "VENGEANCE", "vengeance-icon", 'Buff', 0.5, 0.5));
 
+        // Artifacts
         this.multArray.push(new multiplier('Spray Paint', "SPRAYPAINT", "spraypaint-icon", 'Artifact', 0.15, 0.0));
         this.multArray.push(new multiplier('World Tour Tickets', "WORLD_TOUR_TICKETS", "world-tour-tickets-icon", 'Artifact', 1, 0.0));
         this.multArray.push(new multiplier('Whetstone', "WHETSTONE", "whetstone-icon", 'Artifact', 0.2, -0.2));
@@ -113,14 +117,14 @@ class multipliers {
         this.multArray.push(new multiplier("The Weekend Crossword", "THE_WEEKEND_CROSSWORD", "the-weekend-crossword-icon", 'Artifact', 0.15, 0));
         this.multArray.push(new multiplier("Unfinished Lollipop", "UNFINISHED_LOLLIPOP", "unfinished-lollipop-icon", 'Artifact', 0.1, 0));
 
-
+        // Talents 
         this.multArray.push(new multiplier("Dominance", "DOMINANCE", "dominance-icon", 'Talent', 0, 0));
         this.multArray.push(new multiplier("Stored Command", "STORED_COMMAND", "stored-command-icon", 'Talent', 0, 0));
         this.multArray.push(new multiplier("All-Rounder", "ALL_ROUNDER", "all-rounder-icon", 'Talent', 0.05, 0.05));
         this.multArray.push(new multiplier("Extra Impact", "EXTRA_IMPACT", "extra-impact-icon", 'Talent', 0, 0.1));
         this.multArray.push(new multiplier("Retribution", "RETRIBUTION", "retribution-icon", 'Talent', 0, 0));
         this.multArray.push(new multiplier("Optimized Projectiles", "OPTIMIZED_PROJECTILES", "optimized-projectiles-icon", 'Talent', 0.25, 0.25));
-        this.multArray.push(new multiplier("Peak Condition", "PEAK_CONDITION", "peak-condition-icon", 'Talent', 0, 0.25));
+        this.multArray.push(new multiplier("Peak Condition", "PEAK_CONDITION", "peak-condition-icon", 'Talent', 0, 0.2));
         this.multArray.push(new multiplier("Field Master", "FIELD_MASTER", "field-master-icon", 'Talent', 0.2, 0.2));
         this.multArray.push(new multiplier("Skilled Backstab", "SKILLED_BACKSTAB", "skilled-backstab-icon", 'Talent', 0.5, 0.5));
         this.multArray.push(new multiplier("Summon Synergy", "SUMMON_SYNERGY", "summon-synergy-icon", 'Talent', 0, 0));
@@ -228,7 +232,7 @@ function updateValues() {
                         }
 
                     } else {
-                        var col = document.getElementById(k + 'xr' + i + 'x' + j);
+                        var col = document.getElementById(k + 'xr' + j + 'x' + i);
                         if (col != null) {
                             var finalMap;
                             var finalOut;
@@ -267,7 +271,6 @@ function updateValues() {
                             var finalFalter = mappedFalter.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
 
                             var basecol = parseFloat(col.getAttribute('data-base-value')) / 100;
-                            console.log(basecol)
                             if (finalDamage == finalFalter) {
                                 col.innerHTML = Math.round((parseFloat(basecol) + finalDamage) * 100) + "%"
                             } else {

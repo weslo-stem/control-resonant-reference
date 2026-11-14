@@ -230,6 +230,7 @@ window.addEventListener("resize", (e) => {
     });
 });
 var navbar = document.getElementById("navbar-collapse");
+var buffdrop = document.getElementById("buff-dropdown");
 
 navbar.addEventListener("resize", (e) => {
     connectors.forEach((c) => {
@@ -259,6 +260,7 @@ const resizeObserver = new ResizeObserver((e) => {
     });
 });
 resizeObserver.observe(navbar);
+resizeObserver.observe(buffdrop);
 
 document.addEventListener("DOMContentLoaded", (e) => {
     connectors.forEach((c) => {
