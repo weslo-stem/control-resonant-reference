@@ -37,7 +37,7 @@ class multiplier {
 
     talentSolve = () => {
         if (this.name=="Stored Command") {
-            var attrVal = parseInt(chargeCount.value)
+            var attrVal = parseInt(chargeCount.value && chargeCount)
             if (chargeCount && attrVal <= 5 && attrVal >= 0) {
                 this.damage = 0.05 * attrVal
                 this.falter = 0.05 * attrVal
@@ -51,14 +51,14 @@ class multiplier {
                 this.falter = 0
             }
         }
-        if (this.name == "Summon Synergy") {
+        if (this.name == "Summon Synergy" && summonCount) {
             var attrVal = parseInt(summonCount.value)
             if (summonCount && attrVal <= 5 && attrVal >= 0) {
                 this.damage = 0.1 * attrVal
                 this.falter = 0.1 * attrVal
             }
         }
-        if (this.name == "Energized Melee") {
+        if (this.name == "Energized Melee" && chargeCount) {
             var attrVal = parseInt(chargeCount.value)
             if (chargeCount && attrVal <= 5 && attrVal >= 0) {
                 this.damage = 0.05 * attrVal
@@ -232,7 +232,7 @@ function updateValues() {
                         }
 
                     } else {
-                        var col = document.getElementById(k + 'xr' + j + 'x' + i);
+                        var col = document.getElementById(k + 'xr' + i + 'x' + j);
                         if (col != null) {
                             var finalMap;
                             var finalOut;

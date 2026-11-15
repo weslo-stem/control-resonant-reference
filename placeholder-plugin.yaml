@@ -191,6 +191,41 @@ placeholders:
         values:
             checked: true
             unchecked: false
+    SKY_HIGH_FINISHER:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    POWERFUL_OPENER:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    EAGER_CARVE:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    TOTAL_COMMAND:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    PRIME_STATE:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    LASTING_IMPRESSION:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    GRIEVOUS_HARM:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
 
 settings:
     auto_placeholder_tables: false

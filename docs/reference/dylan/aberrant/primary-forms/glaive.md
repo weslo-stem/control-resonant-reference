@@ -26,7 +26,7 @@
                 <tbody>
                     <tr>
                         <th scope="row" style="background-color: var(--shadow-grey)"><b>Unlock</b></th>
-                        <td><a href="/control-resonant-reference/reference/items/materials/living-shard/" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/living_shard_small.png" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>Living Shard</b></a></td>
+                        <td><a href="/control-resonant-reference/reference/items/materials/#living-shard" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/living_shard_small.png" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>Living Shard</b></a></td>
                         <td>3</td>
                     </tr>
                     <tr>

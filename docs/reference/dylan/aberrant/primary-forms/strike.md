@@ -26,7 +26,7 @@
                 <tbody>
                     <tr>
                         <th scope="row" style="background-color: var(--shadow-grey)"><b>Unlock</b></th>
-                        <td><a href="/control-resonant-reference/reference/items/materials/living-shard/" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/living_shard_small.png" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>Living Shard</b></a></td>
+                        <td><a href="/control-resonant-reference/reference/items/materials/#living-shard" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/living_shard_small.png" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>Living Shard</b></a></td>
                         <td>3</td>
                     </tr>
                     <tr>
@@ -64,7 +64,7 @@ Note that all values displayed in-game are rounded.
 #### *Base Damage and Falter values by Aberrant Strength*
 
 {% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
-{{ caBuffsDropdown(['Raw'], 'Primary', true, true) }}
+{{ caBuffsDropdown(['Raw'], 'Primary', true, true, 'Strike') }}
 
 {% from "reference/dylan/combat-abilities/html/af_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/weapon_forms/strike.csv', ['Raw']) }}
