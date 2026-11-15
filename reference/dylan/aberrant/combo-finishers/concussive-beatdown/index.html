@@ -383,7 +383,7 @@
                 <tbody>
                     <tr>
                         <th scope="row" style="background-color: var(--shadow-grey)"><b>Unlock</b></th>
-                        <td><a href="/control-resonant-reference/reference/items/materials/living-shard/" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/living_shard_small.png" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>Living Shard</b></a></td>
+                        <td><a href="/control-resonant-reference/reference/items/materials/#living-shard" style="color: var(--floral-white)"><img src="/control-resonant-reference/images/items/living_shard_small.png" style="border: 0px; margin: 0px; height: 40px; vertical-align: central"><b>Living Shard</b></a></td>
                         <td>1</td>
                     </tr>
                     <tr>
@@ -415,14 +415,22 @@
 <p>Note that all values displayed in-game are rounded.</p>
 <h4 id="base-damage-and-falter-values-by-aberrant-strength"><em>Base Damage and Falter values by Aberrant Strength</em></h4>
 <details id="buff-dropdown">
+    <i>All buffs, despite being displayed as "+##%", are multiplicative.</i><br />
+     <i>Weapon upgrades <b>Gain Control</b>, <b>Pain Point</b>, and <b>Falter Follow-Up</b> are currently not included, as they are a bit too situational to fit.</i> 
     <summary>
         Buff/Debuff Toggles
         <div style="display: inline-flex; flex-wrap: wrap; max-width: 100%">
             <div class="buff-icons" id="critical-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_crit_up.svg' /></div>
             <div class="buff-icons" id="compact-icon"><img src='/control-resonant-reference/images/artifacts/ch_054_magnifying_glass_small.tex.png' /></div>
+            <div class="buff-icons" id="grievous-harm-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_flurry_upg_melee_crit_dmg_up.svg' /></div>
 
+            <div class="buff-icons" id="sky-high-finisher-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_ariborne_ce_buff.svg' /></div>
+            <div class="buff-icons" id="lasting-impression-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_flurry_upg_ce_dmg_buff.svg' /></div>
 
-            <div class="buff-icons" id="dominance-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_bloodlust.svg' /></div>
+            <div class="buff-icons" id="powerful-opener-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_dmg_buff_to_undamaged.svg' /></div>
+            <div class="buff-icons" id="eager-carve-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_dmg_buff_to_launched.svg' /></div>
+            <div class="buff-icons" id="total-command-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_bloodlust_buff.svg' /></div>
+            <div class="buff-icons" id="prime-state-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_dmg_buff_full_health.svg' /></div>
 
             <div class="buff-icons" id="empowered-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_ability_up.svg' /></div>
             <div class="buff-icons" id="focused-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_falter_up.svg' /></div>
@@ -432,6 +440,7 @@
             <div class="buff-icons" id="vengeance-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_vengeance_mark.svg' /></div>
             <div class="buff-icons" id="weakened-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_defense_down.svg' /></div>
 
+            <div class="buff-icons" id="dominance-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_bloodlust.svg' /></div>
             <div class="buff-icons" id="all-rounder-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_110_inc_all_damage.svg' /></div>
             <div class="buff-icons" id="extra-impact-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_101_inc_falter_dmg_combat_abilities.svg' /></div>
             <div class="buff-icons" id="retribution-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_103_retaliate_falter_dmg_inc.svg' /></div>
@@ -464,59 +473,74 @@
 
         </div>
     </summary>
+    <div class="buff-dropdown">
 
-    <b><label style="color: black;">Critical Hits</label></b> <br>
-    <label class="cbox-indent"><input data-input-for="CRITICAL" type="checkbox" disabled> Critical Hit (150% Base Damage)</label> <br>
-    <label class="cbox-indent"><input data-input-for="COMPACT" type="checkbox" disabled> Compact (+50% Critical Damage, -30% Critical Falter)</label> <br>
-
-
-    <b><label style="color: black;">Status Effects</label></b> <br>
-
-    <label class="cbox-indent"><input data-input-for="FOCUSED" type="checkbox" disabled> Focused (+20% Falter <b>at full health, with a minimum build power 8, and with build power close to enemy level</b>)</label> <br>
-    <label class="cbox-indent"><input data-input-for="RETALIATION" type="checkbox" disabled> Retaliation (+50% Damage and Falter <b>after Perfect Dodge</b>)</label> <br>
-    <label class="cbox-indent"><input data-input-for="RUTHLESS" type="checkbox" disabled> <span class="iBLURREDi">Ruthless (+200% Damage and Falter)</span></label> <br>
-
-
-    <label class="cbox-indent"><input data-input-for="VENGEANCE" type="checkbox" disabled> Vengeance (+50% Damage and Falter <b>from Melee and Shield Bash</b>, debuff on enemy)</label> <br>
-
-
-
-    <b><label style="color: black;">Talents</label></b> <br>
-    <label class="cbox-indent"><input data-input-for="DOMINANCE" type="checkbox" disabled> Dominance (+100% Damage for Primary Melee and Combo Finishers, +50% for Secondary Melee)</label> <br> 
-    <label class="cbox-indent"><input data-input-for="ALL_ROUNDER" type="checkbox" disabled> All-Rounder (+5% Damage and Falter)</label> <br>
-
-    <label class="cbox-indent"><input data-input-for="RETRIBUTION" type="checkbox" disabled> Retribution (+25% Falter to Retaliation)</label> <br>
-    <label class="cbox-indent"><input data-input-for="SKILLED_BACKSTAB" type="checkbox" disabled> Skilled Backstab (+50% Damage and Falter <b>when hitting enemies from behind with Melee</b>)</label> <br>
-
-    <label class="cbox-indent"><input data-input-for="PEAK_CONDITION" type="checkbox" disabled> Peak Condition (+20% Falter <b>at full health.</b>)</label> <br>
-
-    <label class="cbox-indent"><input data-input-for="SUMMON_SYNERGY" type="checkbox" disabled> Summon Synergy (+10% Damage and Falter for Melee <b>per Summon on the battlefield.</b>)</label> <br>
-    <label class="cbox-indent-2"> 🔻 Summon Count (0-5): <br /><input data-input-for="SUMMON_COUNT" value="0" disabled> <i>(3 Mold turrets, 1 Spike, 1 Volatile Anomaly)</i> </label> <br>
-    <label class="cbox-indent"><input data-input-for="ENERGIZED_MELEE" type="checkbox" disabled> Energized Melee (+5% Damage and Falter for Melee <b>per unused Command Charge.</b>)</label> <br>
-    <label class="cbox-indent-2"> 🔻 Charge Count (0-5): <br /><input data-input-for="CHARGE_COUNT" value="0" disabled></label> <br>
+        <b><label style="color: black;">Critical Hits</label></b> <br>
+        <label class="cbox-indent"><input data-input-for="CRITICAL" type="checkbox" disabled> Critical Hit (150% Base Damage)</label> <br>
+        <label class="cbox-indent"><input data-input-for="COMPACT" type="checkbox" disabled> Compact (Artifact, +50% Critical Damage, -30% Critical Falter)</label> <br>
 
 
 
 
-    <b><label id="artifacts-label" style="color: black;">Artifacts (0/4) <i style='font-size: 12px'>(3 in base NG)</i></label></b> <br>
-    <label class="cbox-indent"><input data-input-for="BUG_SPRAY" type="checkbox" disabled> Bug Spray (+30% Damage and Falter <b>against Mold enemies</b>)</label> <br>
+
+        <b><label style="color: black;">Cross-Compatible Weapon Upgrades</label></b> <br>
+        <label class="cbox-indent"><input data-input-for="SKY_HIGH_FINISHER" type="checkbox" disabled> Sky-High Finisher (Combo Finisher - +20% Damage and Falter <b>to airborne enemies</b> if using Primary Form <b>Cleave</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="LASTING_IMPRESSION" type="checkbox" disabled> Lasting Impression (Combo Finisher - +25% Damage if using Primary Form <b>Strike</b>)</label> <br>
 
 
-    <label class="cbox-indent"><input data-input-for="FINGERBOARD" type="checkbox" disabled> Fingerboard (+25% Damage and Falter <b>while using a Gravity Anomaly</b>)</label> <br>
-
-    <label class="cbox-indent"><input data-input-for="GOLDEN_EARRINGS" type="checkbox" disabled> Golden Earrings (-30% Damage, +20% Falter)</label> <br>
-    <label class="cbox-indent"><input data-input-for="MEDICAL_ALERT_BANDS" type="checkbox" disabled> Medical Alert Bands (+25% Falter <b>while below 25% Health</b>)</label> <br>
-    <label class="cbox-indent"><input data-input-for="MOTHERS_LOCKET" type="checkbox" disabled> Mother's Locket (+25% Damage <b>while below 25% Health</b>)</label> <br>
-    <label class="cbox-indent"><input data-input-for="PRACTICE_KNOT" type="checkbox" disabled> Practice Knot (+15% Falter <b>against Heavy enemies</b>)</label> <br>
 
 
-    <label class="cbox-indent"><input data-input-for="SPRAYPAINT" type="checkbox" disabled> Spray Paint (+15% Blunt Damage)</label> <br>
-
-    <label class="cbox-indent"><input data-input-for="THE_WEEKEND_CROSSWORD" type="checkbox" disabled> The Weekend Crossword (+15% Damage for <b>Combo Finisher Melee Form</b>)</label> <br>
 
 
-    <label class="cbox-indent"><input data-input-for="WHETSTONE" type="checkbox" disabled> Whetstone (+20% Damage, -20% Falter)</label> <br>
+        <b><label style="color: black;">Status Effects</label></b> <br>
 
+        <label class="cbox-indent"><input data-input-for="FOCUSED" type="checkbox" disabled> Focused (+20% Falter <b>at full health, with a minimum build power 8, and with build power close to enemy level</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="RETALIATION" type="checkbox" disabled> Retaliation (+50% Damage and Falter <b>after Perfect Dodge</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="RUTHLESS" type="checkbox" disabled> <span class="iBLURREDi">Ruthless (+200% Damage and Falter)</span></label> <br>
+
+
+        <label class="cbox-indent"><input data-input-for="VENGEANCE" type="checkbox" disabled> Vengeance (+50% Damage and Falter <b>from Melee and Shield Bash</b>, debuff on enemy)</label> <br>
+
+
+
+        <b><label style="color: black;">Talents</label></b> <br>
+        <label class="cbox-indent"><input data-input-for="DOMINANCE" type="checkbox" disabled> Dominance (+100% Damage for Primary Melee and Combo Finishers, +50% for Secondary Melee)</label> <br> 
+        <label class="cbox-indent"><input data-input-for="ALL_ROUNDER" type="checkbox" disabled> All-Rounder (+5% Damage and Falter)</label> <br>
+
+        <label class="cbox-indent"><input data-input-for="RETRIBUTION" type="checkbox" disabled> Retribution (+25% Falter to Retaliation)</label> <br>
+        <label class="cbox-indent"><input data-input-for="SKILLED_BACKSTAB" type="checkbox" disabled> Skilled Backstab (+50% Damage and Falter <b>when hitting enemies from behind with Melee</b>)</label> <br>
+
+        <label class="cbox-indent"><input data-input-for="PEAK_CONDITION" type="checkbox" disabled> Peak Condition (+20% Falter <b>at full health.</b>)</label> <br>
+
+        <label class="cbox-indent"><input data-input-for="SUMMON_SYNERGY" type="checkbox" disabled> Summon Synergy (+10% Damage and Falter for Melee <b>per Summon on the battlefield.</b>)</label> <br>
+        <label class="cbox-indent-2"> 🔻 Summon Count (0-5): <br /><input data-input-for="SUMMON_COUNT" value="0" disabled> <i>(3 Mold turrets, 1 Spike, 1 Volatile Anomaly)</i> </label> <br>
+        <label class="cbox-indent"><input data-input-for="ENERGIZED_MELEE" type="checkbox" disabled> Energized Melee (+5% Damage and Falter for Melee <b>per unused Command Charge.</b>)</label> <br>
+        <label class="cbox-indent-2"> 🔻 Charge Count (0-5): <br /><input data-input-for="CHARGE_COUNT" value="0" disabled></label> <br>
+
+
+
+
+        <b><label id="artifacts-label" style="color: black;">Artifacts (0/4) <i style='font-size: 12px'>(3 in base NG)</i></label></b> <br>
+        <label class="cbox-indent"><input data-input-for="BUG_SPRAY" type="checkbox" disabled> Bug Spray (+30% Damage and Falter <b>against Mold enemies</b>)</label> <br>
+
+
+        <label class="cbox-indent"><input data-input-for="FINGERBOARD" type="checkbox" disabled> Fingerboard (+25% Damage and Falter <b>while using a Gravity Anomaly</b>)</label> <br>
+
+        <label class="cbox-indent"><input data-input-for="GOLDEN_EARRINGS" type="checkbox" disabled> Golden Earrings (-30% Damage, +20% Falter)</label> <br>
+        <label class="cbox-indent"><input data-input-for="MEDICAL_ALERT_BANDS" type="checkbox" disabled> Medical Alert Bands (+25% Falter <b>while below 25% Health</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="MOTHERS_LOCKET" type="checkbox" disabled> Mother's Locket (+25% Damage <b>while below 25% Health</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="PRACTICE_KNOT" type="checkbox" disabled> Practice Knot (+15% Falter <b>against Heavy enemies</b>)</label> <br>
+
+
+        <label class="cbox-indent"><input data-input-for="SPRAYPAINT" type="checkbox" disabled> Spray Paint (+15% Blunt Damage)</label> <br>
+
+        <label class="cbox-indent"><input data-input-for="THE_WEEKEND_CROSSWORD" type="checkbox" disabled> The Weekend Crossword (+15% Damage for <b>Combo Finisher Melee Form</b>)</label> <br>
+
+
+        <label class="cbox-indent"><input data-input-for="WHETSTONE" type="checkbox" disabled> Whetstone (+20% Damage, -20% Falter)</label> <br>
+
+
+    </div>
     <button id="clear-all" style="margin: 10px 0px 0px 0px; padding: 0px 2px 0px 2px; accent-color: var(--brown-red); color: var(--brown-red); ">Clear All</button>
 </details>
 
@@ -1266,367 +1290,367 @@
                     </span>
                 </th>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr0x2" data-base-value="90">90</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr0x2" data-base-value="90.12">90.12</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr1x2" data-base-value="91">91</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr1x2" data-base-value="91.62">91.62</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr2x2" data-base-value="93">93</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr2x2" data-base-value="93.12">93.12</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr3x2" data-base-value="94">94</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr3x2" data-base-value="94.63">94.63</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr4x2" data-base-value="96">96</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr4x2" data-base-value="96.13">96.13</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr5x2" data-base-value="97">97</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr5x2" data-base-value="97.63">97.63</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr6x2" data-base-value="99">99</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr6x2" data-base-value="99.13">99.13</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr7x2" data-base-value="100">100</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr7x2" data-base-value="100.63">100.63</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr8x2" data-base-value="102">102</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr8x2" data-base-value="102.14">102.14</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr9x2" data-base-value="103">103</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr9x2" data-base-value="103.64">103.64</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr10x2" data-base-value="105">105</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr10x2" data-base-value="105.14">105.14</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr11x2" data-base-value="106">106</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr11x2" data-base-value="106.64">106.64</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr12x2" data-base-value="108">108</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr12x2" data-base-value="108.14">108.14</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr13x2" data-base-value="109">109</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr13x2" data-base-value="109.65">109.65</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr14x2" data-base-value="111">111</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr14x2" data-base-value="111.15">111.15</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr15x2" data-base-value="112">112</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr15x2" data-base-value="112.65">112.65</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr16x2" data-base-value="114">114</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr16x2" data-base-value="114.15">114.15</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr17x2" data-base-value="115">115</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr17x2" data-base-value="115.65">115.65</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr18x2" data-base-value="117">117</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr18x2" data-base-value="117.16">117.16</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr19x2" data-base-value="118">118</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr19x2" data-base-value="118.66">118.66</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr20x2" data-base-value="120">120</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr20x2" data-base-value="120.16">120.16</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr21x2" data-base-value="121">121</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr21x2" data-base-value="121.66">121.66</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr22x2" data-base-value="123">123</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr22x2" data-base-value="123.16">123.16</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr23x2" data-base-value="124">124</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr23x2" data-base-value="124.67">124.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr24x2" data-base-value="126">126</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr24x2" data-base-value="126.17">126.17</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr25x2" data-base-value="127">127</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr25x2" data-base-value="127.67">127.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr26x2" data-base-value="129">129</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr26x2" data-base-value="129.17">129.17</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr27x2" data-base-value="130">130</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr27x2" data-base-value="130.67">130.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr28x2" data-base-value="132">132</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr28x2" data-base-value="132.18">132.18</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr29x2" data-base-value="133">133</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr29x2" data-base-value="133.68">133.68</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr30x2" data-base-value="135">135</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr30x2" data-base-value="135.18">135.18</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr31x2" data-base-value="136">136</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr31x2" data-base-value="136.68">136.68</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr32x2" data-base-value="138">138</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr32x2" data-base-value="138.18">138.18</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr33x2" data-base-value="139">139</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr33x2" data-base-value="139.69">139.69</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr34x2" data-base-value="141">141</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr34x2" data-base-value="141.19">141.19</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr35x2" data-base-value="142">142</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr35x2" data-base-value="142.69">142.69</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr36x2" data-base-value="144">144</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr36x2" data-base-value="144.19">144.19</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr37x2" data-base-value="145">145</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr37x2" data-base-value="145.69">145.69</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr38x2" data-base-value="147">147</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr38x2" data-base-value="147.2">147.2</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr39x2" data-base-value="148">148</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr39x2" data-base-value="148.7">148.7</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr40x2" data-base-value="150">150</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr40x2" data-base-value="150.2">150.2</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr41x2" data-base-value="151">151</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr41x2" data-base-value="151.7">151.7</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr42x2" data-base-value="153">153</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr42x2" data-base-value="153.2">153.2</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr43x2" data-base-value="154">154</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr43x2" data-base-value="154.71">154.71</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr44x2" data-base-value="156">156</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr44x2" data-base-value="156.21">156.21</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr45x2" data-base-value="157">157</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr45x2" data-base-value="157.71">157.71</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr46x2" data-base-value="159">159</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr46x2" data-base-value="159.21">159.21</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr47x2" data-base-value="160">160</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr47x2" data-base-value="160.71">160.71</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr48x2" data-base-value="162">162</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr48x2" data-base-value="162.22">162.22</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr49x2" data-base-value="163">163</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr49x2" data-base-value="163.72">163.72</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr50x2" data-base-value="165">165</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr50x2" data-base-value="165.22">165.22</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr51x2" data-base-value="166">166</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr51x2" data-base-value="166.72">166.72</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr52x2" data-base-value="168">168</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr52x2" data-base-value="168.22">168.22</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr53x2" data-base-value="169">169</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr53x2" data-base-value="169.73">169.73</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr54x2" data-base-value="171">171</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr54x2" data-base-value="171.23">171.23</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr55x2" data-base-value="172">172</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr55x2" data-base-value="172.73">172.73</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr56x2" data-base-value="174">174</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr56x2" data-base-value="174.23">174.23</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr57x2" data-base-value="175">175</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr57x2" data-base-value="175.73">175.73</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr58x2" data-base-value="177">177</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr58x2" data-base-value="177.24">177.24</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr59x2" data-base-value="178">178</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr59x2" data-base-value="178.74">178.74</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr60x2" data-base-value="180">180</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr60x2" data-base-value="180.24">180.24</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr61x2" data-base-value="181">181</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr61x2" data-base-value="181.74">181.74</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr62x2" data-base-value="183">183</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr62x2" data-base-value="183.24">183.24</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr63x2" data-base-value="184">184</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr63x2" data-base-value="184.75">184.75</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr64x2" data-base-value="186">186</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr64x2" data-base-value="186.25">186.25</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr65x2" data-base-value="187">187</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr65x2" data-base-value="187.75">187.75</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr66x2" data-base-value="189">189</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr66x2" data-base-value="189.25">189.25</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr67x2" data-base-value="190">190</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr67x2" data-base-value="190.75">190.75</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr68x2" data-base-value="192">192</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr68x2" data-base-value="192.26">192.26</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr69x2" data-base-value="193">193</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr69x2" data-base-value="193.76">193.76</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr70x2" data-base-value="195">195</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr70x2" data-base-value="195.26">195.26</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr71x2" data-base-value="196">196</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr71x2" data-base-value="196.76">196.76</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr72x2" data-base-value="198">198</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr72x2" data-base-value="198.26">198.26</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr73x2" data-base-value="199">199</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr73x2" data-base-value="199.77">199.77</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr74x2" data-base-value="201">201</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr74x2" data-base-value="201.27">201.27</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr75x2" data-base-value="202">202</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr75x2" data-base-value="202.77">202.77</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr76x2" data-base-value="204">204</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr76x2" data-base-value="204.27">204.27</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr77x2" data-base-value="205">205</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr77x2" data-base-value="205.77">205.77</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr78x2" data-base-value="207">207</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr78x2" data-base-value="207.28">207.28</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr79x2" data-base-value="208">208</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr79x2" data-base-value="208.78">208.78</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr80x2" data-base-value="210">210</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr80x2" data-base-value="210.28">210.28</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr81x2" data-base-value="211">211</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr81x2" data-base-value="211.78">211.78</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr82x2" data-base-value="213">213</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr82x2" data-base-value="213.28">213.28</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr83x2" data-base-value="214">214</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr83x2" data-base-value="214.79">214.79</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr84x2" data-base-value="216">216</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr84x2" data-base-value="216.29">216.29</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr85x2" data-base-value="217">217</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr85x2" data-base-value="217.79">217.79</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr86x2" data-base-value="219">219</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr86x2" data-base-value="219.29">219.29</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr87x2" data-base-value="220">220</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr87x2" data-base-value="220.79">220.79</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr88x2" data-base-value="222">222</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr88x2" data-base-value="222.3">222.3</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr89x2" data-base-value="223">223</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr89x2" data-base-value="223.8">223.8</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr90x2" data-base-value="225">225</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr90x2" data-base-value="225.3">225.3</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr91x2" data-base-value="226">226</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr91x2" data-base-value="226.8">226.8</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr92x2" data-base-value="228">228</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr92x2" data-base-value="228.3">228.3</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr93x2" data-base-value="229">229</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr93x2" data-base-value="229.81">229.81</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr94x2" data-base-value="231">231</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr94x2" data-base-value="231.31">231.31</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr95x2" data-base-value="232">232</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr95x2" data-base-value="232.81">232.81</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr96x2" data-base-value="234">234</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr96x2" data-base-value="234.31">234.31</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr97x2" data-base-value="235">235</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr97x2" data-base-value="235.81">235.81</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr98x2" data-base-value="237">237</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr98x2" data-base-value="237.32">237.32</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr99x2" data-base-value="238">238</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr99x2" data-base-value="238.82">238.82</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr100x2" data-base-value="240">240</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr100x2" data-base-value="240.32">240.32</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr101x2" data-base-value="241">241</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr101x2" data-base-value="241.82">241.82</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr102x2" data-base-value="243">243</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr102x2" data-base-value="243.32">243.32</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr103x2" data-base-value="244">244</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr103x2" data-base-value="244.83">244.83</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr104x2" data-base-value="246">246</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr104x2" data-base-value="246.33">246.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr105x2" data-base-value="247">247</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr105x2" data-base-value="247.83">247.83</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr106x2" data-base-value="249">249</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr106x2" data-base-value="249.33">249.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr107x2" data-base-value="250">250</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr107x2" data-base-value="250.83">250.83</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr108x2" data-base-value="252">252</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr108x2" data-base-value="252.34">252.34</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr109x2" data-base-value="253">253</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr109x2" data-base-value="253.84">253.84</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr110x2" data-base-value="255">255</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr110x2" data-base-value="255.34">255.34</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr111x2" data-base-value="256">256</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr111x2" data-base-value="256.84">256.84</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr112x2" data-base-value="258">258</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr112x2" data-base-value="258.34">258.34</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr113x2" data-base-value="259">259</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr113x2" data-base-value="259.85">259.85</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr114x2" data-base-value="261">261</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr114x2" data-base-value="261.35">261.35</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr115x2" data-base-value="262">262</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr115x2" data-base-value="262.85">262.85</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr116x2" data-base-value="264">264</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr116x2" data-base-value="264.35">264.35</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr117x2" data-base-value="265">265</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr117x2" data-base-value="265.85">265.85</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr118x2" data-base-value="267">267</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr118x2" data-base-value="267.36">267.36</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr119x2" data-base-value="268">268</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr119x2" data-base-value="268.86">268.86</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr120x2" data-base-value="270">270</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr120x2" data-base-value="270.36">270.36</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr121x2" data-base-value="271">271</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr121x2" data-base-value="271.86">271.86</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr122x2" data-base-value="273">273</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr122x2" data-base-value="273.36">273.36</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr123x2" data-base-value="274">274</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr123x2" data-base-value="274.87">274.87</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr124x2" data-base-value="276">276</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr124x2" data-base-value="276.37">276.37</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr125x2" data-base-value="277">277</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr125x2" data-base-value="277.87">277.87</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr126x2" data-base-value="279">279</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr126x2" data-base-value="279.37">279.37</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr127x2" data-base-value="280">280</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr127x2" data-base-value="280.87">280.87</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr128x2" data-base-value="282">282</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr128x2" data-base-value="282.38">282.38</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr129x2" data-base-value="283">283</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr129x2" data-base-value="283.88">283.88</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr130x2" data-base-value="285">285</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr130x2" data-base-value="285.38">285.38</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr131x2" data-base-value="286">286</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr131x2" data-base-value="286.88">286.88</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr132x2" data-base-value="288">288</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr132x2" data-base-value="288.38">288.38</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr133x2" data-base-value="289">289</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr133x2" data-base-value="289.89">289.89</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr134x2" data-base-value="291">291</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr134x2" data-base-value="291.39">291.39</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr135x2" data-base-value="292">292</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr135x2" data-base-value="292.89">292.89</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr136x2" data-base-value="294">294</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr136x2" data-base-value="294.39">294.39</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr137x2" data-base-value="295">295</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr137x2" data-base-value="295.89">295.89</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr138x2" data-base-value="297">297</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr138x2" data-base-value="297.4">297.4</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr139x2" data-base-value="298">298</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr139x2" data-base-value="298.9">298.9</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr140x2" data-base-value="300">300</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr140x2" data-base-value="300.4">300.4</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr141x2" data-base-value="301">301</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr141x2" data-base-value="301.9">301.9</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr142x2" data-base-value="303">303</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr142x2" data-base-value="303.4">303.4</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr143x2" data-base-value="304">304</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr143x2" data-base-value="304.91">304.91</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr144x2" data-base-value="306">306</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr144x2" data-base-value="306.41">306.41</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr145x2" data-base-value="307">307</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr145x2" data-base-value="307.91">307.91</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr146x2" data-base-value="309">309</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr146x2" data-base-value="309.41">309.41</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr147x2" data-base-value="310">310</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr147x2" data-base-value="310.91">310.91</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr148x2" data-base-value="312">312</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr148x2" data-base-value="312.42">312.42</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr149x2" data-base-value="313">313</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr149x2" data-base-value="313.92">313.92</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr150x2" data-base-value="315">315</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr150x2" data-base-value="315.42">315.42</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr151x2" data-base-value="316">316</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr151x2" data-base-value="316.92">316.92</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr152x2" data-base-value="318">318</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr152x2" data-base-value="318.42">318.42</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr153x2" data-base-value="319">319</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr153x2" data-base-value="319.93">319.93</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr154x2" data-base-value="321">321</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr154x2" data-base-value="321.43">321.43</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr155x2" data-base-value="322">322</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr155x2" data-base-value="322.93">322.93</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr156x2" data-base-value="324">324</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr156x2" data-base-value="324.43">324.43</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr157x2" data-base-value="325">325</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr157x2" data-base-value="325.93">325.93</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr158x2" data-base-value="327">327</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr158x2" data-base-value="327.44">327.44</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr159x2" data-base-value="328">328</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr159x2" data-base-value="328.94">328.94</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr160x2" data-base-value="330">330</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr160x2" data-base-value="330.44">330.44</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr161x2" data-base-value="331">331</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr161x2" data-base-value="331.94">331.94</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr162x2" data-base-value="333">333</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr162x2" data-base-value="333.44">333.44</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr163x2" data-base-value="334">334</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr163x2" data-base-value="334.95">334.95</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr164x2" data-base-value="336">336</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr164x2" data-base-value="336.45">336.45</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr165x2" data-base-value="337">337</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr165x2" data-base-value="337.95">337.95</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr166x2" data-base-value="339">339</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr166x2" data-base-value="339.45">339.45</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr167x2" data-base-value="340">340</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr167x2" data-base-value="340.95">340.95</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr168x2" data-base-value="342">342</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr168x2" data-base-value="342.46">342.46</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr169x2" data-base-value="343">343</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr169x2" data-base-value="343.96">343.96</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr170x2" data-base-value="345">345</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr170x2" data-base-value="345.46">345.46</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr171x2" data-base-value="346">346</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr171x2" data-base-value="346.96">346.96</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr172x2" data-base-value="348">348</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr172x2" data-base-value="348.46">348.46</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr173x2" data-base-value="349">349</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr173x2" data-base-value="349.97">349.97</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr174x2" data-base-value="351">351</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr174x2" data-base-value="351.47">351.47</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr175x2" data-base-value="352">352</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr175x2" data-base-value="352.97">352.97</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr176x2" data-base-value="354">354</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr176x2" data-base-value="354.47">354.47</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr177x2" data-base-value="355">355</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr177x2" data-base-value="355.97">355.97</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr178x2" data-base-value="357">357</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr178x2" data-base-value="357.48">357.48</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr179x2" data-base-value="358">358</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr179x2" data-base-value="358.98">358.98</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr180x2" data-base-value="360">360</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr180x2" data-base-value="360.48">360.48</td>
 
             </tr>
 
@@ -1641,367 +1665,367 @@
                     </span>
                 </th>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr0x3" data-base-value="180">180</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr0x3" data-base-value="180.0">180.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr1x3" data-base-value="183">183</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr1x3" data-base-value="183.0">183.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr2x3" data-base-value="186">186</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr2x3" data-base-value="186.0">186.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr3x3" data-base-value="189">189</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr3x3" data-base-value="189.0">189.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr4x3" data-base-value="192">192</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr4x3" data-base-value="192.0">192.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr5x3" data-base-value="195">195</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr5x3" data-base-value="195.0">195.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr6x3" data-base-value="198">198</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr6x3" data-base-value="198.0">198.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr7x3" data-base-value="201">201</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr7x3" data-base-value="201.0">201.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr8x3" data-base-value="204">204</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr8x3" data-base-value="204.0">204.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr9x3" data-base-value="207">207</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr9x3" data-base-value="207.0">207.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr10x3" data-base-value="210">210</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr10x3" data-base-value="210.0">210.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr11x3" data-base-value="213">213</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr11x3" data-base-value="213.0">213.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr12x3" data-base-value="216">216</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr12x3" data-base-value="216.0">216.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr13x3" data-base-value="219">219</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr13x3" data-base-value="219.0">219.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr14x3" data-base-value="222">222</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr14x3" data-base-value="222.0">222.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr15x3" data-base-value="225">225</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr15x3" data-base-value="225.0">225.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr16x3" data-base-value="228">228</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr16x3" data-base-value="228.0">228.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr17x3" data-base-value="231">231</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr17x3" data-base-value="231.0">231.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr18x3" data-base-value="234">234</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr18x3" data-base-value="234.0">234.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr19x3" data-base-value="237">237</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr19x3" data-base-value="237.0">237.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr20x3" data-base-value="240">240</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr20x3" data-base-value="240.0">240.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr21x3" data-base-value="243">243</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr21x3" data-base-value="243.0">243.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr22x3" data-base-value="246">246</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr22x3" data-base-value="246.0">246.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr23x3" data-base-value="249">249</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr23x3" data-base-value="249.0">249.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr24x3" data-base-value="252">252</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr24x3" data-base-value="252.0">252.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr25x3" data-base-value="255">255</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr25x3" data-base-value="255.0">255.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr26x3" data-base-value="258">258</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr26x3" data-base-value="258.0">258.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr27x3" data-base-value="261">261</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr27x3" data-base-value="261.0">261.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr28x3" data-base-value="264">264</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr28x3" data-base-value="264.0">264.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr29x3" data-base-value="267">267</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr29x3" data-base-value="267.0">267.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr30x3" data-base-value="270">270</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr30x3" data-base-value="270.0">270.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr31x3" data-base-value="273">273</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr31x3" data-base-value="273.0">273.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr32x3" data-base-value="276">276</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr32x3" data-base-value="276.0">276.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr33x3" data-base-value="279">279</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr33x3" data-base-value="279.0">279.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr34x3" data-base-value="282">282</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr34x3" data-base-value="282.0">282.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr35x3" data-base-value="285">285</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr35x3" data-base-value="285.0">285.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr36x3" data-base-value="288">288</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr36x3" data-base-value="288.0">288.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr37x3" data-base-value="291">291</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr37x3" data-base-value="291.0">291.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr38x3" data-base-value="294">294</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr38x3" data-base-value="294.0">294.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr39x3" data-base-value="297">297</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr39x3" data-base-value="297.0">297.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr40x3" data-base-value="300">300</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr40x3" data-base-value="300.0">300.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr41x3" data-base-value="303">303</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr41x3" data-base-value="303.0">303.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr42x3" data-base-value="306">306</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr42x3" data-base-value="306.0">306.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr43x3" data-base-value="309">309</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr43x3" data-base-value="309.0">309.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr44x3" data-base-value="312">312</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr44x3" data-base-value="312.0">312.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr45x3" data-base-value="315">315</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr45x3" data-base-value="315.0">315.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr46x3" data-base-value="318">318</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr46x3" data-base-value="318.0">318.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr47x3" data-base-value="321">321</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr47x3" data-base-value="321.0">321.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr48x3" data-base-value="324">324</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr48x3" data-base-value="324.0">324.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr49x3" data-base-value="327">327</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr49x3" data-base-value="327.0">327.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr50x3" data-base-value="330">330</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr50x3" data-base-value="330.0">330.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr51x3" data-base-value="333">333</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr51x3" data-base-value="333.0">333.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr52x3" data-base-value="336">336</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr52x3" data-base-value="336.0">336.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr53x3" data-base-value="339">339</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr53x3" data-base-value="339.0">339.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr54x3" data-base-value="342">342</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr54x3" data-base-value="342.0">342.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr55x3" data-base-value="345">345</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr55x3" data-base-value="345.0">345.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr56x3" data-base-value="348">348</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr56x3" data-base-value="348.0">348.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr57x3" data-base-value="351">351</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr57x3" data-base-value="351.0">351.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr58x3" data-base-value="354">354</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr58x3" data-base-value="354.0">354.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr59x3" data-base-value="357">357</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr59x3" data-base-value="357.0">357.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr60x3" data-base-value="360">360</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr60x3" data-base-value="360.0">360.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr61x3" data-base-value="363">363</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr61x3" data-base-value="363.0">363.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr62x3" data-base-value="366">366</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr62x3" data-base-value="366.0">366.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr63x3" data-base-value="369">369</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr63x3" data-base-value="369.0">369.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr64x3" data-base-value="372">372</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr64x3" data-base-value="372.0">372.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr65x3" data-base-value="375">375</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr65x3" data-base-value="375.0">375.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr66x3" data-base-value="378">378</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr66x3" data-base-value="378.0">378.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr67x3" data-base-value="381">381</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr67x3" data-base-value="381.0">381.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr68x3" data-base-value="384">384</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr68x3" data-base-value="384.0">384.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr69x3" data-base-value="387">387</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr69x3" data-base-value="387.0">387.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr70x3" data-base-value="390">390</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr70x3" data-base-value="390.0">390.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr71x3" data-base-value="393">393</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr71x3" data-base-value="393.0">393.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr72x3" data-base-value="396">396</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr72x3" data-base-value="396.0">396.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr73x3" data-base-value="399">399</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr73x3" data-base-value="399.0">399.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr74x3" data-base-value="402">402</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr74x3" data-base-value="402.0">402.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr75x3" data-base-value="405">405</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr75x3" data-base-value="405.0">405.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr76x3" data-base-value="408">408</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr76x3" data-base-value="408.0">408.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr77x3" data-base-value="411">411</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr77x3" data-base-value="411.0">411.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr78x3" data-base-value="414">414</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr78x3" data-base-value="414.0">414.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr79x3" data-base-value="417">417</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr79x3" data-base-value="417.0">417.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr80x3" data-base-value="420">420</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr80x3" data-base-value="420.0">420.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr81x3" data-base-value="423">423</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr81x3" data-base-value="423.0">423.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr82x3" data-base-value="426">426</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr82x3" data-base-value="426.0">426.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr83x3" data-base-value="429">429</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr83x3" data-base-value="429.0">429.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr84x3" data-base-value="432">432</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr84x3" data-base-value="432.0">432.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr85x3" data-base-value="435">435</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr85x3" data-base-value="435.0">435.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr86x3" data-base-value="438">438</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr86x3" data-base-value="438.0">438.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr87x3" data-base-value="441">441</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr87x3" data-base-value="441.0">441.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr88x3" data-base-value="444">444</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr88x3" data-base-value="444.0">444.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr89x3" data-base-value="447">447</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr89x3" data-base-value="447.0">447.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr90x3" data-base-value="450">450</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr90x3" data-base-value="450.0">450.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr91x3" data-base-value="453">453</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr91x3" data-base-value="453.0">453.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr92x3" data-base-value="456">456</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr92x3" data-base-value="456.0">456.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr93x3" data-base-value="459">459</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr93x3" data-base-value="459.0">459.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr94x3" data-base-value="462">462</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr94x3" data-base-value="462.0">462.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr95x3" data-base-value="465">465</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr95x3" data-base-value="465.0">465.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr96x3" data-base-value="468">468</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr96x3" data-base-value="468.0">468.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr97x3" data-base-value="471">471</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr97x3" data-base-value="471.0">471.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr98x3" data-base-value="474">474</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr98x3" data-base-value="474.0">474.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr99x3" data-base-value="477">477</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr99x3" data-base-value="477.0">477.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr100x3" data-base-value="480">480</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr100x3" data-base-value="480.0">480.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr101x3" data-base-value="483">483</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr101x3" data-base-value="483.0">483.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr102x3" data-base-value="486">486</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr102x3" data-base-value="486.0">486.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr103x3" data-base-value="489">489</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr103x3" data-base-value="489.0">489.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr104x3" data-base-value="492">492</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr104x3" data-base-value="492.0">492.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr105x3" data-base-value="495">495</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr105x3" data-base-value="495.0">495.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr106x3" data-base-value="498">498</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr106x3" data-base-value="498.0">498.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr107x3" data-base-value="501">501</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr107x3" data-base-value="501.0">501.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr108x3" data-base-value="504">504</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr108x3" data-base-value="504.0">504.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr109x3" data-base-value="507">507</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr109x3" data-base-value="507.0">507.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr110x3" data-base-value="510">510</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr110x3" data-base-value="510.0">510.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr111x3" data-base-value="513">513</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr111x3" data-base-value="513.0">513.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr112x3" data-base-value="516">516</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr112x3" data-base-value="516.0">516.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr113x3" data-base-value="519">519</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr113x3" data-base-value="519.0">519.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr114x3" data-base-value="522">522</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr114x3" data-base-value="522.0">522.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr115x3" data-base-value="525">525</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr115x3" data-base-value="525.0">525.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr116x3" data-base-value="528">528</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr116x3" data-base-value="528.0">528.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr117x3" data-base-value="531">531</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr117x3" data-base-value="531.0">531.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr118x3" data-base-value="534">534</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr118x3" data-base-value="534.0">534.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr119x3" data-base-value="537">537</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr119x3" data-base-value="537.0">537.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr120x3" data-base-value="540">540</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr120x3" data-base-value="540.0">540.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr121x3" data-base-value="543">543</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr121x3" data-base-value="543.0">543.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr122x3" data-base-value="546">546</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr122x3" data-base-value="546.0">546.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr123x3" data-base-value="549">549</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr123x3" data-base-value="549.0">549.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr124x3" data-base-value="552">552</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr124x3" data-base-value="552.0">552.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr125x3" data-base-value="555">555</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr125x3" data-base-value="555.0">555.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr126x3" data-base-value="558">558</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr126x3" data-base-value="558.0">558.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr127x3" data-base-value="561">561</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr127x3" data-base-value="561.0">561.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr128x3" data-base-value="564">564</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr128x3" data-base-value="564.0">564.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr129x3" data-base-value="567">567</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr129x3" data-base-value="567.0">567.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr130x3" data-base-value="570">570</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr130x3" data-base-value="570.0">570.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr131x3" data-base-value="573">573</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr131x3" data-base-value="573.0">573.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr132x3" data-base-value="576">576</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr132x3" data-base-value="576.0">576.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr133x3" data-base-value="579">579</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr133x3" data-base-value="579.0">579.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr134x3" data-base-value="582">582</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr134x3" data-base-value="582.0">582.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr135x3" data-base-value="585">585</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr135x3" data-base-value="585.0">585.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr136x3" data-base-value="588">588</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr136x3" data-base-value="588.0">588.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr137x3" data-base-value="591">591</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr137x3" data-base-value="591.0">591.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr138x3" data-base-value="594">594</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr138x3" data-base-value="594.0">594.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr139x3" data-base-value="597">597</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr139x3" data-base-value="597.0">597.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr140x3" data-base-value="600">600</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr140x3" data-base-value="600.0">600.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr141x3" data-base-value="603">603</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr141x3" data-base-value="603.0">603.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr142x3" data-base-value="606">606</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr142x3" data-base-value="606.0">606.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr143x3" data-base-value="609">609</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr143x3" data-base-value="609.0">609.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr144x3" data-base-value="612">612</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr144x3" data-base-value="612.0">612.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr145x3" data-base-value="615">615</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr145x3" data-base-value="615.0">615.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr146x3" data-base-value="618">618</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr146x3" data-base-value="618.0">618.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr147x3" data-base-value="621">621</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr147x3" data-base-value="621.0">621.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr148x3" data-base-value="624">624</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr148x3" data-base-value="624.0">624.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr149x3" data-base-value="627">627</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr149x3" data-base-value="627.0">627.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr150x3" data-base-value="630">630</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr150x3" data-base-value="630.0">630.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr151x3" data-base-value="633">633</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr151x3" data-base-value="633.0">633.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr152x3" data-base-value="636">636</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr152x3" data-base-value="636.0">636.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr153x3" data-base-value="639">639</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr153x3" data-base-value="639.0">639.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr154x3" data-base-value="642">642</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr154x3" data-base-value="642.0">642.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr155x3" data-base-value="645">645</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr155x3" data-base-value="645.0">645.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr156x3" data-base-value="648">648</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr156x3" data-base-value="648.0">648.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr157x3" data-base-value="651">651</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr157x3" data-base-value="651.0">651.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr158x3" data-base-value="654">654</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr158x3" data-base-value="654.0">654.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr159x3" data-base-value="657">657</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr159x3" data-base-value="657.0">657.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr160x3" data-base-value="660">660</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr160x3" data-base-value="660.0">660.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr161x3" data-base-value="663">663</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr161x3" data-base-value="663.0">663.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr162x3" data-base-value="666">666</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr162x3" data-base-value="666.0">666.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr163x3" data-base-value="669">669</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr163x3" data-base-value="669.0">669.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr164x3" data-base-value="672">672</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr164x3" data-base-value="672.0">672.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr165x3" data-base-value="675">675</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr165x3" data-base-value="675.0">675.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr166x3" data-base-value="678">678</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr166x3" data-base-value="678.0">678.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr167x3" data-base-value="681">681</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr167x3" data-base-value="681.0">681.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr168x3" data-base-value="684">684</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr168x3" data-base-value="684.0">684.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr169x3" data-base-value="687">687</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr169x3" data-base-value="687.0">687.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr170x3" data-base-value="690">690</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr170x3" data-base-value="690.0">690.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr171x3" data-base-value="693">693</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr171x3" data-base-value="693.0">693.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr172x3" data-base-value="696">696</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr172x3" data-base-value="696.0">696.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr173x3" data-base-value="699">699</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr173x3" data-base-value="699.0">699.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr174x3" data-base-value="702">702</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr174x3" data-base-value="702.0">702.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr175x3" data-base-value="705">705</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr175x3" data-base-value="705.0">705.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr176x3" data-base-value="708">708</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr176x3" data-base-value="708.0">708.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr177x3" data-base-value="711">711</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr177x3" data-base-value="711.0">711.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr178x3" data-base-value="714">714</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr178x3" data-base-value="714.0">714.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr179x3" data-base-value="717">717</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr179x3" data-base-value="717.0">717.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr180x3" data-base-value="720">720</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr180x3" data-base-value="720.0">720.0</td>
 
             </tr>
 
@@ -2010,367 +2034,367 @@
             <tr class="conjoined-top">
                 <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Floor</b></strong></span></th>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr0x4" data-base-value="20">20</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr0x4" data-base-value="20.0">20.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr1x4" data-base-value="20">20</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr1x4" data-base-value="20.33">20.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr2x4" data-base-value="20">20</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr2x4" data-base-value="20.67">20.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr3x4" data-base-value="21">21</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr3x4" data-base-value="21.0">21.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr4x4" data-base-value="21">21</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr4x4" data-base-value="21.33">21.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr5x4" data-base-value="21">21</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr5x4" data-base-value="21.67">21.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr6x4" data-base-value="22">22</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr6x4" data-base-value="22.0">22.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr7x4" data-base-value="22">22</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr7x4" data-base-value="22.33">22.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr8x4" data-base-value="22">22</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr8x4" data-base-value="22.67">22.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr9x4" data-base-value="23">23</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr9x4" data-base-value="23.0">23.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr10x4" data-base-value="23">23</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr10x4" data-base-value="23.33">23.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr11x4" data-base-value="23">23</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr11x4" data-base-value="23.67">23.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr12x4" data-base-value="24">24</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr12x4" data-base-value="24.0">24.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr13x4" data-base-value="24">24</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr13x4" data-base-value="24.33">24.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr14x4" data-base-value="24">24</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr14x4" data-base-value="24.67">24.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr15x4" data-base-value="25">25</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr15x4" data-base-value="25.0">25.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr16x4" data-base-value="25">25</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr16x4" data-base-value="25.33">25.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr17x4" data-base-value="25">25</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr17x4" data-base-value="25.67">25.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr18x4" data-base-value="26">26</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr18x4" data-base-value="26.0">26.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr19x4" data-base-value="26">26</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr19x4" data-base-value="26.33">26.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr20x4" data-base-value="26">26</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr20x4" data-base-value="26.67">26.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr21x4" data-base-value="27">27</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr21x4" data-base-value="27.0">27.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr22x4" data-base-value="27">27</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr22x4" data-base-value="27.33">27.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr23x4" data-base-value="27">27</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr23x4" data-base-value="27.67">27.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr24x4" data-base-value="28">28</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr24x4" data-base-value="28.0">28.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr25x4" data-base-value="28">28</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr25x4" data-base-value="28.33">28.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr26x4" data-base-value="28">28</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr26x4" data-base-value="28.67">28.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr27x4" data-base-value="29">29</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr27x4" data-base-value="29.0">29.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr28x4" data-base-value="29">29</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr28x4" data-base-value="29.33">29.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr29x4" data-base-value="29">29</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr29x4" data-base-value="29.67">29.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr30x4" data-base-value="30">30</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr30x4" data-base-value="30.0">30.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr31x4" data-base-value="30">30</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr31x4" data-base-value="30.33">30.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr32x4" data-base-value="30">30</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr32x4" data-base-value="30.67">30.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr33x4" data-base-value="31">31</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr33x4" data-base-value="31.0">31.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr34x4" data-base-value="31">31</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr34x4" data-base-value="31.33">31.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr35x4" data-base-value="31">31</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr35x4" data-base-value="31.67">31.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr36x4" data-base-value="32">32</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr36x4" data-base-value="32.0">32.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr37x4" data-base-value="32">32</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr37x4" data-base-value="32.33">32.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr38x4" data-base-value="32">32</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr38x4" data-base-value="32.67">32.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr39x4" data-base-value="33">33</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr39x4" data-base-value="33.0">33.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr40x4" data-base-value="33">33</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr40x4" data-base-value="33.33">33.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr41x4" data-base-value="33">33</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr41x4" data-base-value="33.67">33.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr42x4" data-base-value="34">34</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr42x4" data-base-value="34.0">34.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr43x4" data-base-value="34">34</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr43x4" data-base-value="34.33">34.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr44x4" data-base-value="34">34</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr44x4" data-base-value="34.67">34.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr45x4" data-base-value="35">35</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr45x4" data-base-value="35.0">35.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr46x4" data-base-value="35">35</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr46x4" data-base-value="35.33">35.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr47x4" data-base-value="35">35</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr47x4" data-base-value="35.67">35.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr48x4" data-base-value="36">36</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr48x4" data-base-value="36.0">36.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr49x4" data-base-value="36">36</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr49x4" data-base-value="36.33">36.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr50x4" data-base-value="36">36</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr50x4" data-base-value="36.67">36.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr51x4" data-base-value="37">37</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr51x4" data-base-value="37.0">37.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr52x4" data-base-value="37">37</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr52x4" data-base-value="37.33">37.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr53x4" data-base-value="37">37</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr53x4" data-base-value="37.67">37.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr54x4" data-base-value="38">38</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr54x4" data-base-value="38.0">38.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr55x4" data-base-value="38">38</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr55x4" data-base-value="38.33">38.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr56x4" data-base-value="38">38</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr56x4" data-base-value="38.67">38.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr57x4" data-base-value="39">39</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr57x4" data-base-value="39.0">39.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr58x4" data-base-value="39">39</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr58x4" data-base-value="39.33">39.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr59x4" data-base-value="39">39</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr59x4" data-base-value="39.67">39.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr60x4" data-base-value="40">40</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr60x4" data-base-value="40.0">40.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr61x4" data-base-value="40">40</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr61x4" data-base-value="40.33">40.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr62x4" data-base-value="40">40</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr62x4" data-base-value="40.67">40.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr63x4" data-base-value="41">41</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr63x4" data-base-value="41.0">41.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr64x4" data-base-value="41">41</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr64x4" data-base-value="41.33">41.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr65x4" data-base-value="41">41</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr65x4" data-base-value="41.67">41.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr66x4" data-base-value="42">42</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr66x4" data-base-value="42.0">42.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr67x4" data-base-value="42">42</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr67x4" data-base-value="42.33">42.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr68x4" data-base-value="42">42</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr68x4" data-base-value="42.67">42.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr69x4" data-base-value="43">43</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr69x4" data-base-value="43.0">43.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr70x4" data-base-value="43">43</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr70x4" data-base-value="43.33">43.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr71x4" data-base-value="43">43</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr71x4" data-base-value="43.67">43.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr72x4" data-base-value="44">44</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr72x4" data-base-value="44.0">44.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr73x4" data-base-value="44">44</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr73x4" data-base-value="44.33">44.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr74x4" data-base-value="44">44</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr74x4" data-base-value="44.67">44.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr75x4" data-base-value="45">45</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr75x4" data-base-value="45.0">45.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr76x4" data-base-value="45">45</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr76x4" data-base-value="45.33">45.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr77x4" data-base-value="45">45</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr77x4" data-base-value="45.67">45.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr78x4" data-base-value="46">46</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr78x4" data-base-value="46.0">46.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr79x4" data-base-value="46">46</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr79x4" data-base-value="46.33">46.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr80x4" data-base-value="46">46</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr80x4" data-base-value="46.67">46.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr81x4" data-base-value="47">47</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr81x4" data-base-value="47.0">47.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr82x4" data-base-value="47">47</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr82x4" data-base-value="47.33">47.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr83x4" data-base-value="47">47</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr83x4" data-base-value="47.67">47.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr84x4" data-base-value="48">48</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr84x4" data-base-value="48.0">48.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr85x4" data-base-value="48">48</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr85x4" data-base-value="48.33">48.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr86x4" data-base-value="48">48</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr86x4" data-base-value="48.67">48.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr87x4" data-base-value="49">49</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr87x4" data-base-value="49.0">49.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr88x4" data-base-value="49">49</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr88x4" data-base-value="49.33">49.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr89x4" data-base-value="49">49</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr89x4" data-base-value="49.67">49.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr90x4" data-base-value="50">50</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr90x4" data-base-value="50.0">50.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr91x4" data-base-value="50">50</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr91x4" data-base-value="50.33">50.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr92x4" data-base-value="50">50</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr92x4" data-base-value="50.67">50.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr93x4" data-base-value="51">51</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr93x4" data-base-value="51.0">51.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr94x4" data-base-value="51">51</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr94x4" data-base-value="51.33">51.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr95x4" data-base-value="51">51</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr95x4" data-base-value="51.67">51.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr96x4" data-base-value="52">52</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr96x4" data-base-value="52.0">52.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr97x4" data-base-value="52">52</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr97x4" data-base-value="52.33">52.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr98x4" data-base-value="52">52</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr98x4" data-base-value="52.67">52.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr99x4" data-base-value="53">53</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr99x4" data-base-value="53.0">53.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr100x4" data-base-value="53">53</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr100x4" data-base-value="53.33">53.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr101x4" data-base-value="53">53</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr101x4" data-base-value="53.67">53.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr102x4" data-base-value="54">54</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr102x4" data-base-value="54.0">54.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr103x4" data-base-value="54">54</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr103x4" data-base-value="54.33">54.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr104x4" data-base-value="54">54</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr104x4" data-base-value="54.67">54.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr105x4" data-base-value="55">55</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr105x4" data-base-value="55.0">55.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr106x4" data-base-value="55">55</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr106x4" data-base-value="55.33">55.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr107x4" data-base-value="55">55</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr107x4" data-base-value="55.67">55.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr108x4" data-base-value="56">56</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr108x4" data-base-value="56.0">56.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr109x4" data-base-value="56">56</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr109x4" data-base-value="56.33">56.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr110x4" data-base-value="56">56</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr110x4" data-base-value="56.67">56.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr111x4" data-base-value="57">57</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr111x4" data-base-value="57.0">57.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr112x4" data-base-value="57">57</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr112x4" data-base-value="57.33">57.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr113x4" data-base-value="57">57</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr113x4" data-base-value="57.67">57.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr114x4" data-base-value="58">58</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr114x4" data-base-value="58.0">58.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr115x4" data-base-value="58">58</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr115x4" data-base-value="58.33">58.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr116x4" data-base-value="58">58</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr116x4" data-base-value="58.67">58.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr117x4" data-base-value="59">59</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr117x4" data-base-value="59.0">59.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr118x4" data-base-value="59">59</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr118x4" data-base-value="59.33">59.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr119x4" data-base-value="59">59</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr119x4" data-base-value="59.67">59.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr120x4" data-base-value="60">60</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr120x4" data-base-value="60.0">60.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr121x4" data-base-value="60">60</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr121x4" data-base-value="60.33">60.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr122x4" data-base-value="60">60</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr122x4" data-base-value="60.67">60.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr123x4" data-base-value="61">61</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr123x4" data-base-value="61.0">61.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr124x4" data-base-value="61">61</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr124x4" data-base-value="61.33">61.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr125x4" data-base-value="61">61</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr125x4" data-base-value="61.67">61.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr126x4" data-base-value="62">62</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr126x4" data-base-value="62.0">62.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr127x4" data-base-value="62">62</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr127x4" data-base-value="62.33">62.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr128x4" data-base-value="62">62</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr128x4" data-base-value="62.67">62.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr129x4" data-base-value="63">63</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr129x4" data-base-value="63.0">63.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr130x4" data-base-value="63">63</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr130x4" data-base-value="63.33">63.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr131x4" data-base-value="63">63</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr131x4" data-base-value="63.67">63.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr132x4" data-base-value="64">64</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr132x4" data-base-value="64.0">64.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr133x4" data-base-value="64">64</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr133x4" data-base-value="64.33">64.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr134x4" data-base-value="64">64</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr134x4" data-base-value="64.67">64.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr135x4" data-base-value="65">65</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr135x4" data-base-value="65.0">65.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr136x4" data-base-value="65">65</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr136x4" data-base-value="65.33">65.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr137x4" data-base-value="65">65</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr137x4" data-base-value="65.67">65.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr138x4" data-base-value="66">66</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr138x4" data-base-value="66.0">66.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr139x4" data-base-value="66">66</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr139x4" data-base-value="66.33">66.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr140x4" data-base-value="66">66</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr140x4" data-base-value="66.67">66.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr141x4" data-base-value="67">67</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr141x4" data-base-value="67.0">67.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr142x4" data-base-value="67">67</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr142x4" data-base-value="67.33">67.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr143x4" data-base-value="67">67</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr143x4" data-base-value="67.67">67.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr144x4" data-base-value="68">68</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr144x4" data-base-value="68.0">68.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr145x4" data-base-value="68">68</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr145x4" data-base-value="68.33">68.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr146x4" data-base-value="68">68</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr146x4" data-base-value="68.67">68.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr147x4" data-base-value="69">69</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr147x4" data-base-value="69.0">69.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr148x4" data-base-value="69">69</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr148x4" data-base-value="69.33">69.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr149x4" data-base-value="69">69</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr149x4" data-base-value="69.67">69.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr150x4" data-base-value="70">70</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr150x4" data-base-value="70.0">70.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr151x4" data-base-value="70">70</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr151x4" data-base-value="70.33">70.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr152x4" data-base-value="70">70</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr152x4" data-base-value="70.67">70.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr153x4" data-base-value="71">71</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr153x4" data-base-value="71.0">71.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr154x4" data-base-value="71">71</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr154x4" data-base-value="71.33">71.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr155x4" data-base-value="71">71</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr155x4" data-base-value="71.67">71.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr156x4" data-base-value="72">72</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr156x4" data-base-value="72.0">72.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr157x4" data-base-value="72">72</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr157x4" data-base-value="72.33">72.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr158x4" data-base-value="72">72</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr158x4" data-base-value="72.67">72.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr159x4" data-base-value="73">73</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr159x4" data-base-value="73.0">73.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr160x4" data-base-value="73">73</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr160x4" data-base-value="73.33">73.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr161x4" data-base-value="73">73</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr161x4" data-base-value="73.67">73.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr162x4" data-base-value="74">74</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr162x4" data-base-value="74.0">74.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr163x4" data-base-value="74">74</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr163x4" data-base-value="74.33">74.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr164x4" data-base-value="74">74</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr164x4" data-base-value="74.67">74.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr165x4" data-base-value="75">75</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr165x4" data-base-value="75.0">75.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr166x4" data-base-value="75">75</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr166x4" data-base-value="75.33">75.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr167x4" data-base-value="75">75</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr167x4" data-base-value="75.67">75.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr168x4" data-base-value="76">76</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr168x4" data-base-value="76.0">76.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr169x4" data-base-value="76">76</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr169x4" data-base-value="76.33">76.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr170x4" data-base-value="76">76</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr170x4" data-base-value="76.67">76.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr171x4" data-base-value="77">77</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr171x4" data-base-value="77.0">77.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr172x4" data-base-value="77">77</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr172x4" data-base-value="77.33">77.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr173x4" data-base-value="77">77</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr173x4" data-base-value="77.67">77.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr174x4" data-base-value="78">78</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr174x4" data-base-value="78.0">78.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr175x4" data-base-value="78">78</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr175x4" data-base-value="78.33">78.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr176x4" data-base-value="78">78</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr176x4" data-base-value="78.67">78.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr177x4" data-base-value="79">79</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr177x4" data-base-value="79.0">79.0</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr178x4" data-base-value="79">79</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr178x4" data-base-value="79.33">79.33</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr179x4" data-base-value="79">79</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr179x4" data-base-value="79.67">79.67</td>
 
-                <td style=" text-align: center; vertical-align: middle;" id="0xr180x4" data-base-value="80">80</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr180x4" data-base-value="80.0">80.0</td>
 
             </tr>
 
@@ -2378,367 +2402,367 @@
             <tr class="conjoined-bot">
                 <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Ceiling</b></strong></span></th>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr0x5" data-base-value="40">40</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr0x5" data-base-value="40.0">40.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr1x5" data-base-value="40">40</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr1x5" data-base-value="40.67">40.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr2x5" data-base-value="41">41</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr2x5" data-base-value="41.33">41.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr3x5" data-base-value="42">42</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr3x5" data-base-value="42.0">42.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr4x5" data-base-value="42">42</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr4x5" data-base-value="42.67">42.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr5x5" data-base-value="43">43</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr5x5" data-base-value="43.33">43.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr6x5" data-base-value="44">44</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr6x5" data-base-value="44.0">44.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr7x5" data-base-value="44">44</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr7x5" data-base-value="44.67">44.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr8x5" data-base-value="45">45</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr8x5" data-base-value="45.33">45.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr9x5" data-base-value="46">46</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr9x5" data-base-value="46.0">46.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr10x5" data-base-value="46">46</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr10x5" data-base-value="46.67">46.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr11x5" data-base-value="47">47</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr11x5" data-base-value="47.33">47.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr12x5" data-base-value="48">48</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr12x5" data-base-value="48.0">48.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr13x5" data-base-value="48">48</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr13x5" data-base-value="48.67">48.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr14x5" data-base-value="49">49</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr14x5" data-base-value="49.33">49.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr15x5" data-base-value="50">50</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr15x5" data-base-value="50.0">50.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr16x5" data-base-value="50">50</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr16x5" data-base-value="50.67">50.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr17x5" data-base-value="51">51</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr17x5" data-base-value="51.33">51.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr18x5" data-base-value="52">52</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr18x5" data-base-value="52.0">52.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr19x5" data-base-value="52">52</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr19x5" data-base-value="52.67">52.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr20x5" data-base-value="53">53</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr20x5" data-base-value="53.33">53.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr21x5" data-base-value="54">54</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr21x5" data-base-value="54.0">54.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr22x5" data-base-value="54">54</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr22x5" data-base-value="54.67">54.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr23x5" data-base-value="55">55</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr23x5" data-base-value="55.33">55.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr24x5" data-base-value="56">56</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr24x5" data-base-value="56.0">56.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr25x5" data-base-value="56">56</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr25x5" data-base-value="56.67">56.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr26x5" data-base-value="57">57</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr26x5" data-base-value="57.33">57.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr27x5" data-base-value="58">58</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr27x5" data-base-value="58.0">58.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr28x5" data-base-value="58">58</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr28x5" data-base-value="58.67">58.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr29x5" data-base-value="59">59</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr29x5" data-base-value="59.33">59.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr30x5" data-base-value="60">60</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr30x5" data-base-value="60.0">60.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr31x5" data-base-value="60">60</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr31x5" data-base-value="60.67">60.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr32x5" data-base-value="61">61</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr32x5" data-base-value="61.33">61.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr33x5" data-base-value="62">62</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr33x5" data-base-value="62.0">62.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr34x5" data-base-value="62">62</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr34x5" data-base-value="62.67">62.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr35x5" data-base-value="63">63</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr35x5" data-base-value="63.33">63.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr36x5" data-base-value="64">64</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr36x5" data-base-value="64.0">64.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr37x5" data-base-value="64">64</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr37x5" data-base-value="64.67">64.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr38x5" data-base-value="65">65</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr38x5" data-base-value="65.33">65.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr39x5" data-base-value="66">66</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr39x5" data-base-value="66.0">66.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr40x5" data-base-value="66">66</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr40x5" data-base-value="66.67">66.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr41x5" data-base-value="67">67</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr41x5" data-base-value="67.33">67.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr42x5" data-base-value="68">68</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr42x5" data-base-value="68.0">68.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr43x5" data-base-value="68">68</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr43x5" data-base-value="68.67">68.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr44x5" data-base-value="69">69</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr44x5" data-base-value="69.33">69.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr45x5" data-base-value="70">70</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr45x5" data-base-value="70.0">70.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr46x5" data-base-value="70">70</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr46x5" data-base-value="70.67">70.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr47x5" data-base-value="71">71</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr47x5" data-base-value="71.33">71.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr48x5" data-base-value="72">72</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr48x5" data-base-value="72.0">72.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr49x5" data-base-value="72">72</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr49x5" data-base-value="72.67">72.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr50x5" data-base-value="73">73</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr50x5" data-base-value="73.33">73.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr51x5" data-base-value="74">74</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr51x5" data-base-value="74.0">74.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr52x5" data-base-value="74">74</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr52x5" data-base-value="74.67">74.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr53x5" data-base-value="75">75</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr53x5" data-base-value="75.33">75.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr54x5" data-base-value="76">76</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr54x5" data-base-value="76.0">76.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr55x5" data-base-value="76">76</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr55x5" data-base-value="76.67">76.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr56x5" data-base-value="77">77</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr56x5" data-base-value="77.33">77.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr57x5" data-base-value="78">78</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr57x5" data-base-value="78.0">78.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr58x5" data-base-value="78">78</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr58x5" data-base-value="78.67">78.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr59x5" data-base-value="79">79</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr59x5" data-base-value="79.33">79.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr60x5" data-base-value="80">80</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr60x5" data-base-value="80.0">80.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr61x5" data-base-value="80">80</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr61x5" data-base-value="80.67">80.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr62x5" data-base-value="81">81</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr62x5" data-base-value="81.33">81.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr63x5" data-base-value="82">82</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr63x5" data-base-value="82.0">82.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr64x5" data-base-value="82">82</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr64x5" data-base-value="82.67">82.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr65x5" data-base-value="83">83</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr65x5" data-base-value="83.33">83.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr66x5" data-base-value="84">84</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr66x5" data-base-value="84.0">84.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr67x5" data-base-value="84">84</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr67x5" data-base-value="84.67">84.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr68x5" data-base-value="85">85</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr68x5" data-base-value="85.33">85.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr69x5" data-base-value="86">86</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr69x5" data-base-value="86.0">86.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr70x5" data-base-value="86">86</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr70x5" data-base-value="86.67">86.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr71x5" data-base-value="87">87</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr71x5" data-base-value="87.33">87.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr72x5" data-base-value="88">88</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr72x5" data-base-value="88.0">88.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr73x5" data-base-value="88">88</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr73x5" data-base-value="88.67">88.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr74x5" data-base-value="89">89</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr74x5" data-base-value="89.33">89.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr75x5" data-base-value="90">90</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr75x5" data-base-value="90.0">90.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr76x5" data-base-value="90">90</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr76x5" data-base-value="90.67">90.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr77x5" data-base-value="91">91</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr77x5" data-base-value="91.33">91.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr78x5" data-base-value="92">92</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr78x5" data-base-value="92.0">92.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr79x5" data-base-value="92">92</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr79x5" data-base-value="92.67">92.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr80x5" data-base-value="93">93</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr80x5" data-base-value="93.33">93.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr81x5" data-base-value="94">94</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr81x5" data-base-value="94.0">94.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr82x5" data-base-value="94">94</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr82x5" data-base-value="94.67">94.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr83x5" data-base-value="95">95</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr83x5" data-base-value="95.33">95.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr84x5" data-base-value="96">96</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr84x5" data-base-value="96.0">96.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr85x5" data-base-value="96">96</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr85x5" data-base-value="96.67">96.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr86x5" data-base-value="97">97</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr86x5" data-base-value="97.33">97.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr87x5" data-base-value="98">98</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr87x5" data-base-value="98.0">98.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr88x5" data-base-value="98">98</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr88x5" data-base-value="98.67">98.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr89x5" data-base-value="99">99</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr89x5" data-base-value="99.33">99.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr90x5" data-base-value="100">100</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr90x5" data-base-value="100.0">100.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr91x5" data-base-value="100">100</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr91x5" data-base-value="100.67">100.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr92x5" data-base-value="101">101</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr92x5" data-base-value="101.33">101.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr93x5" data-base-value="102">102</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr93x5" data-base-value="102.0">102.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr94x5" data-base-value="102">102</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr94x5" data-base-value="102.67">102.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr95x5" data-base-value="103">103</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr95x5" data-base-value="103.33">103.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr96x5" data-base-value="104">104</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr96x5" data-base-value="104.0">104.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr97x5" data-base-value="104">104</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr97x5" data-base-value="104.67">104.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr98x5" data-base-value="105">105</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr98x5" data-base-value="105.33">105.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr99x5" data-base-value="106">106</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr99x5" data-base-value="106.0">106.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr100x5" data-base-value="106">106</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr100x5" data-base-value="106.67">106.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr101x5" data-base-value="107">107</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr101x5" data-base-value="107.33">107.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr102x5" data-base-value="108">108</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr102x5" data-base-value="108.0">108.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr103x5" data-base-value="108">108</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr103x5" data-base-value="108.67">108.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr104x5" data-base-value="109">109</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr104x5" data-base-value="109.33">109.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr105x5" data-base-value="110">110</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr105x5" data-base-value="110.0">110.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr106x5" data-base-value="110">110</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr106x5" data-base-value="110.67">110.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr107x5" data-base-value="111">111</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr107x5" data-base-value="111.33">111.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr108x5" data-base-value="112">112</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr108x5" data-base-value="112.0">112.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr109x5" data-base-value="112">112</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr109x5" data-base-value="112.67">112.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr110x5" data-base-value="113">113</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr110x5" data-base-value="113.33">113.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr111x5" data-base-value="114">114</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr111x5" data-base-value="114.0">114.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr112x5" data-base-value="114">114</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr112x5" data-base-value="114.67">114.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr113x5" data-base-value="115">115</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr113x5" data-base-value="115.33">115.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr114x5" data-base-value="116">116</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr114x5" data-base-value="116.0">116.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr115x5" data-base-value="116">116</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr115x5" data-base-value="116.67">116.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr116x5" data-base-value="117">117</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr116x5" data-base-value="117.33">117.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr117x5" data-base-value="118">118</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr117x5" data-base-value="118.0">118.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr118x5" data-base-value="118">118</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr118x5" data-base-value="118.67">118.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr119x5" data-base-value="119">119</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr119x5" data-base-value="119.33">119.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr120x5" data-base-value="120">120</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr120x5" data-base-value="120.0">120.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr121x5" data-base-value="120">120</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr121x5" data-base-value="120.67">120.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr122x5" data-base-value="121">121</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr122x5" data-base-value="121.33">121.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr123x5" data-base-value="122">122</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr123x5" data-base-value="122.0">122.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr124x5" data-base-value="122">122</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr124x5" data-base-value="122.67">122.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr125x5" data-base-value="123">123</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr125x5" data-base-value="123.33">123.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr126x5" data-base-value="124">124</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr126x5" data-base-value="124.0">124.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr127x5" data-base-value="124">124</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr127x5" data-base-value="124.67">124.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr128x5" data-base-value="125">125</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr128x5" data-base-value="125.33">125.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr129x5" data-base-value="126">126</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr129x5" data-base-value="126.0">126.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr130x5" data-base-value="126">126</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr130x5" data-base-value="126.67">126.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr131x5" data-base-value="127">127</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr131x5" data-base-value="127.33">127.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr132x5" data-base-value="128">128</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr132x5" data-base-value="128.0">128.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr133x5" data-base-value="128">128</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr133x5" data-base-value="128.67">128.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr134x5" data-base-value="129">129</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr134x5" data-base-value="129.33">129.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr135x5" data-base-value="130">130</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr135x5" data-base-value="130.0">130.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr136x5" data-base-value="130">130</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr136x5" data-base-value="130.67">130.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr137x5" data-base-value="131">131</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr137x5" data-base-value="131.33">131.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr138x5" data-base-value="132">132</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr138x5" data-base-value="132.0">132.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr139x5" data-base-value="132">132</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr139x5" data-base-value="132.67">132.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr140x5" data-base-value="133">133</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr140x5" data-base-value="133.33">133.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr141x5" data-base-value="134">134</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr141x5" data-base-value="134.0">134.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr142x5" data-base-value="134">134</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr142x5" data-base-value="134.67">134.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr143x5" data-base-value="135">135</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr143x5" data-base-value="135.33">135.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr144x5" data-base-value="136">136</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr144x5" data-base-value="136.0">136.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr145x5" data-base-value="136">136</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr145x5" data-base-value="136.67">136.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr146x5" data-base-value="137">137</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr146x5" data-base-value="137.33">137.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr147x5" data-base-value="138">138</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr147x5" data-base-value="138.0">138.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr148x5" data-base-value="138">138</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr148x5" data-base-value="138.67">138.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr149x5" data-base-value="139">139</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr149x5" data-base-value="139.33">139.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr150x5" data-base-value="140">140</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr150x5" data-base-value="140.0">140.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr151x5" data-base-value="140">140</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr151x5" data-base-value="140.67">140.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr152x5" data-base-value="141">141</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr152x5" data-base-value="141.33">141.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr153x5" data-base-value="142">142</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr153x5" data-base-value="142.0">142.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr154x5" data-base-value="142">142</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr154x5" data-base-value="142.67">142.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr155x5" data-base-value="143">143</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr155x5" data-base-value="143.33">143.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr156x5" data-base-value="144">144</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr156x5" data-base-value="144.0">144.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr157x5" data-base-value="144">144</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr157x5" data-base-value="144.67">144.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr158x5" data-base-value="145">145</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr158x5" data-base-value="145.33">145.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr159x5" data-base-value="146">146</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr159x5" data-base-value="146.0">146.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr160x5" data-base-value="146">146</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr160x5" data-base-value="146.67">146.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr161x5" data-base-value="147">147</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr161x5" data-base-value="147.33">147.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr162x5" data-base-value="148">148</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr162x5" data-base-value="148.0">148.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr163x5" data-base-value="148">148</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr163x5" data-base-value="148.67">148.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr164x5" data-base-value="149">149</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr164x5" data-base-value="149.33">149.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr165x5" data-base-value="150">150</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr165x5" data-base-value="150.0">150.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr166x5" data-base-value="150">150</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr166x5" data-base-value="150.67">150.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr167x5" data-base-value="151">151</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr167x5" data-base-value="151.33">151.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr168x5" data-base-value="152">152</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr168x5" data-base-value="152.0">152.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr169x5" data-base-value="152">152</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr169x5" data-base-value="152.67">152.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr170x5" data-base-value="153">153</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr170x5" data-base-value="153.33">153.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr171x5" data-base-value="154">154</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr171x5" data-base-value="154.0">154.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr172x5" data-base-value="154">154</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr172x5" data-base-value="154.67">154.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr173x5" data-base-value="155">155</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr173x5" data-base-value="155.33">155.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr174x5" data-base-value="156">156</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr174x5" data-base-value="156.0">156.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr175x5" data-base-value="156">156</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr175x5" data-base-value="156.67">156.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr176x5" data-base-value="157">157</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr176x5" data-base-value="157.33">157.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr177x5" data-base-value="158">158</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr177x5" data-base-value="158.0">158.0</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr178x5" data-base-value="158">158</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr178x5" data-base-value="158.67">158.67</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr179x5" data-base-value="159">159</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr179x5" data-base-value="159.33">159.33</td>
 
-                <td style="text-align: center; vertical-align: middle;" id="0xr180x5" data-base-value="160">160</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr180x5" data-base-value="160.0">160.0</td>
 
             </tr>
 

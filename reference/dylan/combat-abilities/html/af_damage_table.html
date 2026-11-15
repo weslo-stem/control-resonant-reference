@@ -26,7 +26,7 @@
                     </span>
                 </th>
                 {% for idx,row in reader.iterrows() %}
-                <td style=" text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Damage Floor')}}" data-base-value="{{row['Damage Floor']|int}}">{{row['Damage Floor']|int}}</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Damage Floor')}}" data-base-value="{{row['Damage Floor']}}">{{row['Damage Floor']}}</td>
                 {% endfor %}
             </tr>
             {% endif %}
@@ -41,7 +41,7 @@
                     </span>
                 </th>
                 {% for idx,row in reader.iterrows() %}
-                <td style="text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Damage Ceiling')}}" data-base-value="{{row['Damage Ceiling']|int}}">{{row['Damage Ceiling']|int}}</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Damage Ceiling')}}" data-base-value="{{row['Damage Ceiling']}}">{{row['Damage Ceiling']}}</td>
                 {% endfor %}
             </tr>
             {% endif %}
@@ -56,7 +56,7 @@
                     </span>
                 </th>
                 {% for idx,row in reader.iterrows() %}
-                <td style="text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Damage')}}" data-base-value="{{row['Damage']|int}}">{{row['Damage']|int}}</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Damage')}}" data-base-value="{{row['Damage']}}">{{row['Damage']}}</td>
                 {% endfor %}
             </tr>
             {% endif %}
@@ -64,7 +64,7 @@
             <tr class="conjoined-top">
                 <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Floor</b></strong></span></th>
                 {% for idx,row in reader.iterrows() %}
-                <td style=" text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Falter Floor')}}" data-base-value="{{row['Falter Floor']|int}}">{{row['Falter Floor']|int}}</td>
+                <td style=" text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Falter Floor')}}" data-base-value="{{row['Falter Floor']}}">{{row['Falter Floor']}}</td>
                 {% endfor %}
             </tr>
             {% endif %}
@@ -72,7 +72,7 @@
             <tr class="conjoined-bot">
                 <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter Ceiling</b></strong></span></th>
                 {% for idx,row in reader.iterrows() %}
-                <td style="text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Falter Ceiling')}}" data-base-value="{{row['Falter Ceiling']|int}}">{{row['Falter Ceiling']|int}}</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Falter Ceiling')}}" data-base-value="{{row['Falter Ceiling']}}">{{row['Falter Ceiling']}}</td>
                 {% endfor %}
             </tr>
             {% endif %}
@@ -80,7 +80,7 @@
             <tr>
                 <th class="wpn-dmg-header inline-svg"><span class="inline-svg"><img src="/control-resonant-reference/icons/damage_types/icn_damage_falter.svg"><strong><b>Falter</b></strong></span></th>
                 {% for idx,row in reader.iterrows() %}
-                <td style="text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Falter')}}" data-base-value="{{row['Falter']|int}}">{{row['Falter']|int}}</td>
+                <td style="text-align: center; vertical-align: middle;" id="0xr{{idx}}x{{reader.columns.get_loc('Falter')}}" data-base-value="{{row['Falter']}}">{{row['Falter']}}</td>
                 {% endfor %}
             </tr>
             {% endif %}
