@@ -419,8 +419,6 @@
 <p>Note that all values displayed in-game are rounded.</p>
 <h4 id="base-damage-and-falter-values-by-aberrant-strength"><em>Base Damage and Falter values by Aberrant Strength</em></h4>
 <details id="buff-dropdown">
-    <i style="font-size: 12px">All buffs, despite being displayed as "+##%", are multiplicative.</i><br />
-     <i style="font-size: 12px">Weapon upgrades <b>Gain Control</b>, <b>Pain Point</b>, <b>Falter Follow-Up</b>, <b>Savage Accumulation</b>, <b>Ravage Blade</b>, <b>Power Game</b>, and <b>Ambitious Blade</b> are currently not included, as they are a bit too situational to fit.</i> 
     <summary>
         Buff/Debuff Toggles
         <div style="display: inline-flex; flex-wrap: wrap; max-width: 100%">
@@ -495,6 +493,13 @@
         </div>
     </summary>
     <div class="buff-dropdown">
+        <hr />
+        <i style="font-size: 12px">All buffs, despite being displayed as "+XX%", are multiplicative.</i>
+        <br /> <i style="font-size: 12px">Weapon upgrades <b>Gain Control</b>, <b>Pain Point</b>, <b>Falter Follow-Up</b>, <b>Savage Accumulation</b>, <b>Ravage Blade</b>, <b>Power Game</b>, and <b>Ambitious Blade</b> are currently not included, as they are a bit too situational to fit.</i>
+        <hr />
+        <i style="color: black" id="dmgcounter">Damage: </i><br />
+        <i style="color: black" id="faltercounter">Falter: </i>
+        <hr />
 
         <b><label style="color: black;">Critical Hits</label></b> <br>
         <label class="cbox-indent"><input data-input-for="CRITICAL" type="checkbox" disabled> Critical Hit (+50% Damage)</label> <br>
