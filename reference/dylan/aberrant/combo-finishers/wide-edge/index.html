@@ -411,12 +411,12 @@
 <p><br></p>
 <p>Damage and falter values will be increased by talents and status buffs. Below is a table of the base damage and falter values per Aberrant Strength level.</p>
 <h1 id="damage">Damage</h1>
-<p>Damage Falter % Calculation: <code>100% + ( Aberrant Strength * 1.67% )</code></p>
+<p>Base Aberrant Damage Falter % Calculation: <code>100% + ( Aberrant Strength * 1.67% )</code></p>
 <p>Note that all values displayed in-game are rounded.</p>
 <h4 id="base-damage-and-falter-values-by-aberrant-strength"><em>Base Damage and Falter values by Aberrant Strength</em></h4>
 <details id="buff-dropdown">
-    <i>All buffs, despite being displayed as "+##%", are multiplicative.</i><br />
-     <i>Weapon upgrades <b>Gain Control</b>, <b>Pain Point</b>, and <b>Falter Follow-Up</b> are currently not included, as they are a bit too situational to fit.</i> 
+    <i style="font-size: 12px">All buffs, despite being displayed as "+##%", are multiplicative.</i><br />
+     <i style="font-size: 12px">Weapon upgrades <b>Gain Control</b>, <b>Pain Point</b>, <b>Falter Follow-Up</b>, <b>Savage Accumulation</b>, <b>Ravage Blade</b>, <b>Power Game</b>, and <b>Ambitious Blade</b> are currently not included, as they are a bit too situational to fit.</i> 
     <summary>
         Buff/Debuff Toggles
         <div style="display: inline-flex; flex-wrap: wrap; max-width: 100%">
@@ -426,11 +426,28 @@
 
             <div class="buff-icons" id="sky-high-finisher-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_ariborne_ce_buff.svg' /></div>
             <div class="buff-icons" id="lasting-impression-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_flurry_upg_ce_dmg_buff.svg' /></div>
+            <div class="buff-icons" id="final-riposte-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slash_upg_ce_against_status_ailment.svg' /></div>
 
             <div class="buff-icons" id="powerful-opener-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_dmg_buff_to_undamaged.svg' /></div>
             <div class="buff-icons" id="eager-carve-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_dmg_buff_to_launched.svg' /></div>
             <div class="buff-icons" id="total-command-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_bloodlust_buff.svg' /></div>
             <div class="buff-icons" id="prime-state-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_dmg_buff_full_health.svg' /></div>
+
+            <div class="buff-icons" id="aerial-decree-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slash_upg_damage_buff_against_airborne.svg' /></div>
+            <div class="buff-icons" id="forceful-authority-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slash_upg_bloodlust_dmg_up.svg' /></div>
+
+            <div class="buff-icons" id="capitalizing-charge-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_crush_upg_falter_up.svg' /></div>
+
+            <div class="buff-icons" id="high-lash-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_extend_airborne_falter_buff.svg' /></div>
+
+            <div class="buff-icons" id="drive-mauler-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_upg_dmg_against_airborne.svg' /></div>
+            <div class="buff-icons" id="falter-jab-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeon_upg_falter_up.svg' /></div>
+
+            <div class="buff-icons" id="uppercut-stagger-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_bludgeonuc_falter_buff.svg' /></div>
+
+            <div class="buff-icons" id="forceful-authority-2-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slash_upg_bloodlust_dmg_up.svg' /></div>
+
+            <div class="buff-icons" id="clear-the-air-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_split_orbit_upg_airborne_dmg_buff.svg' /></div>
 
             <div class="buff-icons" id="empowered-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_ability_up.svg' /></div>
             <div class="buff-icons" id="focused-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_falter_up.svg' /></div>
@@ -476,7 +493,7 @@
     <div class="buff-dropdown">
 
         <b><label style="color: black;">Critical Hits</label></b> <br>
-        <label class="cbox-indent"><input data-input-for="CRITICAL" type="checkbox" disabled> Critical Hit (150% Base Damage)</label> <br>
+        <label class="cbox-indent"><input data-input-for="CRITICAL" type="checkbox" disabled> Critical Hit (+50% Damage)</label> <br>
         <label class="cbox-indent"><input data-input-for="COMPACT" type="checkbox" disabled> Compact (Artifact, +50% Critical Damage, -30% Critical Falter)</label> <br>
 
 
@@ -486,6 +503,19 @@
         <b><label style="color: black;">Cross-Compatible Weapon Upgrades</label></b> <br>
         <label class="cbox-indent"><input data-input-for="SKY_HIGH_FINISHER" type="checkbox" disabled> Sky-High Finisher (Combo Finisher - +20% Damage and Falter <b>to airborne enemies</b> if using Primary Form <b>Cleave</b>)</label> <br>
         <label class="cbox-indent"><input data-input-for="LASTING_IMPRESSION" type="checkbox" disabled> Lasting Impression (Combo Finisher - +25% Damage if using Primary Form <b>Strike</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="FINAL_RIPOSTE" type="checkbox" disabled> Final Riposte (Combo Finisher - +20% Damage and Falter <b>to enemies afflicted by Burn, Infected, or Astralized</b> if using Primary Form <b>Glaive</b>)</label> <br>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
