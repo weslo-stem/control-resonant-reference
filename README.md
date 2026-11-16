@@ -22,9 +22,9 @@ If you wish to contribute, you will need Python and Git installed.
 [ ] Zones
 [ ] Quests
 [ ] Enemies
-[ ] Status effects/buffs
+[x] Status effects/buffs
 [x] Talents
-[ ] Materials
+[x] Materials
 [ ] Cosmetics
 ```
 
@@ -98,6 +98,8 @@ One-off macro variables can also be defined and initialized in the `mkdocs.yml` 
 To reference these variables in HTML and Markdown, use `{{variable_name}}`. 
 Within Jinja2 code blocks, you can use the variable name in python syntax without extra curly braces: `{% if variable_name in foo %} bar {% endif %}`
 
+**HOWEVER**, macros **cannot** be referenced in .html template files!
+
 # Site navigation
 
 The site's navigation and page visibility is overridden and managed by the [mkdocs-awesome-nav](https://github.com/lukasgeiter/mkdocs-awesome-nav) plugin.
@@ -150,4 +152,48 @@ Looks nicer, especially when you end up having 40+ entries in a single category.
 
 # Placeholders
 
-# Assets
+Placeholders are primarily used for two things (at the moment):
+
+1. Checkbox for blurring spoilers
+2. Checkbox toggles + number boxes for the "Buff/Debuff" dropdown on weapon form and combat ability pages
+
+All placeholder values are stored in the `placeholder-plugin.yaml` file in the root directory. These can be assigned to elements on any page for the user to edit.
+
+If you want to blur something as a spoiler, simply pit `class="iBLURREDi"` in the HTML element. For more info on general use, check out the documentation on the plugin:
+
+https://mkdocs-placeholder-plugin.six-two.dev/usage/
+
+# Assets and Scripts
+
+## Assets
+
+At the moment, we have 4 main asset categories:
+
+1. `docs/gifs` for .GIFs
+2. `docs/icons` for mostly .SVG files
+3. `docs/images` for static images like screenshots
+4. `docs/tables` for .CSV tables
+
+.CSS overrides can be found in `docs/stylesheets/extra.css`
+
+As mentioned in [Macros and site-wide variables](#macros-and-site-wide-variables), assets can be assigned to {{macro}} variables to be referenced shorthand.
+
+## Scripts
+
+JavaScript scripts can be found in `docs/scripts`
+
+Jinja2 code is a bit messy at the moment, being contained to .html template/macro files placed in the folder where they are used.
+
+At the moment, we have 2 .js scripts:
+
+1. `muConnector.js` which was borrowed from StackOverflow, it draws lines between points and is used on the Talents page and the individual Weapon Form pages
+2. `updateMultipliers.js` which stores and applies all the individual damage and falter multipliers on the Combat Ability and Weapon Form pages
+
+Currently used .html macros include:
+
+`reference/items/artifacts/artifactpage.html` Which is used on each artifact's page to display their info boxes. Works in conjunction with `artifacts.csv`
+
+`reference/items/artifactlist.html` Which is used on `artifacts.md`, also uses `artifacts.csv`
+
+`reference/world/vendors/shopgrid_htmls/shopgrid.html` Which are used on each vendor's page to display their item stock
+

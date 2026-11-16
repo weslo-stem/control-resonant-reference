@@ -12,8 +12,8 @@ var secTitle = document.getElementsByTagName("h1").item(0)
 // new multiplier(name, element tag (data-input-for), damage, falter)
 class multiplier {
     static name;
-    static damage;
-    static falter;
+    static damage = 0;
+    static falter = 0;
     static enabled;
     static element;
     static iconid;
@@ -48,9 +48,6 @@ class multiplier {
             if (tryGetRetaliation && tryGetRetaliation.checked) {
                 this.falter = 0.25
                 this.damage = 0
-            } else {
-                this.falter = 0
-                this.damage = 0
             }
         }
         if (this.name == "Summon Synergy" && summonCount) {
@@ -70,14 +67,11 @@ class multiplier {
         if (this.name == "Dominance") {
             var form;
             if (secHeader.innerHTML.includes("Primary")) {
-                console.log("a")
                 form = "Primary"
             } else if (secHeader.innerHTML.includes("Secondary")) {
                 form = "Secondary"
-                console.log("a")
             } else if (secHeader.innerHTML.includes("Combo Finisher")) {
                 form = "Combo Finisher"
-                console.log("a")
             }
             var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
             if (form == "Primary" && tryGetDominance && tryGetDominance.checked) {
@@ -101,9 +95,6 @@ class multiplier {
             if (tryGetCrit && tryGetCrit.checked) {
                 this.damage = 0.5
                 this.falter = -0.3
-            } else {
-                this.damage = 0
-                this.falter = 0
             }
         }
     }
@@ -124,21 +115,17 @@ class multiplier {
             }
         }
         var tryGetCrit = document.querySelector('[data-input-for="CRITICAL"]');
-        if (this.name == "Grievous Harm" && tryGetCrit && tryGetCrit.checked) {
-            this.damage = 0.3
-            this.falter = 0.3
-        } else {
-            this.damage = 0
-            this.falter = 0
+        if (this.name == "Grievous Harm") {
+            if (tryGetCrit && tryGetCrit.checked) {
+                this.damage = 0.3
+                this.falter = 0.3
+            }
         }
         if (this.name == "Total Command") {
             var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
             if (tryGetDominance && tryGetDominance.checked) {
                 this.damage = 0.25
                 this.falter = 0.25
-            } else {
-                this.falter = 0
-                this.damage = 0
             }
         }
         if (this.name == "Forceful Authority") {
@@ -146,9 +133,13 @@ class multiplier {
             if (tryGetDominance && tryGetDominance.checked) {
                 this.damage = 0.25
                 this.falter = 0.25
-            } else {
-                this.falter = 0
-                this.damage = 0
+            }
+        }
+        if (this.name == "Forceful Authority 2") {
+            var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
+            if (tryGetDominance && tryGetDominance.checked) {
+                this.damage = 0.25
+                this.falter = 0.25
             }
         }
     }
@@ -185,8 +176,8 @@ class multipliers {
         this.multArray.push(new multiplier('Medical Alert Bands', "MEDICAL_ALERT_BANDS", "medical-alert-bands-icon", 'Artifact', 0.0, 0.25));
         this.multArray.push(new multiplier("Mother's Locket", "MOTHERS_LOCKET", "mothers-locket-icon", 'Artifact', 0.25, 0.0));
         this.multArray.push(new multiplier("Practice Knot", "PRACTICE_KNOT", "practice-knot-icon", 'Artifact', 0.0, 0.15));
-        this.multArray.push(new multiplier("Brass Dusters", "BRASS_DUSTERS", "brass-dusters-icon", 'Artifact', 0.5, -9999999));
-        this.multArray.push(new multiplier("Framing Hammer", "FRAMING_HAMMER", "framing-hammer-icon", 'Artifact', -9999999, 0.3));
+        this.multArray.push(new multiplier("Brass Dusters", "BRASS_DUSTERS", "brass-dusters-icon", 'Artifact', 0.5, -1));
+        this.multArray.push(new multiplier("Framing Hammer", "FRAMING_HAMMER", "framing-hammer-icon", 'Artifact', -1, 0.3));
         this.multArray.push(new multiplier("Scrunchie", "SCRUNCHIE", "scrunchie-icon", 'Artifact', 0.1, 0));
         this.multArray.push(new multiplier("The Weekend Crossword", "THE_WEEKEND_CROSSWORD", "the-weekend-crossword-icon", 'Artifact', 0.15, 0));
         this.multArray.push(new multiplier("Unfinished Lollipop", "UNFINISHED_LOLLIPOP", "unfinished-lollipop-icon", 'Artifact', 0.1, 0));
@@ -214,26 +205,34 @@ class multipliers {
         // Strike... not much here, idk how to implement Gain Control
 
         // Glaive
-        // this.multArray.push(new multiplier("Aerial Decree", "AERIAL_DECREE", "aerial-decree-icon", 'FormUpgrade', 0.2, 0));
-        // this.multArray.push(new multiplier("Forceful Authority", "FORCEFUL_AUTHORITY", "forceful-authority-icon", 'FormUpgrade', 0.25, 0.25));
+        this.multArray.push(new multiplier("Aerial Decree", "AERIAL_DECREE", "aerial-decree-icon", 'FormUpgrade', 0.2, 0));
+        this.multArray.push(new multiplier("Forceful Authority", "FORCEFUL_AUTHORITY", "forceful-authority-icon", 'FormUpgrade', 0, 0));
 
         // Crush
+        this.multArray.push(new multiplier("Capitalizing Charge", "CAPITALIZING_CHARGE", "capitalizing-charge-icon", 'FormUpgrade', 0, 0.2));
 
         // Extend
+        this.multArray.push(new multiplier("High Lash", "HIGH_LASH", "high-lash-icon", 'FormUpgrade', 0, 0.3));
 
-        // Drill
+        // Drill... nothin here
 
         // Concussive Beatdown
+        this.multArray.push(new multiplier("Drive Mauler", "DRIVE_MAULER", "drive-mauler-icon", 'FormUpgrade', 0.2, 0.2));
+        this.multArray.push(new multiplier("Falter Jab", "FALTER_JAB", "falter-jab-icon", 'FormUpgrade', 0, 0.2));
 
         // Uppercut Surge
+        this.multArray.push(new multiplier("Uppercut Stagger", "UPPERCUT_STAGGER", "uppercut-stagger-icon", 'FormUpgrade', 0, 0.3));
 
-        // Wide Edge
+        // Wide Edge... nah
 
         // Spin Edge
+        this.multArray.push(new multiplier("Forceful Authority 2", "FORCEFUL_AUTHORITY_2", "forceful-authority-2-icon", 'FormUpgrade', 0, 0)); // Yes there are two
 
-        // Split Pivot
+        // Split Pivot... nah
 
         // Split Orbit
+        this.multArray.push(new multiplier("Clear the Air", "CLEAR_THE_AIR", "clear-the-air-icon", 'FormUpgrade', 0.2, 0.2));
+
 
         // Cross-Compatible
         this.multArray.push(new multiplier("Sky-High Finisher", "SKY_HIGH_FINISHER", "sky-high-finisher-icon", 'FormUpgrade', 0, 0));
@@ -267,6 +266,16 @@ var cbs = document.querySelectorAll('[type="checkbox"]');
     cb.addEventListener("change", updateElements);
 });
 
+var dominanceCheck = document.querySelector('[data-input-for="DOMINANCE"]');
+var critCheck = document.querySelector('[data-input-for="CRITICAL"]');
+
+if (dominanceCheck) {
+    dominanceCheck.addEventListener("change", disableDominanceReliant)
+}
+if (critCheck) {
+    critCheck.addEventListener("change", disableCritReliant)
+}
+
 chargeCount?.addEventListener("change", _multipliers.check)
 chargeCount?.addEventListener("change", updateValues);
 chargeCount?.addEventListener("change", updateElements);
@@ -278,21 +287,20 @@ document.addEventListener("PlaceholderPluginConfigJson", updateElements)
 window.addEventListener("load", _multipliers.check)
 window.addEventListener("load", updateValues)
 window.addEventListener("load", updateElements)
+window.addEventListener("load", disableDominanceReliant)
+window.addEventListener("load", disableCritReliant)
+
+var dmgcounter = document.getElementById("dmgcounter")
+var faltercounter = document.getElementById("faltercounter")
 
 function updateElements() {
 
     var enabledArtifacts = _multipliers.multArray.filter((x) => x.enabled && x.buffsrc == 'Artifact')
-
+    if (dmgcounter && faltercounter) {
+        dmgcounter.innerHTML = "Damage: 1 "
+        faltercounter.innerHTML = "Falter: 1 "
+    }
     _multipliers.multArray.forEach((mult) => {
-
-        // Update Icons
-        var style = document.getElementById(mult.iconid)?.style
-        if (style != null) {
-            style.height = mult.enabled ? "auto" : "0";
-            style.width = mult.enabled ? "auto" : "0";
-            style.visibility = mult.enabled ? "visible" : "hidden";
-        }
-
         // Update Artifacts checkboxes
         if (mult.element != null) {
             if (enabledArtifacts.length == 4) {
@@ -317,10 +325,86 @@ function updateElements() {
                     mult.element.disabled = true;
                 }
             }
+
+            if (mult.name == "Sky-High Finisher" || mult.name == "Lasting Impression") {
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Final Riposte" && x.enabled == true))
+                if (tfilt.length > 0) {
+                    mult.element.disabled = true;
+                }
+            }
+            if (mult.name == "Sky-High Finisher" || mult.name == "Final Riposte") {
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Lasting Impression" && x.enabled == true))
+                if (tfilt.length > 0) {
+                    mult.element.disabled = true;
+                }
+            }
+            if (mult.name == "Lasting Impression" || mult.name == "Final Riposte") {
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Sky-High Finisher" && x.enabled == true))
+                if (tfilt.length > 0) {
+                    mult.element.disabled = true;
+                }
+            }
+            
+            if (mult.enabled && mult.element) {
+                dmgcounter.innerHTML += "* " + (1 + mult.damage).toString() + " "
+                faltercounter.innerHTML += "* " + ( 1 + mult.falter).toString() + " "
+            }
+        }
+
+        // Update Icons
+        var style = document.getElementById(mult.iconid)?.style
+        if (style != null) {
+            style.height = mult.enabled ? "auto" : "0";
+            style.width = mult.enabled ? "auto" : "0";
+            style.visibility = mult.enabled ? "visible" : "hidden";
         }
     })
 
     if (artifactslabel) { artifactslabel.innerHTML = "Artifacts (" + enabledArtifacts.length + "/4) <i style='font-size: 12px'>(3 in base NG)</i>" }
+}
+
+function disableDominanceReliant() {
+    var tfilt = _multipliers.multArray.filter((x) => (x.name == "Total Command" ||
+        x.name == "Forceful Authority" ||
+        x.name == "Forceful Authority 2"))
+    if (dominanceCheck && dominanceCheck.checked) {
+        tfilt.forEach((mult) => {
+            if (mult.element) {
+                mult.element.disabled = false;
+            }
+        })
+    } else if (dominanceCheck && dominanceCheck.checked == false) {
+        tfilt.forEach((mult) => {
+            if (mult.element) {
+                if (mult.element.checked) {
+                    mult.element.checked = false;
+                    mult.element.dispatchEvent(new Event("change"));
+                }
+                mult.element.disabled = true;
+            }
+        })
+    }
+}
+
+function disableCritReliant() {
+    var tfilt = _multipliers.multArray.filter((x) => (x.name == "Compact" || x.name == "Grievous Harm"))
+    if (critCheck && critCheck.checked) {
+        tfilt.forEach((mult) => {
+            if (mult.element) {
+                mult.element.disabled = false;
+            }
+        })
+    } else if (critCheck && critCheck.checked == false) {
+        tfilt.forEach((mult) => {
+            if (mult.element) { 
+                if(mult.element.checked) {
+                    mult.element.checked = false;
+                    mult.element.dispatchEvent(new Event("change"));
+                }
+                mult.element.disabled = true;
+            }
+        })
+    }
 }
 
 function updateValues() {
@@ -336,14 +420,17 @@ function updateValues() {
 
                             var basecol = parseFloat(col.getAttribute('data-base-value')) / 100;
 
-                            var finalDamage = mappedDamage?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
-                            var finalFalter = mappedFalter?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
+                            var finalDamage = mappedDamage?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), 1);
+                            var finalFalter = mappedFalter?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), 1);
 
-                            if (finalDamage == finalFalter) {
-                                col.innerHTML = "DF " + Math.round(parseFloat(finalDamage) * 100) + "%"
-                            } else {
-                                var str = "D " + Math.max(0, Math.round(parseFloat(finalDamage) * 100)) + "% / F " + Math.max(0, Math.round(parseFloat(finalFalter) * 100)) + "%"
-                                col.innerHTML = str;
+                            if (finalDamage == 1 && finalFalter == 1) {
+                                col.innerHTML = "DF " + Math.round(parseFloat(basecol) * 100) + "%"
+                            }
+                            else if (finalDamage == finalFalter) {
+                                col.innerHTML = "DF " + Math.round(parseFloat(basecol) * 100) + "% * DF " + Math.round(parseFloat(finalDamage) * 100) + "%"
+                            }
+                            else {
+                                col.innerHTML = "DF " + Math.round(parseFloat(basecol) * 100) + "% * D " + Math.max(0, Math.round(parseFloat(finalDamage) * 100)) + "% / F " + Math.max(0, Math.round(parseFloat(finalFalter) * 100)) + "%"
                             }
                         }
 
@@ -385,14 +472,17 @@ function updateValues() {
 
                             var basecol = parseFloat(col.getAttribute('data-base-value')) / 100;
 
-                            var finalDamage = mappedDamage?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
-                            var finalFalter = mappedFalter?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
+                            var finalDamage = mappedDamage?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), 1);
+                            var finalFalter = mappedFalter?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), 1);
 
-                            if (finalDamage == finalFalter) {
-                                col.innerHTML = "DF " + Math.round(parseFloat(finalDamage) * 100) + "%"
-                            } else {
-                                var str = "D " + Math.max(0, Math.round(parseFloat(finalDamage) * 100)) + "% F " + Math.max(0, Math.round(parseFloat(finalFalter) * 100)) + "%"
-                                col.innerHTML = str;
+                            if (finalDamage == 1 && finalFalter == 1) {
+                                col.innerHTML = "DF " + Math.round(parseFloat(basecol) * 100) + "%"
+                            }
+                            else if (finalDamage == finalFalter) {
+                                col.innerHTML = "DF " + Math.round(parseFloat(basecol) * 100) + "% * DF " + Math.round(parseFloat(finalDamage) * 100) + "%"
+                            }
+                            else {
+                                col.innerHTML = "DF " + Math.round(parseFloat(basecol) * 100) + "% * D " + Math.max(0, Math.round(parseFloat(finalDamage) * 100)) + "% / F " + Math.max(0, Math.round(parseFloat(finalFalter) * 100)) + "%"
                             }
                         }
 
