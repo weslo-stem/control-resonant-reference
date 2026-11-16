@@ -7,6 +7,7 @@ var artifactslabel = document.getElementById("artifacts-label");
 var chargeCount = document.querySelector('[data-input-for="CHARGE_COUNT"]');
 var summonCount = document.querySelector('[data-input-for="SUMMON_COUNT"]');
 var secHeader = document.getElementsByTagName("h2").item(0)
+var secTitle = document.getElementsByTagName("h1").item(0)
 
 // new multiplier(name, element tag (data-input-for), damage, falter)
 class multiplier {
@@ -30,14 +31,13 @@ class multiplier {
     matchCheck = () => {
         this.enabled = this.element?.checked
         if (this.buffsrc == 'Talent') { this.talentSolve() }
-        if (secHeader.innerHTML.includes("Primary")) { this.aberrantSolve("Primary") }
-        else if (secHeader.innerHTML.includes("Secondary")) { this.aberrantSolve("Secondary") }
-        else if (secHeader.innerHTML.includes("Combo Finisher")) { this.aberrantSolve("Combo Finisher") }
-    }
+        if (this.buffsrc == 'FormUpgrade') { this.formSolve() }
+        if (this.buffsrc == 'Artifact') { this.artifactSolve() }
+    } 
 
     talentSolve = () => {
-        if (this.name=="Stored Command") {
-            var attrVal = parseInt(chargeCount.value && chargeCount)
+        if (this.name == "Stored Command" && chargeCount) {
+            var attrVal = parseInt(chargeCount.value)
             if (chargeCount && attrVal <= 5 && attrVal >= 0) {
                 this.damage = 0.05 * attrVal
                 this.falter = 0.05 * attrVal
@@ -47,8 +47,10 @@ class multiplier {
             var tryGetRetaliation = document.querySelector('[data-input-for="RETALIATION"]');
             if (tryGetRetaliation && tryGetRetaliation.checked) {
                 this.falter = 0.25
+                this.damage = 0
             } else {
                 this.falter = 0
+                this.damage = 0
             }
         }
         if (this.name == "Summon Synergy" && summonCount) {
@@ -65,18 +67,89 @@ class multiplier {
                 this.falter = 0.05 * attrVal
             }
         }
+        if (this.name == "Dominance") {
+            var form;
+            if (secHeader.innerHTML.includes("Primary")) {
+                console.log("a")
+                form = "Primary"
+            } else if (secHeader.innerHTML.includes("Secondary")) {
+                form = "Secondary"
+                console.log("a")
+            } else if (secHeader.innerHTML.includes("Combo Finisher")) {
+                form = "Combo Finisher"
+                console.log("a")
+            }
+            var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
+            if (form == "Primary" && tryGetDominance && tryGetDominance.checked) {
+                this.damage = 1
+                this.falter = 0
+            }
+            else if (form == "Secondary" && tryGetDominance && tryGetDominance.checked) {
+                this.damage = 0.5
+                this.falter = 0
+            }
+            else if (form == "Combo Finisher" && tryGetDominance && tryGetDominance.checked) {
+                this.damage = 1
+                this.falter = 0
+            }
+        }
     }
 
-    aberrantSolve = (form) => {
-        var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
-        if (form == "Primary" && tryGetDominance && tryGetDominance.checked) {
-            this.damage = 1
+    artifactSolve = () => {
+        if (this.name=="Compact") {
+            var tryGetCrit = document.querySelector('[data-input-for="CRITICAL"]');
+            if (tryGetCrit && tryGetCrit.checked) {
+                this.damage = 0.5
+                this.falter = -0.3
+            } else {
+                this.damage = 0
+                this.falter = 0
+            }
         }
-        else if (form == "Secondary" && tryGetDominance && tryGetDominance.checked) {
-            this.damage = 0.5
+    }
+
+    formSolve = () => {
+        if (secHeader && secHeader.innerHTML.includes("Combo Finisher")) {
+            if (this.name == "Sky-High Finisher") {
+                this.damage = 0.2
+                this.falter = 0.2
+            }
+            else if (this.name == "Lasting Impression") {
+                this.damage = 0.25
+                this.falter = 0
+            }
+            else if (this.name == "Final Riposte") {
+                this.damage = 0.2
+                this.falter = 0.2
+            }
         }
-        else if (form == "Combo Finisher" && tryGetDominance && tryGetDominance.checked) {
-            this.damage = 1
+        var tryGetCrit = document.querySelector('[data-input-for="CRITICAL"]');
+        if (this.name == "Grievous Harm" && tryGetCrit && tryGetCrit.checked) {
+            this.damage = 0.3
+            this.falter = 0.3
+        } else {
+            this.damage = 0
+            this.falter = 0
+        }
+        if (this.name == "Total Command") {
+            var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
+            if (tryGetDominance && tryGetDominance.checked) {
+                this.damage = 0.25
+                this.falter = 0.25
+            } else {
+                this.falter = 0
+                this.damage = 0
+            }
+        }
+        if (this.name == "Forceful Authority") {
+            var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
+            if (tryGetDominance && tryGetDominance.checked) {
+                this.damage = 0.25
+                this.falter = 0.25
+            } else {
+                this.falter = 0
+                this.damage = 0
+            }
         }
     }
 }
@@ -87,8 +160,9 @@ class multipliers {
         this.multArray = [];
 
         // Critical
-        this.multArray.push(new multiplier("Critical Hit", "CRITICAL", "critical-icon", 'Other', 0, 0));
+        this.multArray.push(new multiplier("Critical Hit", "CRITICAL", "critical-icon", 'Other', 0.5, 0.5));
         this.multArray.push(new multiplier("Compact", "COMPACT", "compact-icon", 'Artifact', 0, 0));
+        this.multArray.push(new multiplier("Grievous Harm", "GRIEVOUS_HARM", "grievous-harm-icon", 'FormUpgrade', 0, 0));
 
         // Status Effects
         this.multArray.push(new multiplier('Tracked', "TRACKED", "tracked-icon", 'EnemyDebuff', 0.3, 0.3));
@@ -130,6 +204,41 @@ class multipliers {
         this.multArray.push(new multiplier("Summon Synergy", "SUMMON_SYNERGY", "summon-synergy-icon", 'Talent', 0, 0));
         this.multArray.push(new multiplier("Energized Melee", "ENERGIZED_MELEE", "energized-melee-icon", 'Talent', 0, 0));
 
+        // Form Upgrades
+        // Cleave
+        this.multArray.push(new multiplier("Prime State", "PRIME_STATE", "prime-state-icon", 'FormUpgrade', 0.5, 0.5));
+        this.multArray.push(new multiplier("Total Command", "TOTAL_COMMAND", "total-command-icon", 'FormUpgrade', 0.25, 0.25));
+        this.multArray.push(new multiplier("Eager Carve", "EAGER_CARVE", "eager-carve-icon", 'FormUpgrade', 0.2, 0.2));
+        this.multArray.push(new multiplier("Powerful Opener", "POWERFUL_OPENER", "powerful-opener-icon", 'FormUpgrade', 0.2, 0.2));
+
+        // Strike... not much here, idk how to implement Gain Control
+
+        // Glaive
+        // this.multArray.push(new multiplier("Aerial Decree", "AERIAL_DECREE", "aerial-decree-icon", 'FormUpgrade', 0.2, 0));
+        // this.multArray.push(new multiplier("Forceful Authority", "FORCEFUL_AUTHORITY", "forceful-authority-icon", 'FormUpgrade', 0.25, 0.25));
+
+        // Crush
+
+        // Extend
+
+        // Drill
+
+        // Concussive Beatdown
+
+        // Uppercut Surge
+
+        // Wide Edge
+
+        // Spin Edge
+
+        // Split Pivot
+
+        // Split Orbit
+
+        // Cross-Compatible
+        this.multArray.push(new multiplier("Sky-High Finisher", "SKY_HIGH_FINISHER", "sky-high-finisher-icon", 'FormUpgrade', 0, 0));
+        this.multArray.push(new multiplier("Lasting Impression", "LASTING_IMPRESSION", "lasting-impression-icon", 'FormUpgrade', 0, 0));
+        this.multArray.push(new multiplier("Final Riposte", "FINAL_RIPOSTE", "final-riposte-icon", 'FormUpgrade', 0, 0));
     }
 
     check = () => {
@@ -166,6 +275,10 @@ document.addEventListener("PlaceholderPluginConfigJson", _multipliers.check)
 document.addEventListener("PlaceholderPluginConfigJson", updateValues)
 document.addEventListener("PlaceholderPluginConfigJson", updateElements)
 
+window.addEventListener("load", _multipliers.check)
+window.addEventListener("load", updateValues)
+window.addEventListener("load", updateElements)
+
 function updateElements() {
 
     var enabledArtifacts = _multipliers.multArray.filter((x) => x.enabled && x.buffsrc == 'Artifact')
@@ -190,13 +303,16 @@ function updateElements() {
                 mult.element.disabled = false;
             }
 
-            if (mult.name == "Focused" || mult.name == "Peak Condition") {
-                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Medical Alert Bands" || x.name == "Mother's Locket") && x.enabled == true)
+            if (mult.name == "Focused" || mult.name == "Peak Condition" || mult.name == "Prime State") {
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Medical Alert Bands" ||
+                                                                  x.name == "Mother's Locket") && x.enabled == true)
                 if (tfilt.length > 0) {
                     mult.element.disabled = true;
                 }
             } else if (mult.name == "Medical Alert Bands" || mult.name == "Mother's Locket") {
-                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Focused" || x.name == "Peak Condition") && x.enabled == true)
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Focused" ||
+                                                                  x.name == "Peak Condition" ||
+                                                                  x.name == "Prime State") && x.enabled == true)
                 if (tfilt.length > 0) {
                     mult.element.disabled = true;
                 }
@@ -218,15 +334,15 @@ function updateValues() {
                             var mappedDamage = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
                             var mappedFalter = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
 
-                            var finalDamage = mappedDamage?.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-                            var finalFalter = mappedFalter?.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-
                             var basecol = parseFloat(col.getAttribute('data-base-value')) / 100;
 
+                            var finalDamage = mappedDamage?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
+                            var finalFalter = mappedFalter?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
+
                             if (finalDamage == finalFalter) {
-                                col.innerHTML = Math.round((parseFloat(basecol) + finalDamage) * 100) + "%"
+                                col.innerHTML = "DF " + Math.round(parseFloat(finalDamage) * 100) + "%"
                             } else {
-                                var str = Math.max(0, Math.round(parseFloat((basecol) + finalDamage) * 100)) + "%" + "/" + Math.max(0, Math.round(parseFloat((basecol) + finalFalter) * 100)) + "%"
+                                var str = "D " + Math.max(0, Math.round(parseFloat(finalDamage) * 100)) + "% / F " + Math.max(0, Math.round(parseFloat(finalFalter) * 100)) + "%"
                                 col.innerHTML = str;
                             }
                         }
@@ -236,7 +352,7 @@ function updateValues() {
                         if (col != null) {
                             var finalMap;
                             var finalOut;
-
+                            var basecol = col.getAttribute('data-base-value');
                             var header = table.rows[0].cells[j].innerHTML;
                             if (header.includes('Damage')) {
                                 finalMap = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
@@ -244,9 +360,9 @@ function updateValues() {
                             else if (header.includes('Falter')) {
                                 finalMap = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
                             }
-                            finalOut = finalMap?.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-                            var basecol = col.getAttribute('data-base-value');
-                            col.innerHTML = Math.max(0, Math.round(parseFloat(basecol) + (parseFloat(basecol) * finalOut)))
+                            finalOut = finalMap?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
+                            
+                            col.innerHTML = Math.max(0, parseInt(finalOut))
                         }
                     }
                 }
@@ -267,24 +383,25 @@ function updateValues() {
                             var mappedDamage = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
                             var mappedFalter = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
 
-                            var finalDamage = mappedDamage.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-                            var finalFalter = mappedFalter.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-
                             var basecol = parseFloat(col.getAttribute('data-base-value')) / 100;
+
+                            var finalDamage = mappedDamage?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
+                            var finalFalter = mappedFalter?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
+
                             if (finalDamage == finalFalter) {
-                                col.innerHTML = Math.round((parseFloat(basecol) + finalDamage) * 100) + "%"
+                                col.innerHTML = "DF " + Math.round(parseFloat(finalDamage) * 100) + "%"
                             } else {
-                                var str = Math.max(0, Math.round(parseFloat((basecol) + finalDamage) * 100)) + "%" + "/" + Math.max(0, Math.round(parseFloat((basecol) + finalFalter) * 100)) + "%"
+                                var str = "D " + Math.max(0, Math.round(parseFloat(finalDamage) * 100)) + "% F " + Math.max(0, Math.round(parseFloat(finalFalter) * 100)) + "%"
                                 col.innerHTML = str;
                             }
                         }
 
                     } else {
-                        var col = document.getElementById('0' + 'xr' + i + 'x' + j);
+                        var col = document.getElementById(k + 'xr' + i + 'x' + j);
                         if (col != null) {
                             var finalMap;
                             var finalOut;
-
+                            var basecol = col.getAttribute('data-base-value');
                             var header = table.rows[j].cells[0].innerHTML;
                             if (header.includes('Damage')) {
                                 finalMap = _multipliers.multArray.map((x) => x.enabled ? x.damage : 0)
@@ -292,9 +409,9 @@ function updateValues() {
                             else if (header.includes('Falter')) {
                                 finalMap = _multipliers.multArray.map((x) => x.enabled ? x.falter : 0)
                             }
-                            finalOut = finalMap?.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-                            var basecol = col.getAttribute('data-base-value');
-                            col.innerHTML = Math.max(0, Math.round(parseFloat(basecol) + (parseFloat(basecol) * finalOut)))
+                            finalOut = finalMap?.reduce((accumulator, currentValue) => accumulator * (1 + currentValue), basecol);
+                            
+                            col.innerHTML = Math.max(0, parseInt(finalOut))
                         }
                     }
                 }

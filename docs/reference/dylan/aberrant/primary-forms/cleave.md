@@ -58,7 +58,7 @@ Damage and falter values will be increased by talents and status buffs. Below is
 # Damage
 
 
-Damage Falter % Calculation: `100% + ( Aberrant Strength * 1.67% )`
+Base Aberrant Damage Falter % Calculation: `100% + ( Aberrant Strength * 1.67% )`
 
 Note that all values displayed in-game are rounded.
 

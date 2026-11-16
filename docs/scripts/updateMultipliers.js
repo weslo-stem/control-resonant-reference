@@ -124,12 +124,14 @@ class multiplier {
             }
         }
         var tryGetCrit = document.querySelector('[data-input-for="CRITICAL"]');
-        if (this.name == "Grievous Harm" && tryGetCrit && tryGetCrit.checked) {
-            this.damage = 0.3
-            this.falter = 0.3
-        } else {
-            this.damage = 0
-            this.falter = 0
+        if (this.name == "Grievous Harm") {
+            if (tryGetCrit && tryGetCrit.checked) {
+                this.damage = 0.3
+                this.falter = 0.3
+            } else {
+                this.damage = 0
+                this.falter = 0
+            }
         }
         if (this.name == "Total Command") {
             var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
@@ -142,6 +144,16 @@ class multiplier {
             }
         }
         if (this.name == "Forceful Authority") {
+            var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
+            if (tryGetDominance && tryGetDominance.checked) {
+                this.damage = 0.25
+                this.falter = 0.25
+            } else {
+                this.falter = 0
+                this.damage = 0
+            }
+        }
+        if (this.name == "Forceful Authority 2") {
             var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
             if (tryGetDominance && tryGetDominance.checked) {
                 this.damage = 0.25
@@ -214,26 +226,34 @@ class multipliers {
         // Strike... not much here, idk how to implement Gain Control
 
         // Glaive
-        // this.multArray.push(new multiplier("Aerial Decree", "AERIAL_DECREE", "aerial-decree-icon", 'FormUpgrade', 0.2, 0));
-        // this.multArray.push(new multiplier("Forceful Authority", "FORCEFUL_AUTHORITY", "forceful-authority-icon", 'FormUpgrade', 0.25, 0.25));
+        this.multArray.push(new multiplier("Aerial Decree", "AERIAL_DECREE", "aerial-decree-icon", 'FormUpgrade', 0.2, 0));
+        this.multArray.push(new multiplier("Forceful Authority", "FORCEFUL_AUTHORITY", "forceful-authority-icon", 'FormUpgrade', 0, 0));
 
         // Crush
+        this.multArray.push(new multiplier("Capitalizing Charge", "CAPITALIZING_CHARGE", "capitalizing-charge-icon", 'FormUpgrade', 0, 0.2));
 
         // Extend
+        this.multArray.push(new multiplier("High Lash", "HIGH_LASH", "high-lash-icon", 'FormUpgrade', 0, 0.3));
 
-        // Drill
+        // Drill... nothin here
 
         // Concussive Beatdown
+        this.multArray.push(new multiplier("Drive Mauler", "DRIVE_MAULER", "drive-mauler-icon", 'FormUpgrade', 0.2, 0.2));
+        this.multArray.push(new multiplier("Falter Jab", "FALTER_JAB", "falter-jab-icon", 'FormUpgrade', 0, 0.2));
 
         // Uppercut Surge
+        this.multArray.push(new multiplier("Uppercut Stagger", "UPPERCUT_STAGGER", "uppercut-stagger-icon", 'FormUpgrade', 0, 0.3));
 
-        // Wide Edge
+        // Wide Edge... nah
 
         // Spin Edge
+        this.multArray.push(new multiplier("Forceful Authority 2", "FORCEFUL_AUTHORITY_2", "forceful-authority-2-icon", 'FormUpgrade', 0, 0)); // Yes there are two
 
-        // Split Pivot
+        // Split Pivot... nah
 
         // Split Orbit
+        this.multArray.push(new multiplier("Clear the Air", "CLEAR_THE_AIR", "clear-the-air-icon", 'FormUpgrade', 0.2, 0.2));
+
 
         // Cross-Compatible
         this.multArray.push(new multiplier("Sky-High Finisher", "SKY_HIGH_FINISHER", "sky-high-finisher-icon", 'FormUpgrade', 0, 0));
@@ -313,6 +333,25 @@ function updateElements() {
                 var tfilt = _multipliers.multArray.filter((x) => (x.name == "Focused" ||
                                                                   x.name == "Peak Condition" ||
                                                                   x.name == "Prime State") && x.enabled == true)
+                if (tfilt.length > 0) {
+                    mult.element.disabled = true;
+                }
+            }
+
+            if (mult.name == "Sky-High Finisher" || mult.name == "Lasting Impression") {
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Final Riposte" && x.enabled == true))
+                if (tfilt.length > 0) {
+                    mult.element.disabled = true;
+                }
+            }
+            if (mult.name == "Sky-High Finisher" || mult.name == "Final Riposte") {
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Lasting Impression" && x.enabled == true))
+                if (tfilt.length > 0) {
+                    mult.element.disabled = true;
+                }
+            }
+            if (mult.name == "Lasting Impression" || mult.name == "Final Riposte") {
+                var tfilt = _multipliers.multArray.filter((x) => (x.name == "Sky-High Finisher" && x.enabled == true))
                 if (tfilt.length > 0) {
                     mult.element.disabled = true;
                 }

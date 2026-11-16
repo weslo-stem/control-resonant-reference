@@ -226,6 +226,56 @@ placeholders:
         values:
             checked: true
             unchecked: false
+    AERIAL_DECREE:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    FORCEFUL_AUTHORITY:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    FINAL_RIPOSTE:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    CAPITALIZING_CHARGE:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    HIGH_LASH:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    DRIVE_MAULER:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    FALTER_JAB:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    UPPERCUT_STAGGER:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    FORCEFUL_AUTHORITY_2:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
+    CLEAR_THE_AIR:
+        default: unchecked
+        values:
+            checked: true
+            unchecked: false
 
 settings:
     auto_placeholder_tables: false

@@ -58,14 +58,14 @@ Damage and falter values will be increased by talents and status buffs. Below is
 # Damage
 
 
-Damage Falter % Calculation: `100% + ( Aberrant Strength * 1.67% )`
+Base Aberrant Damage Falter % Calculation: `100% + ( Aberrant Strength * 1.67% )`
 
 Note that all values displayed in-game are rounded.
 
 #### *Base Damage and Falter values by Aberrant Strength*
 
 {% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
-{{ caBuffsDropdown(['Raw'], 'Primary', true, true) }}
+{{ caBuffsDropdown(['Raw'], 'Primary', true, true, 'Glaive') }}
 
 {% from "reference/dylan/combat-abilities/html/af_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/weapon_forms/glaive.csv', ['Raw']) }}

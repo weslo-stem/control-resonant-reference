@@ -1,14 +1,23 @@
-{% macro caBuffsDropdown(dmgTypes, abilityName, enableWeapons, enableCrit) %}
+{% macro caBuffsDropdown(dmgTypes, abilityName, enableWeapons, enableCrit, weaponName) %}
+
 <details id="buff-dropdown">
+    <i>All buffs, despite being displayed as "+##%", are multiplicative.</i><br />
+    {% if enableWeapons == true %} <i>Weapon upgrades <b>Gain Control</b>, <b>Pain Point</b>, and <b>Falter Follow-Up</b> are currently not included, as they are a bit too situational to fit.</i> {% endif %}
     <summary>
         Buff/Debuff Toggles
         <div style="display: inline-flex; flex-wrap: wrap; max-width: 100%">
             <div class="buff-icons" id="critical-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_crit_up.svg' /></div>
             <div class="buff-icons" id="compact-icon"><img src='/control-resonant-reference/images/artifacts/ch_054_magnifying_glass_small.tex.png' /></div>
+            <div class="buff-icons" id="grievous-harm-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_flurry_upg_melee_crit_dmg_up.svg' /></div>
 
+            <div class="buff-icons" id="sky-high-finisher-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_ariborne_ce_buff.svg' /></div>
+            <div class="buff-icons" id="lasting-impression-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_flurry_upg_ce_dmg_buff.svg' /></div>
 
-            <div class="buff-icons" id="dominance-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_bloodlust.svg' /></div>
-
+            <div class="buff-icons" id="powerful-opener-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_dmg_buff_to_undamaged.svg' /></div>
+            <div class="buff-icons" id="eager-carve-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_dmg_buff_to_launched.svg' /></div>
+            <div class="buff-icons" id="total-command-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_bloodlust_buff.svg' /></div>
+            <div class="buff-icons" id="prime-state-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/melee_upgrades/icn_melee_upgrade_slice_upg_dmg_buff_full_health.svg' /></div>
+            
             <div class="buff-icons" id="empowered-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_ability_up.svg' /></div>
             <div class="buff-icons" id="focused-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_falter_up.svg' /></div>
             <div class="buff-icons" id="retaliation-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_retaliate.svg' /></div>
@@ -17,6 +26,7 @@
             <div class="buff-icons" id="vengeance-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_vengeance_mark.svg' /></div>
             <div class="buff-icons" id="weakened-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_defense_down.svg' /></div>
 
+            <div class="buff-icons" id="dominance-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/status_effects/icn_status_bloodlust.svg' /></div>
             <div class="buff-icons" id="all-rounder-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_110_inc_all_damage.svg' /></div>
             <div class="buff-icons" id="extra-impact-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_101_inc_falter_dmg_combat_abilities.svg' /></div>
             <div class="buff-icons" id="retribution-icon"><img style="filter: invert(1);" src='/control-resonant-reference/icons/talents/icn_tal_103_retaliate_falter_dmg_inc.svg' /></div>
@@ -49,80 +59,101 @@
 
         </div>
     </summary>
-    {% if enableCrit %}
-    <b><label style="color: black;">Critical Hits</label></b> <br>
-    <label class="cbox-indent"><input data-input-for="CRITICAL"> Critical Hit (150% Base Damage)</label> <br>
-    <label class="cbox-indent"><input data-input-for="COMPACT"> Compact (+50% Critical Damage, -30% Critical Falter)</label> <br>
-    {% endif %}
+    <div class="buff-dropdown">
+        {% if enableCrit %}
+        <b><label style="color: black;">Critical Hits</label></b> <br>
+        <label class="cbox-indent"><input data-input-for="CRITICAL"> Critical Hit (150% Base Damage)</label> <br>
+        <label class="cbox-indent"><input data-input-for="COMPACT"> Compact (Artifact, +50% Critical Damage, -30% Critical Falter)</label> <br>
+        {% if enableWeapons == true and weaponName == "Strike" %}<label class="cbox-indent"><input data-input-for="GRIEVOUS_HARM"> Grievous Harm (+30% Damage and Falter to all Melee Critical Hits from Primary Form <b>Strike</b>)</label> <br>{% endif %}
+        {% endif %}
 
-    <b><label style="color: black;">Status Effects</label></b> <br>
-    {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="EMPOWERED"> Empowered (+25% Damage and Falter from Combat Abilities)</label> <br>
-    {% endif %}
-    <label class="cbox-indent"><input data-input-for="FOCUSED"> Focused (+20% Falter <b>at full health, with a minimum build power 8, and with build power close to enemy level</b>)</label> <br>
-    <label class="cbox-indent"><input data-input-for="RETALIATION"> Retaliation (+50% Damage and Falter <b>after Perfect Dodge</b>)</label> <br>
-    <label class="cbox-indent"><input data-input-for="RUTHLESS"> <span class="iBLURREDi">Ruthless (+200% Damage and Falter)</span></label> <br>
-    {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="TRACKED"> Tracked (+30% Damage and Falter from Combat Abilities , debuff on enemy)</label> <br>
-    {% endif %}
-    {% if abilityName == 'Shield' or enableWeapons == true %}
-    <label class="cbox-indent"><input data-input-for="VENGEANCE"> Vengeance (+50% Damage and Falter <b>from Melee and Shield Bash</b>, debuff on enemy)</label> <br>
-    {% endif %}
-    {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="WEAKENED"> Weakened (+25% Damage and Falter from Combat Abilities, debuff on enemy)</label> <br>
-    {% endif %}
 
-    <b><label style="color: black;">Talents</label></b> <br>
-    {% if enableWeapons == true %}<label class="cbox-indent"><input data-input-for="DOMINANCE"> Dominance (+100% Damage for Primary Melee and Combo Finishers, +50% for Secondary Melee)</label> <br> {% endif %}
-    <label class="cbox-indent"><input data-input-for="ALL_ROUNDER"> All-Rounder (+5% Damage and Falter)</label> <br>
-    {% if enableWeapons == false %}<label class="cbox-indent"><input data-input-for="EXTRA_IMPACT"> Extra Impact (+10% Falter from Combat Abilities)</label> <br>{% endif %}
-    <label class="cbox-indent"><input data-input-for="RETRIBUTION"> Retribution (+25% Falter to Retaliation)</label> <br>
-    {% if enableWeapons == true %}<label class="cbox-indent"><input data-input-for="SKILLED_BACKSTAB"> Skilled Backstab (+50% Damage and Falter <b>when hitting enemies from behind with Melee</b>)</label> <br>{% endif %}
-    {% if abilityName == 'Barrage' or abilityName == 'Spore Burst' %}<label class="cbox-indent"><input data-input-for="OPTIMIZED_PROJECTILES"> Optimized Projectiles (+25% Damage and Falter to Projectiles)</label> <br>{% endif %}
-    <label class="cbox-indent"><input data-input-for="PEAK_CONDITION"> Peak Condition (+20% Falter <b>at full health.</b>)</label> <br>
-    {% if enableWeapons == true %}
-    <label class="cbox-indent"><input data-input-for="SUMMON_SYNERGY"> Summon Synergy (+10% Damage and Falter for Melee <b>per Summon on the battlefield.</b>)</label> <br>
-    <label class="cbox-indent-2"> 🔻 Summon Count (0-5): <br /><input style="width: 50%" data-input-for="SUMMON_COUNT"> <i>(3 Mold turrets, 1 Spike, 1 Volatile Anomaly)</i> </label> <br>
-    <label class="cbox-indent"><input data-input-for="ENERGIZED_MELEE"> Energized Melee (+5% Damage and Falter for Melee <b>per unused Command Charge.</b>)</label> <br>
-    <label class="cbox-indent-2"> 🔻 Charge Count (0-5): <br /><input style="width: 50%" data-input-for="CHARGE_COUNT"></label> <br>
-    {% endif %}
-    {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="STORED_COMMAND"> Stored Command (+5% Damage and Falter <b>per unused Command Charge.</b>)</label> <br>
-    <label class="cbox-indent-2"> 🔻 Charge Count (0-5): <br /><input style="width: 50%" data-input-for="CHARGE_COUNT"></label> <br>
-    {% endif %}
-    {% if enableWeapons == false and abilityName!='Growth' and abilityName!='Volatile Anomaly' and abilityName!='Spike' %}
-    <label class="cbox-indent"><input data-input-for="FIELD_MASTER"> Field Master (+20% Damage and Falter from <b>Non-Summon</b> Combat Abilities <b>if Commanded enemy on battlefield</b>)</label> <br>
-    {% endif %}
+        {% if enableWeapons == true and abilityName == "Combo Finisher" %}
+        <b><label style="color: black;">Cross-Compatible Weapon Upgrades</label></b> <br>
+        <label class="cbox-indent"><input data-input-for="SKY_HIGH_FINISHER"> Sky-High Finisher (Combo Finisher - +20% Damage and Falter <b>to airborne enemies</b> if using Primary Form <b>Cleave</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="LASTING_IMPRESSION"> Lasting Impression (Combo Finisher - +25% Damage if using Primary Form <b>Strike</b>)</label> <br>
+        
+        {% endif %}
 
-    <b><label id="artifacts-label" style="color: black;">Artifacts (0/4) <i style='font-size: 12px'>(3 in base NG)</i></label></b> <br>
-    <label class="cbox-indent"><input data-input-for="BUG_SPRAY"> Bug Spray (+30% Damage and Falter <b>against Mold enemies</b>)</label> <br>
-    {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="BRASS_DUSTERS"> Brass Dusters (+50% Damage from Combat Abilities, <b>no Falter at all</b>)</label> <br>
-    {% endif %}
-    {% if 'Sharp' in dmgTypes %}
-    <label class="cbox-indent"><input data-input-for="FORK"> Fork (+15% Sharp Damage)</label> <br>
-    {% endif %}
-    <label class="cbox-indent"><input data-input-for="FINGERBOARD"> Fingerboard (+25% Damage and Falter <b>while using a Gravity Anomaly</b>)</label> <br>
-    {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="FRAMING_HAMMER"> Framing Hammer (+30% Falter from Combat Abilities, <b>no Damage at all</b>)</label> <br>
-    {% endif %}
-    <label class="cbox-indent"><input data-input-for="GOLDEN_EARRINGS"> Golden Earrings (-30% Damage, +20% Falter)</label> <br>
-    <label class="cbox-indent"><input data-input-for="MEDICAL_ALERT_BANDS"> Medical Alert Bands (+25% Falter <b>while below 25% Health</b>)</label> <br>
-    <label class="cbox-indent"><input data-input-for="MOTHERS_LOCKET"> Mother's Locket (+25% Damage <b>while below 25% Health</b>)</label> <br>
-    <label class="cbox-indent"><input data-input-for="PRACTICE_KNOT"> Practice Knot (+15% Falter <b>against Heavy enemies</b>)</label> <br>
-    {% if enableWeapons == true and abilityName=="Primary" %}<label class="cbox-indent"><input data-input-for="SCRUNCHIE"> Scrunchie (+10% Damage for <b>Primary Melee Form</b>)</label> <br>{% endif %}
-    {% if 'Blunt' in dmgTypes %}
-    <label class="cbox-indent"><input data-input-for="SPRAYPAINT"> Spray Paint (+15% Blunt Damage)</label> <br>
-    {% endif %}
-    {% if enableWeapons == true and abilityName=="Combo Finisher" %}<label class="cbox-indent"><input data-input-for="THE_WEEKEND_CROSSWORD"> The Weekend Crossword (+15% Damage for <b>Combo Finisher Melee Form</b>)</label> <br>{% endif %}
-    {% if 'Raw' in dmgTypes %}
-    <label class="cbox-indent"><input data-input-for="TRUSTED_SPANNER"> Trusted Spanner (+15% Raw Damage)</label> <br>
-    {% endif %}
-    {% if enableWeapons == true and abilityName=="Secondary" %}<label class="cbox-indent"><input data-input-for="UNFINISHED_LOLLIPOP"> The Weekend Crossword (+10% Damage for <b>Secondary Melee Form</b>)</label> <br>{% endif %}
-    <label class="cbox-indent"><input data-input-for="WHETSTONE"> Whetstone (+20% Damage, -20% Falter)</label> <br>
-    {% if enableWeapons == false %}
-    <label class="cbox-indent"><input data-input-for="WORLD_TOUR_TICKETS"> World Tour Tickets (+100% Damage from Combat Abilities, <b>Power capped at 50%</b>)</label><br />
-    {% endif %}
+        {% if enableWeapons == true and weaponName == "Cleave" %}
+        <b><label style="color: black;">Cleave Weapon Upgrades</label></b> <br>
+        <label class="cbox-indent"><input data-input-for="POWERFUL_OPENER"> Powerful Opener (+20% Damage and Falter <b>to undamaged enemies</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="EAGER_CARVE"> Eager Carve (+20% Damage and Falter <b>to Lifted enemies</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="TOTAL_COMMAND"> Total Command (+25% Damage and Falter <b>during Dominance</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="PRIME_STATE"> Prime State (+50% Damage and Falter <b>at full health</b>)</label> <br>
+        {% endif %}
+        
+
+        <b><label style="color: black;">Status Effects</label></b> <br>
+        {% if enableWeapons == false %}
+        <label class="cbox-indent"><input data-input-for="EMPOWERED"> Empowered (+25% Damage and Falter from Combat Abilities)</label> <br>
+        {% endif %}
+        <label class="cbox-indent"><input data-input-for="FOCUSED"> Focused (+20% Falter <b>at full health, with a minimum build power 8, and with build power close to enemy level</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="RETALIATION"> Retaliation (+50% Damage and Falter <b>after Perfect Dodge</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="RUTHLESS"> <span class="iBLURREDi">Ruthless (+200% Damage and Falter)</span></label> <br>
+        {% if enableWeapons == false %}
+        <label class="cbox-indent"><input data-input-for="TRACKED"> Tracked (+30% Damage and Falter from Combat Abilities , debuff on enemy)</label> <br>
+        {% endif %}
+        {% if abilityName == 'Shield' or enableWeapons == true %}
+        <label class="cbox-indent"><input data-input-for="VENGEANCE"> Vengeance (+50% Damage and Falter <b>from Melee and Shield Bash</b>, debuff on enemy)</label> <br>
+        {% endif %}
+        {% if enableWeapons == false %}
+        <label class="cbox-indent"><input data-input-for="WEAKENED"> Weakened (+25% Damage and Falter from Combat Abilities, debuff on enemy)</label> <br>
+        {% endif %}
+
+        <b><label style="color: black;">Talents</label></b> <br>
+        {% if enableWeapons == true %}<label class="cbox-indent"><input data-input-for="DOMINANCE"> Dominance (+100% Damage for Primary Melee and Combo Finishers, +50% for Secondary Melee)</label> <br> {% endif %}
+        <label class="cbox-indent"><input data-input-for="ALL_ROUNDER"> All-Rounder (+5% Damage and Falter)</label> <br>
+        {% if enableWeapons == false %}<label class="cbox-indent"><input data-input-for="EXTRA_IMPACT"> Extra Impact (+10% Falter from Combat Abilities)</label> <br>{% endif %}
+        <label class="cbox-indent"><input data-input-for="RETRIBUTION"> Retribution (+25% Falter to Retaliation)</label> <br>
+        {% if enableWeapons == true %}<label class="cbox-indent"><input data-input-for="SKILLED_BACKSTAB"> Skilled Backstab (+50% Damage and Falter <b>when hitting enemies from behind with Melee</b>)</label> <br>{% endif %}
+        {% if abilityName == 'Barrage' or abilityName == 'Spore Burst' %}<label class="cbox-indent"><input data-input-for="OPTIMIZED_PROJECTILES"> Optimized Projectiles (+25% Damage and Falter to Projectiles)</label> <br>{% endif %}
+        <label class="cbox-indent"><input data-input-for="PEAK_CONDITION"> Peak Condition (+20% Falter <b>at full health.</b>)</label> <br>
+        {% if enableWeapons == true %}
+        <label class="cbox-indent"><input data-input-for="SUMMON_SYNERGY"> Summon Synergy (+10% Damage and Falter for Melee <b>per Summon on the battlefield.</b>)</label> <br>
+        <label class="cbox-indent-2"> 🔻 Summon Count (0-5): <br /><input style="width: 50%" data-input-for="SUMMON_COUNT"> <i>(3 Mold turrets, 1 Spike, 1 Volatile Anomaly)</i> </label> <br>
+        <label class="cbox-indent"><input data-input-for="ENERGIZED_MELEE"> Energized Melee (+5% Damage and Falter for Melee <b>per unused Command Charge.</b>)</label> <br>
+        <label class="cbox-indent-2"> 🔻 Charge Count (0-5): <br /><input style="width: 50%" data-input-for="CHARGE_COUNT"></label> <br>
+        {% endif %}
+        {% if enableWeapons == false %}
+        <label class="cbox-indent"><input data-input-for="STORED_COMMAND"> Stored Command (+5% Damage and Falter <b>per unused Command Charge.</b>)</label> <br>
+        <label class="cbox-indent-2"> 🔻 Charge Count (0-5): <br /><input style="width: 50%" data-input-for="CHARGE_COUNT"></label> <br>
+        {% endif %}
+        {% if enableWeapons == false and abilityName!='Growth' and abilityName!='Volatile Anomaly' and abilityName!='Spike' %}
+        <label class="cbox-indent"><input data-input-for="FIELD_MASTER"> Field Master (+20% Damage and Falter from <b>Non-Summon</b> Combat Abilities <b>if Commanded enemy on battlefield</b>)</label> <br>
+        {% endif %}
+
+        <b><label id="artifacts-label" style="color: black;">Artifacts (0/4) <i style='font-size: 12px'>(3 in base NG)</i></label></b> <br>
+        <label class="cbox-indent"><input data-input-for="BUG_SPRAY"> Bug Spray (+30% Damage and Falter <b>against Mold enemies</b>)</label> <br>
+        {% if enableWeapons == false %}
+        <label class="cbox-indent"><input data-input-for="BRASS_DUSTERS"> Brass Dusters (+50% Damage from Combat Abilities, <b>no Falter at all</b>)</label> <br>
+        {% endif %}
+        {% if 'Sharp' in dmgTypes %}
+        <label class="cbox-indent"><input data-input-for="FORK"> Fork (+15% Sharp Damage)</label> <br>
+        {% endif %}
+        <label class="cbox-indent"><input data-input-for="FINGERBOARD"> Fingerboard (+25% Damage and Falter <b>while using a Gravity Anomaly</b>)</label> <br>
+        {% if enableWeapons == false %}
+        <label class="cbox-indent"><input data-input-for="FRAMING_HAMMER"> Framing Hammer (+30% Falter from Combat Abilities, <b>no Damage at all</b>)</label> <br>
+        {% endif %}
+        <label class="cbox-indent"><input data-input-for="GOLDEN_EARRINGS"> Golden Earrings (-30% Damage, +20% Falter)</label> <br>
+        <label class="cbox-indent"><input data-input-for="MEDICAL_ALERT_BANDS"> Medical Alert Bands (+25% Falter <b>while below 25% Health</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="MOTHERS_LOCKET"> Mother's Locket (+25% Damage <b>while below 25% Health</b>)</label> <br>
+        <label class="cbox-indent"><input data-input-for="PRACTICE_KNOT"> Practice Knot (+15% Falter <b>against Heavy enemies</b>)</label> <br>
+        {% if enableWeapons == true and abilityName=="Primary" %}<label class="cbox-indent"><input data-input-for="SCRUNCHIE"> Scrunchie (+10% Damage for <b>Primary Melee Form</b>)</label> <br>{% endif %}
+        {% if 'Blunt' in dmgTypes %}
+        <label class="cbox-indent"><input data-input-for="SPRAYPAINT"> Spray Paint (+15% Blunt Damage)</label> <br>
+        {% endif %}
+        {% if enableWeapons == true and abilityName=="Combo Finisher" %}<label class="cbox-indent"><input data-input-for="THE_WEEKEND_CROSSWORD"> The Weekend Crossword (+15% Damage for <b>Combo Finisher Melee Form</b>)</label> <br>{% endif %}
+        {% if 'Raw' in dmgTypes %}
+        <label class="cbox-indent"><input data-input-for="TRUSTED_SPANNER"> Trusted Spanner (+15% Raw Damage)</label> <br>
+        {% endif %}
+        {% if enableWeapons == true and abilityName=="Secondary" %}<label class="cbox-indent"><input data-input-for="UNFINISHED_LOLLIPOP"> The Weekend Crossword (+10% Damage for <b>Secondary Melee Form</b>)</label> <br>{% endif %}
+        <label class="cbox-indent"><input data-input-for="WHETSTONE"> Whetstone (+20% Damage, -20% Falter)</label> <br>
+        {% if enableWeapons == false %}
+        <label class="cbox-indent"><input data-input-for="WORLD_TOUR_TICKETS"> World Tour Tickets (+100% Damage from Combat Abilities, <b>Power capped at 50%</b>)</label><br />
+        {% endif %}
+
+    </div>
     <button id="clear-all" style="margin: 10px 0px 0px 0px; padding: 0px 2px 0px 2px; accent-color: var(--brown-red); color: var(--brown-red); ">Clear All</button>
 </details>
 {% endmacro %}
