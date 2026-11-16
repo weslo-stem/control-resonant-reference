@@ -1,8 +1,6 @@
 {% macro caBuffsDropdown(dmgTypes, abilityName, enableWeapons, enableCrit, weaponName) %}
 
 <details id="buff-dropdown">
-    <i style="font-size: 12px">All buffs, despite being displayed as "+##%", are multiplicative.</i><br />
-    {% if enableWeapons == true %} <i style="font-size: 12px">Weapon upgrades <b>Gain Control</b>, <b>Pain Point</b>, <b>Falter Follow-Up</b>, <b>Savage Accumulation</b>, <b>Ravage Blade</b>, <b>Power Game</b>, and <b>Ambitious Blade</b> are currently not included, as they are a bit too situational to fit.</i> {% endif %}
     <summary>
         Buff/Debuff Toggles
         <div style="display: inline-flex; flex-wrap: wrap; max-width: 100%">
@@ -77,6 +75,13 @@
         </div>
     </summary>
     <div class="buff-dropdown">
+        <hr />
+        <i style="font-size: 12px">All buffs, despite being displayed as "+XX%", are multiplicative.</i>
+        {% if enableWeapons == true %}<br /> <i style="font-size: 12px">Weapon upgrades <b>Gain Control</b>, <b>Pain Point</b>, <b>Falter Follow-Up</b>, <b>Savage Accumulation</b>, <b>Ravage Blade</b>, <b>Power Game</b>, and <b>Ambitious Blade</b> are currently not included, as they are a bit too situational to fit.</i>{% endif %}
+        <hr />
+        <i style="color: black" id="dmgcounter">Damage: </i><br />
+        <i style="color: black" id="faltercounter">Falter: </i>
+        <hr />
         {% if enableCrit %}
         <b><label style="color: black;">Critical Hits</label></b> <br>
         <label class="cbox-indent"><input data-input-for="CRITICAL"> Critical Hit (+50% Damage)</label> <br>
@@ -105,7 +110,7 @@
         <label class="cbox-indent"><input data-input-for="AERIAL_DECREE"> Aerial Decree (+20% Damage <b>to airborne enemies</b>)</label> <br>
         <label class="cbox-indent"><input data-input-for="FORCEFUL_AUTHORITY"> Forceful Authority (+25% Damage and Falter <b>during Dominance</b>)</label> <br>
         {% endif %}
-        
+
         {% if enableWeapons == true and weaponName == "Crush" %}
         <b><label style="color: black;">Crush Weapon Upgrades</label></b> <br>
         <label class="cbox-indent"><input data-input-for="CAPITALIZING_CHARGE"> Capitalizing Charge (+20% Falter <b>from charged attacks</b>)</label> <br>

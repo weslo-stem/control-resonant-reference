@@ -1,10 +1,14 @@
 placeholders:
+
+    # Spoiler Blur
     BLURRED: 
         default: checked
         values:
             checked: "spoiler-blur"
             unchecked: "spoiler-blur-disabled"
         replace_everywhere: true
+
+    # Buff Toggles
     DOMINANCE:
         default: unchecked
         values:
