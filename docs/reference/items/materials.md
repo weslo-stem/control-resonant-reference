@@ -15,8 +15,6 @@
     .replace("Hedron", '<span class="iBLURREDi">Hedron</span>')
 %}
 
-{% if xindrow['Material'] == "Living Shard" %}
-
 <div class="melee-upgrade-box" id="{{xindrow['Material'].replace(' ', '-').lower()}}" style="display:flex;">
     <div style="height:auto; width:20%;">
         <img src="{{xindrow['Icon']}}" style="border: 0px; width:100%" />
@@ -28,38 +26,16 @@
             <p class="inline-svg">
                 {{desc}}
             </p>
-
+            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Subdescription']}}</i></p>
+            {% if xindrow['Material'] == "Living Shard" %}
             {% include 'reference/items/material-overrides/living-shard.html' %}
-
-            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Subdescription']}}</i></p>
+            {% endif %}
         </div>
     </div>
 </div>
-
-{% else %}
-
-<div class="melee-upgrade-box" id="{{xindrow['Material'].replace(' ', '-').lower()}}" style="display:flex;">
-    <div style="height:auto; width:20%;">
-        <img src="{{xindrow['Icon']}}" style="border: 0px; width:100%" />
-    </div>
-    <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
-        <div class="image-subtitle left-box">
-            <p style="font-size: 24px; margin: 0px;"><b>{{xindrow['Material']}}</b></p>
-            <p style="font-size: 18px; margin: 0px;"><i>{{xindrow['Header Description']}}</i></p>
-            <p class="inline-svg">
-                {{desc}}
-            </p>
-            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Subdescription']}}</i></p>
-        </div>
-    </div>
-</div>
-
-{% endif %}
 
 <!-- MOBILE LAYOUT -->
 
-{% if xindrow['Material'] == "Living Shard" %}
-
 <div class="mobile-melee-upgrade-box" style="display:flex; flex-direction:column;">
     <div style="height:auto; width:65%; align-self:center">
         <img src="{{xindrow['Icon']}}" style="border: 0px; width:100%" />
@@ -71,32 +47,12 @@
             <p class="inline-svg">
                 {{desc}}
             </p>
-            
+            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Subdescription']}}</i></p>
+            {% if xindrow['Material'] == "Living Shard" %}
             {% include 'reference/items/material-overrides/living-shard.html' %}
-
-            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Subdescription']}}</i></p>
+            {% endif %}
         </div>
     </div>
 </div>
-
-{% else %}
-
-<div class="mobile-melee-upgrade-box" style="display:flex; flex-direction:column;">
-    <div style="height:auto; width:65%; align-self:center">
-        <img src="{{xindrow['Icon']}}" style="border: 0px; width:100%" />
-    </div>
-    <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
-        <div class="image-subtitle left-box">
-            <p style="font-size: 24px; margin: 0px;"><b>{{xindrow['Material']}}</b></p>
-            <p style="font-size: 18px; margin: 0px;"><i>{{xindrow['Header Description']}}</i></p>
-            <p class="inline-svg">
-                {{desc}}
-            </p>
-            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Subdescription']}}</i></p>
-        </div>
-    </div>
-</div>
-
-{% endif %}
 {% endfor %}
 {% endfor %}

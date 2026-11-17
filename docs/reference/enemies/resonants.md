@@ -1,3 +1,1 @@
-
-
 # Resonant Entities
