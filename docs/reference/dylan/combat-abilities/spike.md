@@ -54,7 +54,7 @@ Following activations will command the Astral Spike to attack and stun the targe
 #### *Base Damage and Falter values by Ability Strength*
 
 
-{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{% from "reference/dylan/html/buffs_dropdown.html" import caBuffsDropdown %}
 {{ caBuffsDropdown(['Astral'], 'Spike', false, false) }}
-{% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
+{% from "reference/dylan/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/spike.csv', ['Astral']) }}

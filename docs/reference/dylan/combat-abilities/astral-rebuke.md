@@ -53,8 +53,8 @@ Damage and falter values will be increased by talents and status buffs. Below is
 #### *Base Damage and Falter values by Ability Strength*
 
 
-{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{% from "reference/dylan/html/buffs_dropdown.html" import caBuffsDropdown %}
 {{ caBuffsDropdown(['Astral'], 'Astral Rebuke', false, false) }}
-{% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
+{% from "reference/dylan/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/astral_rebuke.csv', ['Astral']) }}
     

@@ -63,14 +63,14 @@ Note that all values displayed in-game are rounded.
 
 #### *Base Damage and Falter values by Aberrant Strength*
 
-{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{% from "reference/dylan/html/buffs_dropdown.html" import caBuffsDropdown %}
 {{ caBuffsDropdown(['Sharp'], 'Combo Finisher', true, true, 'Split Orbit') }}
 
-{% from "reference/dylan/combat-abilities/html/af_damage_table.html" import dmgTable %}
+{% from "reference/dylan/html/af_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/weapon_forms/split_orbit.csv', ['Sharp']) }}
 
 # Upgrades
 #### *Weapon Upgrade Tree*
 
-{% from "reference/dylan/aberrant/upgrade_tree.html" import upgrade_tree %}
+{% from "reference/dylan/html/weapon_upgrade_tree.html" import upgrade_tree %}
 {{ upgrade_tree('Split Orbit') }}

@@ -63,7 +63,7 @@
 
 #### **Shield Bash Damage:**
 
-{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{% from "reference/dylan/html/buffs_dropdown.html" import caBuffsDropdown %}
 {{ caBuffsDropdown(['Blunt'], 'Shield', false, false) }}
-{% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
+{% from "reference/dylan/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/shield.csv', ['Blunt']) }}

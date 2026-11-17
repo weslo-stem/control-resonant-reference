@@ -57,7 +57,7 @@ Inferno attacks can be rapidly chained by quick, persistent inputs. Damage and f
 #### *Base Damage and Falter values by Ability Strength*
 
 
-{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{% from "reference/dylan/html/buffs_dropdown.html" import caBuffsDropdown %}
 {{ caBuffsDropdown(['Fire'], 'Inferno', false, false) }}
-{% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
+{% from "reference/dylan/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/inferno.csv', ['Fire']) }}

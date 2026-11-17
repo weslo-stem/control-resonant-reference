@@ -7,10 +7,14 @@ A public community-driven wiki for the game [Control Resonant](https://controlga
 https://weslo-stem.github.io/control-resonant-reference
 
 - All pages are written in markdown format with HTML injections enabled
-- Utilizes mkdocs as a base (not mkdocs-material... probably a bad idea on my part, but here we are)
+- Utilizes mkdocs as a base (not mkdocs-material or Zensical... probably a bad idea on my part, but here we are)
 - Utilizes Jinja2 code blocks
 
+I apologize if the project is a bit of a mess. I am new to community-based projects like this and just really wanted to make something.
+
 If you wish to contribute, you will need Python and Git installed.
+
+**No AI or vibecode please.**
 
 ## Progress
 
@@ -191,9 +195,12 @@ At the moment, we have 2 .js scripts:
 
 Currently used .html macros include:
 
-`reference/items/artifacts/artifactpage.html` Which is used on each artifact's page to display their info boxes. Works in conjunction with `artifacts.csv`
-
-`reference/items/artifactlist.html` Which is used on `artifacts.md`, also uses `artifacts.csv`
-
-`reference/world/vendors/shopgrid_htmls/shopgrid.html` Which are used on each vendor's page to display their item stock
-
+- `reference/items/artifacts/artifactpage.html` Which is used on each artifact's page to display their info boxes. Utilizes `artifacts.csv`
+- `reference/items/artifactlist.html` Which is used on `artifacts.md`, also utilizes `artifacts.csv`
+- `reference/items/material-overrides` Which are used in `materials.md` to replace or inject into the generic information boxes
+- `reference/world/vendors/shopgrid.html` Which is used on each vendor's page to display their item stock. Utilizes .CSV files in `docs/tables/vendor_tables`
+- `reference/dylan/html/talent_tree.html` Which generates the nodes and lines in the visual talent tree in `talents.md`. Utilizes `docs/tables/vendor_tables` and sets the list of objects that `muConnector.js` will draw lines between
+- `reference/dylan/html/weapon_upgrade_tree.html` Which generates the weapon upgrades and lines in the visual weapon upgrade tree on every weapon form page. Utilizes `docs/tables/weapon_upgrades.csv` and sets the list of objects that `muConnector.js` will draw lines between
+- `reference/dylan/html/af_damage_table.html` Which is used in every weapon form page. This generates a table of base damage values from each weapon form's respective .CSV in `docs/tables/damage_tables/weapon_forms`
+- `reference/dylan/html/ca_damage_table.html` Which is used in every combat ability page (except Command). This generates a table of base damage values from each combat ability's respective .CSV in `docs/tables/damage_tables/combat_abilities`
+- `reference/dylan/html/buffs_dropdown.html` Which is used in every weapon form page and combat ability page (except Command). This generates the buff/debuff dropdown and acts as the direct connection between the damage tables and the `updateMultipliers.js` script.

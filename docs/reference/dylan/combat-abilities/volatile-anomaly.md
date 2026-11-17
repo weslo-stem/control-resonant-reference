@@ -64,13 +64,13 @@
 
 #### **Projectile Damage:**
 
-{% from "reference/dylan/combat-abilities/html/ca_buffs_dropdown.html" import caBuffsDropdown %}
+{% from "reference/dylan/html/buffs_dropdown.html" import caBuffsDropdown %}
 {{ caBuffsDropdown(['Blunt'], 'Volatile Anomaly', false, false) }}
-{% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable %}
+{% from "reference/dylan/html/ca_damage_table.html" import dmgTable %}
 {{ dmgTable('tables/damage_tables/combat_abilities/volatile_anomaly_projectiles.csv', ['Blunt']) }}
 
 
 #### **Explosion Damage:**
 
-{% from "reference/dylan/combat-abilities/html/ca_damage_table.html" import dmgTable2 %}
+{% from "reference/dylan/html/ca_damage_table.html" import dmgTable2 %}
 {{ dmgTable2('tables/damage_tables/combat_abilities/volatile_anomaly_explosion.csv', ['Blunt']) }}
