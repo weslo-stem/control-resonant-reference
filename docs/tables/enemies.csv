@@ -1,11 +1,84 @@
 Faction,Class,Name,Image Folder,Image,Description
-Hiss,Special,Vending Machine,/control-resonant-reference/images/enemies/hiss/,vending_machine_large.tex.png,
-Hiss,Drone,Hiss Guard,/control-resonant-reference/images/enemies/hiss/drone/,artillery_large.tex.png,
-Hiss,Drone,Hiss Charged,/control-resonant-reference/images/enemies/hiss/drone/,charged_large.tex.png,
-Hiss,Drone,Hiss Elevated,/control-resonant-reference/images/enemies/hiss/drone/,elevated_large.tex.png,
-Hiss,Drone,Hiss Provoker,/control-resonant-reference/images/enemies/hiss/drone/,hermit_large.tex.png,
-Hiss,Drone,Hiss Passenger,/control-resonant-reference/images/enemies/hiss/drone/,mini_blob_large.tex.png,
-Hiss,Drone,Hiss Thug,/control-resonant-reference/images/enemies/hiss/drone/,soldier_large.tex.png,
+Hiss,Special,Vending Machine,/control-resonant-reference/images/enemies/hiss/,vending_machine_large.tex.png,"    THREAT ASSESSMENT: VENDING MACHINE
+<br />
+<br />
+<span style=""margin-left:2rem; display:block; line-height:1.5rem"">
+    - This is a curious one. The Vending Machine is not so much a Hiss variant or even an ""enemy"" - as it is a corrupted piece of the decor of the Oldest House, now loose in the city.<br />
+    - Note: the idea of a machine being corrupted doesn't quite fit our understanding of how the Hiss operate, so one could also argue that this outer appearance is just a clever disguise.<br />
+    - The Vending Machine looks like a regular vintage piece of equipment until it is attacked, after which it flees. Is there any joy in this escape? Oddly, some reports suggest the chaotic pursuit is more thrilling than terrifying, almost like playing a game of tag with the Hiss rather than engaging in warfare.<br />
+    - (And, even though the Vending Machine cannot be stunned nor executed as such, it can ultimately be destroyed.)<br />
+    - Does this indicate some form of playfulness from the Hiss? I dare not even think what that might mean for us in the big picture - have we underestimated the Hiss and its functionality for years? Best to think of this specimen as an outlier.<br /><br />
+</span>
+    Rick Patel<br />
+    Senior Analyst, Threat Assessment Team"
+Hiss,Drone,Hiss Guard,/control-resonant-reference/images/enemies/hiss/drone/,artillery_large.tex.png,"THREAT ASSESSMENT: HISS GUARD
+<br />
+<br />
+<span style=""margin-left:2rem; display:block; line-height:1.5rem"">
+    - This ""Drone"" enemy type has been observed attacking from a distance by using projectiles drawn from its surroundings, seemingly telekinetically.<br />
+    - The Hiss Guard looks for higher ground, possibly to gain a clearer view of its opponent. This suggests some tactical thinking although ""thinking"" might not be the correct word to use regarding the Hiss.<br />
+    - This enemy has better aim with a still target. Does this imply poor vision or poor coordination? Or is this Hiss variant simply impatient, hasty in its actions during combat?<br />
+    - Note that if you get too close to the Hiss Guard, it will use a direct melee defense. Or attack, depending on your viewpoint.<br />
+    - Relatively easy to defeat, especially in smaller numbers. Although, this statement is of course easy to make from the side-lines.<br /><br />
+</span>
+    Rick Patel<br />
+    Senior Analyst, Threat Assessment Team"
+Hiss,Drone,Hiss Charged,/control-resonant-reference/images/enemies/hiss/drone/,charged_large.tex.png,"THREAT ASSESSMENT: HISS CHARGED
+<br />
+<br />
+<span style=""margin-left:2rem; display:block; line-height:1.5rem"">
+    - Yet another known variant from the Hiss invasion that overtook the Oldest House.<br />
+    - The Hiss Charged is a ""Drone"" enemy that boldly flies towards its target and, upon reaching it, self-detonates.<br />
+    - This self-sacrificing method of attack has of course been used widely in ordinary human warfare as well. There, it carries a more tragic connotation, but in the context of the Hiss, it is merely an efficient means to an end.<br />
+    - Due to its modus operandi, this enemy cannot be stunned. This Hiss variant also explodes upon death, making it a ""living"", flying landmine of sorts. Not pleasant.<br />
+    - The damage the explosions cause is significant and affects the immediate surroundings, and sadly, we've seen it leave people with severe burns, in the cases where they live.<br />
+</span>
+    Rick Patel<br />
+    Senior Analyst, Threat Assessment Team"
+Hiss,Drone,Hiss Elevated,/control-resonant-reference/images/enemies/hiss/drone/,elevated_large.tex.png,"THREAT ASSESSMENT: HISS ELEVATED<br /><br />
+<span style=""margin-left:2rem; display:block; line-height:1.5rem"">
+    - This Hiss variant is familiar to us from the Oldest House invasion and seems to have remained in its original state even beyond the Lockdown.<br />
+    - The Hiss Elevated is a ""Drone"" enemy that moves around by levitating, while appearing to keep the target in its line of sight. <br />
+    - When airborne, the Hiss Elevated has been reported to deftly dodge some of our ranged attacks - a skill it has had plenty of time to practice.<br />
+    - I've observed an interesting attack from the Hiss Elevated where it charges the target at considerable speed and hits them with a small impulse wave. Although this sudden attack momentarily drains the enemy, leaving it vulnerable on the ground, it still exhibits this behavior. A lack of strategical thinking or an ""all or nothing"" mentality? Can the Hiss exhibit either?<br /><br />
+</span>
+    Rick Patel<br />
+    Senior Analyst, Threat Assessment Team"
+Hiss,Drone,Hiss Provoker,/control-resonant-reference/images/enemies/hiss/drone/,hermit_large.tex.png,"THREAT ASSESSMENT: HISS PROVOKER
+<br />
+<br />
+<span style=""margin-left:2rem; display:block; line-height:1.5rem"">
+    - The Hiss Provoker is another ""Drone"" enemy that uses projectiles. but what makes this specimen especially interesting is its stationary nature.<br />
+    - The enemy appears almost shy: it's encased within an armored shell to which it withdraws when its opponent comes near. <br />
+    - However, with enough force, the protective shell can be destroyed, so this Hiss variant is not fully safe inside the little bubble it creates for itself. This begs the question is this an early phase of an evolution that would lead to a fully cocooned specimen? (Lydia, I'd like to hear your thoughts on this!)<br />
+    - The casing itself seems to be the fleshy remains of the person this Hiss enemy used to be, and the operating part of it now only the skeleton. Disturbing.<br /><br />
+</span>
+    Rick Patel<br />
+    Senior Analyst, Threat Assessment Team"
+Hiss,Drone,Hiss Passenger,/control-resonant-reference/images/enemies/hiss/drone/,mini_blob_large.tex.png,"THREAT ASSESSMENT: HISS PASSENGER
+<br />
+<br />
+<span style=""margin-left:2rem; display:block; line-height:1.5rem"">
+    - The Hiss Passenger, a fast and fairly small melee ""Drone"" enemy, seems to originate from the Hiss Transporter variant. This seems very logical, given their connection.<br />
+    - The enemy's appearance is that of a passenger of the corrupted bus, fused together with their seat. Gruesome.<br />
+    - I've observed this enemy using fast but simple melee attacks against its opponent when in close range. This methodology might indicate a specific ""frustration"" - perhaps due to the enemy being stuck to a chair, forever in transit, never arriving? <br />
+    - This Hiss variant seems to lack tenacity, especially when separated, which is likely why they often fight in packs. Or crowds, like real passengers tend to do.<br />
+    - Rangers who have encountered this enemy have stated that they were unable to stun the Hiss Passenger with their attacks, even when it was close to death.<br /><br />
+</span>
+    Rick Patel
+<br />
+    Senior Analyst, Threat Assessment Team"
+Hiss,Drone,Hiss Thug,/control-resonant-reference/images/enemies/hiss/drone/,soldier_large.tex.png,"THREAT ASSESSMENT: HISS THUG
+<br />
+<br />
+<span style=""margin-left:2rem; display:block; line-height:1.5rem"">
+    - The Hiss Thug is a melee ""Drone"" enemy that exhibits slow movement as it advances on its target, then an equally slow melee attack when in range.<br />
+    - To note, despite its apparent slowness, the Hiss Thug has been observed at times charging at the target and attempting an overhead attack. This move appears to happen when in medium range, possibly as an acute effort to overwhelm the opponent.<br />
+    - This Hiss variant uses its elongated, misshapen arms as weapons. One might wonder is this intentional, opportunistic action or just a physical flailing, a symptom of the mutation?<br /><br />
+</span>
+    Rick Patel
+<br />
+    Senior Analyst, Threat Assessment Team"
 Hiss,Heavy,Hiss Transporter,/control-resonant-reference/images/enemies/hiss/heavy/,blob_large.tex.png,
 Hiss,Heavy,Hiss Freighter,/control-resonant-reference/images/enemies/hiss/heavy/,brute_arcs_large.tex.png,
 Hiss,Heavy,Hiss Collider,/control-resonant-reference/images/enemies/hiss/heavy/,brute_large.tex.png,
