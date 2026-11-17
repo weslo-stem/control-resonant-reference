@@ -1,5 +1,20 @@
 {% extends "base.html" %}
 
+{% set embedImage = config.site_url + "/img/icon.png" %}
+{% set urlsplit = page.canonical_url.split("/") %}
+{% set pagetitle2 = urlsplit[urlsplit|length - 2].replace("-", " ").title() %}
+{% set pagetitle1 = urlsplit[urlsplit|length - 3].replace("-", " ").title() %}
+
+{% block extrahead %}
+    {{ super() }}
+    <meta property="og:site_name" content="Control Resonant Reference" />
+    <meta property="og:title" content="{% if page and page.title and not page.is_homepage %}{{pagetitle1}} | {{pagetitle2}}{% else %}{{ config.site_name }}{% endif %}">
+    <meta property="og:description" content="Community-driven open-source web reference for Control Resonant">
+    <meta property="og:url" content="{{page.canonical_url}}">
+    <meta property="og:image" content="{{embedImage}}">
+    <meta property="og:type" content="website">
+{% endblock %}
+
 {#
 The entry point for the MkDocs Theme.
  

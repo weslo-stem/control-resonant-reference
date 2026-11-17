@@ -20,8 +20,8 @@ nav:
             - reference/dylan/aberrant/combo-finishers/spin-edge.md
             - reference/dylan/aberrant/combo-finishers/split-pivot.md
             - reference/dylan/aberrant/combo-finishers/split-orbit.md
-      - reference/dylan/combat-abilities.md
-      - reference/dylan/talents.md
+      - Combat Abilities: reference/dylan/combat-abilities.md
+      - Talents: reference/dylan/talents.md
     - Enemies: 
       - reference/enemies/hiss.md
       - reference/enemies/mold.md

@@ -2,6 +2,10 @@ site_name: Control Resonant Reference
 site_url: https://weslo-stem.github.io/control-resonant-reference/
 repo_url: https://github.com/weslo-stem/control-resonant-reference
 edit_uri: blob/main/docs/
+theme:
+    name: mkdocs
+    custom_dir: crr_custom_theme
+    favicon: 'docs/icons/favicon.ico'
 extra_javascript:
     - path: scripts/muConnector.js
     - path: scripts/updateMultipliers.js
@@ -24,10 +28,6 @@ plugins:
     - toggle-sidebar:
         show_toc_by_default: False
         enable_key_bindings: False
-theme:
-    name: mkdocs
-    custom_dir: 'crr_custom_theme/'
-    favicon: 'docs/icons/favicon.ico'
 extra:
     nav_blur_terms: Hedron;Unknown;Underpass;The Physicist;Astral Plane;The Co-Director;Evacuation Zone (Secret)
     ctx: /control-resonant-reference

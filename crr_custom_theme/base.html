@@ -14,11 +14,7 @@
 
       {%- block htmltitle %}
         <title>{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}</title>
-        <meta property="og:title" content="{% if page and page.title and not page.is_homepage %}{{ page.title }} - {% endif %}{{ config.site_name }}">
-        <meta property="og:description" content="Community-driven open-source web reference for Control Resonant">
-        <meta property="og:url" content="{{page.canonical_url}}">
-        <meta property="og:image" content={{'img/icon.png'|url}}>
-        <meta property="og:type" content="website">
+        
       {%- endblock %}
 
       {%- block styles %}

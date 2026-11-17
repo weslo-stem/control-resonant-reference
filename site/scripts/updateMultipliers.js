@@ -66,11 +66,11 @@ class multiplier {
         }
         if (this.name == "Dominance") {
             var form;
-            if (secHeader.innerHTML.includes("Primary")) {
+            if (secHeader && secHeader.innerHTML.includes("Primary")) {
                 form = "Primary"
-            } else if (secHeader.innerHTML.includes("Secondary")) {
+            } else if (secHeader && secHeader.innerHTML.includes("Secondary")) {
                 form = "Secondary"
-            } else if (secHeader.innerHTML.includes("Combo Finisher")) {
+            } else if (secHeader && secHeader.innerHTML.includes("Combo Finisher")) {
                 form = "Combo Finisher"
             }
             var tryGetDominance = document.querySelector('[data-input-for="DOMINANCE"]');
