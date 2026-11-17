@@ -15,7 +15,7 @@
     <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
         <img src="{{xindrow['Image Folder']}}{{xindrow['Image']}}" style="border: 0px; height:auto; width:60%;" />
         <div class="image-subtitle left-box" style="padding: 1rem">
-            <p style="font-size: 18px; margin: auto; color: #564F56ff;"><i>{{xindrow['Description']}}</i></p>
+            <p style="font-size: 18px; margin: auto; color: var(--floral-white);"><i>{{xindrow['Description']}}</i></p>
         </div>
     </div>
 </div>
@@ -28,7 +28,7 @@
     </div>
     <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
         <div class="image-subtitle left-box">
-            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Description']}}</i></p>
+            <p style="font-size: 18px; margin: 0px; color: var(--floral-white);"><i>{{xindrow['Description']}}</i></p>
         </div>
     </div>
 </div>
@@ -47,7 +47,7 @@
     <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
         <img src="{{xindrow['Image Folder']}}{{xindrow['Image']}}" style="border: 0px; height:auto; width:60%;" />
         <div class="image-subtitle left-box" style="padding: 1rem">
-            <p style="font-size: 18px; margin: auto; color: #564F56ff;"><i>{{xindrow['Description']}}</i></p>
+            <p style="font-size: 18px; margin: auto; color: var(--floral-white);"><i>{{xindrow['Description']}}</i></p>
         </div>
     </div>
 </div>
@@ -60,7 +60,7 @@
     </div>
     <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
         <div class="image-subtitle left-box">
-            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Description']}}</i></p>
+            <p style="font-size: 18px; margin: 0px; color: var(--floral-white);"><i>{{xindrow['Description']}}</i></p>
         </div>
     </div>
 </div>
@@ -79,7 +79,7 @@
     <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
         <img src="{{xindrow['Image Folder']}}{{xindrow['Image']}}" style="border: 0px; height:auto; width:60%;" />
         <div class="image-subtitle left-box" style="padding: 1rem">
-            <p style="font-size: 18px; margin: auto; color: #564F56ff;"><i>{{xindrow['Description']}}</i></p>
+            <p style="font-size: 18px; margin: auto; color: var(--floral-white);"><i>{{xindrow['Description']}}</i></p>
         </div>
     </div>
 </div>
@@ -92,7 +92,7 @@
     </div>
     <div class="flex-container" style="flex-direction: row; align-items: flex-start; width: 100%;">
         <div class="image-subtitle left-box">
-            <p style="font-size: 18px; margin: 0px; color: #564F56ff;"><i>{{xindrow['Description']}}</i></p>
+            <p style="font-size: 18px; margin: 0px; color: var(--floral-white);"><i>{{xindrow['Description']}}</i></p>
         </div>
     </div>
 </div>
