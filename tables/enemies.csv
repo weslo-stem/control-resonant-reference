@@ -1,0 +1,58 @@
+Faction,Class,Name,Image Folder,Image,Description
+Hiss,Special,Vending Machine,/control-resonant-reference/images/enemies/hiss/,vending_machine_large.tex.png,
+Hiss,Drone,Hiss Guard,/control-resonant-reference/images/enemies/hiss/drone/,artillery_large.tex.png,
+Hiss,Drone,Hiss Charged,/control-resonant-reference/images/enemies/hiss/drone/,charged_large.tex.png,
+Hiss,Drone,Hiss Elevated,/control-resonant-reference/images/enemies/hiss/drone/,elevated_large.tex.png,
+Hiss,Drone,Hiss Provoker,/control-resonant-reference/images/enemies/hiss/drone/,hermit_large.tex.png,
+Hiss,Drone,Hiss Passenger,/control-resonant-reference/images/enemies/hiss/drone/,mini_blob_large.tex.png,
+Hiss,Drone,Hiss Thug,/control-resonant-reference/images/enemies/hiss/drone/,soldier_large.tex.png,
+Hiss,Heavy,Hiss Transporter,/control-resonant-reference/images/enemies/hiss/heavy/,blob_large.tex.png,
+Hiss,Heavy,Hiss Freighter,/control-resonant-reference/images/enemies/hiss/heavy/,brute_arcs_large.tex.png,
+Hiss,Heavy,Hiss Collider,/control-resonant-reference/images/enemies/hiss/heavy/,brute_large.tex.png,
+Hiss,Heavy,Hiss Cluster,/control-resonant-reference/images/enemies/hiss/heavy/,cluster_large.tex.png,
+Hiss,Heavy,Hiss Distorted,/control-resonant-reference/images/enemies/hiss/heavy/,distorted_large.tex.png,
+Hiss,Heavy,Hiss Riveter,/control-resonant-reference/images/enemies/hiss/heavy/,glider_large.tex.png,
+Hiss,Heavy,Hiss Ruiner,/control-resonant-reference/images/enemies/hiss/heavy/,leviathan_large.tex.png,
+Hiss,Heavy,Hiss Pursuer,/control-resonant-reference/images/enemies/hiss/heavy/,pursuer_large.tex.png,
+Hiss,Heavy,Hiss Focused,/control-resonant-reference/images/enemies/hiss/heavy/,sniper_large.tex.png,
+Hiss,Apex,Hiss Transporter - Apex,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_blob_large.tex.png,
+Hiss,Apex,Hiss Freighter - Apex,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_brute_arcs_large.tex.png,
+Hiss,Apex,Hiss Riveter - Apex,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_glider_large.tex.png,
+Hiss,Apex,Hiss Ruiner - Apex,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_leviathan_large.tex.png,
+Hiss,Apex,Hiss Distorted - Apex,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_master_large.tex.png,
+Hiss,Apex,Hiss Pursuer - Apex,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_pursuer_large.tex.png,
+Hiss,Apex,Hiss Focused - Apex,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_sniper_large.tex.png,
+Mold,Drone,Mold Host,/control-resonant-reference/images/enemies/mold/drone/,moldbag_large.tex.png,
+Mold,Drone,Mold Launcher,/control-resonant-reference/images/enemies/mold/drone/,moldbag_rocket_large.tex.png,
+Mold,Drone,Mold Spreader,/control-resonant-reference/images/enemies/mold/drone/,moldbag_shotgun_large.tex.png,
+Mold,Drone,Mold Spitter,/control-resonant-reference/images/enemies/mold/drone/,spitter_large.tex.png,
+Mold,Heavy,Mold Blight,/control-resonant-reference/images/enemies/mold/heavy/,juggernaut_geysers_large.tex.png,
+Mold,Heavy,Mold Scrapper,/control-resonant-reference/images/enemies/mold/heavy/,juggernaut_large.tex.png,
+Mold,Heavy,Mold Disperser,/control-resonant-reference/images/enemies/mold/heavy/,plague_barrage_large.tex.png,
+Mold,Heavy,Mold Plague,/control-resonant-reference/images/enemies/mold/heavy/,plague_large.tex.png,
+Mold,Heavy,Spore Mother,/control-resonant-reference/images/enemies/mold/heavy/,spore_large.tex.png,
+Mold,Heavy,Bloomed Spore Mother,/control-resonant-reference/images/enemies/mold/heavy/,spore_mines_large.tex.png,
+Mold,Apex,Mold Blight - Apex,/control-resonant-reference/images/enemies/mold/apex/,miniboss_juggernaut_geysers_large.tex.png,
+Mold,Apex,Mold Plague - Apex,/control-resonant-reference/images/enemies/mold/apex/,miniboss_plague_large.tex.png,
+Hedron,Drone,Hedron Spike,/control-resonant-reference/images/enemies/hedron/drone/,astral_construct_large.tex.png,"THREAT ASSESSMENT: HEDRON SPIKE<br><br>
+<span style=""margin-left:2rem; display:block; line-height:1.5rem"">
+- A ""Drone""-class Hedron variant<br>
+- A Hedron-corrupted (coerced? co-opted? copied?) version of an Astral Spike <br>
+- (Background: Astral Spikes are believed to be native inhabitants of the Astral Plane; see &#x2588;&#x2588;&#x2588;&#x2588;&#x2588;&#x2588; for more information) <br>
+- Native Astral Spikes are notoriously resistant to damage to the point of invulnerability: luckily, the Hedron Spike variant is much squishier<br>
+- The Hedron Spike attempts to approach targets; once close enough, dashes towards the target<br>
+- Visual identification is easy: if it looks like a migraine, you found one<br>
+- (You're lucky you don't get migraines, Ricky)<br><br>
+</span>
+Lydia M.B. McPierce<br>
+Senior Analyst, Threat Assessment Team"
+Hedron,Drone,Hedron Base,/control-resonant-reference/images/enemies/hedron/drone/,flux_horizontal_large.tex.png,
+Hedron,Drone,Hedron Flux,/control-resonant-reference/images/enemies/hedron/drone/,flux_large.tex.png,
+Hedron,Heavy,Hedron Axiom,/control-resonant-reference/images/enemies/hedron/heavy/,aggregate_beams_large.tex.png,
+Hedron,Heavy,Hedron Aggregate,/control-resonant-reference/images/enemies/hedron/heavy/,aggregate_large.tex.png,
+Hedron,Heavy,Hedron Sequence,/control-resonant-reference/images/enemies/hedron/heavy/,swarm_large.tex.png,
+Hedron,Heavy,Hedron Vector,/control-resonant-reference/images/enemies/hedron/heavy/,swarm_melee_large.tex.png,
+Hedron,Apex,Hedron Axiom - Apex,/control-resonant-reference/images/enemies/hedron/apex/,miniboss_aggregate_beams_large.tex.png,
+Hedron,Apex,Hedron Aggregate - Apex,/control-resonant-reference/images/enemies/hedron/apex/,miniboss_aggregate_large.tex.png,
+Hedron,Apex,Hedron Sequence - Apex,/control-resonant-reference/images/enemies/hedron/apex/,miniboss_swarm_large.tex.png,
+Hedron,Apex,Hedron Vector - Apex,/control-resonant-reference/images/enemies/hedron/apex/,miniboss_swarm_melee_large.tex.png,
