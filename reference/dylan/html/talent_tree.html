@@ -3,7 +3,7 @@
 {% set reader=pd_read_csv('tables/talents.csv') %}
 {% set uplist = [] %}
 
-<div class="combat-ability-infobox" id="treewindow" style="padding: 3%; align-self: center">
+<div class="generic-infobox" id="treewindow" style="padding: 3%; align-self: center">
     <div class="talent-window" style="display: inline-flex; flex-direction: column-reverse; width:100%;">
 
         {% for rindex in range(0,reader['Row'].max()+1) %}
@@ -17,7 +17,7 @@
         {% endif %}
         <div class="talent-row">
             {% for _,uprow in reader[reader['Row']==rindex].fillna('').iterrows() %}
-            <div class="talent-column" id="icon-{{uprow['Talent'].lower().replace(' ', '-')}}">
+            <div class="talent-item" id="icon-{{uprow['Talent'].lower().replace(' ', '-')}}">
                 <a href="#{{uprow['Talent'].lower().replace(' ', '-')}}" class="talent-icon">
                     <img {% if uprow['Talent']=="Ruthless" %} class="iBLURREDi" {% endif %} src="{{uprow['Icon']}}" />
                 </a>

@@ -5,7 +5,7 @@
     <div class="shop-row">
         {% for _,shoprow in reader[ reader['Row'] == index ].fillna('').iterrows() %}
 
-        <div class="shop-column">
+        <div class="shop-item">
             <div style="display: flex">
                 <p class="shop_p_qty" style="color:{% if shoprow['Level'] == 2 %}var(--control-blue){% elif shoprow['Level'] == 3 %}var(--control-yellow){% else %}white{% endif %}">{{ shoprow['Qty 1']|round|int }} </p>
                 {% if shoprow['Qty 2']!='' %}
@@ -22,7 +22,7 @@
         {% endfor %}
         {% if reader[ reader['Row'] == index ].fillna('').shape[0] < reader['Column'].max() %}
         {% for ix in range(0, reader['Column'].max()-reader[ reader['Row'] == index ].fillna('').shape[0]) %}
-        <div class="blank-shop-column">
+        <div class="blank-shop-item">
             
         </div>
         {% endfor %}

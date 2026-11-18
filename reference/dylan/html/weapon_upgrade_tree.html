@@ -5,8 +5,8 @@
 {% set lmr = ['left', 'middle', 'right'] %}
 {% set uplist = [] %}
 
-<div class="combat-ability-infobox" id="treewindow" style="padding: 5%; align-self: center">
-    <div class="wpn-ugrade-window" style="flex-direction: column;">
+<div class="generic-infobox" id="treewindow" style="padding: 5%; align-self: center">
+    <div class="wpn-upgrade-window" style="flex-direction: column;">
 
         {% for rindex in range(0,searchtable['Row'].max()+1) %}
         {% set crows = searchtable[searchtable['Row']==rindex] %}
@@ -14,7 +14,7 @@
             {% for xcol in lmr %}
             {% if xcol in crows['Column'].fillna('').values %}
             {% set uprow = crows.loc[crows['Column'] == xcol] %}
-            <div class="wpn-ugrade-column" id="icon-{{uprow['Upgrade'].item().lower().replace(' ', '-')}}">
+            <div class="wpn-upgrade-item" id="icon-{{uprow['Upgrade'].item().lower().replace(' ', '-')}}">
                 <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-link"><b>{{uprow['Upgrade'].item()}}</b></a>
                 <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-icon">
                     <img src="{{uprow['Icon'].item()}}" />
@@ -23,7 +23,7 @@
             </div>
             {{uplist.append(uprow['Upgrade'].fillna('').item().replace(' ', '-').lower() + '|' + uprow['Required Predecessor'].fillna('').item().replace(' ', '-').lower()) or ""}}
             {% else %}
-            <div class="blank-wpn-ugrade-column"></div>
+            <div class="blank-wpn-upgrade-item"></div>
             {% endif %}
             {% endfor %}
         </div>
