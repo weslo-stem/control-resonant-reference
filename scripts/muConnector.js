@@ -260,7 +260,10 @@ const resizeObserver = new ResizeObserver((e) => {
     });
 });
 resizeObserver.observe(navbar);
-resizeObserver.observe(buffdrop);
+if (buffdrop) {
+    resizeObserver.observe(buffdrop);
+}
+
 
 document.addEventListener("DOMContentLoaded", (e) => {
     connectors.forEach((c) => {

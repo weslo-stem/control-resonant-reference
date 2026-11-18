@@ -10,7 +10,7 @@
 
         {% for rindex in range(0,searchtable['Row'].max()+1) %}
         {% set crows = searchtable[searchtable['Row']==rindex] %}
-        <div class="wpn-upgrade-row" style="display:flex; flex-direction: row;">
+        <div class="wpn-upgrade-row">
             {% for xcol in lmr %}
             {% if xcol in crows['Column'].fillna('').values %}
             {% set uprow = crows.loc[crows['Column'] == xcol] %}
@@ -18,7 +18,7 @@
                 <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-link"><b>{{uprow['Upgrade'].item()}}</b></a>
                 <a href="#{{uprow['Upgrade'].item().lower().replace(' ', '-')}}" class="wpn-upgrade-icon">
                     <img src="{{uprow['Icon'].item()}}" />
-                    <p class="wpn-upgrade-str-boost"><b>+{{uprow['Aberrant Strength Boost'].item()}}</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
+                    <p class="wpn-upgrade-str-boost"><b style="vertical-align:middle">+{{uprow['Aberrant Strength Boost'].item()}}</b><img src='/control-resonant-reference/icons/icon/icn_aberrant_strength.svg' /></p>
                 </a>
             </div>
             {{uplist.append(uprow['Upgrade'].fillna('').item().replace(' ', '-').lower() + '|' + uprow['Required Predecessor'].fillna('').item().replace(' ', '-').lower()) or ""}}
