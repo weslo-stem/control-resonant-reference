@@ -2,7 +2,7 @@
 # Vendor
 ### *Evacuation Zone (Secret)*
 
-<div class="combat-ability-infobox">
+<div class="generic-infobox">
     <!-- Image -->
     <div class="flex-container">
         <div class="vendor-image left-box image-subtitle" style="padding: 5px">
@@ -33,6 +33,6 @@
     <p>Color Legend: </p>
     <img src="{{icon_vendor_level_0}}" style="border: 0px"/>
 </div>
-<div class="combat-ability-infobox">
+<div class="generic-infobox">
     {{ vendorTable('tables/vendor_tables/vendor_evacuation_zone_secret.csv') }}
 </div>

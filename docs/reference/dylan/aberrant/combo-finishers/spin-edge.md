@@ -3,20 +3,20 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox" style="width: 100%;">
+<div class="generic-infobox" style="width: 100%;">
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_spin_edge}}" alt="Spin Edge Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">A continuous spin that deals <img src="{{icon_generic_damage}}"/><strong><b>Damage</b></strong> to all nearby enemies.</p>
             </div>
         </div>
-        <div class="combat-ability-gif right-box">
+        <div class="box-gif-primary right-box">
             <img src="{{gif_spin_edge}}" alt="Spin Edge">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_spin_edge}}" alt="Spin Edge">
     </div>
     <hr>

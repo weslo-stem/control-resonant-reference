@@ -3,20 +3,20 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox" >
+<div class="generic-infobox" >
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_barrage}}" alt="Barrage Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">Sends projectiles hurtling towards a target.</p>
             </div>
         </div>
-       <div class="combat-ability-gif">
+       <div class="box-gif-primary">
             <img src="{{gif_barrage}}" alt="Barrage">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_barrage}}" alt="Barrage">
     </div>
     <hr>

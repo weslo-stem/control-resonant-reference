@@ -3,20 +3,20 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox" style="width: 100%;">
+<div class="generic-infobox" style="width: 100%;">
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_split_orbit}}" alt="Split Orbit Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">A short-range attack that becomes a blade that flies around Dylan for a short duration.</p>
             </div>
         </div>
-        <div class="combat-ability-gif right-box">
+        <div class="box-gif-primary right-box">
             <img src="{{gif_split_orbit}}" alt="Split Orbit">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_split_orbit}}" alt="Split Orbit">
     </div>
     <hr>

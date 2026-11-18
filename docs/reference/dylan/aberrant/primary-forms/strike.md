@@ -3,20 +3,20 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox" style="width: 100%;">
+<div class="generic-infobox" style="width: 100%;">
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_strike}}" alt="strike Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">A fast attack with a high Critical Chance.</p>
             </div>
         </div>
-        <div class="combat-ability-gif right-box">
+        <div class="box-gif-primary right-box">
             <img src="{{gif_strike}}" alt="Strike">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_strike}}" alt="Strike">
     </div>
     <hr>

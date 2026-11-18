@@ -1,4 +1,4 @@
-![background](crr_custom_theme/img/Wallpaper2.png)
+![background](crr_custom_theme/img/logo.png)
 
 # Control Resonant Reference
 
@@ -25,7 +25,7 @@ If you wish to contribute, you will need Python and Git installed.
 [x] Weapon Forms
 [ ] Zones
 [ ] Quests
-[ ] Enemies
+[x] Enemies
 [x] Status effects/buffs
 [x] Talents
 [x] Materials

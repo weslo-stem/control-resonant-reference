@@ -5,7 +5,7 @@
     <div class="shop-window shop-row">
         {% for _,shoprow in reader[ reader['Row'] == index ].fillna('').iterrows() %}
         
-        <div class="shop-window shop-column">
+        <div class="shop-window shop-item">
             <div style="display: flex">
                 <p class="shop_p_qty" style="color:{% if shoprow['Level'] == 2 %}var(--control-blue){% elif shoprow['Level'] == 3 %}var(--control-yellow){% else %}white{% endif %}">{{ (shoprow['Qty 1']|round(2)|string).rstrip('.0') }} </p>
                 {% if shoprow['Qty 2']!='' %}

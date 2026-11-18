@@ -3,21 +3,21 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox" style="width: 100%;">
+<div class="generic-infobox" style="width: 100%;">
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_split_pivot}}" alt="Split Pivot Icon">
             <div class="image-subtitle">
                 
                 <p class="inline-svg">An attack that becomes a circular blade that causes <img src="{{icon_generic_damage}}"/><strong><b>Damage</b></strong> and <img src="{{icon_falter_damage}}"/><strong><b>Falter</b></strong> for a short time.</p>
             </div>
         </div>
-        <div class="combat-ability-gif right-box">
+        <div class="box-gif-primary right-box">
             <img src="{{gif_split_pivot}}" alt="Split Pivot">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_split_pivot}}" alt="Split Pivot">
     </div>
     <hr>

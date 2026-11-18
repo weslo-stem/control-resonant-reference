@@ -3,20 +3,20 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox">
+<div class="generic-infobox">
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_command}}" alt="Command Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">Take over an enemy's mind and turn them into an ally.</p>
             </div>
         </div>
-        <div class="combat-ability-gif">
+        <div class="box-gif-primary">
             <img src="{{gif_command}}" alt="Command">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_command}}" alt="Command">
     </div>
     <hr>

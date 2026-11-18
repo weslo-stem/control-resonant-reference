@@ -1,9 +1,9 @@
 # Combat Abilities
 
-<div class="combat-ability-infobox">
+<div class="generic-infobox">
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_astral_rebuke}}">
                 <img src="{{icon_astral_rebuke}}" alt="Astral Rebuke Icon">
             </a>
@@ -19,7 +19,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_barrage}}">
                 <img src="{{icon_barrage}}" alt="Barrage Icon">
             </a>
@@ -33,7 +33,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_command}}">
                 <img src="{{icon_command}}" alt="Command Icon">
             </a>
@@ -47,7 +47,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_ground_slam}}">
                 <img src="{{icon_ground_slam}}" alt="Ground Slam Icon">
             </a>
@@ -65,7 +65,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_growth}}">
                 <img src="{{icon_growth}}" alt="Growth Icon">
             </a>
@@ -83,7 +83,7 @@
     <hr>
 
 	<div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_ignite}}">
                 <img src="{{icon_ignite}}" alt="Ignite Icon">
             </a>
@@ -102,7 +102,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_inferno}}">
                 <img src="{{icon_inferno}}" alt="Inferno Icon">
             </a>
@@ -122,7 +122,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_push}}">
                 <img src="{{icon_push}}" alt="Push Icon">
             </a>
@@ -139,7 +139,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_shield}}">
                 <img src="{{icon_shield}}" alt="Shield Icon">
             </a>
@@ -160,7 +160,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_spike}}">
                 <img src="{{icon_spike}}" alt="Spike Icon">
             </a>
@@ -177,7 +177,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_spore_burst}}">
                 <img src="{{icon_spore_burst}}" alt="Spore Burst Icon">
             </a>
@@ -196,7 +196,7 @@
     <hr>
 
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <a href="{{page_volatile_anomaly}}">
                 <img src="{{icon_volatile_anomaly}}" alt="Volatile Anomaly Icon">
             </a>
@@ -210,5 +210,4 @@
             </p>
         </div>
     </div>
-    
 </div>

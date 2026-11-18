@@ -2,6 +2,8 @@
 
 # 🔻 Home
 
+## Control Resonant Reference
+
 A public community-driven wiki for the game [Control Resonant](https://controlgame.com/en) hosted on [GitHub](https://github.com/weslo-stem/control-resonant-reference) Pages.
 
 Latter-third spoilers (i.e. story, things that have not been extensively shown or reviewed in pre-release gameplay footage or interviews, things past the main overworld zones, etc.) will be blurred by default. Hover over the blurred text to view. You can disable this at the top of the page.
@@ -28,16 +30,31 @@ We highly recommend playing through your first time entirely blind. This is pure
                 <summary>
                     Primary Forms
                 </summary>
+                <br>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/primary-forms/cleave/">Cleave</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/primary-forms/strike/">Strike</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/primary-forms/glaive/">Glaive</a></p>
             </details>
             <details>
                 <summary>
                     Secondary Forms
                 </summary>
+                <br>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/secondary-forms/crush/">Crush</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/secondary-forms/extend/">Extend</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/secondary-forms/drill/">Drill</a></p>
             </details>
             <details>
                 <summary>
                     Combo Finishers
                 </summary>
+                <br>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/combo-finishers/concussive-beatdown/">Concussive Beatdown</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/combo-finishers/uppercut-surge/">Uppercut Surge</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/combo-finishers/wide-edge/">Wide Edge</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/combo-finishers/spin-edge/">Spin Edge</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/combo-finishers/split-pivot/">Split Pivot</a></p>
+                <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/aberrant/combo-finishers/split-orbit/">Split Orbit</a></p>
             </details>
         </details>
         <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/dylan/combat-abilities/">Combat Abilities</a></p>

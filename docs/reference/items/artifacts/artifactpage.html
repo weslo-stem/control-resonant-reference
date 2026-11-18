@@ -2,9 +2,9 @@
 {% set reader=pd_read_csv(csv) %}
 {% set artifact=reader.loc[reader["Artifact"] == artifactname].iloc[0] %}
 
-<div class="combat-ability-infobox">
+<div class="generic-infobox">
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{artifact['img medium']}}" alt="{{artifact['Artifact']}} Icon">
             <div class="image-subtitle text-center"><p><b>{{artifact['Artifact']}}</b></p></div>
         </div>

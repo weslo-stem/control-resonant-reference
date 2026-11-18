@@ -3,10 +3,10 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox">
+<div class="generic-infobox">
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_ignite}}" alt="Ignite Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">Melee Attacks and 
@@ -17,11 +17,11 @@
                 <img src="{{icon_status_burn}}"/><strong><b>Burn</b></strong>.</p>
             </div>
         </div>
-        <div class="combat-ability-gif">
+        <div class="box-gif-primary">
             <img src="{{gif_ignite}}" alt="Ignite">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
             <img src="{{gif_ignite}}" alt="Ignite">
         </div>
     <hr>

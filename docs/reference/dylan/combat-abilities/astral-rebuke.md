@@ -3,10 +3,10 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox" style="width: 100%;" >
+<div class="generic-infobox" style="width: 100%;" >
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_astral_rebuke}}" alt="Astral Rebuke Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">Unleash a homing spike that erupts beneath enemies and throws them in the air. Applies
@@ -14,11 +14,11 @@
                 <img src="{{icon_status_astralized}}"/><strong><b>Astralized</b></strong>.</p>
             </div>
         </div>
-       <div class="combat-ability-gif ">
+       <div class="box-gif-primary ">
             <img src="{{gif_astral_rebuke}}" alt="Astral Rebuke">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_astral_rebuke}}" alt="Astral Rebuke">
     </div>
     <hr>

@@ -3,20 +3,20 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox" style="width: 100%;">
+<div class="generic-infobox" style="width: 100%;">
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_drill}}" alt="Drill Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">A quick attack. Charge to continuously drill the target. <br><br>Charge attacks deal <img src="{{icon_falter_damage}}"/><strong><b>Falter</b></strong>.</p>
             </div>
         </div>
-        <div class="combat-ability-gif right-box">
+        <div class="box-gif-primary right-box">
             <img src="{{gif_drill}}" alt="Drill">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_drill}}" alt="Uppercut Surge">
     </div>
     <hr>

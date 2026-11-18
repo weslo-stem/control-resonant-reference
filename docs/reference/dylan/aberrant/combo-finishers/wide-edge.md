@@ -3,20 +3,20 @@
 
 <div class="flex-container">
 
-<div class="combat-ability-infobox" style="width: 100%;">
+<div class="generic-infobox" style="width: 100%;">
     <!-- Image -->
     <div class="flex-container">
-        <div class="combat-ability-image left-box">
+        <div class="box-icon-primary left-box">
             <img src="{{icon_wide_edge}}" alt="Wide Edge Icon">
             <div class="image-subtitle">
                 <p class="inline-svg">A powerful, wide attack that deals massive <img src="{{icon_generic_damage}}"/><strong><b>Damage</b></strong> and pushes enemies away.</p>
             </div>
         </div>
-        <div class="combat-ability-gif right-box">
+        <div class="box-gif-primary right-box">
             <img src="{{gif_wide_edge}}" alt="Wide Edge">
         </div>
     </div>
-    <div class="mobile-combat-ability-gif">
+    <div class="mobile-box-gif-primary">
         <img src="{{gif_wide_edge}}" alt="Wide Edge">
     </div>
     <hr>

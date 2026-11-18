@@ -66,12 +66,12 @@ summary {
     color: var(--brown-red);
 }
 
-.combat-ability-image {
+.box-icon-primary {
     display: flex;
     align-items: center;
 }
 
-    .combat-ability-image > img{
+    .box-icon-primary > img{
         background-color: rgba(0,0,0,0);
         border-width: 0px;
         border-radius: 0px;
@@ -79,11 +79,11 @@ summary {
         max-width: 100%;
     }
 
-    .combat-ability-image > a {
+    .box-icon-primary > a {
         background-color: rgba(0,0,0,0);
     }
 
-        .combat-ability-image > a > img {
+        .box-icon-primary > a > img {
             background-color: rgba(0,0,0,0);
             border-width: 0px;
             border-radius: 0px;
@@ -91,11 +91,11 @@ summary {
             max-width: 100%;
         }
 
-.combat-ability-gif {
+.box-gif-primary {
     display:flex;
     align-content: center;
 }
-    .combat-ability-gif > img {
+    .box-gif-primary > img {
         background-color: rgba(0,0,0,0);
         border-width: 0px;
         border-radius: 0px;
@@ -103,7 +103,7 @@ summary {
         align-self: center;
     }
 
-.mobile-combat-ability-gif {
+.mobile-box-gif-primary {
     display: flex;
     align-content: center;
     border-width: 0px;
@@ -112,7 +112,7 @@ summary {
     height: 0px
 }
 
-    .mobile-combat-ability-gif > img {
+    .mobile-box-gif-primary > img {
         background-color: rgba(0,0,0,0);
         border-width: 0px;
         border-radius: 0px;
@@ -121,7 +121,7 @@ summary {
     }
 
 
-    .combat-ability-infobox {
+    .generic-infobox {
         max-width: 100%;
         width: 100%;
         padding: 10px;
@@ -293,7 +293,7 @@ summary {
         min-height: 100%;
     }
 
-    .shop-column {
+    .shop-item {
         display: flex;
         flex-direction: column;
         border: 2px solid;
@@ -306,19 +306,19 @@ summary {
         object-fit: contain;
     }
 
-        .shop-column:hover {
+        .shop-item:hover {
             background-color: var(--charcoal);
             border-color: var(--floral-white);
         }
 
-        .shop-column > img {
+        .shop-item > img {
             border: none;
             margin: 0px;
             max-width: 100%;
             width: 100%
         }
 
-        .shop-column > a {
+        .shop-item > a {
             margin: 0px 0px 5px 0px;
             font-family: 'Noto Sans';
             align-self: center;
@@ -329,7 +329,7 @@ summary {
             overflow: hidden;
         }
 
-            .shop-column > a > img {
+            .shop-item > a > img {
                 border: none;
                 margin: 0px;
                 max-width: 100%;
@@ -373,7 +373,7 @@ summary {
             margin: 0px;
         }
 
-    .blank-shop-column {
+    .blank-shop-item {
         display: flex;
         flex-direction: column;
         border: 1px;
@@ -449,13 +449,13 @@ summary {
         vertical-align: middle;
     }
 
-    .wpn-ugrade-window {
+    .wpn-upgrade-window {
         display: flex;
         flex-shrink: 1;
         position: relative;
     }
 
-    .wpn-ugrade-row {
+    .wpn-upgrade-row {
         display: inline-flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -465,7 +465,7 @@ summary {
         aspect-ratio: 3 / 1;
     }
 
-    .wpn-ugrade-column {
+    .wpn-upgrade-item {
         display: flex;
         flex-direction: column;
         border: 2px solid;
@@ -483,12 +483,12 @@ summary {
         z-index: 2;
     }
 
-        .wpn-ugrade-column:hover {
+        .wpn-upgrade-item:hover {
             background-color: var(--charcoal);
             border-color: var(--floral-white);
         }
 
-        .wpn-ugrade-column > .wpn-upgrade-link {
+        .wpn-upgrade-item > .wpn-upgrade-link {
             color: var(--floral-white);
             text-align: center;
             align-content: flex-start;
@@ -496,7 +496,7 @@ summary {
             font-size: clamp(8px, 1.5vw, 20px);
         }
 
-        .wpn-ugrade-column > .wpn-upgrade-icon {
+        .wpn-upgrade-item > .wpn-upgrade-icon {
             display: flex;
             flex-direction: column;
             flex-basis: 0px;
@@ -509,7 +509,7 @@ summary {
             height: 0%;
         }
 
-            .wpn-ugrade-column > .wpn-upgrade-icon > img {
+            .wpn-upgrade-item > .wpn-upgrade-icon > img {
                 flex-basis: 0px;
                 flex-grow: 0.75;
                 flex-shrink: 0.25;
@@ -521,7 +521,7 @@ summary {
                 margin: auto;
             }
 
-            .wpn-ugrade-column > .wpn-upgrade-icon > .wpn-upgrade-str-boost {
+            .wpn-upgrade-item > .wpn-upgrade-icon > .wpn-upgrade-str-boost {
                 position: absolute;
                 font-size: clamp(10px, 1.5vw, 20px);
                 margin: 0px;
@@ -530,7 +530,7 @@ summary {
                 right: 0;
             }
 
-                .wpn-ugrade-column > .wpn-upgrade-icon > .wpn-upgrade-str-boost > img {
+                .wpn-upgrade-item > .wpn-upgrade-icon > .wpn-upgrade-str-boost > img {
                     background-color: rgba(0,0,0,0);
                     border-width: 0px;
                     border-radius: 0px;
@@ -542,7 +542,7 @@ summary {
 
 
 
-    .blank-wpn-ugrade-column {
+    .blank-wpn-upgrade-item {
         display: flex;
         flex: 0, 1, 0;
         flex-direction: column;
@@ -632,7 +632,7 @@ summary {
     accent-color: var(--brown-red);
 }
 
-.talent-column {
+.talent-item {
     display: flex;
     flex-direction: column;
     border: 2px solid;
@@ -645,12 +645,12 @@ summary {
     aspect-ratio: 1/1;
 }
 
-    .talent-column:hover {
+    .talent-item:hover {
         background-color: var(--charcoal);
         border-color: var(--floral-white);
     }
 
-    .talent-column > .talent-link {
+    .talent-item > .talent-link {
         color: var(--floral-white);
         text-align: center;
         align-content: flex-start;
@@ -658,14 +658,14 @@ summary {
         font-size: clamp(8px, 1.5vw, 20px);
     }
 
-    .talent-column > .talent-icon {
+    .talent-item > .talent-icon {
         display: flex;
         border: 0px;
         width: auto;
         height: auto;
     }
 
-        .talent-column > .talent-icon > img {
+        .talent-item > .talent-icon > img {
             width: 100%;
             height: 100%;
             align-self: center;
@@ -705,12 +705,12 @@ summary {
 }
 
 @media (max-width: 768px) {
-    .combat-ability-gif {
+    .box-gif-primary {
         visibility: hidden;
         width: 0%;
     }
 
-    .mobile-combat-ability-gif {
+    .mobile-box-gif-primary {
         display: flex;
         align-content: center;
         visibility: visible;
