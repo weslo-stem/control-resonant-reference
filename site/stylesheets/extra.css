@@ -9,9 +9,26 @@
     --control-yellow: #FEE93Bff;
 }
 
-.text-center{
-    text-align:center;
+.text-center {
+    text-align: center;
 }
+
+#map {
+    width: auto;
+    height: 50vh;
+    margin: 0;
+    background-color: var(--dark-grey-3);
+    border: solid 1px var(--charcoal);
+}
+    #map .leaflet-control-attribution {
+        background: rgba(255, 255, 255, 0);
+        margin: 0;
+        color: var(--floral-white);
+    }
+        #map .leaflet-control-attribution a {
+            text-decoration: none;
+            color: var(--brown-red);
+        }
 
 
 /* Spoiler Styling */
@@ -465,11 +482,10 @@ thead {
 .wpn-upgrade-row {
     display: inline-flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: space-evenly;
     align-items: center;
     align-content: normal;
-    aspect-ratio: 3 / 1;
 }
 
 .wpn-upgrade-item {
@@ -507,8 +523,7 @@ thead {
         display: flex;
         flex-direction: column;
         flex-basis: 0px;
-        flex-grow: 1;
-        flex-shrink: 1;
+        flex: 1 1 auto;
         border: 0px;
         object-fit: contain;
         align-self: center;
@@ -530,7 +545,7 @@ thead {
 
         .wpn-upgrade-item > .wpn-upgrade-icon > .wpn-upgrade-str-boost {
             position: absolute;
-            font-size: clamp(10px, 1.5vw, 20px);
+            font-size: clamp(8px, 1.5vw, 20px);
             margin: 0px;
             padding: 0px;
             bottom: 0;
@@ -541,10 +556,12 @@ thead {
                 background-color: rgba(0,0,0,0);
                 border-width: 0px;
                 border-radius: 0px;
-                width: clamp(20px, 2vw, 32px);
+                width: clamp(14px, 2vw, 32px);
                 height: clamp(20px, 2vw, 32px);
                 margin: 0px 0px 0px 0px;
                 vertical-align: middle;
+                background-position: center;
+                object-fit: cover;
             }
 
 .blank-wpn-upgrade-item {
@@ -558,7 +575,6 @@ thead {
     background-color: rgb(0,0,0,0);
     padding: 1%;
     margin: 5%;
-    aspect-ratio: 1 / 1;
     aspect-ratio: 1 / 1;
     max-width: 33%;
     max-height: 33%;
