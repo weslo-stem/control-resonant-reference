@@ -51,4 +51,6 @@ nav:
         - The Park: reference/world/vendors/the-park.md
         - Underpass: reference/world/vendors/underpass.md
         - Unknown: reference/world/vendors/unknown.md
-  - guides
+  - Library:
+    - library/documents.md
+    - library/guides.md
