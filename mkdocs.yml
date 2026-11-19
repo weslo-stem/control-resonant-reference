@@ -10,8 +10,11 @@ extra_javascript:
     - path: scripts/muConnector.js
     - path: scripts/updateMultipliers.js
       type: module
+    - scripts/maps.js
+    - https://unpkg.com/leaflet@1.9.4/dist/leaflet.js 
 extra_css: 
     - stylesheets/extra.css
+    - https://unpkg.com/leaflet@1.9.4/dist/leaflet.css
 markdown_extensions:
     - md_in_html
 plugins:
