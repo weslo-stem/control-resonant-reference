@@ -1,0 +1,63 @@
+{% macro zone_upgrades(zone) -%}
+{% set reader=pd_read_csv('tables/zone_tables/zone_upgrades.csv') %}
+{% set filteredReader = reader[reader['Zone']==zone].fillna('') %}
+
+
+<div class='generic-infobox gi-leftmargin mobile-hide '>
+	<h2>Zone Level Rewards</h2>
+	<div class='zone-upgrade-container'> 
+
+	{% for _,row in filteredReader.iterrows() %}
+		<div class='zone-upgrade-row'>
+			<div class='zone-upgrade-left'>
+				<p class='zone-upgrade-level'>{{row['Level']}}</p>
+			</div>
+			<div class='zone-upgrade-middle'>
+				<img class='zone-upgrade-icon' src='{{row['Icon']}}'/>
+			</div>
+			<div class='zone-upgrade-right'>
+				<p class='zone-upgrade-reward'>{{row['Reward']}}</p>
+				<p class='zone-upgrade-description'>{{row['Description']}}</p>
+				{% if row['LinkText'] %}
+				<a style="font-size: clamp(12px, 1vw, 14px);" href='{{row['Link']}}'>[ {{row['LinkText']}} ]</a>
+				{% endif %}
+			</div>
+		</div>
+	{% endfor %}
+
+	</div>
+</div>
+
+{% endmacro %}
+
+{% macro zone_upgrades_mobile(zone) -%}
+{% set reader=pd_read_csv('tables/zone_tables/zone_upgrades.csv') %}
+{% set filteredReader = reader[reader['Zone']==zone].fillna('') %}
+
+
+<div class='generic-infobox mobile '>
+	<h2>Zone Level Rewards</h2>
+	<div class='zone-upgrade-container mobile'> 
+
+	{% for _,row in filteredReader.iterrows() %}
+		<div class='zone-upgrade-row'>
+			<div class='zone-upgrade-left'>
+				<p class='zone-upgrade-level'>{{row['Level']}}</p>
+			</div>
+			<div class='zone-upgrade-middle'>
+				<img class='zone-upgrade-icon' src='{{row['Icon']}}'/>
+			</div>
+			<div class='zone-upgrade-right'>
+				<p class='zone-upgrade-reward'>{{row['Reward']}}</p>
+				<p class='zone-upgrade-description'>{{row['Description']}}</p>
+				{% if row['LinkText'] %}
+				<a style="font-size: clamp(14px, 1vw, 20px);" href='{{row['Link']}}'>[ {{row['LinkText']}} ]</a>
+				{% endif %}
+			</div>
+		</div>
+	{% endfor %}
+
+	</div>
+</div>
+
+{% endmacro %}
