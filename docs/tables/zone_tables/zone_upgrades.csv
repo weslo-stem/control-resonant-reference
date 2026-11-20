@@ -1,79 +1,79 @@
-Zone,Level,Reward,Description,Icon
-Downtown,2,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
-Downtown,3,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
-Downtown,4,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
-Downtown,5,Large Resource Crate Marker,Mark large Resource Crates on the map.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
-Downtown,6,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
-Downtown,7,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
-Downtown,8,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
-Downtown,9,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_1.svg
-Downtown,10,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
-Downtown,11,Outfit,Grants a new piece of Outfit.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_outfit_0.svg
-Downtown,12,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
-Downtown,13,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_1.svg
-Downtown,14,Artifact,Grants a new Artifact.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_charms_0.svg
-Downtown,15,Command Charge,More Command Charges will appear in this Zone. Does not affect Command Charges dropped by enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_ultimate_0.svg
-Central,2,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
-Central,3,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
-Central,4,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
-Central,5,Large Resource Crate Marker,Mark large Resource Crates on the map.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
-Central,6,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
-Central,7,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
-Central,8,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
-Central,9,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_1.svg
-Central,10,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
-Central,11,Command Charge,More Command Charges will appear in this Zone. Does not affect Command Charges dropped by enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_ultimate_0.svg
-Central,12,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
-Central,13,Artifact,Grants a new Artifact.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_charms_0.svg
-Central,14,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_1.svg
-Central,15,Outfit,Grants a new piece of Outfit.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_outfit_0.svg
-Evacuation Zone,2,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
-Evacuation Zone,3,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
-Evacuation Zone,4,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
-Evacuation Zone,5,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
-Evacuation Zone,6,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
-Evacuation Zone,7,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
-Evacuation Zone,8,Large Resource Crate Marker,Mark large Resource Crates on the map.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
-Evacuation Zone,9,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
-Evacuation Zone,10,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
-West Incursion Zone,2,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
-West Incursion Zone,3,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
-West Incursion Zone,4,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
-West Incursion Zone,5,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
-West Incursion Zone,6,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
-West Incursion Zone,7,Large Resource Crate Marker,Mark large Resource Crates on the map.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
-West Incursion Zone,8,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
-West Incursion Zone,9,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
-West Incursion Zone,10,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
-The Park,2,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
-The Park,3,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
-The Park,4,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
-The Park,5,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
-The Park,6,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
-The Park,7,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
-The Park,8,Large Resource Crate Marker,Mark large Resource Crates on the map.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
-The Park,9,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
-The Park,10,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
-Underpass,2,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
-Underpass,3,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
-Underpass,4,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
-Underpass,5,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
-Underpass,6,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
-Underpass,7,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
-Underpass,8,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
-Underpass,9,Large Resource Crate Marker,Mark large Resource Crates on the map.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
-Underpass,10,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
-Unknown,2,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
-Unknown,3,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
-Unknown,4,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
-Unknown,5,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
-Unknown,6,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
-Unknown,7,Source Boost,Gain +20% extra Source.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
-Unknown,8,Command Charge,More Command Charges will appear in this Zone. Does not affect Command Charges dropped by enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_ultimate_0.svg
-Unknown,9,Large Resource Crate Marker,Mark large Resource Crates on the map.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
-Unknown,10,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
-Unknown,11,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_1.svg
-Unknown,12,Artifact,Grants a new Artifact.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_charms_0.svg
-Unknown,13,Outfit,Grants a new piece of Outfit.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_outfit_0.svg
-Unknown,14,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
-Unknown,15,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_1.svg
+Zone,Level,Reward,Description,LinkText,Link,Icon
+Downtown,2,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
+Downtown,3,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,Vendor,/control-resonant-reference/reference/world/vendors/downtown/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
+Downtown,4,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
+Downtown,5,Large Resource Crate Marker,Mark large Resource Crates on the map.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
+Downtown,6,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
+Downtown,7,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
+Downtown,8,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
+Downtown,9,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_1.svg
+Downtown,10,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
+Downtown,11,Outfit,Grants a new piece of Outfit.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_outfit_0.svg
+Downtown,12,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,Vendor,/control-resonant-reference/reference/world/vendors/downtown/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
+Downtown,13,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_1.svg
+Downtown,14,Artifact,Grants a new Artifact.,Lit Sparkler,/control-resonant-reference/reference/items/artifacts/lit-sparkler/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_charms_0.svg
+Downtown,15,Command Charge,More Command Charges will appear in this Zone. Does not affect Command Charges dropped by enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_ultimate_0.svg
+Central,2,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
+Central,3,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
+Central,4,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
+Central,5,Large Resource Crate Marker,Mark large Resource Crates on the map.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
+Central,6,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,Vendor,/control-resonant-reference/reference/world/vendors/central/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
+Central,7,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
+Central,8,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
+Central,9,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_1.svg
+Central,10,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
+Central,11,Command Charge,More Command Charges will appear in this Zone. Does not affect Command Charges dropped by enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_ultimate_0.svg
+Central,12,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,Vendor,/control-resonant-reference/reference/world/vendors/central/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
+Central,13,Artifact,Grants a new Artifact.,The Weekend Crossword,/control-resonant-reference/reference/items/artifacts/the-weekend-crossword/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_charms_0.svg
+Central,14,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_1.svg
+Central,15,Outfit,Grants a new piece of Outfit.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_outfit_0.svg
+Evacuation Zone,2,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
+Evacuation Zone,3,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
+Evacuation Zone,4,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,Vendor,/control-resonant-reference/reference/world/vendors/evacuation-zone/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
+Evacuation Zone,5,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
+Evacuation Zone,6,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
+Evacuation Zone,7,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
+Evacuation Zone,8,Large Resource Crate Marker,Mark large Resource Crates on the map.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
+Evacuation Zone,9,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
+Evacuation Zone,10,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,Vendor,/control-resonant-reference/reference/world/vendors/evacuation-zone/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
+West Incursion Zone,2,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
+West Incursion Zone,3,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
+West Incursion Zone,4,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,Vendor,/control-resonant-reference/reference/world/vendors/west-incursion-zone/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
+West Incursion Zone,5,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
+West Incursion Zone,6,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
+West Incursion Zone,7,Large Resource Crate Marker,Mark large Resource Crates on the map.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
+West Incursion Zone,8,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
+West Incursion Zone,9,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
+West Incursion Zone,10,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,Vendor,/control-resonant-reference/reference/world/vendors/west-incursion-zone/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
+The Park,2,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
+The Park,3,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,Vendor,/control-resonant-reference/reference/world/vendors/the-park/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
+The Park,4,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
+The Park,5,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
+The Park,6,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
+The Park,7,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,Vendor,/control-resonant-reference/reference/world/vendors/the-park/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
+The Park,8,Large Resource Crate Marker,Mark large Resource Crates on the map.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
+The Park,9,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
+The Park,10,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
+Underpass,2,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
+Underpass,3,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,Vendor,/control-resonant-reference/reference/world/vendors/underpass/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
+Underpass,4,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
+Underpass,5,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
+Underpass,6,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
+Underpass,7,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,Vendor,/control-resonant-reference/reference/world/vendors/underpass/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
+Underpass,8,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
+Underpass,9,Large Resource Crate Marker,Mark large Resource Crates on the map.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
+Underpass,10,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
+Unknown,2,Vendor Level 2,Upgrades Vendors in this Zone to Level 2.,Vendor,/control-resonant-reference/reference/world/vendors/unknown/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg
+Unknown,3,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_0.svg
+Unknown,4,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_0.svg
+Unknown,5,Arcade Machine,Unlocks the SHÜM arcade machine in this zone.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_challenge_0.svg
+Unknown,6,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_0.svg
+Unknown,7,Source Boost,Gain +20% extra Source.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_cash_0.svg
+Unknown,8,Command Charge,More Command Charges will appear in this Zone. Does not affect Command Charges dropped by enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_ultimate_0.svg
+Unknown,9,Large Resource Crate Marker,Mark large Resource Crates on the map.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_map_0.svg
+Unknown,10,World Feat Cap Increase,More World Feats will be available in this zone in the next Resonant Cycle.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_bounty_1.svg
+Unknown,11,Enemy Drop Boost,Grants a chance for enemies to drop additional resources.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_loot_drop_1.svg
+Unknown,12,Artifact,Grants a new Artifact.,Energy Drink,/control-resonant-reference/reference/items/artifacts/energy-drink/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_charms_0.svg
+Unknown,13,Outfit,Grants a new piece of Outfit.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_outfit_0.svg
+Unknown,14,Vendor Level 3,Upgrades Vendors in this Zone to Level 3.,Vendor,/control-resonant-reference/reference/world/vendors/unknown/,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg
+Unknown,15,Health Elements Boost,Increase the chance of receiving Health Elements from defeated enemies.,,,/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_health_pickup_1.svg
