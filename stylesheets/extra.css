@@ -13,6 +13,14 @@
     text-align: center;
 }
 
+.italic-text {
+    font-style: italic;
+}
+
+.video {
+    width: 100%;
+}
+
 #map {
     width: 100%;
     height: 70vh;
