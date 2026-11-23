@@ -13,9 +13,17 @@
     text-align: center;
 }
 
+.italic-text {
+    font-style: italic;
+}
+
+.video {
+    width: 100%;
+}
+
 #map {
-    width: auto;
-    height: 50vh;
+    width: 100%;
+    height: 70vh;
     margin: 0;
     background-color: var(--dark-grey-3);
     border: solid 1px var(--charcoal);
@@ -172,6 +180,89 @@ thead {
 }
 
 
+/* Zone Upgrades */
+.generic-infobox.gi-leftmargin {
+    margin-left: 15px;
+    width: 60%;
+    height: 70vh;
+    overflow-y: scroll;
+}
+
+.generic-infobox.mobile {
+    margin: 0px;
+    padding: 0;
+    width: 0px;
+    height: 0px;
+    visibility: hidden;
+}
+
+.zone-upgrade-container {
+    display: flex;
+    flex-direction: column;
+    width: auto
+}
+
+.zone-upgrade-container div.zone-upgrade-row {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.zone-upgrade-row div.zone-upgrade-left {
+    display: flex;
+    max-width: 15%;
+    padding: 10px;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+    .zone-upgrade-left p.zone-upgrade-level {
+        font-size: clamp(24px, 1vw, 32px);
+        font-weight: bold;
+        margin: 0px;
+    }
+
+.zone-upgrade-row div.zone-upgrade-middle {
+    display: flex;
+    max-width: 25%;
+    padding: 10px;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+}
+    .zone-upgrade-middle img.zone-upgrade-icon {
+        max-width: 100%;
+        max-height: 100%;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 0px;
+    }
+
+.zone-upgrade-row div.zone-upgrade-right {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 60%;
+    padding: 10px;
+    flex: 1 1 auto;
+    justify-content: center;
+}
+    .zone-upgrade-right p.zone-upgrade-reward {
+        display: flex;
+        font-size: clamp(16px, 1vw, 20px);
+        font-weight: bold;
+        margin: 0px;
+        vertical-align: middle;
+    }
+.zone-upgrade-right p.zone-upgrade-description {
+    display: flex;
+    font-size: clamp(12px, 1vw, 14px);
+    color: #6e6e6e;
+    margin: 0px;
+    vertical-align: middle;
+}
+
+
 /* Images and Descriptions */
 .generic-infobox {
     max-width: 100%;
@@ -212,7 +303,7 @@ thead {
         width: 32px;
         height: 32px;
         margin: 0px;
-        padding: 0px;
+        padding: 3px;
         vertical-align: central;
     }
 
@@ -229,6 +320,7 @@ thead {
             width: 32px;
             height: 32px;
             margin: 0px 0px 0px 0px;
+            padding: 3px;
             vertical-align: middle;
         }
 
@@ -735,6 +827,19 @@ thead {
         width: 0%;
     }
 
+    .generic-infobox.gi-leftmargin {
+        margin-left: 0px;
+        width: 0px;
+    }
+
+    .generic-infobox.mobile {
+        margin-top: 15px;
+        padding: 10px;
+        width: 100%;
+        height: auto;
+        visibility: visible;
+    }
+
     .mobile-box-gif-primary {
         display: flex;
         align-content: center;
@@ -756,9 +861,27 @@ thead {
         width: 0px;
         height: 0px;
         visibility: hidden;
+        padding: 0;
+        margin: 0px;
     }
 
     .mobile-text-shrink {
         font-size: clamp(12px, 2vw, 16px);
     }
+
+    .zone-upgrade-container {
+        display: flex;
+        flex-direction: column;
+        width: 0%;
+        height: 0%;
+        visibility: hidden;
+    }
+
+        .zone-upgrade-container.mobile {
+            display: flex;
+            flex-direction: column;
+            width: auto;
+            height: auto;
+            visibility: visible;
+        }
 }

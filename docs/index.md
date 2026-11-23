@@ -112,4 +112,14 @@ We highly recommend playing through your first time entirely blind. This is pure
 </div>
 <br>
 
-## Guides
+## Library
+<div style="border: 1px solid #ccc; background-color: #000000; padding: 12px; border-radius: 6px;">
+    <details>
+        <summary>
+            Library
+        </summary>
+        <br>
+        <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="library/documents">Documents</a></p>
+        <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="library/guides">Guides</a></p>
+    </details>
+</div>
