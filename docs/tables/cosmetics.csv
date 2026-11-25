@@ -1,5 +1,5 @@
 Category,Name,Description,Unlock,Colors
-Top Layer,Bureau Rain Gear,Standard issue Rain Gear with labeling for potentially dangerous parautilitarians.,,"{
+Top Layer,Bureau Rain Gear,Standard issue Rain Gear with labeling for potentially dangerous parautilitarians.,Unlocked by default,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_poncho_default.tex.png"",
     ""material"": ""outfit_item_material_poncho_default.tex.png""
@@ -17,12 +17,12 @@ Top Layer,Bureau Rain Gear,Standard issue Rain Gear with labeling for potentiall
     ""material"": ""outfit_item_material_poncho_vintage.tex.png""
   }
 }"
-Top Layer,Bureau Rain Gear: Torn,Standard issue Rain Gear. It’s seen better days.,,"{
+Top Layer,Bureau Rain Gear: Torn,Standard issue Rain Gear. It’s seen better days.,Complete Quest: <b>Enemy of My Enemy</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_poncho_torn.tex.png""
   }
 }"
-Top Layer,Aramid Work Clothes,"Made of strong heat and ballistic resistant fibers. Used during agent training, but also a favorite of Langston’s.",,"{
+Top Layer,Aramid Work Clothes,"Made of strong heat and ballistic resistant fibers. Used during agent training, but also a favorite of Langston’s.",Complete Quest: <b>Panopticon Service Request</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_samurai_default.tex.png"",
     ""material"": ""outfit_item_material_samurai_default.tex.png""
@@ -40,7 +40,7 @@ Top Layer,Aramid Work Clothes,"Made of strong heat and ballistic resistant fiber
     ""material"": ""outfit_item_material_samurai_vintage.tex.png""
   }
 }"
-Top Layer,Plate Carrier M1,Specialized vest for those who deal with ballistics.,,"{
+Top Layer,Plate Carrier M1,Specialized vest for those who deal with ballistics.,Complete Quest: <b>Urban Survival</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_armor_default.tex.png"",
     ""material"": ""outfit_item_material_armor_default.tex.png""
@@ -54,7 +54,7 @@ Top Layer,Plate Carrier M1,Specialized vest for those who deal with ballistics.,
     ""material"": ""outfit_item_material_armor_ranger.tex.png""
   }
 }"
-Top Layer,Compression Vest,Agents who have long guard shifts swear by these vests.,,"{
+Top Layer,Compression Vest,Agents who have long guard shifts swear by these vests.,Score 3rd place or higher in SHÜM – Underpass,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_vest_default.tex.png"",
     ""material"": ""outfit_item_material_topvest_default.tex.png""
@@ -68,17 +68,17 @@ Top Layer,Compression Vest,Agents who have long guard shifts swear by these vest
     ""material"": ""outfit_item_material_topvest_vintage.tex.png""
   }
 }"
-Top Layer,Sierra Vest,Protective Vest used by volunteers of FBC’s high acceleration experiments.,,"{
+Top Layer,Sierra Vest,Protective Vest used by volunteers of FBC’s high acceleration experiments.,"Twitch.tv Drops promotion (2 hours, active from 9/29/26 – 10/13/26)","{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_vest_testdummy_default.tex.png""
   }
 }"
-Top Layer,Circulation Vest,Caution: Contains flammable liquid.,,"{
+Top Layer,Circulation Vest,Caution: Contains flammable liquid.,Digital Deluxe Edition exclusive,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_deluxe.tex.png""
   }
 }"
-Top Layer,Bureau Tactical Rain Jacket,"For heavier weather conditions like hurricanes, snowstorms, and amphibious floods.",,"{
+Top Layer,Bureau Tactical Rain Jacket,"For heavier weather conditions like hurricanes, snowstorms, and amphibious floods.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/the-park/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg' style='border: 0px; margin: 0px'/><b>The Park Vendor</b></a> (2000 Source),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_raincoat_default.tex.png"",
     ""material"": ""outfit_item_material_raincoat_default.tex.png""
@@ -96,7 +96,7 @@ Top Layer,Bureau Tactical Rain Jacket,"For heavier weather conditions like hurri
     ""material"": ""outfit_item_material_raincoat_vintage.tex.png""
   }
 }"
-Top Layer,Hood Down Tactical Rain Jacket,"For heavier weather conditions like hurricanes, snowstorms, and amphibious floods.",,"{
+Top Layer,Hood Down Tactical Rain Jacket,"For heavier weather conditions like hurricanes, snowstorms, and amphibious floods.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/the-park/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>The Park Vendor</b></a> (2000 Source),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_raincoat_hooddown_default.tex.png"",
     ""material"": ""outfit_item_material_raincoat_hooddown_default.tex.png""
@@ -114,22 +114,22 @@ Top Layer,Hood Down Tactical Rain Jacket,"For heavier weather conditions like hu
     ""material"": ""outfit_item_material_raincoat_hooddown_vintage.tex.png""
   }
 }"
-Top Layer,Threshold Bureau Coat,Allegedly retrieved from a threshold several decades ago. Our eyes are yet to open to what it means.,,"{
+Top Layer,Threshold Bureau Coat,Allegedly retrieved from a threshold several decades ago. Our eyes are yet to open to what it means.,PS5 Pre-order exclusive,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_ps.tex.png""
   }
 }"
-Top Layer,MIO Specialist’s Robe,A robe left by a Specialist from the Ministry of Immaterial Objectives; a Chinese Government Entity dedicated to protecting public order through the discovery and containment of Paranatural Phenomena.,,"{
+Top Layer,MIO Specialist’s Robe,A robe left by a Specialist from the Ministry of Immaterial Objectives; a Chinese Government Entity dedicated to protecting public order through the discovery and containment of Paranatural Phenomena.,Reward code EV172-LN211-PL279 ,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_monk_default.tex.png""
   }
 }"
-Top Layer,Deathadder Jacket,The right balance between utility and cool.,,"{
+Top Layer,Deathadder Jacket,The right balance between utility and cool.,Unobtainable,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_razerjacket_default.tex.png""
   }
 }"
-Top Layer,Varsity Jacket,A jacket so good it’ll have people saying “baby baby baby yeah.”,,"{
+Top Layer,Varsity Jacket,A jacket so good it’ll have people saying “baby baby baby yeah.”,Complete Quest: <b>The Party Won't Stop</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_urbanjacket_default.tex.png"",
     ""material"": ""outfit_item_material_urbanjacket_default.tex.png""
@@ -147,7 +147,7 @@ Top Layer,Varsity Jacket,A jacket so good it’ll have people saying “baby bab
     ""material"": ""outfit_item_material_urbanjacket_vintage.tex.png""
   }
 }"
-Hair,Scruffy,"It’s been well kept for all these years, not a tangle in sight.",,"{
+Hair,Scruffy,"It’s been well kept for all these years, not a tangle in sight.",Unlocked by default,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_coma_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -161,7 +161,7 @@ Hair,Scruffy,"It’s been well kept for all these years, not a tangle in sight."
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Hair,Half Bun,Just to keep the hair out of the eyes.,,"{
+Hair,Half Bun,Just to keep the hair out of the eyes.,Unlocked by default,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_manbun_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -175,7 +175,7 @@ Hair,Half Bun,Just to keep the hair out of the eyes.,,"{
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Hair,Boxer Braids,"Otherwise known as Cornrow Braids, based on historical data.",,"{
+Hair,Boxer Braids,"Otherwise known as Cornrow Braids, based on historical data.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/unknown/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Unknown Vendor</b></a> (2000 Source),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_boxerbraids_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -189,7 +189,7 @@ Hair,Boxer Braids,"Otherwise known as Cornrow Braids, based on historical data."
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Hair,Skin Fade Mullet,"Doesn’t matter how long it takes, it’s always a good time to rebel against authority.",,"{
+Hair,Skin Fade Mullet,"Doesn’t matter how long it takes, it’s always a good time to rebel against authority.",Score 3rd place or higher in SHÜM – Downtown,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_mohawk_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -211,7 +211,7 @@ Hair,Skin Fade Mullet,"Doesn’t matter how long it takes, it’s always a good 
     ""material"": ""outfit_item_material_hair_green.tex.png""
   }
 }"
-Hair,Middle Part,A style that screams “I’m normal and you can trust me.”,,"{
+Hair,Middle Part,A style that screams “I’m normal and you can trust me.”,Purchase: <a href='/control-resonant-reference/reference/world/vendors/underpass/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Underpass Vendor</b></a> (2000 Source),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_middlepart_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -225,7 +225,7 @@ Hair,Middle Part,A style that screams “I’m normal and you can trust me.”,,
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Hair,Bowl Cut,It’s reminiscent of childhood.,,"{
+Hair,Bowl Cut,It’s reminiscent of childhood.,Unknown – Zone Level 13 reward,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_bowlcut_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -239,7 +239,7 @@ Hair,Bowl Cut,It’s reminiscent of childhood.,,"{
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Hair,Crew Cut,"Clean, professional, and ready for business.",,"{
+Hair,Crew Cut,"Clean, professional, and ready for business.",Digital Deluxe Edition exclusive,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_deluxe_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -253,7 +253,7 @@ Hair,Crew Cut,"Clean, professional, and ready for business.",,"{
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Hair,Buzzcut,Sometimes cutting it all off can be therapeutic.,,"{
+Hair,Buzzcut,Sometimes cutting it all off can be therapeutic.,Central – Zone Level 15 reward,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_buzzcut_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -267,7 +267,7 @@ Hair,Buzzcut,Sometimes cutting it all off can be therapeutic.,,"{
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Base Layer,Surplus Sensor Platform Suit,Typically used for intense resistance training. The sensors to monitor bodily functions have been removed.,,"{
+Base Layer,Surplus Sensor Platform Suit,Typically used for intense resistance training. The sensors to monitor bodily functions have been removed.,Unlocked by default,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_testsuit_default.tex.png"",
     ""material"": ""outfit_item_material_testsuit_default.tex.png""
@@ -281,17 +281,17 @@ Base Layer,Surplus Sensor Platform Suit,Typically used for intense resistance tr
     ""material"": ""outfit_item_material_testsuit_vintage.tex.png""
   }
 }"
-Base Layer,Sierra Suit,Suit used by volunteers of FBC’s high acceleration experiments.,,"{
+Base Layer,Sierra Suit,Suit used by volunteers of FBC’s high acceleration experiments.,"Twitch.tv Drops promotion (1 hour, active from 9/29/26 – 10/13/26)","{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_testdummy_default.tex.png""
   }
 }"
-Base Layer,Diagnostic Suit,A prototype suit meant to enhance combat abilities of Rangers.,,"{
+Base Layer,Diagnostic Suit,A prototype suit meant to enhance combat abilities of Rangers.,Digital Deluxe Edition exclusive,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_deluxe.tex.png""
   }
 }"
-Base Layer,Prime Candidate Restraint Suit,Used for the restraint and imprisonment of P6.,,"{
+Base Layer,Prime Candidate Restraint Suit,Used for the restraint and imprisonment of P6.,Complete Quest: <b>Recursions and Iterations</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_straitsuit_default.tex.png"",
     ""material"": ""outfit_item_material_straitsuit_default.tex.png""
@@ -305,7 +305,7 @@ Base Layer,Prime Candidate Restraint Suit,Used for the restraint and imprisonmen
     ""material"": ""outfit_item_material_straitsuit_vintage.tex.png""
   }
 }"
-Base Layer,Standard Issue Coverall,"Work coveralls that can handle all types of mold, blood, and oil.",,"{
+Base Layer,Standard Issue Coverall,"Work coveralls that can handle all types of mold, blood, and oil.",Complete Quest: <b>Maintenance Protocol</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_coveralls_default.tex.png"",
     ""material"": ""outfit_item_material_coveralls_default.tex.png""
@@ -323,7 +323,7 @@ Base Layer,Standard Issue Coverall,"Work coveralls that can handle all types of 
     ""material"": ""outfit_item_material_coveralls_research.tex.png""
   }
 }"
-Base Layer,Agent Uniform,Agent uniform tailored to Dylan with warnings that he’s a dangerous parautilitarian.,,"{
+Base Layer,Agent Uniform,Agent uniform tailored to Dylan with warnings that he’s a dangerous parautilitarian.,Complete Quest: <b>Evacuation Procedures</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_consultant_default.tex.png"",
     ""material"": ""outfit_item_material_consultant_default.tex.png""
@@ -341,12 +341,12 @@ Base Layer,Agent Uniform,Agent uniform tailored to Dylan with warnings that he�
     ""material"": ""outfit_item_material_consultant_vintage.tex.png""
   }
 }"
-Base Layer,Threshold Bureau Workwear,"Where men were undone by blood, this was the ideal outfit to wear.",,"{
+Base Layer,Threshold Bureau Workwear,"Where men were undone by blood, this was the ideal outfit to wear.",PS5 Pre-order exclusive,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_ps.tex.png""
   }
 }"
-Base Layer,Stripped Down Work Uniform,FBC regulations frown upon the outfit due to lack of protection but most people ignore that rule.,,"{
+Base Layer,Stripped Down Work Uniform,FBC regulations frown upon the outfit due to lack of protection but most people ignore that rule.,Score 3rd place or higher in SHÜM – Unknown,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_tanktop_default.tex.png"",
     ""material"": ""outfit_item_material_tanktop_default.tex.png""
@@ -360,12 +360,12 @@ Base Layer,Stripped Down Work Uniform,FBC regulations frown upon the outfit due 
     ""material"": ""outfit_item_material_tanktop_vintage.tex.png""
   }
 }"
-Base Layer,P6 Uniform: Torn,It would be pretty comfortable if not for all the memories it holds.,,"{
+Base Layer,P6 Uniform: Torn,It would be pretty comfortable if not for all the memories it holds.,Complete Quest: <b>Evacuation Procedures</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_p6_torn.tex.png""
   }
 }"
-Base Layer,Casual Outfit,Comfortable and stylish. The youth would approve.,,"{
+Base Layer,Casual Outfit,Comfortable and stylish. The youth would approve.,Defeat the final boss,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_civilian_default.tex.png"",
     ""material"": ""outfit_item_material_civilian_default.tex.png""
@@ -399,17 +399,17 @@ Base Layer,Casual Outfit,Comfortable and stylish. The youth would approve.,,"{
     ""material"": ""outfit_item_material_civilian_tvshow.tex.png""
   }
 }"
-Base Layer,Casual Outfit: Resonants,Comfortable and stylish. The youth would approve.,,"{
+Base Layer,Casual Outfit: Resonants,Comfortable and stylish. The youth would approve.,Defeat all Resonant Entities,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_civilian_resonants_default.tex.png""
   }
 }"
-Base Layer,Exposed,Only a parautilitarian could get away with this…,,"{
+Base Layer,Exposed,Only a parautilitarian could get away with this…,Pre-order exclusive,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_base_shirtless.tex.png""
   }
 }"
-Facial Hair,Full,It usually takes 3 months to grow a beard this nice.,,"{
+Facial Hair,Full,It usually takes 3 months to grow a beard this nice.,Unlocked by default,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_beard_long_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -423,7 +423,7 @@ Facial Hair,Full,It usually takes 3 months to grow a beard this nice.,,"{
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Facial Hair,Medium,A little more than a five-o’clock shadow.,,"{
+Facial Hair,Medium,A little more than a five-o’clock shadow.,Unlocked by default,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_beard_medium_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -465,7 +465,7 @@ Facial Hair,Zappa,As a man once said: “Give a guy a big nose and weird hair an
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Accessories,Armored Helmet M1,Specialized helmet for those who deal with ballistics.,,"{
+Accessories,Armored Helmet M1,Specialized helmet for those who deal with ballistics.,Score 3rd place or higher in SHÜM – West Incursion Zone,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_armoredhelmet_default.tex.png"",
     ""material"": ""outfit_item_material_helmet_default.tex.png""
@@ -479,12 +479,12 @@ Accessories,Armored Helmet M1,Specialized helmet for those who deal with ballist
     ""material"": ""outfit_item_material_helmet_blue.tex.png""
   }
 }"
-Accessories,Sierra Helmet,Helmet used by volunteers of FBC’s high acceleration experiments.,,"{
+Accessories,Sierra Helmet,Helmet used by volunteers of FBC’s high acceleration experiments.,"Twitch.tv Drops promotion (4 hours, active from 9/29/26 – 10/13/26)","{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_testdummy_default.tex.png""
   }
 }"
-Accessories,Sensory Restraint Hood,"Used on the paranaturally unwell to limit the senses, but someone’s made eye holes.",,"{
+Accessories,Sensory Restraint Hood,"Used on the paranaturally unwell to limit the senses, but someone’s made eye holes.",Complete Quest: <b>Crossing the Threshold</b>,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_sensoryhood_default.tex.png"",
     ""material"": ""outfit_item_material_sensoryhood_default.tex.png""
@@ -502,7 +502,7 @@ Accessories,Sensory Restraint Hood,"Used on the paranaturally unwell to limit th
     ""material"": ""outfit_item_material_sensoryhood_vintage.tex.png""
   }
 }"
-Accessories,Emergency Hood,Prevents 30.33% inhalation of hazardous paranatural material.,,"{
+Accessories,Emergency Hood,Prevents 30.33% inhalation of hazardous paranatural material.,Complete Unsupervised Science Facility Vesey – behind door,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_protectivebag_default.tex.png"",
     ""material"": ""outfit_item_material_protectivebag_default.tex.png""
@@ -516,17 +516,17 @@ Accessories,Emergency Hood,Prevents 30.33% inhalation of hazardous paranatural m
     ""material"": ""outfit_item_material_protectivebag_research.tex.png""
   }
 }"
-Accessories,Threshold Bureau Gas Mask,The plastic covering makes it look like some type of beast.,,"{
+Accessories,Threshold Bureau Gas Mask,The plastic covering makes it look like some type of beast.,PS5 Pre-order exclusive,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_ps_default.tex.png""
   }
 }"
-Accessories,Communications Department Headset,Best used by those helping with logistics between zones and moving rangers to combat areas.,,"{
+Accessories,Communications Department Headset,Best used by those helping with logistics between zones and moving rangers to combat areas.,Remedy newsletter promotion,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_comms_default.tex.png""
   }
 }"
-Accessories,Bureau Cap,Supposedly a welcome gift for people who join the FBC.,,"{
+Accessories,Bureau Cap,Supposedly a welcome gift for people who join the FBC.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/central/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Central Vendor</b></a> (2000 Source),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_cap_default.tex.png"",
     ""material"": ""outfit_item_material_cap_default.tex.png""
@@ -540,17 +540,17 @@ Accessories,Bureau Cap,Supposedly a welcome gift for people who join the FBC.,,"
     ""material"": ""outfit_item_material_cap_vintage.tex.png""
   }
 }"
-Accessories,Third Ice Baseball Cap,A commemorative item from the 33rd anniversary of Third Ice. The mascot is beautifully rendered.,,"{
+Accessories,Third Ice Baseball Cap,A commemorative item from the 33rd anniversary of Third Ice. The mascot is beautifully rendered.,NVIDIA promotion,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_vendorcap_default.tex.png""
   }
 }"
-Accessories,K9 Frequency Receiver,Experimental device that mimics the hearing ability of dogs.,,"{
+Accessories,K9 Frequency Receiver,Experimental device that mimics the hearing ability of dogs.,Unobtainable,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_dogears_default.tex.png""
   }
 }"
-Accessories,Standard Issue Goggles,Given to all Rangers during training.,,"{
+Accessories,Standard Issue Goggles,Given to all Rangers during training.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/evacuation-zone/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Evacuation Zone Vendor</b></a> (2000 Source),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_rangergoggles_default.tex.png"",
     ""material"": ""outfit_item_material_rangergoggles_default.tex.png""
@@ -564,17 +564,17 @@ Accessories,Standard Issue Goggles,Given to all Rangers during training.,,"{
     ""material"": ""outfit_item_material_rangergoggles_vintage.tex.png""
   }
 }"
-Accessories,Optical Filtering Goggles,To shield eyes from bright arcs during welding and paranatural radiation.,,"{
+Accessories,Optical Filtering Goggles,To shield eyes from bright arcs during welding and paranatural radiation.,Remedy newsletter promotion,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_engineergoggles_default.tex.png""
   }
 }"
-Accessories,Firebreaker Goggles,"They’re meant to prevent debris in the eyes, but the slots are a little too big.",,"{
+Accessories,Firebreaker Goggles,"They’re meant to prevent debris in the eyes, but the slots are a little too big.",Complete Unsupervised Science Facility Dutch – behind door,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_firebreakgoggles_default.tex.png""
   }
 }"
-Accessories,Standard Issue Sunglasses,"Every FBC Agent gets a pair for field work, mostly for aesthetics.",,"{
+Accessories,Standard Issue Sunglasses,"Every FBC Agent gets a pair for field work, mostly for aesthetics.",Downtown – Zone Level 11 reward,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_sunglasses_default.tex.png"",
     ""material"": ""outfit_item_material_sunglasses_default.tex.png""
@@ -588,12 +588,12 @@ Accessories,Standard Issue Sunglasses,"Every FBC Agent gets a pair for field wor
     ""material"": ""outfit_item_material_sunglasses_vintage.tex.png""
   }
 }"
-Accessories,Cracked Standard Issue Sunglasses,"Every FBC Agent gets a pair for field work, mostly for aesthetics.",,"{
+Accessories,Cracked Standard Issue Sunglasses,"Every FBC Agent gets a pair for field work, mostly for aesthetics.",Unobtainable,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_sunglasses_broken_default.tex.png""
   }
 }"
-Accessories,Reading Glasses,For the far-sighted that need a little help.,,"{
+Accessories,Reading Glasses,For the far-sighted that need a little help.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/downtown/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Downtown Vendor</b></a> (2000 Source),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_eyeglasses_default.tex.png"",
     ""material"": ""outfit_item_material_eyeglasses_default.tex.png""
@@ -607,7 +607,7 @@ Accessories,Reading Glasses,For the far-sighted that need a little help.,,"{
     ""material"": ""outfit_item_material_eyeglasses_research.tex.png""
   }
 }"
-Accessories,Helix and Nostril Piercings,Some call it the “Barista Special.”,,"{
+Accessories,Helix and Nostril Piercings,Some call it the “Barista Special.”,Purchase: <a href='/control-resonant-reference/reference/world/vendors/west-incursion-zone/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>West Incursion Zone Vendor</b></a> (2000 Source),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_piercings_default.tex.png"",
     ""material"": ""outfit_item_material_piercings_default.tex.png""
@@ -617,17 +617,17 @@ Accessories,Helix and Nostril Piercings,Some call it the “Barista Special.”,
     ""material"": ""outfit_item_material_piercings_gold.tex.png""
   }
 }"
-Body and Face,Regular,Pretty good for someone who was in a 7-year coma.,,"{
+Body and Face,Regular,Pretty good for someone who was in a 7-year coma.,Unlocked by default,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_body_full.tex.png""
   }
 }"
-Body and Face,Fit,All that jumping around must be good for the body.,,"{
+Body and Face,Fit,All that jumping around must be good for the body.,Score 3rd place or higher in SHÜM – The Park,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_body_muscular.tex.png""
   }
 }"
-Body and Face,Corrupted,No one really knows what long-term Hiss exposure does to parautilitarians. This might be a hint.,,"{
+Body and Face,Corrupted,No one really knows what long-term Hiss exposure does to parautilitarians. This might be a hint.,Digital Deluxe Edition exclusive,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_body_scarred.tex.png""
   }
