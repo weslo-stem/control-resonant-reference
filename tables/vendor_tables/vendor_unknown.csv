@@ -16,7 +16,7 @@ Unknown,2,Aberrant Shard,3,3,,750,3,4,Aberrant Items,/control-resonant-reference
 Unknown,2,Mourning Echo,3,3,,750,3,5,Artifacts,/control-resonant-reference/images/items/currency_charm_component_d_small.tex.png,/control-resonant-reference/reference/items/materials/#mourning-echo
 Unknown,2,Violent Echo,3,3,,750,4,1,Artifacts,/control-resonant-reference/images/items/currency_charm_component_c_small.tex.png,/control-resonant-reference/reference/items/materials/#violent-echo
 Unknown,2,Reset Item,5,,,1500,4,2,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
-Unknown,2,Boxer Braids,1,,,2000,4,3,Customization,/control-resonant-reference/images/player_outfit/outfit_item_dylan_hair_boxerbraids.tex.png,/control-resonant-reference/reference/items/cosmetics/hair/boxer-braids/
+Unknown,2,Boxer Braids,1,,,2000,4,3,Customization,/control-resonant-reference/images/player_outfit/outfit_item_dylan_hair_boxerbraids.tex.png,/control-resonant-reference/reference/items/cosmetics/hair/#boxer-braids-header
 Unknown,3,Corrupted Element,5,,,100,4,4,Materials,/control-resonant-reference/images/items/currency_hiss_material_a_small.tex.png,/control-resonant-reference/reference/items/materials/#corrupted-element
 Unknown,3,Distorted Form,5,,,100,4,5,Materials,/control-resonant-reference/images/items/currency_hiss_material_b_small.tex.png,/control-resonant-reference/reference/items/materials/#distorted-form
 Unknown,3,Warped Resonance,5,,,150,5,1,Materials,/control-resonant-reference/images/items/currency_hiss_material_c_small.tex.png,/control-resonant-reference/reference/items/materials/#warped-resonance

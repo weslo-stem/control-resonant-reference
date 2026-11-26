@@ -78,7 +78,7 @@ Top Layer,Circulation Vest,Caution: Contains flammable liquid.,Digital Deluxe Ed
     ""full"": ""outfit_item_dylan_top_deluxe.tex.png""
   }
 }"
-Top Layer,Bureau Tactical Rain Jacket,"For heavier weather conditions like hurricanes, snowstorms, and amphibious floods.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/the-park/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg' style='border: 0px; margin: 0px'/><b>The Park Vendor</b></a> (2000 Source),"{
+Top Layer,Bureau Tactical Rain Jacket,"For heavier weather conditions like hurricanes, snowstorms, and amphibious floods.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/the-park/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_2.svg' style='border: 0px; margin: 0px'/><b>The Park Vendor</b></a> (<img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">2000),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_raincoat_default.tex.png"",
     ""material"": ""outfit_item_material_raincoat_default.tex.png""
@@ -96,7 +96,7 @@ Top Layer,Bureau Tactical Rain Jacket,"For heavier weather conditions like hurri
     ""material"": ""outfit_item_material_raincoat_vintage.tex.png""
   }
 }"
-Top Layer,Hood Down Tactical Rain Jacket,"For heavier weather conditions like hurricanes, snowstorms, and amphibious floods.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/the-park/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>The Park Vendor</b></a> (2000 Source),"{
+Top Layer,Hood Down Tactical Rain Jacket,"For heavier weather conditions like hurricanes, snowstorms, and amphibious floods.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/the-park/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>The Park Vendor</b></a> (<img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">2000),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_top_raincoat_hooddown_default.tex.png"",
     ""material"": ""outfit_item_material_raincoat_hooddown_default.tex.png""
@@ -175,7 +175,7 @@ Hair,Half Bun,Just to keep the hair out of the eyes.,Unlocked by default,"{
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Hair,Boxer Braids,"Otherwise known as Cornrow Braids, based on historical data.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/unknown/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Unknown Vendor</b></a> (2000 Source),"{
+Hair,Boxer Braids,"Otherwise known as Cornrow Braids, based on historical data.",Purchase: <a href='/control-resonant-reference/reference/world/vendors/unknown/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Unknown Vendor</b></a> (<img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">2000),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_boxerbraids_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -211,7 +211,7 @@ Hair,Skin Fade Mullet,"Doesn’t matter how long it takes, it’s always a good 
     ""material"": ""outfit_item_material_hair_green.tex.png""
   }
 }"
-Hair,Middle Part,A style that screams “I’m normal and you can trust me.”,Purchase: <a href='/control-resonant-reference/reference/world/vendors/underpass/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Underpass Vendor</b></a> (2000 Source),"{
+Hair,Middle Part,A style that screams “I’m normal and you can trust me.”,Purchase: <a href='/control-resonant-reference/reference/world/vendors/underpass/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Underpass Vendor</b></a> (<img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">2000),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_hair_middlepart_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -437,7 +437,7 @@ Facial Hair,Medium,A little more than a five-o’clock shadow.,Unlocked by defau
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Facial Hair,Stubble,"Never really thought growing a beard was possible, this is a good start.",,"{
+Facial Hair,Stubble,"Never really thought growing a beard was possible, this is a good start.",Score 3rd place or higher in SHÜM – Central,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_beard_short_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -451,7 +451,7 @@ Facial Hair,Stubble,"Never really thought growing a beard was possible, this is 
     ""material"": ""outfit_item_material_hair_blond.tex.png""
   }
 }"
-Facial Hair,Zappa,As a man once said: “Give a guy a big nose and weird hair and he’s capable of anything.”,,"{
+Facial Hair,Zappa,As a man once said: “Give a guy a big nose and weird hair and he’s capable of anything.”,Score 3rd place or higher in SHÜM – Evacuation Zone,"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_beard_mustache_default.tex.png"",
     ""material"": ""outfit_item_material_hair_default.tex.png""
@@ -526,7 +526,7 @@ Accessories,Communications Department Headset,Best used by those helping with lo
     ""full"": ""outfit_item_dylan_accessories_comms_default.tex.png""
   }
 }"
-Accessories,Bureau Cap,Supposedly a welcome gift for people who join the FBC.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/central/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Central Vendor</b></a> (2000 Source),"{
+Accessories,Bureau Cap,Supposedly a welcome gift for people who join the FBC.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/central/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Central Vendor</b></a> (<img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">2000),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_cap_default.tex.png"",
     ""material"": ""outfit_item_material_cap_default.tex.png""
@@ -550,7 +550,7 @@ Accessories,K9 Frequency Receiver,Experimental device that mimics the hearing ab
     ""full"": ""outfit_item_dylan_accessories_dogears_default.tex.png""
   }
 }"
-Accessories,Standard Issue Goggles,Given to all Rangers during training.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/evacuation-zone/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Evacuation Zone Vendor</b></a> (2000 Source),"{
+Accessories,Standard Issue Goggles,Given to all Rangers during training.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/evacuation-zone/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Evacuation Zone Vendor</b></a> (<img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">2000),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_rangergoggles_default.tex.png"",
     ""material"": ""outfit_item_material_rangergoggles_default.tex.png""
@@ -593,7 +593,7 @@ Accessories,Cracked Standard Issue Sunglasses,"Every FBC Agent gets a pair for f
     ""full"": ""outfit_item_dylan_accessories_sunglasses_broken_default.tex.png""
   }
 }"
-Accessories,Reading Glasses,For the far-sighted that need a little help.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/downtown/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Downtown Vendor</b></a> (2000 Source),"{
+Accessories,Reading Glasses,For the far-sighted that need a little help.,Purchase: <a href='/control-resonant-reference/reference/world/vendors/downtown/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>Downtown Vendor</b></a> (<img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">2000),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_eyeglasses_default.tex.png"",
     ""material"": ""outfit_item_material_eyeglasses_default.tex.png""
@@ -607,7 +607,7 @@ Accessories,Reading Glasses,For the far-sighted that need a little help.,Purchas
     ""material"": ""outfit_item_material_eyeglasses_research.tex.png""
   }
 }"
-Accessories,Helix and Nostril Piercings,Some call it the “Barista Special.”,Purchase: <a href='/control-resonant-reference/reference/world/vendors/west-incursion-zone/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>West Incursion Zone Vendor</b></a> (2000 Source),"{
+Accessories,Helix and Nostril Piercings,Some call it the “Barista Special.”,Purchase: <a href='/control-resonant-reference/reference/world/vendors/west-incursion-zone/' style='color: var(--floral-white)'><img src='/control-resonant-reference/icons/district_upgrades/icn_district_upgrade_vendor_level_1.svg' style='border: 0px; margin: 0px'/><b>West Incursion Zone Vendor</b></a> (<img src="/control-resonant-reference/icons/currencies/icn_currency_cash.svg" style="border:0px; margin:0px; height:inherit; vertical-align:central">2000),"{
   ""Default"": {
     ""full"": ""outfit_item_dylan_accessories_piercings_default.tex.png"",
     ""material"": ""outfit_item_material_piercings_default.tex.png""
