@@ -527,7 +527,7 @@ thead {
     font-family: 'Noto Sans';
     text-align: left;
     margin: 0px 0px 5px 0px;
-    font-size: clamp(10px, 1.35cqw, 18px);
+    font-size: clamp(8px, 1.35cqw, 18px);
     overflow: hidden;
 }
 

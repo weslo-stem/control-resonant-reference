@@ -16,7 +16,7 @@ Downtown,2,Aberrant Fragment,3,3,,750,3,4,Aberrant Items,/control-resonant-refer
 Downtown,2,Mourning Echo,3,3,,750,3,5,Artifacts,/control-resonant-reference/images/items/currency_charm_component_d_small.tex.png,/control-resonant-reference/reference/items/materials/#mourning-echo
 Downtown,2,Violent Echo,3,3,,750,4,1,Artifacts,/control-resonant-reference/images/items/currency_charm_component_c_small.tex.png,/control-resonant-reference/reference/items/materials/#violent-echo
 Downtown,2,Reset Item,5,,,1500,4,2,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
-Downtown,2,Reading Glasses,2,,,2000,4,3,Customization,/control-resonant-reference/images/player_outfit/outfit_item_dylan_accessories_eyeglasses.tex.png,/control-resonant-reference/reference/items/cosmetics/accessories/reading-glasses/
+Downtown,2,Reading Glasses,2,,,2000,4,3,Customization,/control-resonant-reference/images/player_outfit/outfit_item_dylan_accessories_eyeglasses.tex.png,/control-resonant-reference/reference/items/cosmetics/accessories/#reading-glasses-header
 Downtown,2,Living Shard,1,1,,4000,4,4,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_shard_small.tex.png,/control-resonant-reference/reference/items/materials/#living-shard
 Downtown,3,Untapped Fingerboard,1,,,1000,4,5,Artifacts,/control-resonant-reference/images/items/ch_010_fingerboard_bp_small.tex.png,/control-resonant-reference/reference/items/artifacts/fingerboard/
 Downtown,3,Reset Item,5,,,2000,5,1,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/

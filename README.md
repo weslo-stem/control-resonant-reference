@@ -6,7 +6,7 @@ A public community-driven wiki for the game [Control Resonant](https://controlga
 
 https://weslo-stem.github.io/control-resonant-reference
 
-- All pages are written in markdown format with HTML injections enabled
+- All pages are written in markdown format with HTML injections enabled (and used heavily)
 - Utilizes mkdocs as a base (not mkdocs-material or Zensical... probably a bad idea on my part, but here we are)
 - Utilizes Jinja2 code blocks
 
@@ -14,22 +14,38 @@ I apologize if the project is a bit of a mess. I am new to community-based proje
 
 If you wish to contribute, you will need Python and Git installed.
 
-**No AI or vibecode please.**
+**No AI please.**
 
 ## Progress
 
+Reference:
 ```
-[x] Combat Abilities
-[x] Vendors
-[x] Artifacts
-[x] Weapon Forms
-[ ] Zones
+[ ] Combat > Status Effects
+
+[x] Dylan > Combat Abilities
+[x] Dylan > Aberrant > Forms
+[x] Dylan > Talents
+[x] Dylan > Aberrant & Combat Ability Status effects/buffs dropdown
+
+[~] Enemies -- Not sure what else to do
+
+[x] Items > Artifacts
+[x] Items > Materials
+[~] Items > Cosmetics -- Needs some cleanup on the Unlock sections
+[ ] Items > Key Items (+ Reset Item)
+
 [ ] Quests
-[x] Enemies
-[x] Status effects/buffs
-[x] Talents
-[x] Materials
-[ ] Cosmetics
+[~] Zones
+[x] Vendors
+```
+
+Library:
+```
+[~] Library > Documents > Collectibles (maybe like 1% done lol)
+[x] Library > Documents > Enemies
+[ ] Library > Documents > Tutorials
+
+[ ] Library > Guides
 ```
 
 ## Plugins used
@@ -38,6 +54,7 @@ If you wish to contribute, you will need Python and Git installed.
 - [mkdocs-table-reader-plugin](https://github.com/timvink/mkdocs-table-reader-plugin)
 - [mkdocs-placeholder-plugin](https://github.com/six-two/mkdocs-placeholder-plugin)
 - [mkdocs-awesome-nav](https://github.com/lukasgeiter/mkdocs-awesome-nav)
+- [mkdocs-toggle-sidebar-plugin](https://github.com/six-two/mkdocs-toggle-sidebar-plugin)
 
 Make sure to install these if you wish to contribute!
 

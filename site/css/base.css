@@ -230,7 +230,8 @@ blockquote {
 
 .admonition, details {
     padding: 15px;
-    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     border: 1px solid transparent;
     border-radius: 4px;
     text-align: left;
@@ -291,7 +292,7 @@ details.danger h4, details.danger h5, details.danger h6 {
 .admonition, details {
     color: var(--bs-light-text-emphasis);
     background-color: var(--bs-light-bg-subtle);
-    border-color: var(--bs-light-border-subtle);
+    border-color: var(--charcoal);
 }
 
 .admonition h1, .admonition h2, .admonition h3,
