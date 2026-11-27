@@ -1,47 +1,34 @@
 Faction,Class,Name,Drops,Found,Image Folder,Image
-Hiss,Special,Vending Machine,,,/control-resonant-reference/images/enemies/hiss/,vending_machine_large.tex.png
-Hiss,Drone,Hiss Guard,,,/control-resonant-reference/images/enemies/hiss/drone/,artillery_large.tex.png
-Hiss,Drone,Hiss Charged,,,/control-resonant-reference/images/enemies/hiss/drone/,charged_large.tex.png
-Hiss,Drone,Hiss Elevated,,,/control-resonant-reference/images/enemies/hiss/drone/,elevated_large.tex.png
-Hiss,Drone,Hiss Provoker,,,/control-resonant-reference/images/enemies/hiss/drone/,hermit_large.tex.png
-Hiss,Drone,Hiss Passenger,,,/control-resonant-reference/images/enemies/hiss/drone/,mini_blob_large.tex.png
-Hiss,Drone,Hiss Thug,,,/control-resonant-reference/images/enemies/hiss/drone/,soldier_large.tex.png
-Hiss,Heavy,Hiss Transporter,,,/control-resonant-reference/images/enemies/hiss/heavy/,blob_large.tex.png
-Hiss,Heavy,Hiss Freighter,,,/control-resonant-reference/images/enemies/hiss/heavy/,brute_arcs_large.tex.png
-Hiss,Heavy,Hiss Collider,,,/control-resonant-reference/images/enemies/hiss/heavy/,brute_large.tex.png
-Hiss,Heavy,Hiss Cluster,,,/control-resonant-reference/images/enemies/hiss/heavy/,cluster_large.tex.png
-Hiss,Heavy,Hiss Distorted,,,/control-resonant-reference/images/enemies/hiss/heavy/,distorted_large.tex.png
-Hiss,Heavy,Hiss Riveter,,,/control-resonant-reference/images/enemies/hiss/heavy/,glider_large.tex.png
-Hiss,Heavy,Hiss Ruiner,,,/control-resonant-reference/images/enemies/hiss/heavy/,leviathan_large.tex.png
-Hiss,Heavy,Hiss Pursuer,,,/control-resonant-reference/images/enemies/hiss/heavy/,pursuer_large.tex.png
-Hiss,Heavy,Hiss Focused,,,/control-resonant-reference/images/enemies/hiss/heavy/,sniper_large.tex.png
-Hiss,Apex,Hiss Transporter - Apex,,,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_blob_large.tex.png
-Hiss,Apex,Hiss Freighter - Apex,,,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_brute_arcs_large.tex.png
-Hiss,Apex,Hiss Riveter - Apex,,,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_glider_large.tex.png
-Hiss,Apex,Hiss Ruiner - Apex,,,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_leviathan_large.tex.png
-Hiss,Apex,Hiss Distorted - Apex,,,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_master_large.tex.png
-Hiss,Apex,Hiss Pursuer - Apex,,,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_pursuer_large.tex.png
-Hiss,Apex,Hiss Focused - Apex,,,/control-resonant-reference/images/enemies/hiss/apex/,miniboss_sniper_large.tex.png
-Mold,Drone,Mold Host,,,/control-resonant-reference/images/enemies/mold/drone/,moldbag_large.tex.png
-Mold,Drone,Mold Launcher,,,/control-resonant-reference/images/enemies/mold/drone/,moldbag_rocket_large.tex.png
-Mold,Drone,Mold Spreader,,,/control-resonant-reference/images/enemies/mold/drone/,moldbag_shotgun_large.tex.png
-Mold,Drone,Mold Spitter,,,/control-resonant-reference/images/enemies/mold/drone/,spitter_large.tex.png
-Mold,Heavy,Mold Blight,,,/control-resonant-reference/images/enemies/mold/heavy/,juggernaut_geysers_large.tex.png
-Mold,Heavy,Mold Scrapper,,,/control-resonant-reference/images/enemies/mold/heavy/,juggernaut_large.tex.png
-Mold,Heavy,Mold Disperser,,,/control-resonant-reference/images/enemies/mold/heavy/,plague_barrage_large.tex.png
-Mold,Heavy,Mold Plague,,,/control-resonant-reference/images/enemies/mold/heavy/,plague_large.tex.png
-Mold,Heavy,Spore Mother,,,/control-resonant-reference/images/enemies/mold/heavy/,spore_large.tex.png
-Mold,Heavy,Bloomed Spore Mother,,,/control-resonant-reference/images/enemies/mold/heavy/,spore_mines_large.tex.png
-Mold,Apex,Mold Blight - Apex,,,/control-resonant-reference/images/enemies/mold/apex/,miniboss_juggernaut_geysers_large.tex.png
-Mold,Apex,Mold Plague - Apex,,,/control-resonant-reference/images/enemies/mold/apex/,miniboss_plague_large.tex.png
-Hedron,Drone,Hedron Spike,,,/control-resonant-reference/images/enemies/hedron/drone/,astral_construct_large.tex.png
-Hedron,Drone,Hedron Base,,,/control-resonant-reference/images/enemies/hedron/drone/,flux_horizontal_large.tex.png
-Hedron,Drone,Hedron Flux,,,/control-resonant-reference/images/enemies/hedron/drone/,flux_large.tex.png
-Hedron,Heavy,Hedron Axiom,,,/control-resonant-reference/images/enemies/hedron/heavy/,aggregate_beams_large.tex.png
-Hedron,Heavy,Hedron Aggregate,,,/control-resonant-reference/images/enemies/hedron/heavy/,aggregate_large.tex.png
-Hedron,Heavy,Hedron Sequence,,,/control-resonant-reference/images/enemies/hedron/heavy/,swarm_large.tex.png
-Hedron,Heavy,Hedron Vector,,,/control-resonant-reference/images/enemies/hedron/heavy/,swarm_melee_large.tex.png
-Hedron,Apex,Hedron Axiom - Apex,,,/control-resonant-reference/images/enemies/hedron/apex/,miniboss_aggregate_beams_large.tex.png
-Hedron,Apex,Hedron Aggregate - Apex,,,/control-resonant-reference/images/enemies/hedron/apex/,miniboss_aggregate_large.tex.png
-Hedron,Apex,Hedron Sequence - Apex,,,/control-resonant-reference/images/enemies/hedron/apex/,miniboss_swarm_large.tex.png
-Hedron,Apex,Hedron Vector - Apex,,,/control-resonant-reference/images/enemies/hedron/apex/,miniboss_swarm_melee_large.tex.png
+Hiss,Special,Vending Machine,Reset Item;Aberrant Slivers;Aberrant Splinters;Aberrant Fragments;Aberrant Shards;Aberrant Cuts;Aberrant Remnants;Nostalgic Echo;Quiet Echo;Violent Echo;Mourning Echo;Panicked Echo;Odd Echo;Undefined Reading,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Unknown,/control-resonant-reference/images/enemies/hiss/,vending-machine.png
+Hiss,Drone,Hiss Guard,None,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/drone/,hiss-guard.png
+Hiss,Drone,Hiss Charged,None,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/drone/,hiss-charged.png
+Hiss,Drone,Hiss Elevated,None,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/drone/,hiss-elevated.png
+Hiss,Drone,Hiss Provoker,None,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/drone/,hiss-provoker.png
+Hiss,Drone,Hiss Passenger,None,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/drone/,hiss-passenger.png
+Hiss,Drone,Hiss Thug,None,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/drone/,hiss-thug.png
+Hiss,Heavy,Hiss Transporter,Corrupted Element;Distorted Form;Warped Resonance,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-transporter.png
+Hiss,Heavy,Hiss Freighter,Corrupted Element;Distorted Form,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-freighter.png
+Hiss,Heavy,Hiss Collider,Corrupted Element;Distorted Form,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-collider.png
+Hiss,Heavy,Hiss Cluster,Corrupted Element;Distorted Form,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-cluster.png
+Hiss,Heavy,Hiss Distorted,Corrupted Element;Distorted Form,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-distorted.png
+Hiss,Heavy,Hiss Riveter,Corrupted Element;Distorted Form,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-riveter.png
+Hiss,Heavy,Hiss Ruiner,Corrupted Element;Distorted Form;Warped Resonance,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-ruiner.png
+Hiss,Heavy,Hiss Pursuer,Corrupted Element;Distorted Form,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-pursuer.png
+Hiss,Heavy,Hiss Focused,Corrupted Element;Distorted Form,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hiss/heavy/,hiss-focused.png
+Mold,Drone,Mold Host,None,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/drone/,mold-host.png
+Mold,Drone,Mold Launcher,None,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/drone/,mold-launcher.png
+Mold,Drone,Mold Spreader,None,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/drone/,mold-spreader.png
+Mold,Drone,Mold Spitter,None,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/drone/,mold-spitter.png
+Mold,Heavy,Mold Blight,Edible Glob;Fungal Growth,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/heavy/,mold-blight.png
+Mold,Heavy,Mold Scrapper,Edible Glob;Fungal Growth,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/heavy/,mold-scrapper.png
+Mold,Heavy,Mold Disperser,Edible Glob;Fungal Growth;Thriving Spore,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/heavy/,mold-disperser.png
+Mold,Heavy,Mold Plague,Edible Glob;Fungal Growth;Thriving Spore,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/heavy/,mold-plague.png
+Mold,Heavy,Spore Mother,Edible Glob;Fungal Growth,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/heavy/,spore-mother.png
+Mold,Heavy,Bloomed Spore Mother,Edible Glob;Fungal Growth,Central;Evacuation Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/mold/heavy/,bloomed-spore-mother.png
+Hedron,Drone,Hedron Spike,None,Underpass,/control-resonant-reference/images/enemies/hedron/drone/,hedron-spike.png
+Hedron,Drone,Hedron Base,None,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hedron/drone/,hedron-base.png
+Hedron,Drone,Hedron Flux,None,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hedron/drone/,hedron-flux.png
+Hedron,Heavy,Hedron Axiom,Ordered Image;Patterned Thought,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hedron/heavy/,hedron-axiom.png
+Hedron,Heavy,Hedron Aggregate,Ordered Image;Patterned Thought,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hedron/heavy/,hedron-aggregate.png
+Hedron,Heavy,Hedron Sequence,Ordered Image;Patterned Thought,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hedron/heavy/,hedron-sequence.png
+Hedron,Heavy,Hedron Vector,Ordered Image;Patterned Thought,Downtown;Central;Evacuation Zone;West Incursion Zone;The Park;Underpass;Unknown,/control-resonant-reference/images/enemies/hedron/heavy/,hedron-vector.png
