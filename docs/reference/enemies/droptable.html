@@ -1,0 +1,33 @@
+{% macro dropTable(drops, locations, imgs) -%}
+{% set imgssplit = imgs.split(';') %}
+
+<div class="htable" style="overflow-x: auto; flex-grow:1; margin:5px;">
+    <table>
+        <tbody>
+            <tr>
+                <th scope="row" style="background-color: var(--shadow-grey); vertical-align:middle;"><b>Drops</b></th>
+                <td>
+                    {%- for drop in drops.split(';') -%}
+                    {%- if drop=="No Drops" -%}
+                    <p style="margin: 0.5rem 0px 0.5rem 0px">None</p>
+                    {%- elif drop=="Reset Item" -%}
+                    <p style="margin: 0.5rem 0px 0.5rem 0px"><a href="/control-resonant-reference/reference/items/key-items/#{{drop.replace(" ", "-").lower()}}"><img src="{{imgssplit[loop.index0]}}" style="border:0px; margin:0px; height:40px; vertical-align:central">{{drop}}</a></p>
+                    {%- else -%}
+                    <p style="margin: 0.5rem 0px 0.5rem 0px"><a href="/control-resonant-reference/reference/items/materials/#{{drop.replace(" ", "-").lower()}}"><img src="{{imgssplit[loop.index0]}}" style="border:0px; margin:0px; height:40px; vertical-align:central">{{drop}}</a></p>
+                    {%- endif -%}
+                    {%- endfor -%}
+                </td>
+            </tr>
+            <tr>
+                <th scope="row" style="background-color: var(--shadow-grey); vertical-align: middle; "><b>Zones Found</b></th>
+                <td>
+                    {%- for location in locations.split(';') -%}
+                    <p style="margin: 0.5rem 0px 0.5rem 0px"><a href="/control-resonant-reference/reference/world/zones/{{location.replace(" ", "-").lower()}}">{{location}}</a></p>
+                    {%- endfor -%}
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+{% endmacro %}

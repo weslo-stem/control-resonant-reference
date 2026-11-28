@@ -77,57 +77,59 @@
     // - setCombinedVisibility(showNavigation: bool, showTOC: bool) -> string (dynamic CSS)
     // - registerKeyboardEventHandler() -> void
     const setCombinedVisibility = (showNavigation, showTOC) => {
-    // Navigation and TOC are merged so we just pick one of the values and trust them
-    // @TODO: add support for combined bars in toggle-sidebar.js?
     let style = `
+.mkdocs-toggle-sidebar-container {
+    margin: auto 0;
+}
+
 .mkdocs-toggle-sidebar-button {
     cursor: pointer;
-    width: 1em;
-    fill: darkgray;
-    display: flex;
-    margin-right: 5px;
+    width: 1.5em;
+    padding-bottom: 2px;
 }
 
-/* Hide toggle button in mobile view */
-@media screen and (max-width: 768px) {
-    .wy-breadcrumbs > li.mkdocs-toggle-sidebar-container {
-        display: none;
-    }
+.mkdocs-toggle-sidebar-button svg {
+    fill: white;
 }
 `;
-    if (!showNavigation) {
-        // We can not hide the contents in mobile view, since then the hamburger menu would be empty
+
+    if (!showTOC) {
         style += `
-@media screen and (min-width: 768px) {
-    section.wy-nav-content-wrap {
-        margin-left: 0px;
-    }
+div.col-md-3 {
+    display: none;
+}
 
-    nav.wy-nav-side, div.rst-versions {
-        display: none;
-    }
-
-    div.wy-nav-content {
-        max-width: 1100px;
-    }
+div.col-md-9 {
+    max-width: 100%;
+    flex-basis: 100%;
 }
 `;
+    }
+
+    if (!showNavigation) {
+        style += `
+ul.navbar-nav:nth-child(1) {
+    display: none;
+}
+`
     }
 
     return style;
-    
 }
 
 const addToggleButton = (toggleNavigation, toggleTOC) => {
     const toggleBtn = createDefaultToggleButton(toggleNavigation, toggleTOC);
-    toggleBtn.title = "Toggle Navigation"; // There is only one real sidebar, so we use this name for consistency
     const li = document.createElement("li");
-    li.className = "mkdocs-toggle-sidebar-container";
+    li.className = "nav-item mkdocs-toggle-sidebar-container";
     li.append(toggleBtn);
-
-    const titleElement = document.querySelector("ul.wy-breadcrumbs");
+  
+    let titleElement = document.querySelector("#navbar-collapse > ul.nav.navbar-nav.ms-md-auto");
+    if (!titleElement) {
+        // This worked in older versions, but not anymore. Since the default check failed, maybe we are in an old version?
+        titleElement = document.querySelector("#navbar-collapse > ul.nav.navbar-nav.ml-auto");
+    }
     if (titleElement) {
-        titleElement.insertBefore(li, titleElement.firstChild);  
+        titleElement.insertBefore(li, titleElement.firstChild);
     } else {
         console.warn(TOGGLE_BUTTON_REFERENCE_ELEMENT_NOT_FOUND_WARNING);
     }

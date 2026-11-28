@@ -73,7 +73,7 @@ We highly recommend playing through your first time entirely blind. This is pure
         <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/items/cosmetics/">Cosmetics</a></p>
         <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/items/key-items/">Key Items</a></p>
         <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/items/materials/">Materials</a></p>
-        <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/items/reset-item/">Reset Item</a></p>
+        <p style="text-indent: 1em;">🔻 <a style="color: var(--brown-red)" href="reference/items/key-items/#reset-item">Reset Item</a></p>
     </details>
     <details>
         <summary>World</summary>
