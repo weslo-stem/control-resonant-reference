@@ -9,13 +9,13 @@ The Park,1,Aberrant Fragment,3,3,3,750,2,2,Aberrant Items,/control-resonant-refe
 The Park,1,Aberrant Shard,3,3,3,750,2,3,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_d_small.tex.png,/control-resonant-reference/reference/items/materials/#aberrant-shard
 The Park,1,Mourning Echo,3,3,3,750,2,4,Artifacts,/control-resonant-reference/images/items/currency_charm_component_d_small.tex.png,/control-resonant-reference/reference/items/materials/#mourning-echo
 The Park,1,Violent Echo,3,3,3,750,2,5,Artifacts,/control-resonant-reference/images/items/currency_charm_component_c_small.tex.png,/control-resonant-reference/reference/items/materials/#violent-echo/
-The Park,1,Reset Item,3,,,1000,3,1,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
+The Park,1,Reset Item,3,,,1000,3,1,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/key-items/#reset-item
 The Park,1,Untapped Molding Bar,1,,,1000,3,2,Artifacts,/control-resonant-reference/images/items/ch_041_molded_candy_bp_small.tex.png,/control-resonant-reference/reference/items/artifacts/molding-bar/
 The Park,1,Living Shard,1,1,,4000,3,3,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_shard_small.tex.png,/control-resonant-reference/reference/items/materials/#living-shard
 The Park,2,Aberrant Slivers,3,3,,750,3,4,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_a_small.tex.png,/control-resonant-reference/reference/items/materials/#aberrant-slivers
 The Park,2,Aberrant Splinter,3,3,,750,3,5,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_b_small.tex.png,/control-resonant-reference/reference/items/materials/#aberrant-splinter
 The Park,2,Nostalgic Echo,3,3,,750,4,1,Artifacts,/control-resonant-reference/images/items/currency_charm_component_a_small.tex.png,/control-resonant-reference/reference/items/materials/#nostalgic-echo
 The Park,2,Quiet Echo,3,3,,750,4,2,Artifacts,/control-resonant-reference/images/items/currency_charm_component_b_small.tex.png,/control-resonant-reference/reference/items/materials/#quiet-echo
-The Park,2,Reset Item,5,,,1500,4,3,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
+The Park,2,Reset Item,5,,,1500,4,3,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/key-items/#reset-item
 The Park,2,Hood Down Tactical Rain Jacket,1,,,2000,4,4,Customization,/control-resonant-reference/images/player_outfit/outfit_item_dylan_top_raincoat_hooddown.tex.png,/control-resonant-reference/reference/items/cosmetics/top-layer/#bureau-tactical-rain-jacket-header
-The Park,3,Reset Item,5,,,2000,4,5,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
+The Park,3,Reset Item,5,,,2000,4,5,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/key-items/#reset-item

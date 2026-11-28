@@ -9,7 +9,7 @@ Underpass,1,Aberrant Cuts,3,3,3,750,2,2,Aberrant Items,/control-resonant-referen
 Underpass,1,Aberrant Remnant,3,3,3,750,2,3,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_f_small.tex.png,/control-resonant-reference/reference/items/materials/#aberrant-remnant
 Underpass,1,Odd Echo,3,3,3,750,2,4,Artifacts,/control-resonant-reference/images/items/currency_charm_component_f_small.tex.png,/control-resonant-reference/reference/items/materials/#odd-echo
 Underpass,1,Panicked Echo,3,3,3,750,2,5,Artifacts,/control-resonant-reference/images/items/currency_charm_component_e_small.tex.png,/control-resonant-reference/reference/items/materials/#panicked-echo
-Underpass,1,Reset Item,3,,,1000,3,1,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
+Underpass,1,Reset Item,3,,,1000,3,1,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/key-items/#reset-item
 Underpass,1,Untapped Framing Hammer,1,,,1000,3,2,Artifacts,/control-resonant-reference/images/items/ch_018_scissors_bp_small.tex.png,/control-resonant-reference/reference/items/artifacts/framing-hammer/
 Underpass,1,Living Shard,1,1,,4000,3,3,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_shard_small.tex.png,/control-resonant-reference/reference/items/materials/#living-shard
 Underpass,2,Aberrant Fragment,3,3,,750,3,4,Aberrant Items,/control-resonant-reference/images/items/currency_aberrant_material_c_small.tex.png,/control-resonant-reference/reference/items/materials/#aberrant-fragment
@@ -20,6 +20,6 @@ Underpass,2,Mourning Echo,3,3,,750,4,3,Artifacts,/control-resonant-reference/ima
 Underpass,2,Nostalgic Echo,3,3,,750,4,4,Artifacts,/control-resonant-reference/images/items/currency_charm_component_a_small.tex.png,/control-resonant-reference/reference/items/materials/#nostalgic-echo
 Underpass,2,Quiet Echo,3,3,,750,4,5,Artifacts,/control-resonant-reference/images/items/currency_charm_component_b_small.tex.png,/control-resonant-reference/reference/items/materials/#quiet-echo
 Underpass,2,Violent Echo,3,3,,750,5,1,Artifacts,/control-resonant-reference/images/items/currency_charm_component_c_small.tex.png,/control-resonant-reference/reference/items/materials/#violent-echo
-Underpass,2,Reset Item,5,,,1500,5,2,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
+Underpass,2,Reset Item,5,,,1500,5,2,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/key-items/#reset-item
 Underpass,2,Middle Part,1,,,2000,5,3,Customization,/control-resonant-reference/images/player_outfit/outfit_item_dylan_hair_middlepart_default.tex.png,/control-resonant-reference/reference/items/cosmetics/hair/#middle-part-header
-Underpass,3,Reset Item,5,,,2000,5,4,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/reset-item/
+Underpass,3,Reset Item,5,,,2000,5,4,Special Items,/control-resonant-reference/icons/currencies/icn_currency_respec_items.svg,/control-resonant-reference/reference/items/key-items/#reset-item
